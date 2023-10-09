@@ -26,8 +26,9 @@ def insert_to_db(file_path: str, exam_number: int):
         "div[class^='detailed-result-panel--panel-row--']")
 
     # import to exam table
-    exam_insert_query = f"INSERT INTO exams (uuid, id, time_minute, subject_id) VALUES (%s, %s, %s, 1)"
-    cursor.execute(exam_insert_query, (get_uuid(), exam_number, 180))
+    exam_insert_query = f"INSERT INTO exams (uuid, id, name, thumbnail, time_minute, subject_id) VALUES (%s, %s, %s, %s, %s, 1)"
+    cursor.execute(exam_insert_query, (get_uuid(), exam_number,
+                   f'Udemy {exam_number}', 'images/thumbnail1.jpeg', 180))
 
     exam_id = cursor.lastrowid
 

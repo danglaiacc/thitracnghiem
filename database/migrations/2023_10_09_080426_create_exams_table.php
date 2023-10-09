@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('exams', function (Blueprint $table) {
             $table->id();
             $table->uuid();
+            $table->string('name');
+            $table->string('thumbnail')->nullable();
             $table->integer('time_minute');
             $table->foreignId('subject_id')->constrained();
             $table->timestamps();
