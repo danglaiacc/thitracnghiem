@@ -101,10 +101,12 @@ def insert_to_db(file_path: str, exam_number: int):
             'ul', {'class': 'wpProQuiz_questionList'}
         ).find_all('li')
 
+        total_correct_options = 0
         for option_html in options:
             # option_html = str(option.select('.wpProQuiz_questionListItem')[0])
             option_html = str(option_html)
             is_correct = int('wpProQuiz_answerCorrect' in option_html)
+            total_correct_options += 1 if is_correct else 0
 
             option_html = re.sub(
                 r'<span style="display:none;">.*?<\/span>', '', option_html)
@@ -130,6 +132,11 @@ def insert_to_db(file_path: str, exam_number: int):
             option_insert_query = "INSERT INTO options (text, is_correct, question_id) VALUES (%s, %s, %s)"
             cursor.execute(option_insert_query, (str(
                 option_html), is_correct, question_id))
+
+        # update multi choice field
+        if (total_correct_options > 1):
+            update_question_query = "update questions set is_multichoice=%s where id=%s"
+            cursor.execute(update_question_query, (1, question_id))
 
 
 file_paths = {

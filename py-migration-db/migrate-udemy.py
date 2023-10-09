@@ -70,10 +70,12 @@ def insert_to_db(file_path: str, exam_number: int):
             'ul', {'class': 'ud-unstyled-list'}
         ).find_all('li')
 
+        total_correct_options = 0
         for option in options:
             option_text = option.text
             option_html = str(option.select('.ud-heading-md')[0])
             is_correct = int(option_text.endswith('(Correct)'))
+            total_correct_options += 1 if is_correct else 0
 
             # option_text = str(re.sub('\(Correct\)$', '', option_text))
 
@@ -90,6 +92,11 @@ def insert_to_db(file_path: str, exam_number: int):
             option_insert_query = "INSERT INTO options (text, is_correct, question_id) VALUES (%s, %s, %s)"
             cursor.execute(option_insert_query, (str(
                 option_html), is_correct, question_id))
+
+        # update multi choice field
+        if (total_correct_options > 1):
+            update_question_query = "update questions set is_multichoice=%s where id=%s"
+            cursor.execute(update_question_query, (1, question_id))
 
 
 file_paths = {

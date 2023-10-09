@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('text', 2000);
             $table->string('explaination', 10000);
             $table->string('note');
+            $table->boolean('is_multichoice')->default(false);
             $table->timestamps();
         });
     }

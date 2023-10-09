@@ -20,6 +20,6 @@ Route::get('/', Home::class);
 
 
 Route::group(['prefix' => 'take-exam', 'as' => 'take-exam.'], function () {
-    Route::get('review/{exam_id}', ['as' => 'review', 'uses' => ReviewMode::class]);
-    Route::get('timed/{exam_id}', ['as' => 'timed', 'uses' => TimedMode::class]);
+    Route::get('review/{exam}', ['as' => 'review', 'uses' => ReviewMode::class]);
+    Route::get('timed/{exam}', ['as' => 'timed', 'uses' => TimedMode::class]);
 });
