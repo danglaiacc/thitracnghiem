@@ -1,3 +1,7 @@
+<?php
+$checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
+?>
+
 <div>
     <h3>Question {{ $currentIndexQuestion + 1 }}:</h3>
     <p>
@@ -7,27 +11,15 @@
     <form wire:submit.prevent="checkAnswer">
         <fieldset {{ $isShowExplaination ? 'disabled' : '' }}>
 
-            @if ($currentQuestion->is_multichoice)
-                @foreach ($options as $option)
-                    <div class="form-check border border-2">
-                        <input class="form-check-input" type="checkbox" value="{{ $option->id }}"
-                            id="answer-{{ $option->id }}">
-                        <label class="form-check-label" for="answer-{{ $option->id }}">
-                            {!! $option->text !!}
-                        </label>
-                    </div>
-                @endforeach
-            @else
-                @foreach ($options as $option)
-                    <div class="form-check">
-                        <input wire:model="selectedOptions" class="form-check-input" type="radio"
-                            id="ans-{{ $option->id }}" value="{{ $option->id }}">
-                        <label class="form-check-label" for="ans-{{ $option->id }}">
-                            {!! $option->text !!}
-                        </label>
-                    </div>
-                @endforeach
-            @endif
+            @foreach ($options as $option)
+                <div class="form-check border border-2">
+                    <input class="form-check-input" type="{{ $checkBoxType }}" value="{{ $option->id }}"
+                        id="answer-{{ $option->id }}" wire:model="selectedOptions">
+                    <label class="form-check-label" for="answer-{{ $option->id }}">
+                        {!! $option->text !!}
+                    </label>
+                </div>
+            @endforeach
 
         </fieldset>
         <button class="btn btn-success" type="submit">Check</button>
