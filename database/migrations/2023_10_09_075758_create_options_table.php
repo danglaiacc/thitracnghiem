@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('options', function (Blueprint $table) {
             $table->id();
-            $table->string('text');
+            $table->string('text', 2000);
             $table->boolean('is_correct');
             $table->foreignId('question_id')->constrained();
             $table->timestamps();

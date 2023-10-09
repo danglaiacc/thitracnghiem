@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
             $table->uuid();
-            $table->string('text');
-            $table->string('explaination');
+            $table->string('text', 2000);
+            $table->string('explaination', 8000);
             $table->string('note');
             $table->timestamps();
         });

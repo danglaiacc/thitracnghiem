@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('subjects', function (Blueprint $table) {
             $table->id();
             $table->uuid();
+            $table->string('name', 200);
             $table->timestamps();
         });
     }
