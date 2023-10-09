@@ -11,11 +11,21 @@ $checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
     <form wire:submit.prevent="checkAnswer">
         <fieldset {{ $isShowExplaination ? 'disabled' : '' }}>
 
-            @foreach ($options as $option)
-                <div class="form-check border border-2">
+            @foreach ($options as $index => $option)
+                <?php
+                $border = '';
+                if ($isShowExplaination) {
+                    if ($option->is_correct) {
+                        $border = 'border-success';
+                    } elseif (in_array($option->id, $selectedOptions)) {
+                        $border = 'border-danger';
+                    }
+                }
+                ?>
+                <div class="form-check border border-2 {{ $border }}">
                     <input class="form-check-input" type="{{ $checkBoxType }}" value="{{ $option->id }}"
-                        id="answer-{{ $option->id }}" wire:model="selectedOptions">
-                    <label class="form-check-label" for="answer-{{ $option->id }}">
+                        id="answer-{{ $index }}" wire:model="selectedOptions">
+                    <label class="form-check-label" for="answer-{{ $index }}">
                         {!! $option->text !!}
                     </label>
                 </div>

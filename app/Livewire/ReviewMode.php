@@ -6,6 +6,8 @@ use App\Models\Exam;
 use App\Models\ExamQuestion;
 use Livewire\Component;
 
+use function Laravel\Prompts\error;
+
 class ReviewMode extends Component
 {
     public $exam;
@@ -31,7 +33,7 @@ class ReviewMode extends Component
         }
 
         $this->currentIndexQuestion = 0;
-        $this->updatedCurrentIndexQuestion();
+        $this->loadQuestion();
     }
 
     public function render()
@@ -58,7 +60,7 @@ class ReviewMode extends Component
         $this->isCorrectAnswer = $this->checkCorrectAnswer();
     }
 
-    public function updatedCurrentIndexQuestion()
+    public function loadQuestion()
     {
         $this->currentQuestion = $this->questions->values()->get($this->currentIndexQuestion);
 
@@ -73,21 +75,22 @@ class ReviewMode extends Component
     {
         if ($this->currentIndexQuestion != 0) {
             $this->currentIndexQuestion--;
-            $this->updatedCurrentIndexQuestion();
+            $this->loadQuestion();
         }
     }
 
     public function nextQuestion()
     {
         $this->currentIndexQuestion++;
-        $this->updatedCurrentIndexQuestion();
+        $this->loadQuestion();
     }
 
     private function checkCorrectAnswer()
     {
         $this->selectedOptions = is_string($this->selectedOptions) ? [(int)$this->selectedOptions] : $this->selectedOptions;
 
-        $options = $this->options->pluck(null, 'id')->all();
+        $options = clone $this->options;
+        $options = $options->pluck(null, 'id')->all();
 
         // if select an item false
         foreach ($this->selectedOptions as $selectedOption) {
