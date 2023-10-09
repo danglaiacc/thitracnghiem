@@ -40,7 +40,7 @@ def insert_to_db(file_path: str, exam_number: int):
         question_text = question_text.replace(
             ' class="ud-text-bold mc-quiz-question--question-prompt--2_dlz rt-scaffolding" data-purpose="safely-set-inner-html:rich-text-viewer:html" id="question-prompt"', '')
         explaination = str(question_card.select(
-            'div[class^="mc-quiz-question--explanation"]')[0])
+            'div[class^="mc-quiz-question--explanation"]')[0]).replace('\n', '')
 
         remove_strings = [
             ' class="rt-scaffolding" data-purpose="safely-set-inner-html:rich-text-viewer:html" id="question-explanation"',
