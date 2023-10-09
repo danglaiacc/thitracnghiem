@@ -121,14 +121,17 @@ def insert_to_db(file_path: str, exam_number: int):
                 ' class="wpProQuiz_questionListItem wpProQuiz_answerCorrect"',
                 ' class="wpProQuiz_questionListItem wpProQuiz_answerCorrectIncomplete"',
                 ' class="wpProQuiz_questionListItem wpProQuiz_answerIncorrect"',
+                '<input type="radio">',
+                '<input type="checkbox">',
+                ' class="is-selected"',
+                ' class=""',
                 '<span class="input-style"></span> ',
             ]
             for remove_option_string in remove_option_strings:
                 option_html = option_html.replace(remove_option_string, '')
 
-            option_html = option_html.replace('<li > <label> ', '<li><label>')
-            option_html = option_html.replace(
-                ' </label> </li>', '</label></li>')
+            option_html = option_html.replace('<li > <label> ', '<p>')
+            option_html = option_html.replace(' </label> </li>', '</p>')
             option_insert_query = "INSERT INTO options (text, is_correct, question_id) VALUES (%s, %s, %s)"
             cursor.execute(option_insert_query, (str(
                 option_html), is_correct, question_id))
