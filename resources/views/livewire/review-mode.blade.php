@@ -5,27 +5,31 @@
     </p>
 
     <form wire:submit.prevent="checkAnswer">
-        @if ($currentQuestion->is_multichoice)
-            @foreach ($options as $option)
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="{{ $option->id }}" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        {!! $option->text !!}
-                    </label>
-                </div>
-            @endforeach
-        @else
-            @foreach ($options as $option)
-                <div class="form-check">
-                    <input wire:model="selectedOptions" class="form-check-input" type="radio"
-                        id="ans-{{ $option->id }}" value="{{ $option->id }}">
-                    <label class="form-check-label" for="ans-{{ $option->id }}">
-                        {!! $option->text !!}
-                    </label>
-                </div>
-            @endforeach
-        @endif
+        <fieldset {{ $isShowExplaination ? 'disabled' : '' }}>
 
+            @if ($currentQuestion->is_multichoice)
+                @foreach ($options as $option)
+                    <div class="form-check border border-2">
+                        <input class="form-check-input" type="checkbox" value="{{ $option->id }}"
+                            id="answer-{{ $option->id }}">
+                        <label class="form-check-label" for="answer-{{ $option->id }}">
+                            {!! $option->text !!}
+                        </label>
+                    </div>
+                @endforeach
+            @else
+                @foreach ($options as $option)
+                    <div class="form-check">
+                        <input wire:model="selectedOptions" class="form-check-input" type="radio"
+                            id="ans-{{ $option->id }}" value="{{ $option->id }}">
+                        <label class="form-check-label" for="ans-{{ $option->id }}">
+                            {!! $option->text !!}
+                        </label>
+                    </div>
+                @endforeach
+            @endif
+
+        </fieldset>
         <button class="btn btn-success" type="submit">Check</button>
         <button class="btn btn-warning" wire:click.prevent="previousQuestion">Previous</button>
         <button class="btn btn-primary" wire:click.prevent="nextQuestion">Next</button>
