@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->uuid();
             $table->string('text', 2000);
-            $table->string('explaination', 8000);
+            $table->string('explaination', 10000);
             $table->string('note');
             $table->timestamps();
         });
