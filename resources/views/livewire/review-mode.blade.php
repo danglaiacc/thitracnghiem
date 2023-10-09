@@ -1,4 +1,5 @@
 <div>
+    <h3>Question {{ $currentIndexQuestion + 1 }}:</h3>
     <p>
         {!! $currentQuestion->text !!}
     </p>
@@ -26,6 +27,9 @@
         @endif
 
         <button class="btn btn-success" type="submit">Check</button>
+        <button class="btn btn-warning" wire:click.prevent="previousQuestion">Previous</button>
+        <button class="btn btn-primary" wire:click.prevent="nextQuestion">Next</button>
+        <button class="btn btn-danger" wire:click.prevent="addToHardQuestion">Add to hard</button>
     </form>
 
     @if ($isShowExplaination)
