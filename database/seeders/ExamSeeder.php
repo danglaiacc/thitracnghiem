@@ -19,6 +19,7 @@ class ExamSeeder extends Seeder
             'name' => 'AWS Solutions Architect Professional SAP-C02 - Hard',
             'time_minute' => 180,
             'subject_id' => 1,
+            'allow_shuffle' => 0,
         ]);
     }
 }
