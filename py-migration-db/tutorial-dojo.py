@@ -145,10 +145,10 @@ def insert_to_db(file_path: str, exam_number: int):
 file_paths = {
     '/Users/lai/Downloads/exam/sap.tr-1.html': 4,
     '/Users/lai/Downloads/exam/sap.tr-2.html': 5,
-    '/Users/lai/Downloads/exam/sap.tr-3.html': 7,
-    '/Users/lai/Downloads/exam/sap.tr-4.html': 9,
-    '/Users/lai/Downloads/exam/sap.tr-5.html': 11,
-    '/Users/lai/Downloads/exam/sap.tr-6.html': 13,
+    '/Users/lai/Downloads/exam/sap.tr-3.html': 6,
+    '/Users/lai/Downloads/exam/sap.tr-4.html': 7,
+    '/Users/lai/Downloads/exam/sap.tr-5.html': 8,
+    '/Users/lai/Downloads/exam/sap.tr-6.html': 9,
 }
 
 for path, exam_number in file_paths.items():

@@ -22,7 +22,9 @@ $checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
         </div>
     </div>
 
-    <h5>Question {{ $currentIndexQuestion + 1 }}</h5>
+    <h5 class="{{ $isShowExplaination ? ($isCorrectAnswer ? 'text-success' : 'text-danger') : '' }}">
+        Question {{ $currentIndexQuestion + 1 }} / {{ $totalQuestion }}
+    </h5>
     <div class="question-text">
         {!! $currentQuestion->text !!}
     </div>
