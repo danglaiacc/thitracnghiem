@@ -2,11 +2,11 @@
 $checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
 ?>
 
-<div>
+<div class="question">
     <h5>Question {{ $currentIndexQuestion + 1 }}:</h5>
-    <p>
+    <div class="question--text">
         {!! $currentQuestion->text !!}
-    </p>
+    </div>
 
     <form wire:submit.prevent="submitAnswer">
         <fieldset {{ $isShowExplaination ? 'disabled' : '' }}>
@@ -22,10 +22,10 @@ $checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
                     }
                 }
                 ?>
-                <div class="form-check border border-2 {{ $border }}">
+                <div class="question--answer-item form-check border border-2 {{ $border }}">
                     <input class="form-check-input" type="{{ $checkBoxType }}" value="{{ $option->id }}"
                         id="answer-{{ $index }}" wire:model="selectedOptions">
-                    <label class="form-check-label" for="answer-{{ $index }}">
+                    <label class="form-check-label answer-item--text" for="answer-{{ $index }}">
                         {!! $option->text !!}
                     </label>
                 </div>

@@ -1,0 +1,12 @@
+p {
+    font-size: 18px;
+}
+
+.question--answer-item {
+    margin: 12px 0;
+}
+
+.answer-item--text p{
+    margin: 0;
+    padding: 4px;
+}
