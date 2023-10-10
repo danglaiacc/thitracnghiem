@@ -16,7 +16,7 @@ return new class extends Migration
             $table->uuid();
             $table->string('name');
             $table->string('thumbnail')->nullable();
-            $table->integer('time_minute');
+            $table->integer('time');
             $table->integer('pass_score')->default(75);
             $table->boolean('allow_shuffle')->default(true);
             $table->foreignId('subject_id')->constrained();

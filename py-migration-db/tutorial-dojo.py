@@ -30,7 +30,7 @@ def insert_to_db(file_path: str, exam_number: int):
     question_cards = soup.select("li.wpProQuiz_listItem")
 
     # import to exam table
-    exam_insert_query = f"INSERT INTO exams (uuid, id, name, thumbnail, time_minute, subject_id) VALUES (%s, %s, %s, %s, %s, 1)"
+    exam_insert_query = f"INSERT INTO exams (uuid, id, name, thumbnail, time, subject_id) VALUES (%s, %s, %s, %s, %s, 1)"
     cursor.execute(exam_insert_query, (get_uuid(), exam_number,
                    f'Tutorial Dojo {exam_number}', 'images/thumbnail2.jpeg', 180))
 

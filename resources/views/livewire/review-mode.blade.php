@@ -2,7 +2,7 @@
 $checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
 ?>
 @section('title', $exam->name)
-@section('time', $exam->time_minute)
+@section('time', $exam->time)
 
 <div class="question">
     <h5>Question {{ $currentIndexQuestion + 1 }}:</h5>
