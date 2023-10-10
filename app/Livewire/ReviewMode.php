@@ -96,9 +96,10 @@ class ReviewMode extends Component
 
         // shuffle code, do not combine these lines
         if ($this->exam->allow_shuffle) {
-            $this->options = $this->currentQuestion->options;
-        } else {
+            error_log('enter to shuffle function');
             $this->options = $this->currentQuestion->options->shuffle();
+        } else {
+            $this->options = $this->currentQuestion->options;
         }
 
         $this->isShowExplaination = false;
