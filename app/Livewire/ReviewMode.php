@@ -6,8 +6,6 @@ use App\Models\Exam;
 use App\Models\ExamQuestion;
 use Livewire\Component;
 
-use function Laravel\Prompts\error;
-
 class ReviewMode extends Component
 {
     public $exam;

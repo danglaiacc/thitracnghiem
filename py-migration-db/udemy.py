@@ -85,6 +85,8 @@ def insert_to_db(file_path: str, exam_number: int):
                 ' class="mc-quiz-answer--answer-body--1JtTQ rt-scaffolding" data-purpose="safely-set-inner-html:rich-text-viewer:html"',
                 '<div class="ud-heading-sm mc-quiz-answer--correctness--3pFQG">(Correct)</div>',
                 '<div class="ud-heading-sm mc-quiz-answer--correctness--3pFQG">(Incorrect)</div>',
+                '<div><div><div>',
+                '</div></div></div>',
             ]
             for remove_option_string in remove_option_strings:
                 option_html = option_html.replace(remove_option_string, '')
