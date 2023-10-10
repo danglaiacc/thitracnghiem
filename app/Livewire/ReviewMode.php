@@ -3,7 +3,6 @@
 namespace App\Livewire;
 
 use App\Helper\FileHelper;
-use App\Helper\StringHelper;
 use App\Models\Exam;
 use App\Models\ExamQuestion;
 use Livewire\Component;
@@ -21,6 +20,9 @@ class ReviewMode extends Component
 
     public $isShowExplaination;
 
+    public int $totalQuestion, $totalCorrectAnswer = 0;
+    public string $resultMessage;
+
     public function mount(
         $exam,
     ) {
@@ -32,9 +34,14 @@ class ReviewMode extends Component
         } else {
             $this->questions = $this->exam->questions;
         }
+        $this->totalQuestion = count($this->questions);
 
         $this->currentIndexQuestion = 0;
         $this->loadQuestion();
+    }
+
+    public function finishExam()
+    {
     }
 
     public function render()
@@ -64,7 +71,6 @@ class ReviewMode extends Component
             $examQuestion->save();
             session()->flash('background', 'success');
             session()->flash('message', 'OK');
-
         }
         else {
             session()->flash('background', 'warning');
@@ -77,6 +83,11 @@ class ReviewMode extends Component
     {
         $this->isShowExplaination = true;
         $this->isCorrectAnswer = $this->checkCorrectAnswer();
+
+        if ($this->isCorrectAnswer)
+        {
+            $this->totalCorrectAnswer ++;
+        }
     }
 
     public function loadQuestion()
