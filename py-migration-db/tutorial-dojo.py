@@ -1,6 +1,6 @@
-import mysql.connector
 from bs4 import BeautifulSoup
 from uuid import uuid4
+from base import conn
 import re
 
 '''
@@ -13,12 +13,12 @@ def get_uuid():
 
 
 # Establish a connection to the MySQL server
-conn = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="root",
-    database="exam"
-)
+# conn = mysql.connector.connect(
+#     host="j8oay8teq9xaycnm.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+#     user="ggx6lw6wrhch5c8o",
+#     password="ypbcx5wg7bagrwsd",
+#     database="zczcn4prmzhnh94e"
+# )
 cursor = conn.cursor()
 
 
