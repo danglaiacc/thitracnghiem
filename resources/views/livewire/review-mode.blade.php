@@ -34,10 +34,17 @@ $checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
             @endforeach
 
         </fieldset>
-        <button class="btn btn-success" type="submit">Check</button>
-        <button class="btn btn-warning" wire:click.prevent="previousQuestion">Previous</button>
-        <button class="btn btn-primary" wire:click.prevent="nextQuestion">Next</button>
-        <button class="btn btn-danger" wire:click.prevent="addToHardQuestion">Add to hard</button>
+
+        <div class="d-flex justify-content-between">
+            <div>
+                <button class="btn btn-warning" wire:click.prevent="previousQuestion">Previous</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" wire:click.prevent="addToHardQuestion">Add to hard</button>
+                <button class="btn btn-success" type="submit">Check</button>
+                <button class="btn btn-primary" wire:click.prevent="nextQuestion">Next</button>
+            </div>
+        </div>
     </form>
 
     @if ($isShowExplaination)
