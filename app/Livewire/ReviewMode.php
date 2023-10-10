@@ -2,6 +2,8 @@
 
 namespace App\Livewire;
 
+use App\Helper\FileHelper;
+use App\Helper\StringHelper;
 use App\Models\Exam;
 use App\Models\ExamQuestion;
 use Livewire\Component;
@@ -47,10 +49,23 @@ class ReviewMode extends Component
      */
     public function addToHardQuestion()
     {
-        ExamQuestion::firstOrCreate([
+        $questionId = $this->currentQuestion->id;
+        $params = [
             'exam_id' => 100,
-            'question_id' => $this->currentQuestion->id,
-        ]);
+            'question_id' => $questionId,
+        ];
+
+        $existedExamQuestion = ExamQuestion::where($params)->first();
+        if (is_null($existedExamQuestion)) {
+            $examQuestion = new ExamQuestion($params);
+            FileHelper::write2File(
+                "INSERT INTO exam_questions (exam_id, question_id) values (100, $questionId);\n",
+            );
+            $examQuestion->save();
+        }
+        else {
+            error_log('this question has been exsited in exam');
+        }
     }
 
     public function submitAnswer()
