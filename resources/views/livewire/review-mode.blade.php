@@ -5,7 +5,24 @@ $checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
 @section('time', $exam->time)
 
 <div class="question">
-    <h5>Question {{ $currentIndexQuestion + 1 }}:</h5>
+    <div class="d-flex justify-content-between">
+        <h2>{{ $exam->name }}</h2>
+        <div>
+            <button type="button" class="btn btn-primary position-relative">
+                Correct answer
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ $totalCorrectAnswer }}
+                    <span class="visually-hidden">unread messages</span>
+                </span>
+            </button>
+
+            {{-- <button class="btn btn-warning" wire:click.prevent="finishExam">
+                Finish
+            </button> --}}
+        </div>
+    </div>
+
+    <h5>Question {{ $currentIndexQuestion + 1 }}</h5>
     <div class="question-text">
         {!! $currentQuestion->text !!}
     </div>
@@ -37,18 +54,28 @@ $checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
 
         <div class="d-flex justify-content-between">
             <div>
-                <button class="btn btn-warning" wire:click.prevent="previousQuestion">Previous</button>
+                @if ($currentIndexQuestion > 0)
+                    <button class="btn btn-warning" wire:click.prevent="previousQuestion">
+                        Previous
+                    </button>
+                @endif
             </div>
             <div>
-                <button class="btn btn-danger" wire:click.prevent="addToHardQuestion">Add to hard</button>
-                <button class="btn btn-success" type="submit">Check</button>
-                <button class="btn btn-primary" wire:click.prevent="nextQuestion">Next</button>
+                <button class="btn btn-danger" wire:click.prevent="addToHardQuestion">
+                    Add to hard
+                </button>
+                <button class="btn btn-success" type="submit">
+                    Check
+                </button>
+                <button class="btn btn-primary" wire:click.prevent="nextQuestion">
+                    Next
+                </button>
             </div>
         </div>
     </form>
 
     @if (session()->has('message'))
-        <div class="alert alert-{{session('background')}} mt-2 p-2">
+        <div class="alert alert-{{ session('background') }} mt-2 p-2">
             {{ session('message') }}
         </div>
     @endif

@@ -1,7 +1,4 @@
 <div>
-    <h1>
-        something in home page
-    </h1>
     <div class="row">
         @foreach ($exams as $exam)
             <div class="col-3 mb-3">
