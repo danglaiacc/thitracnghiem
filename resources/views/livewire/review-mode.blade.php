@@ -48,7 +48,7 @@ $checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
     </form>
 
     @if (session()->has('message'))
-        <div class="alert alert-success mt-2 p-2">
+        <div class="alert alert-{{session('background')}} mt-2 p-2">
             {{ session('message') }}
         </div>
     @endif

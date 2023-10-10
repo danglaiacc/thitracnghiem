@@ -62,10 +62,12 @@ class ReviewMode extends Component
                 "INSERT INTO exam_questions (exam_id, question_id) values (100, $questionId);\n",
             );
             $examQuestion->save();
+            session()->flash('background', 'success');
             session()->flash('message', 'OK');
 
         }
         else {
+            session()->flash('background', 'warning');
             session()->flash('message', 'Question has been exsited.');
             error_log('this question has been exsited in exam');
         }
