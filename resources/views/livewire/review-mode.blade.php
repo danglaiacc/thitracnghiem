@@ -4,7 +4,7 @@ $checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
 
 <div class="question">
     <h5>Question {{ $currentIndexQuestion + 1 }}:</h5>
-    <div class="question--text">
+    <div class="question-text">
         {!! $currentQuestion->text !!}
     </div>
 
