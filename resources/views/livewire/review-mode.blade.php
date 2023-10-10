@@ -71,3 +71,11 @@ $checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
     @endif
 
 </div>
+
+@push('js')
+    <script type="text/javascript">
+        window.onbeforeunload = function() {
+            return "Refresh page? Are you sure haha?";
+        }
+    </script>
+@endpush
