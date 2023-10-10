@@ -8,7 +8,7 @@ $checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
         {!! $currentQuestion->text !!}
     </p>
 
-    <form wire:submit.prevent="checkAnswer">
+    <form wire:submit.prevent="submitAnswer">
         <fieldset {{ $isShowExplaination ? 'disabled' : '' }}>
 
             @foreach ($options as $index => $option)

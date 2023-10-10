@@ -23,11 +23,12 @@ class ReviewMode extends Component
         $exam,
     ) {
         $this->exam = Exam::where('uuid', $exam)->first();
-        $this->questions = $this->exam->questions;
 
         // shuffle
         if ($this->exam->allow_shuffle) {
-            $this->questions = $this->questions->shuffle();
+            $this->questions = $this->exam->questions->shuffle();
+        } else {
+            $this->questions = $this->exam->questions;
         }
 
         $this->currentIndexQuestion = 0;
@@ -52,7 +53,7 @@ class ReviewMode extends Component
         ]);
     }
 
-    public function checkAnswer()
+    public function submitAnswer()
     {
         $this->isShowExplaination = true;
         $this->isCorrectAnswer = $this->checkCorrectAnswer();
@@ -62,8 +63,12 @@ class ReviewMode extends Component
     {
         $this->currentQuestion = $this->questions->values()->get($this->currentIndexQuestion);
 
-        $this->options = $this->currentQuestion->options;
-        $this->exam->allow_shuffle && $this->options = $this->options->shuffle();
+        // shuffle code, do not combine these lines
+        if ($this->exam->allow_shuffle) {
+            $this->options = $this->currentQuestion->options;
+        } else {
+            $this->options = $this->currentQuestion->options->shuffle();
+        }
 
         $this->isShowExplaination = false;
         $this->selectedOptions = [];

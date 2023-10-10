@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('thumbnail')->nullable();
             $table->integer('time_minute');
-            $table->integer('pass_score')->default(750);
+            $table->integer('pass_score')->default(75);
             $table->boolean('allow_shuffle')->default(true);
             $table->foreignId('subject_id')->constrained();
             $table->timestamps();
