@@ -1,19 +1,11 @@
-import mysql.connector
-from bs4 import BeautifulSoup
 from uuid import uuid4
+from base import conn
 
 
 def get_uuid():
     return str(uuid4())
 
 
-# Establish a connection to the MySQL server
-conn = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="root",
-    database="exam"
-)
 cursor = conn.cursor()
 
 def insert_more():
@@ -22,7 +14,7 @@ def insert_more():
     cursor.execute(exam_insert_query, (get_uuid(), 100,
                    f'Difficult question', 'images/aws-sap-3.png', 180))
 
-insert_more()
+# insert_more()
 conn.commit()
 cursor.close()
 conn.close()
