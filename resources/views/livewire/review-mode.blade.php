@@ -47,6 +47,12 @@ $checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
         </div>
     </form>
 
+    @if (session()->has('message'))
+        <div class="alert alert-success mt-2 p-2">
+            {{ session('message') }}
+        </div>
+    @endif
+
     @if ($isShowExplaination)
         @if ($isCorrectAnswer)
             <div class="p-3 mt-2 bg-success text-white">Correct</div>
