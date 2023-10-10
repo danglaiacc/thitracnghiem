@@ -104,6 +104,7 @@ def insert_to_db(file_path: str, exam_number: int):
 file_paths = {
     '/Users/lai/Downloads/exam/sap.u1.1.html': 1,
     '/Users/lai/Downloads/exam/sap.u1.2.html': 2,
+    '/Users/lai/Downloads/exam/sap.u1.3.html': 3,
 }
 
 for path, exam_number in file_paths.items():
