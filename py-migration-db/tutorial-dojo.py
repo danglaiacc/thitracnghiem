@@ -132,6 +132,7 @@ def insert_to_db(file_path: str, exam_number: int):
 
             option_html = option_html.replace('<li > <label> ', '<p>')
             option_html = option_html.replace(' </label> </li>', '</p>')
+            option_html = option_html.replace('<p><span><br/> ', '<p><span>')
             option_insert_query = "INSERT INTO options (text, is_correct, question_id) VALUES (%s, %s, %s)"
             cursor.execute(option_insert_query, (str(
                 option_html), is_correct, question_id))
