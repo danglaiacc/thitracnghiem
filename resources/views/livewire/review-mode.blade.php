@@ -66,9 +66,11 @@ $checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
                 <button class="btn btn-danger" wire:click.prevent="addToHardQuestion">
                     Add to hard
                 </button>
-                <button class="btn btn-success" type="submit">
-                    Check
-                </button>
+                @if (!$isShowExplaination)
+                    <button class="btn btn-success" type="submit">
+                        Check
+                    </button>
+                @endif
                 <button class="btn btn-primary" wire:click.prevent="nextQuestion">
                     Next
                 </button>

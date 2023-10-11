@@ -1,9 +1,11 @@
 # Thi trắc nghiệm
 
 ## Run step
-0. Install python package `pip install mysql-connector-python`
-1. Chạy migration trong `py-migration-db`
 ```sh
-alias lai='seed;py ./py-migration-db/udemy.py;py ./py-migration-db/tutorial-dojo.py; py ./py-migration-db/custom.py;'
+pip install mysql-connector-python
+composer install
+php artisan migrate:fresh --seed
+python3 py-migration-db/udemy.py;
+python3 py-migration-db/tutorial-dojo.py;
+php artisan ser
 ```
-2. Chạy dự án bằng `php artisan ser`
