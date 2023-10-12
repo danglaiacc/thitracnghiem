@@ -1,5 +1,5 @@
 <?php
-$checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
+$checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
 ?>
 @section('title', $exam->name)
 @section('time', $exam->time)
@@ -26,28 +26,28 @@ $checkBoxType = $currentQuestion->is_multichoice ? 'checkbox' : 'radio';
         Question {{ $currentIndexQuestion + 1 }} / {{ $totalQuestion }}
     </h5>
     <div class="question-text">
-        {!! $currentQuestion->text !!}
+        {!! $currentQuestion['text'] !!}
     </div>
 
     <form wire:submit.prevent="submitAnswer">
         <fieldset {{ $isShowExplaination ? 'disabled' : '' }}>
 
-            @foreach ($options as $index => $option)
+            @foreach ($currentQuestion['options'] as $index => $option)
                 <?php
                 $border = '';
                 if ($isShowExplaination) {
-                    if ($option->is_correct) {
+                    if ($option['is_correct']) {
                         $border = 'border-success';
-                    } elseif (in_array($option->id, $selectedOptions)) {
+                    } elseif (in_array($option['id'], $selectedOptions)) {
                         $border = 'border-danger';
                     }
                 }
                 ?>
                 <div class="question--answer-item form-check border border-2 {{ $border }}">
-                    <input class="form-check-input" type="{{ $checkBoxType }}" value="{{ $option->id }}"
+                    <input class="form-check-input" type="{{ $checkBoxType }}" value="{{ $option['id'] }}"
                         id="answer-{{ $index }}" wire:model="selectedOptions">
                     <label class="form-check-label answer-item--text" for="answer-{{ $index }}">
-                        {!! $option->text !!}
+                        {!! $option['text'] !!}
                     </label>
                 </div>
             @endforeach

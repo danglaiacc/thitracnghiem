@@ -26,18 +26,36 @@ class ReviewMode extends Component
     public function mount(
         $exam,
     ) {
-        $this->exam = Exam::where('uuid', $exam)->first();
+        $this->exam = Exam::with([
+            'questions' => fn ($q) => $q->select(['questions.id', 'text', 'explaination', 'is_multichoice']),
+            'questions.options' => fn ($q) => $q->select(['options.id', 'text', 'question_id', 'is_correct']),
+        ])
+            ->where('uuid', $exam)
+            ->select(['id', 'name', 'thumbnail'])
+            ->first();
+        $this->shuffleQuestionAndAnswer();
 
-        // shuffle
-        if ($this->exam->allow_shuffle) {
-            $this->questions = $this->exam->questions->shuffle();
-        } else {
-            $this->questions = $this->exam->questions;
-        }
         $this->totalQuestion = count($this->questions);
-
         $this->currentIndexQuestion = 0;
         $this->loadQuestion();
+    }
+
+    private function shuffleQuestionAndAnswer()
+    {
+        // transform question to array and shuffle it
+        $arrayQuestionOptions = $this->exam->questions->toArray();
+        shuffle($arrayQuestionOptions);
+
+        // remove pivot key and shuffle options
+        $this->questions = array_map(
+            function ($question) {
+                unset($question['pivot']);
+                shuffle($question['options']);
+                $question['user_answers'] = [];
+                return $question;
+            },
+            $arrayQuestionOptions
+        );
     }
 
     public function finishExam()
@@ -71,8 +89,7 @@ class ReviewMode extends Component
             $examQuestion->save();
             session()->flash('background', 'success');
             session()->flash('message', 'OK');
-        }
-        else {
+        } else {
             session()->flash('background', 'warning');
             session()->flash('message', 'Question has been exsited.');
             error_log('this question has been exsited in exam');
@@ -84,23 +101,14 @@ class ReviewMode extends Component
         $this->isShowExplaination = true;
         $this->isCorrectAnswer = $this->checkCorrectAnswer();
 
-        if ($this->isCorrectAnswer)
-        {
-            $this->totalCorrectAnswer ++;
+        if ($this->isCorrectAnswer) {
+            $this->totalCorrectAnswer++;
         }
     }
 
     public function loadQuestion()
     {
-        $this->currentQuestion = $this->questions->values()->get($this->currentIndexQuestion);
-
-        // shuffle code, do not combine these lines
-        if ($this->exam->allow_shuffle) {
-            error_log('enter to shuffle function');
-            $this->options = $this->currentQuestion->options->shuffle();
-        } else {
-            $this->options = $this->currentQuestion->options;
-        }
+        $this->currentQuestion = $this->questions[$this->currentIndexQuestion];
 
         $this->isShowExplaination = false;
         $this->selectedOptions = [];
