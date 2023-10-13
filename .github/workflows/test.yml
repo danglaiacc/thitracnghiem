@@ -16,7 +16,7 @@ jobs:
         image: mysql:latest
         env:
           MYSQL_ROOT_PASSWORD: root
-          MYSQL_DATABASE: root
+          MYSQL_DATABASE: exam
         ports:
           - 3306:3306
 
