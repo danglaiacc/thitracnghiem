@@ -1,5 +1,10 @@
 <?php
 $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
+// function checkSelectedOptionsAndOption($selectedOptions, $optionId)
+// {
+//     $selectedOptions = is_string($selectedOptions) ? [$selectedOptions] : $selectedOptions;
+//     return in_array($optionId, $selectedOptions) ? 'text-primary' : '';
+// }
 ?>
 @section('title', $exam->name)
 @section('time', $exam->time)
@@ -44,6 +49,7 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
                 
                 ?>
                 <div class="question--answer-item form-check border border-2 {{ $border }}">
+                    {{-- {{ json_encode($currentQuestion['user_answers'])}} --}}
                     <input class="form-check-input" type="{{ $checkBoxType }}" value={{ $option['id'] }}
                         id="answer-{{ $index }}" wire:model.defer="selectedOptions">
 
@@ -56,6 +62,7 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
 
         </fieldset>
 
+        {{ var_export($selectedOptions) }}
         <div class="d-flex justify-content-between">
             <div>
                 @if ($currentQuestionIndex > 0)

@@ -132,6 +132,7 @@ class ReviewMode extends Component
     {
         $this->saveUserAnswer();
         if ($this->currentQuestionIndex != 0) {
+            error_log('enter to previous question');
             $this->currentQuestionIndex--;
             $this->loadQuestion();
         }
