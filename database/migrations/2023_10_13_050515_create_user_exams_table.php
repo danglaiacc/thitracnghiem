@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('exam_id')->constrained();
             $table->foreignId('user_id')->constrained();
-            $table->int('exam_mode')->comment('follow ExamMode Enum');
+            $table->integer('exam_mode')->comment('follow ExamMode Enum');
             $table->float('score');
             $table->integer('time_remain')->comment('seconds');
             $table->boolean('is_finish');

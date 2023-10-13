@@ -2,9 +2,11 @@
 
 namespace App\Livewire;
 
+use App\Enums\ExamMode;
 use App\Helper\FileHelper;
 use App\Models\Exam;
 use App\Models\ExamQuestion;
+use App\Models\UserExam;
 use Livewire\Component;
 
 class ReviewMode extends Component
@@ -21,6 +23,9 @@ class ReviewMode extends Component
 
     public int $totalQuestion, $totalCorrectAnswer = 0;
     public string $resultMessage;
+
+    // fake user id for user exam table
+    public int $userId = 1;
 
     public bool $isReviewMode = true;
 
@@ -39,6 +44,34 @@ class ReviewMode extends Component
         $this->totalQuestion = count($this->questions);
         $this->currentQuestionIndex = 0;
         $this->loadQuestion(0);
+
+        UserExam::create([
+            'user_id' => $this->userId,
+            'exam_id' => $this->exam->id,
+            'exam_mode' => ExamMode::REVIEW_MODE,
+            'score' => 0,
+            'time_remain' => $this->exam->time,
+            'is_finish' => false,
+            'records' => json_encode($this->transformQuestionToStoreInUserExam(
+                $this->questions,
+            )),
+        ]);
+    }
+
+    /**
+     * transform array question (question_id, options_ids, user_answers)
+     * to store in user exam in db
+     */
+    private function transformQuestionToStoreInUserExam(array $questions)
+    {
+        return array_map(
+            fn ($question) => [
+                'question_id' => $question['id'],
+                'option_ids' => array_map(fn ($option) => $option['id'], $question['options']),
+                'user_answers' => $question['user_answers'],
+            ],
+            $questions
+        );
     }
 
     /**
@@ -50,6 +83,10 @@ class ReviewMode extends Component
         "options" , // []
         "user_answers" , // string|array
      * ]
+     * 
+     * convert question from collections to array
+     * shuffle question and options in each question
+     * save question order in UserExam table
      */
     private function shuffleQuestionAndAnswer()
     {

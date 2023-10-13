@@ -21,7 +21,7 @@ class ExamFactory extends Factory
         return [
             //
             'uuid' => Str::uuid(),
-            'name' => 'exam name' . hexdec(uniqid()),
+            'name' => 'exam name ' . hexdec(uniqid()),
             'thumbnail' => 'images/aws-sap-3.png',
             'time' => 10800, // 180 mins
             'pass_score' => 75,
