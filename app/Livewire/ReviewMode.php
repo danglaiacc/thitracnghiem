@@ -31,20 +31,24 @@ class ReviewMode extends Component
     public int $userId = 1;
 
     public bool $isReviewMode = true;
+    public $userExam;
 
     public function mount(
         $exam,
     ) {
         $this->exam = Exam::where('uuid', $exam)->first();
-        $userExam = UserExam::where([
+        $this->userExam = UserExam::where([
             'user_id' => $this->userId,
             'exam_id' => $this->exam->id,
         ])->latest()->first();
 
-        if (is_null($userExam)) {
+        if (is_null($this->userExam)) {
+            $this->userExam = new UserExam([
+                'id' => PHP_INT_MAX,
+            ]);
             $this->createNewExam(examUuid: $exam);
         } else {
-            $this->loadQuestionFromExamHistory($userExam->record);
+            $this->loadQuestionFromExamHistory($this->userExam->record);
         }
 
         $this->totalQuestion = count($this->questions);
@@ -81,7 +85,7 @@ class ReviewMode extends Component
                 'is_multichoice' => $keyIdQuestions[$q['question_id']]->is_multichoice,
                 'is_submit' => count($q['user_answers']) > 0,
                 'user_answers' => $q['user_answers'],
-                'options' => array_map(fn($optionId) => [
+                'options' => array_map(fn ($optionId) => [
                     'id' => $keyIdOptions[$optionId]->id,
                     'text' => $keyIdOptions[$optionId]->text,
                     'is_correct' => $keyIdOptions[$optionId]->is_correct,
@@ -221,12 +225,20 @@ class ReviewMode extends Component
      */
     public function loadQuestion(int $questionIndex)
     {
-        $this->questions[$this->currentQuestionIndex]['user_answers'] = $this->selectedOptions;
-        if (-1 < $questionIndex && $questionIndex < $this->totalQuestion) {
-            $this->currentQuestionIndex = $questionIndex;
-            $this->currentQuestion = $this->questions[$this->currentQuestionIndex];
-            $this->isShowExplaination = $this->checkShowExpalination();
-            $this->selectedOptions = $this->questions[$this->currentQuestionIndex]['user_answers'];
+        // validate question index
+        if (0 > $questionIndex || $questionIndex >= $this->totalQuestion)
+            return;
+
+        $this->currentQuestionIndex = $questionIndex;
+        $this->currentQuestion = $this->questions[$this->currentQuestionIndex];
+        $this->isShowExplaination = $this->checkShowExpalination();
+
+        // validate option from submit button (next/previous question)
+        // or from history in user history
+        if ($this->currentQuestion['is_submit']) {
+            $this->selectedOptions = $this->currentQuestion['user_answers'];
+        } else {
+            $this->questions[$this->currentQuestionIndex]['user_answers'] = $this->selectedOptions;
         }
     }
 
@@ -252,13 +264,16 @@ class ReviewMode extends Component
         return true;
     }
 
-    public function saveExamResult(){
+    public function saveExamResult()
+    {
         // get use exam record and store to db
         $userExamRecord = json_encode($this->transformQuestionToStoreInUserExam(
             $this->questions,
         ));
 
-        UserExam::create([
+        $this->userExam = $this->userExam->updateOrCreate([
+            'id' => $this->userExam->id,
+        ], [
             'user_id' => $this->userId,
             'exam_id' => $this->exam->id,
             'exam_mode' => ExamMode::REVIEW_MODE,
