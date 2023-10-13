@@ -1,4 +1,5 @@
 <?php
+use App\Enums\ResultMessage;
 $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
 ?>
 @section('title', $exam->name)
@@ -94,11 +95,11 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
     @if ($isShowExplaination)
         @if ($isCorrectAnswer)
             <div class="p-3 mt-2 bg-success text-white">
-                Corrected answers 😁😁
+                {{ ResultMessage::CORRECT_ANSWER }}
             </div>
         @else
             <div class="p-3 mt-2 bg-danger text-white">
-                Incorrect answers 😢😢
+                {{ ResultMessage::IN_CORRECT_ANSWER }}
             </div>
         @endif
 
