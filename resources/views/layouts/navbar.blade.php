@@ -6,10 +6,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Review mode</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Timed mode</a>
                         </li>
                         {{-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -25,15 +25,10 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li> --}}
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">
-                                <p id="demo" data-time="@yield('time')" class="mb-0"></p>
-                            </a>
-                        </li>
                     </ul>
                 </div>
                 <button class="btn btn-light btn-dark shadow" id="btnSwitch" onclick="toggleTheme()">
-                    Toggle Mode
+                    <i class="bi bi-brightness-high-fill" id="theme-icon"></i>
                 </button>
             </div>
         </div>

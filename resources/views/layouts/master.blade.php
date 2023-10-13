@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
         p {
             font-size: 18px;
@@ -59,49 +59,21 @@
 
     <script src="{{ url('./js/bootstrap.5.3.2_dist_js_bootstrap.bundle.min.js') }}"></script>
     <script>
+        // =============== toggle theme dark/light ===============
         function toggleTheme() {
-            text = document.documentElement.getAttribute('data-bs-theme') == 'dark' ? 'light' : 'dark';
+            themeText = 'dark';
+            themeIconClass = "bi bi-brightness-high-fill";
 
-            document.documentElement.setAttribute('data-bs-theme', text);
-            document.getElementById('btnSwitch').classList.toggle('btn-dark')
-        }
-    </script>
-
-    {{-- count down timer --}}
-
-    <script>
-        // Set the date we're counting down to
-        const currentDate = new Date();
-        var timeItem = +document.getElementById("demo").getAttribute('data-time');
-        var countDownDate = new Date(currentDate.getTime() + timeItem * 60000).getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-
-            // Get today's date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = hours + "h " +
-                minutes + "m " + seconds + "s ";
-
-            // If the count down is finished, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
+            if (document.documentElement.getAttribute('data-bs-theme') == 'dark'){
+                themeText = 'light';
+                themeIconClass = "bi bi-moon-stars-fill";
             }
-        }, 1000);
-    </script>
 
+            document.documentElement.setAttribute('data-bs-theme', themeText);
+            document.getElementById('theme-icon').className = themeIconClass;
+        }
+        // =============== toggle theme dark/light ===============
+    </script>
 
     @stack('js')
 </body>

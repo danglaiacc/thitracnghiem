@@ -32,7 +32,7 @@ class ReviewMode extends Component
             'questions.options' => fn ($q) => $q->select(['options.id', 'text', 'question_id', 'is_correct']),
         ])
             ->where('uuid', $exam)
-            ->select(['id', 'name', 'thumbnail'])
+            ->select(['id', 'name', 'thumbnail', 'time'])
             ->first();
         $this->shuffleQuestionAndAnswer();
 

@@ -2,12 +2,15 @@
 $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
 ?>
 @section('title', $exam->name)
-@section('time', $exam->time)
 
 <div class="question">
     <div class="d-flex justify-content-between">
         <h2>{{ $exam->name }}</h2>
-        <div>
+        <div class="d-flex align-items-center">
+            <a class="nav-link disabled" aria-disabled="true">
+                <p id="demo" data-time="{{ $exam->time }}" class="mb-0"></p>
+            </a>
+
             <button type="button" class="btn btn-primary position-relative">
                 Correct answer
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -108,10 +111,42 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
 
 </div>
 
-{{-- @push('js')
+@push('js')
     <script type="text/javascript">
-        window.onbeforeunload = function() {
-            return "Refresh page? Are you sure haha?";
-        }
+        // window.onbeforeunload = function() {
+        //     return "Refresh page? Are you sure haha?";
+        // }
+
+        // ============== count down timer
+        // Set the date we're counting down to
+        const currentDate = new Date();
+        var timeItem = +document.getElementById("demo").getAttribute('data-time');
+        var countDownDate = new Date(currentDate.getTime() + timeItem * 1000).getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
     </script>
-@endpush --}}
+@endpush
