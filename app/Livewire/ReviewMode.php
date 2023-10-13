@@ -22,6 +22,8 @@ class ReviewMode extends Component
     public int $totalQuestion, $totalCorrectAnswer = 0;
     public string $resultMessage;
 
+    public bool $isReviewMode = true;
+
     public function mount(
         $exam,
     ) {
@@ -61,6 +63,7 @@ class ReviewMode extends Component
                 unset($question['pivot']);
                 shuffle($question['options']);
                 $question['user_answers'] = [];
+                $question['is_submit'] = false;
                 return $question;
             },
             $arrayQuestionOptions
@@ -114,6 +117,7 @@ class ReviewMode extends Component
         $this->isShowExplaination = true;
         $this->isCorrectAnswer = $this->checkCorrectAnswer();
         $this->questions[$this->currentQuestionIndex]['user_answers'] = $this->selectedOptions;
+        $this->questions[$this->currentQuestionIndex]['is_submit'] = true;
 
         if ($this->isCorrectAnswer) {
             $this->totalCorrectAnswer++;
@@ -129,12 +133,17 @@ class ReviewMode extends Component
     public function loadQuestion(int $questionIndex)
     {
         $this->questions[$this->currentQuestionIndex]['user_answers'] = $this->selectedOptions;
-        $this->isShowExplaination = false;
         if (-1 < $questionIndex && $questionIndex < $this->totalQuestion) {
             $this->currentQuestionIndex = $questionIndex;
             $this->currentQuestion = $this->questions[$this->currentQuestionIndex];
+            $this->isShowExplaination = $this->checkShowExpalination();
             $this->selectedOptions = $this->questions[$this->currentQuestionIndex]['user_answers'];
         }
+    }
+
+    public function checkShowExpalination()
+    {
+        return $this->isReviewMode && $this->currentQuestion['is_submit'];
     }
 
     private function checkCorrectAnswer()
