@@ -126,6 +126,7 @@ class ReviewMode extends Component
     public function loadQuestion()
     {
         $this->currentQuestion = $this->questions[$this->currentQuestionIndex];
+        $this->selectedOptions = $this->questions[$this->currentQuestionIndex]['user_answers'];
     }
 
     public function previousQuestion()
@@ -143,7 +144,6 @@ class ReviewMode extends Component
         $this->saveUserAnswer();
         $this->currentQuestionIndex++;
         $this->loadQuestion();
-        $this->selectedOptions = $this->questions[$this->currentQuestionIndex]['user_answers'];
     }
 
     private function checkCorrectAnswer()
