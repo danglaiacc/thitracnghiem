@@ -49,8 +49,7 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
                         id="answer-{{ $index }}" wire:model.defer="selectedOptions">
 
                     <label class="form-check-label answer-item--text" for="answer-{{ $index }}">
-                        {!! $option['text'] !!} {{ $option['id'] }}
-                        {{ json_encode($currentQuestion['user_answers']) }}
+                        {!! $option['text'] !!}
                     </label>
                 </div>
             @endforeach
@@ -98,7 +97,7 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
         @endif
 
         <p>
-            {!! $currentQuestion->explaination !!}
+            {!! $currentQuestion['explaination'] !!}
         </p>
 
         <div style="position:sticky;bottom:5px;right:5px;margin:0;padding:5px 3px;" class="d-flex justify-content-end">

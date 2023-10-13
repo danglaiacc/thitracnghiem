@@ -11,11 +11,10 @@ class ReviewMode extends Component
 {
     public $exam;
     public $questions;
-    public $options;
 
     public $currentQuestion;
     public $currentQuestionIndex;
-    public $selectedOptions;
+    public $selectedOptions = [];
     public $isCorrectAnswer;
 
     public $isShowExplaination;
@@ -106,11 +105,15 @@ class ReviewMode extends Component
         }
     }
 
+    /**
+     * check current question is correct or not
+     * save user_answer to question table
+     */
     public function submitAnswer()
     {
         $this->isShowExplaination = true;
         $this->isCorrectAnswer = $this->checkCorrectAnswer();
-        $this->saveUserAnswer();
+        $this->questions[$this->currentQuestionIndex]['user_answers'] = $this->selectedOptions;
 
         if ($this->isCorrectAnswer) {
             $this->totalCorrectAnswer++;
@@ -126,6 +129,7 @@ class ReviewMode extends Component
     public function loadQuestion(int $questionIndex)
     {
         $this->questions[$this->currentQuestionIndex]['user_answers'] = $this->selectedOptions;
+        $this->isShowExplaination = false;
         if (-1 < $questionIndex && $questionIndex < $this->totalQuestion) {
             $this->currentQuestionIndex = $questionIndex;
             $this->currentQuestion = $this->questions[$this->currentQuestionIndex];
@@ -137,22 +141,16 @@ class ReviewMode extends Component
     {
         $this->selectedOptions = is_string($this->selectedOptions) ? [(int)$this->selectedOptions] : $this->selectedOptions;
 
-        $options = clone $this->options;
-        $options = $options->pluck(null, 'id')->all();
+        foreach ($this->questions[$this->currentQuestionIndex]['options'] as $option) {
+            if (
+                // select in correct answer
+                (in_array($option['id'], $this->selectedOptions) && $option['is_correct'] == 0) ||
 
-        // if select an item false
-        foreach ($this->selectedOptions as $selectedOption) {
-            if ($options[$selectedOption]->is_correct === 0)
+                // not select correct answer
+                (!in_array($option['id'], $this->selectedOptions) && $option['is_correct'] == 1)
+            )
                 return false;
         }
-
-        // not select true item
-        foreach ($options as $optionId => $option) {
-            if ($option->is_correct === 1 && !in_array($optionId, $this->selectedOptions)) {
-                return false;
-            }
-        }
-
         return true;
     }
 }
