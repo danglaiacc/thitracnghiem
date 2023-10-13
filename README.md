@@ -1,5 +1,12 @@
 # Thi trắc nghiệm
 
+## Create database for test
+Change this line in `.env` file to
+```sh
+IS_PROD_DB=false
+```
+and run seeder again
+
 ## Run step
 ```sh
 pip install mysql-connector-python
