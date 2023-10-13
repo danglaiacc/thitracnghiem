@@ -96,7 +96,7 @@ abstract class BaseTestcase extends TestCase
                     ],
                     [
                         "id" => 7,
-                        "text" => "Option 1",
+                        "text" => "Option 1 fake in base test",
                         "is_correct" => 0,
                     ],
                     [
@@ -121,7 +121,7 @@ abstract class BaseTestcase extends TestCase
                 "options" => [
                     [
                         "id" => 1,
-                        "text" => "option 2 true",
+                        "text" => "option 2 true fake in base test",
                         "is_correct" => 1,
                     ],
                     [
