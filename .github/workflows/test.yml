@@ -12,16 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
     services:
-      mysql3306:
+      mysql:
         image: mysql:latest
         env:
           MYSQL_ROOT_PASSWORD: root
-          MYSQL_DATABASE: techdrobe_admin
+          MYSQL_DATABASE: root
         ports:
           - 3306:3306
-        # options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
-        # volumes:
-        #   - ${{ github.workspace }}:/docker-entrypoint-initdb.d:ro
 
     steps:
       - uses: shivammathur/setup-php@v2
