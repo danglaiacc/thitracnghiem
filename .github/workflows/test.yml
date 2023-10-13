@@ -7,7 +7,7 @@ on:
 
 jobs:
   run-test:
-    if: "!contains(github.event.head_commit.message, 'fix (')"
+    if: "contains(github.event.head_commit.message, 'fix ')"
 
     runs-on: ubuntu-latest
 
