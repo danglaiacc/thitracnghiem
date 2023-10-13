@@ -31,24 +31,56 @@ class DatabaseSeeder extends Seeder
                 'subject_id' => 1,
                 'allow_shuffle' => false,
             ])->create();
-            $this->generateQuestionOption($exam->id, true);
-            $this->generateQuestionOption($exam->id, false);
+
+            $question = Question::factory([
+                'text' => 'question 1, correct answer = [2, 5]. select TWO.',
+                'is_multichoice' => true,
+            ])->create();
+
+            Option::factory([
+                'text' => 'option 2 true',
+                'is_correct' => true,
+                'question_id' => $question->id,
+            ])->create();
+
+            Option::factory([
+                'text' => 'option 5 true',
+                'is_correct' => true,
+                'question_id' => $question->id,
+            ])->create();
+
+            Option::factory(3, [
+                'is_correct' => false,
+                'question_id' => $question->id,
+            ])->create();
+            ExamQuestion::factory([
+                'exam_id' => $exam->id,
+                'question_id' => $question->id,
+            ])->create();
+
+            $question = Question::factory([
+                'text' => 'question 2, correct answer = 1',
+                'is_multichoice' => false,
+            ])->create();
+
+            Option::factory([
+                'text' => 'option 1 true answer',
+                'is_correct' => true,
+                'question_id' => $question->id,
+            ])->create();
+
+            Option::factory(3, [
+                'is_correct' => false,
+                'question_id' => $question->id,
+            ])->create();
+            ExamQuestion::factory([
+                'exam_id' => $exam->id,
+                'question_id' => $question->id,
+            ])->create();
         }
     }
 
     private function generateQuestionOption(int $examId, bool $isMultiChoice)
     {
-        $question = Question::factory([
-            'is_multichoice' => $isMultiChoice,
-        ])->create();
-
-        $options = Option::factory(5, [
-            'question_id' => $question->id,
-        ])->create();
-
-        ExamQuestion::factory([
-            'exam_id' => $examId,
-            'question_id' => $question->id,
-        ])->create();
     }
 }

@@ -44,7 +44,6 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
                         $border = 'border-danger';
                     }
                 }
-                
                 ?>
                 <div class="question--answer-item form-check border border-2 {{ $border }}">
                     {{-- {{ json_encode($currentQuestion['user_answers'])}} --}}
