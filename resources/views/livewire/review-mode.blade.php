@@ -12,7 +12,6 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
                 Correct answer
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     {{ $totalCorrectAnswer }}
-                    <span class="visually-hidden">unread messages</span>
                 </span>
             </button>
 
@@ -23,13 +22,13 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
     </div>
 
     <h5 class="{{ $isShowExplaination ? ($isCorrectAnswer ? 'text-success' : 'text-danger') : '' }}">
-        Question {{ $currentIndexQuestion + 1 }} / {{ $totalQuestion }}
+        Question {{ $currentQuestionIndex + 1 }} / {{ $totalQuestion }}
     </h5>
     <div class="question-text">
         {!! $currentQuestion['text'] !!}
     </div>
 
-    <form wire:submit.prevent="submitAnswer">
+    <form wire:submit.prevent="submitAnswer" wire:key="{{ $currentQuestionIndex }}">
         <fieldset {{ $isShowExplaination ? 'disabled' : '' }}>
 
             @foreach ($currentQuestion['options'] as $index => $option)
@@ -42,12 +41,15 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
                         $border = 'border-danger';
                     }
                 }
+                
                 ?>
                 <div class="question--answer-item form-check border border-2 {{ $border }}">
-                    <input class="form-check-input" type="{{ $checkBoxType }}" value="{{ $option['id'] }}"
-                        id="answer-{{ $index }}" wire:model="selectedOptions">
+                    <input class="form-check-input" type="{{ $checkBoxType }}" value={{ $option['id'] }}
+                        id="answer-{{ $index }}" wire:model.defer="selectedOptions">
+
                     <label class="form-check-label answer-item--text" for="answer-{{ $index }}">
-                        {!! $option['text'] !!}
+                        {!! $option['text'] !!} {{ $option['id'] }}
+                        {{ json_encode($currentQuestion['user_answers']) }}
                     </label>
                 </div>
             @endforeach
@@ -56,13 +58,16 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
 
         <div class="d-flex justify-content-between">
             <div>
-                @if ($currentIndexQuestion > 0)
-                    <button class="btn btn-warning" wire:click.prevent="previousQuestion">
+                @if ($currentQuestionIndex > 0)
+                    <button class="btn btn-warning" wire:click="previousQuestion">
                         Previous
                     </button>
                 @endif
             </div>
             <div>
+                <button class="btn btn-warning" wire:click.prevent="previousQuestion">
+                    Previous
+                </button>
                 <button class="btn btn-danger" wire:click.prevent="addToHardQuestion">
                     Add to hard
                 </button>
@@ -103,10 +108,10 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
 
 </div>
 
-@push('js')
+{{-- @push('js')
     <script type="text/javascript">
         window.onbeforeunload = function() {
             return "Refresh page? Are you sure haha?";
         }
     </script>
-@endpush
+@endpush --}}

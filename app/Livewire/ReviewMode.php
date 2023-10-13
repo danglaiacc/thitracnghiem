@@ -14,7 +14,7 @@ class ReviewMode extends Component
     public $options;
 
     public $currentQuestion;
-    public $currentIndexQuestion;
+    public $currentQuestionIndex;
     public $selectedOptions;
     public $isCorrectAnswer;
 
@@ -36,10 +36,20 @@ class ReviewMode extends Component
         $this->shuffleQuestionAndAnswer();
 
         $this->totalQuestion = count($this->questions);
-        $this->currentIndexQuestion = 0;
+        $this->currentQuestionIndex = 0;
         $this->loadQuestion();
     }
 
+    /**
+     * [▼
+        "id",
+        "text",
+        "explaination",
+        "is_multichoice",
+        "options" , // []
+        "user_answers" , // string|array
+     * ]
+     */
     private function shuffleQuestionAndAnswer()
     {
         // transform question to array and shuffle it
@@ -96,10 +106,17 @@ class ReviewMode extends Component
         }
     }
 
+    private function saveUserAnswer()
+    {
+        // convert selected option id from string to int value
+        $this->questions[$this->currentQuestionIndex]['user_answers'] = $this->selectedOptions;
+    }
+
     public function submitAnswer()
     {
         $this->isShowExplaination = true;
         $this->isCorrectAnswer = $this->checkCorrectAnswer();
+        $this->saveUserAnswer();
 
         if ($this->isCorrectAnswer) {
             $this->totalCorrectAnswer++;
@@ -108,24 +125,24 @@ class ReviewMode extends Component
 
     public function loadQuestion()
     {
-        $this->currentQuestion = $this->questions[$this->currentIndexQuestion];
-
-        $this->isShowExplaination = false;
-        $this->selectedOptions = [];
+        $this->currentQuestion = $this->questions[$this->currentQuestionIndex];
     }
 
     public function previousQuestion()
     {
-        if ($this->currentIndexQuestion != 0) {
-            $this->currentIndexQuestion--;
+        $this->saveUserAnswer();
+        if ($this->currentQuestionIndex != 0) {
+            $this->currentQuestionIndex--;
             $this->loadQuestion();
         }
     }
 
     public function nextQuestion()
     {
-        $this->currentIndexQuestion++;
+        $this->saveUserAnswer();
+        $this->currentQuestionIndex++;
         $this->loadQuestion();
+        $this->selectedOptions = $this->questions[$this->currentQuestionIndex]['user_answers'];
     }
 
     private function checkCorrectAnswer()

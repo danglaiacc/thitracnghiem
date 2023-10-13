@@ -1,3 +1,5 @@
+@section('title', 'Thi trắc nghiệm')
+
 <div>
     <div class="row">
         @foreach ($exams as $exam)

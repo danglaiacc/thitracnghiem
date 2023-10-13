@@ -22,7 +22,7 @@ class ExamFactory extends Factory
             //
             'uuid' => Str::uuid(),
             'name' => 'exam name' . hexdec(uniqid()),
-            'thumbnail' => 'thumbnai url',
+            'thumbnail' => 'images/aws-sap-3.png',
             'time' => 180,
             'pass_score' => 75,
             'allow_shuffle' =>rand(0,1),
