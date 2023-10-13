@@ -1,10 +1,5 @@
 <?php
 $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
-// function checkSelectedOptionsAndOption($selectedOptions, $optionId)
-// {
-//     $selectedOptions = is_string($selectedOptions) ? [$selectedOptions] : $selectedOptions;
-//     return in_array($optionId, $selectedOptions) ? 'text-primary' : '';
-// }
 ?>
 @section('title', $exam->name)
 @section('time', $exam->time)
@@ -62,17 +57,16 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
 
         </fieldset>
 
-        {{ var_export($selectedOptions) }}
         <div class="d-flex justify-content-between">
             <div>
                 @if ($currentQuestionIndex > 0)
-                    <button class="btn btn-warning" wire:click="previousQuestion">
+                    <button class="btn btn-warning" wire:click.prevent="loadQuestion({{ $currentQuestionIndex - 1 }})">
                         Previous
                     </button>
                 @endif
             </div>
             <div>
-                <button class="btn btn-warning" wire:click.prevent="previousQuestion">
+                <button class="btn btn-warning" wire:click.prevent="loadQuestion({{ $currentQuestionIndex - 1 }})">
                     Previous
                 </button>
                 <button class="btn btn-danger" wire:click.prevent="addToHardQuestion">
@@ -83,7 +77,7 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
                         Check
                     </button>
                 @endif
-                <button class="btn btn-primary" wire:click.prevent="nextQuestion">
+                <button class="btn btn-primary" wire:click.prevent="loadQuestion({{ $currentQuestionIndex + 1 }})">
                     Next
                 </button>
             </div>

@@ -37,7 +37,7 @@ class ReviewMode extends Component
 
         $this->totalQuestion = count($this->questions);
         $this->currentQuestionIndex = 0;
-        $this->loadQuestion();
+        $this->loadQuestion(0);
     }
 
     /**
@@ -106,12 +106,6 @@ class ReviewMode extends Component
         }
     }
 
-    private function saveUserAnswer()
-    {
-        // convert selected option id from string to int value
-        $this->questions[$this->currentQuestionIndex]['user_answers'] = $this->selectedOptions;
-    }
-
     public function submitAnswer()
     {
         $this->isShowExplaination = true;
@@ -123,27 +117,20 @@ class ReviewMode extends Component
         }
     }
 
-    public function loadQuestion()
+    /**
+     * update new user answer to question
+     * check question index is available
+     * reload current question
+     * reload user answer has been selected
+     */
+    public function loadQuestion(int $questionIndex)
     {
-        $this->currentQuestion = $this->questions[$this->currentQuestionIndex];
-        $this->selectedOptions = $this->questions[$this->currentQuestionIndex]['user_answers'];
-    }
-
-    public function previousQuestion()
-    {
-        $this->saveUserAnswer();
-        if ($this->currentQuestionIndex != 0) {
-            error_log('enter to previous question');
-            $this->currentQuestionIndex--;
-            $this->loadQuestion();
+        $this->questions[$this->currentQuestionIndex]['user_answers'] = $this->selectedOptions;
+        if (-1 < $questionIndex && $questionIndex < $this->totalQuestion) {
+            $this->currentQuestionIndex = $questionIndex;
+            $this->currentQuestion = $this->questions[$this->currentQuestionIndex];
+            $this->selectedOptions = $this->questions[$this->currentQuestionIndex]['user_answers'];
         }
-    }
-
-    public function nextQuestion()
-    {
-        $this->saveUserAnswer();
-        $this->currentQuestionIndex++;
-        $this->loadQuestion();
     }
 
     private function checkCorrectAnswer()
