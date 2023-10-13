@@ -12,44 +12,76 @@ use Livewire\Livewire;
 
 class ReviewModeTest extends BaseTestcase
 {
-    /**
-     * A basic test example.
-     */
-    public function test_option_not_shuffle_after_submit_answer()
+    public $correctAnswerMessage = 'Corrected answers 😁😁',
+        $incorrectAnswerMessage = 'Incorrect answers 😢😢';
+
+    public function test_select_incorrect_answer_single_choice()
     {
-        $subject = Subject::factory()->create();
-        $exam = Exam::factory([
-            'subject_id' => $subject->id,
-            'allow_shuffle' => false,
-        ])->create();
-
-        $this->generateQuestionOption($exam->id, true);
-        $this->generateQuestionOption($exam->id, false);
-
-        // $shuffledOptions = $options->shuffle();
-
-        // $component = Livewire::test(ReviewMode::class, ['exam' => $exam->uuid])
-        //     ->set('options', $shuffledOptions)
-        //     ->call('submitAnswer');
-
-        // $component->assertSeeHtmlInOrder(
-        //     $shuffledOptions->pluck('text')->toArray()
-        // );
+        $this->createExamAndQuestion();
+        Livewire::test(ReviewMode::class, [
+            'exam' => $this->exam->uuid
+        ])->set('questions', $this->getQuestionRandom())
+            ->set('selectedOptions', "7")
+            ->call('submitAnswer')
+            ->assertSee($this->incorrectAnswerMessage);
     }
 
-    private function generateQuestionOption(int $examId, bool $isMultiChoice){
-        $question = Question::factory([
-            'is_multichoice' => $isMultiChoice,
-        ])->create();
+    public function test_select_correct_answer_single_choice()
+    {
+        $this->createExamAndQuestion();
+        Livewire::test(ReviewMode::class, [
+            'exam' => $this->exam->uuid
+        ])->set('questions', $this->getQuestionRandom())
+            ->set('selectedOptions', "6")
+            ->call('submitAnswer')
+            ->assertSee($this->correctAnswerMessage);
+    }
 
-        $options = Option::factory(5, [
-            'question_id' => $question->id,
-        ])->create();
+    public function test_select_incorrect_answer_multi_choice()
+    {
+        $this->createExamAndQuestion();
+        Livewire::test(ReviewMode::class, [
+            'exam' => $this->exam->uuid
+        ])->set('questions', $this->getQuestionRandom())
+            ->call('loadQuestion', 1)
+            ->set('selectedOptions', ["2", "3"])
+            ->call('submitAnswer')
+            ->assertSee($this->incorrectAnswerMessage);
+    }
 
-        ExamQuestion::factory([
-            'exam_id' => $examId,
-            'question_id' => $question->id,
-        ])->create();
+    public function test_select_incorrect_answer_multi_choice_dont_have_any_option()
+    {
+        $this->createExamAndQuestion();
+        Livewire::test(ReviewMode::class, [
+            'exam' => $this->exam->uuid
+        ])->set('questions', $this->getQuestionRandom())
+            ->call('loadQuestion', 1)
+            ->set('selectedOptions', [])
+            ->call('submitAnswer')
+            ->assertSee($this->incorrectAnswerMessage);
+    }
 
+    public function test_select_incorrect_answer_multi_choice_select_all_options()
+    {
+        $this->createExamAndQuestion();
+        Livewire::test(ReviewMode::class, [
+            'exam' => $this->exam->uuid
+        ])->set('questions', $this->getQuestionRandom())
+            ->call('loadQuestion', 1)
+            ->set('selectedOptions', ["1", "5", "2", "3", "4"])
+            ->call('submitAnswer')
+            ->assertSee($this->incorrectAnswerMessage);
+    }
+
+    public function test_select_correct_answer_multi_choice()
+    {
+        $this->createExamAndQuestion();
+        Livewire::test(ReviewMode::class, [
+            'exam' => $this->exam->uuid
+        ])->set('questions', $this->getQuestionRandom())
+            ->call('loadQuestion', 1)
+            ->set('selectedOptions', ["1", "5"])
+            ->call('submitAnswer')
+            ->assertSee($this->correctAnswerMessage);
     }
 }

@@ -93,15 +93,18 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
 
     @if ($isShowExplaination)
         @if ($isCorrectAnswer)
-            <div class="p-3 mt-2 bg-success text-white">Correct</div>
+            <div class="p-3 mt-2 bg-success text-white">
+                Corrected answers 😁😁
+            </div>
         @else
-            <div class="p-3 mt-2 bg-danger text-white">Incorrect</div>
+            <div class="p-3 mt-2 bg-danger text-white">
+                Incorrect answers 😢😢
+            </div>
         @endif
 
         <p>
             {!! $currentQuestion['explaination'] !!}
         </p>
-
         <div style="position:sticky;bottom:5px;right:5px;margin:0;padding:5px 3px;" class="d-flex justify-content-end">
             <button class="btn btn-danger" wire:click.prevent="addToHardQuestion">Add to hard</button>
             <button class="btn btn-primary ms-2" wire:click.prevent="nextQuestion">Next</button>
