@@ -3,9 +3,12 @@
 namespace App\Livewire;
 
 use App\Enums\ExamMode;
+use App\Helper\ArrayHelper;
 use App\Helper\FileHelper;
 use App\Models\Exam;
 use App\Models\ExamQuestion;
+use App\Models\Option;
+use App\Models\Question;
 use App\Models\UserExam;
 use Livewire\Component;
 
@@ -32,30 +35,74 @@ class ReviewMode extends Component
     public function mount(
         $exam,
     ) {
-        $this->exam = Exam::with([
-            'questions' => fn ($q) => $q->select(['questions.id', 'text', 'explaination', 'is_multichoice']),
-            'questions.options' => fn ($q) => $q->select(['options.id', 'text', 'question_id', 'is_correct']),
-        ])
-            ->where('uuid', $exam)
-            ->select(['id', 'name', 'thumbnail', 'time'])
-            ->first();
-        $this->shuffleQuestionAndAnswer();
+        $this->exam = Exam::where('uuid', $exam)->first();
+        $userExam = UserExam::where([
+            'user_id' => $this->userId,
+            'exam_id' => $this->exam->id,
+        ])->latest()->first();
+
+        if (is_null($userExam)) {
+            $this->createNewExam(examUuid: $exam);
+        } else {
+            $this->loadQuestionFromExamHistory($userExam->record);
+        }
 
         $this->totalQuestion = count($this->questions);
         $this->currentQuestionIndex = 0;
         $this->loadQuestion(0);
+    }
 
-        UserExam::create([
-            'user_id' => $this->userId,
-            'exam_id' => $this->exam->id,
-            'exam_mode' => ExamMode::REVIEW_MODE,
-            'score' => 0,
-            'time_remain' => $this->exam->time,
-            'is_finish' => false,
-            'records' => json_encode($this->transformQuestionToStoreInUserExam(
-                $this->questions,
-            )),
-        ]);
+    /**
+     * from user_exams.record columns
+     * get question_id, option_ids of each question
+     * query to questions, options table to get text and other fields
+     * mapping again for matching with questions format
+     */
+    private function loadQuestionFromExamHistory($record)
+    {
+        $record = json_decode($record, true);
+        $questionIds = array_map(fn ($r) => $r['question_id'], $record);
+        $optionIds = array_reduce(
+            $record,
+            fn ($record, $a) => array_merge($record, $a['option_ids']),
+            []
+        );
+
+        $questions = Question::whereIn('id', $questionIds)->select(['id', 'text', 'explaination', 'is_multichoice'])->get();
+        $options = Option::whereIn('id', $optionIds)->select(['id', 'text', 'is_correct'])->get();
+        $keyIdQuestions = ArrayHelper::transformCollectionsWithIdAsKey($questions, 'id');
+        $keyIdOptions = ArrayHelper::transformCollectionsWithIdAsKey($options, 'id');
+
+        $this->questions = array_map(
+            fn ($q) => [
+                'id' => $q['question_id'],
+                'text' => $keyIdQuestions[$q['question_id']]->text,
+                'explaination' => $keyIdQuestions[$q['question_id']]->explaination,
+                'is_multichoice' => $keyIdQuestions[$q['question_id']]->is_multichoice,
+                'is_submit' => count($q['user_answers']) > 0,
+                'user_answers' => $q['user_answers'],
+                'options' => array_map(fn($optionId) => [
+                    'id' => $keyIdOptions[$optionId]->id,
+                    'text' => $keyIdOptions[$optionId]->text,
+                    'is_correct' => $keyIdOptions[$optionId]->is_correct,
+                ], $q['option_ids'])
+            ],
+            $record
+        );
+    }
+
+    private function createNewExam($examUuid)
+    {
+        $this->exam = Exam::with([
+            'questions' => fn ($q) => $q->select(['questions.id', 'text', 'explaination', 'is_multichoice']),
+            'questions.options' => fn ($q) => $q->select(['options.id', 'text', 'question_id', 'is_correct']),
+        ])
+            ->where('uuid', $examUuid)
+            ->select(['id', 'name', 'thumbnail', 'time'])
+            ->first();
+        $this->shuffleQuestionAndAnswer();
+
+        $this->saveExamResult();
     }
 
     /**
@@ -80,7 +127,12 @@ class ReviewMode extends Component
         "text",
         "explaination",
         "is_multichoice",
-        "options" , // []
+        "is_submit",
+        "options" , // [
+            'text',
+            'is_correct',
+            'id',
+        ]
         "user_answers" , // string|array
      * ]
      * 
@@ -198,5 +250,22 @@ class ReviewMode extends Component
                 return false;
         }
         return true;
+    }
+
+    public function saveExamResult(){
+        // get use exam record and store to db
+        $userExamRecord = json_encode($this->transformQuestionToStoreInUserExam(
+            $this->questions,
+        ));
+
+        UserExam::create([
+            'user_id' => $this->userId,
+            'exam_id' => $this->exam->id,
+            'exam_mode' => ExamMode::REVIEW_MODE,
+            'score' => 0,
+            'time_remain' => $this->exam->time,
+            'is_finish' => false,
+            'record' => $userExamRecord,
+        ]);
     }
 }

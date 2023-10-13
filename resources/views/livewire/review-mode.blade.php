@@ -11,13 +11,13 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
                 <p id="demo" data-time="{{ $exam->time }}" class="mb-0"></p>
             </a>
 
-            <button type="button" class="btn btn-primary position-relative">
-                Correct answer
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ $totalCorrectAnswer }}
-                </span>
-            </button>
-
+            <div class="btn btn-secondary" wire:click.prevent='saveExamResult'>
+                <i class="bi bi-pause-circle-fill"></i>
+            </div>
+            <div class="rounded-circle bg-success d-flex align-items-center justify-content-center"
+                style="width:50px;height:50px;">
+                {{ $totalCorrectAnswer }}
+            </div>
             {{-- <button class="btn btn-warning" wire:click.prevent="finishExam">
                 Finish
             </button> --}}
