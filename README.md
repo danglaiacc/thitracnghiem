@@ -1,4 +1,4 @@
-# Thi trắc nghiệm
+# Thi trắc nghiệm test cmooint
 
 ## Create database for test
 Change this line in `.env` file to
