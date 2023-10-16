@@ -1,4 +1,4 @@
-import WebFactory
+from WebFactory import WebFactory
 
 
 class Udemy(WebFactory):
@@ -16,6 +16,15 @@ class Udemy(WebFactory):
     @property
     def option_text_class(self):
         return 'ud-unstyled-list'
+
+    @property
+    def question_card_class(self):
+        return "div[class^='detailed-result-panel--panel-row--']"
+
+    def get_option_text_and_is_correct(self, option_html):
+        is_correct = int(option_html.text.endswith('(Correct)'))
+        option_html = str(option_html.select('.ud-heading-md')[0])
+        return [option_html, is_correct]
 
     def transform_question(self, question: str):
         return question.replace(
@@ -51,6 +60,7 @@ class Udemy(WebFactory):
             )
         return explaination
 
+
 file_paths = {
     '/Users/lai/Downloads/exam/sap.u1.1.html': 1,
     '/Users/lai/Downloads/exam/sap.u1.2.html': 2,
@@ -60,7 +70,7 @@ file_paths = {
 for path, exam_number in file_paths.items():
     u = Udemy(
         file_path=path,
-        exam_number = exam_number,
-        thumbnail = 'images/thumbnail1.jpeg',
+        thumbnail='images/thumbnail1.jpeg',
+        question_card_from=1,
     )
     u.run()
