@@ -72,6 +72,6 @@ for index,path in enumerate(file_paths):
         file_path=path,
         thumbnail='images/thumbnail1.jpeg',
         question_card_from=1,
-        exam_name=f"SAP {index}",
+        exam_name=f"SAP Udemy {index}",
     )
     u.run()

@@ -51,7 +51,7 @@ class WebFactory(ABC):
                 .replace('\n', '')
             )
 
-            note = f'{self.__class__.__name__} {i}'
+            note = f'{self.exam_name} {i}'
 
             # create question
             question_id = self.write_question_to_db(
