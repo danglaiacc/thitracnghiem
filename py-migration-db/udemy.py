@@ -62,15 +62,16 @@ class Udemy(WebFactory):
 
 
 file_paths = {
-    '/Users/lai/Downloads/exam/sap.u1.1.html': 1,
-    '/Users/lai/Downloads/exam/sap.u1.2.html': 2,
-    '/Users/lai/Downloads/exam/sap.u1.3.html': 3,
+    '/Users/lai/Downloads/exam/sap.u1.1.html',
+    '/Users/lai/Downloads/exam/sap.u1.2.html',
+    '/Users/lai/Downloads/exam/sap.u1.3.html',
 }
 
-for path, exam_number in file_paths.items():
+for index,path in enumerate(file_paths):
     u = Udemy(
         file_path=path,
         thumbnail='images/thumbnail1.jpeg',
         question_card_from=1,
+        exam_name=f"SAP {index}",
     )
     u.run()

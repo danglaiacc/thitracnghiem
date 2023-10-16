@@ -9,19 +9,19 @@ def get_uuid():
 
 
 class WebFactory(ABC):
-    def __init__(self, file_path: str, thumbnail: str, question_card_from: int = 0) -> None:
+    def __init__(self, file_path: str, thumbnail: str, exam_name: str, question_card_from: int = 0) -> None:
         self.file_path = file_path
         self.thumbnail = thumbnail
         self.question_card_from = question_card_from
-        conn = connector.connect(
+        self.exam_name = exam_name
+        self.conn = connector.connect(
             host="localhost",
             port=3306,
             user="root",
             password="root",
             database="exam",
         )
-        self.cursor = conn.cursor()
-        conn.reconnect()
+        self.cursor = self.conn.cursor()
 
     def read_source(self):
         with open(self.file_path, 'r') as file:
@@ -71,9 +71,9 @@ class WebFactory(ABC):
             is_multi_choice and self.update_question_multichoice(question_id)
 
         # close connection
-        conn.commit()
+        self.conn.commit()
         self.cursor.close()
-        conn.close()
+        self.conn.close()
 
     def process_question(self, question_card,  question_id: int):
 
@@ -137,7 +137,7 @@ class WebFactory(ABC):
         self.cursor.execute(
             exam_insert_query, (
                 get_uuid(),
-                f'{self.__class__.__name__}',
+                self.exam_name,
                 self.thumbnail,
                 180,
             )
