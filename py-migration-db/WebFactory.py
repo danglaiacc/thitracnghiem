@@ -80,9 +80,9 @@ class WebFactory(ABC):
     def process_question(self, question_card,  question_id: int):
 
         # transform option
-        options = question_card.find(
-            'ul', {'class': self.option_text_class}
-        ).find_all('li')
+        options = question_card.select_one(
+            f'ul.{self.option_text_class}'
+        ).find_all('li', recursive=False)
 
         total_correct_options = 0
         for option_html in options:

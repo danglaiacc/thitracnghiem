@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
             $table->uuid();
-            $table->string('text', 2000);
-            $table->string('explaination', 10000);
+            $table->text('text', 10000);
+            $table->text('explaination', 10000);
             $table->string('note');
             $table->boolean('is_multichoice')->default(false);
             $table->timestamps();

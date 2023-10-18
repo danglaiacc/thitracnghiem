@@ -62,27 +62,29 @@ class Udemy(WebFactory):
 
 
 # AWS Solution Architect Professional
-file_paths = {
-    '/Users/lai/Downloads/exam/sap.u1.1.html',
-    '/Users/lai/Downloads/exam/sap.u1.2.html',
-    '/Users/lai/Downloads/exam/sap.u1.3.html',
-}
+# file_paths = {
+#     '/Users/lai/Downloads/exam/sap.u1.1.html',
+#     '/Users/lai/Downloads/exam/sap.u1.2.html',
+#     '/Users/lai/Downloads/exam/sap.u1.3.html',
+# }
 
-for index, path in enumerate(file_paths):
-    u = Udemy(
-        file_path=path,
-        thumbnail='images/thumbnail1.jpeg',
-        question_card_from=1,
-        exam_name=f"SAP Udemy {index}",
-    )
-    u.run()
+# for index, path in enumerate(file_paths):
+#     u = Udemy(
+#         file_path=path,
+#         thumbnail='images/thumbnail1.jpeg',
+#         question_card_from=1,
+#         exam_name=f"SAP Udemy {index}",
+#     )
+#     u.run()
 
 # Databricks Data Engineer Associate
 folder_path = '/Users/lai/Downloads/exam/databricks'
 for index in range(1, 8):
-    print('start '+f'{folder_path}/dea-{index}.html')
+    file_path = f'{folder_path}/dea-{index}.html'
+
+    print('start '+file_path)
     u = Udemy(
-        file_path=f'{folder_path}/dea-{index}.html',
+        file_path=file_path,
         thumbnail='images/thumbnail1.jpeg',
         question_card_from=1,
         exam_name=f"Databricks Data Engineer {index}",
@@ -90,4 +92,4 @@ for index in range(1, 8):
         exam_time=90
     )
     u.run()
-    print('done '+f'{folder_path}/dea-{index}.html')
+    print('done '+file_path)
