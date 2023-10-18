@@ -3,7 +3,7 @@
 <div>
     <div class="row">
         @foreach ($exams as $exam)
-            <?php $examUrl = route('take-exam.timed', $exam->uuid); ?>
+            <?php $examUrl = route('take-exam.review', $exam->uuid); ?>
 
             <div class="col-3 mb-3" href="{{ $examUrl }}">
                 <div class="card exam-card" style="width: 18rem;">
