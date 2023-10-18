@@ -9,11 +9,13 @@ def get_uuid():
 
 
 class WebFactory(ABC):
-    def __init__(self, file_path: str, thumbnail: str, exam_name: str, question_card_from: int = 0) -> None:
+    def __init__(self, file_path: str, thumbnail: str, exam_name: str, question_card_from: int = 0, exam_time: int = 180, subject_id: int = 1) -> None:
         self.file_path = file_path
         self.thumbnail = thumbnail
         self.question_card_from = question_card_from
         self.exam_name = exam_name
+        self.exam_time = exam_time
+        self.subject_id = subject_id
         self.conn = connector.connect(
             host="localhost",
             port=3306,
@@ -133,13 +135,14 @@ class WebFactory(ABC):
         pass
 
     def write_exam_to_db(self):
-        exam_insert_query = f"INSERT INTO exams (uuid, name, thumbnail, time, subject_id) VALUES (%s, %s, %s, %s, 1)"
+        exam_insert_query = f"INSERT INTO exams (uuid, name, thumbnail, time, subject_id) VALUES (%s, %s, %s, %s, %s)"
         self.cursor.execute(
             exam_insert_query, (
                 get_uuid(),
                 self.exam_name,
                 self.thumbnail,
-                180,
+                self.exam_time,
+                self.subject_id,
             )
         )
         return self.cursor.lastrowid

@@ -61,13 +61,14 @@ class Udemy(WebFactory):
         return explaination
 
 
+# AWS Solution Architect Professional
 file_paths = {
     '/Users/lai/Downloads/exam/sap.u1.1.html',
     '/Users/lai/Downloads/exam/sap.u1.2.html',
     '/Users/lai/Downloads/exam/sap.u1.3.html',
 }
 
-for index,path in enumerate(file_paths):
+for index, path in enumerate(file_paths):
     u = Udemy(
         file_path=path,
         thumbnail='images/thumbnail1.jpeg',
@@ -75,3 +76,18 @@ for index,path in enumerate(file_paths):
         exam_name=f"SAP Udemy {index}",
     )
     u.run()
+
+# Databricks Data Engineer Associate
+folder_path = '/Users/lai/Downloads/exam/databricks'
+for index in range(1, 8):
+    print('start '+f'{folder_path}/dea-{index}.html')
+    u = Udemy(
+        file_path=f'{folder_path}/dea-{index}.html',
+        thumbnail='images/thumbnail1.jpeg',
+        question_card_from=1,
+        exam_name=f"Databricks Data Engineer {index}",
+        subject_id=2,
+        exam_time=90
+    )
+    u.run()
+    print('done '+f'{folder_path}/dea-{index}.html')
