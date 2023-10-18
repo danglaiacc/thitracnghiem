@@ -52,6 +52,7 @@ class Udemy(WebFactory):
             ' class="mc-quiz-question--explanation--Q5KHQ"',
             ' class="ud-heading-md"',
             '<div><h4>Explanation</h4><div>',
+            '<p><br/></p>',
         ]
 
         for remove_string in remove_strings:
@@ -80,7 +81,7 @@ class Udemy(WebFactory):
 
 # Databricks Data Engineer Associate
 folder_path = '/Users/lai/Downloads/exam/databricks'
-for index in range(1, 8):
+for index in range(6, 7):
     file_path = f'{folder_path}/dea-{index}.html'
 
     print('start '+file_path)

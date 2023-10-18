@@ -41,24 +41,23 @@ class WebFactory(ABC):
         for i in range(self.question_card_from, len(question_cards)):
             question_card = question_cards[i]
 
-            question_text = self.transform_question(
+            question_text = (
                 str(question_card.select(
                     self.question_text_class)[0])
                 .replace('\n', '')
             )
 
-            explaination_text = self.transform_question(
-                str(question_card.select(
-                    self.explaination_text_class)[0])
-                .replace('\n', '')
+            explaination = question_card.select(
+                self.explaination_text_class
             )
+            explaination = '' if len(explaination) == 0 else str(explaination[0])
 
             note = f'{self.exam_name} {i}'
 
             # create question
             question_id = self.write_question_to_db(
                 question_text,
-                explaination_text,
+                explaination,
                 note,
                 exam_id,
             )
