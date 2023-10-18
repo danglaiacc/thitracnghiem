@@ -51,6 +51,7 @@ class Udemy(WebFactory):
             ' class="rt-scaffolding" data-purpose="safely-set-inner-html:rich-text-viewer:html" id="question-explanation"',
             ' class="mc-quiz-question--explanation--Q5KHQ"',
             ' class="ud-heading-md"',
+            '<div><h4>Explanation</h4><div>',
         ]
 
         for remove_string in remove_strings:
