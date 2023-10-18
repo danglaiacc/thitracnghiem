@@ -3,16 +3,19 @@
 <div>
     <div class="row">
         @foreach ($exams as $exam)
-            <div class="col-3 mb-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ url($exam->thumbnail) }}" class="card-img-top">
+            <?php $examUrl = route('take-exam.timed', $exam->uuid); ?>
 
+            <div class="col-3 mb-3" href="{{ $examUrl }}">
+                <div class="card exam-card" style="width: 18rem;">
+                    <a href="{{ $examUrl }}">
+                        <img src="{{ url($exam->thumbnail) }}" class="card-img-top">
+                    </a>
                     <div class="card-body">
                         <h5 class="card-title">{{ $exam->name }}</h5>
-                        <a href="{{ route('take-exam.review', $exam->uuid) }}" class="card-link">
+                        <a href="{{ $examUrl }}" class="card-link">
                             Review mode
                         </a>
-                        <a href="{{ route('take-exam.timed', $exam->uuid) }}" class="card-link">
+                        <a href="{{}}" class="card-link">
                             Timed mode
                         </a>
                     </div>

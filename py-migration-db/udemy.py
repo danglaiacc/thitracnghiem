@@ -81,17 +81,15 @@ class Udemy(WebFactory):
 
 # Databricks Data Engineer Associate
 folder_path = '/Users/lai/Downloads/exam/databricks'
-for index in range(6, 7):
+for index in range(1, 8):
     file_path = f'{folder_path}/dea-{index}.html'
 
-    print('start '+file_path)
     u = Udemy(
         file_path=file_path,
-        thumbnail='images/thumbnail1.jpeg',
+        thumbnail='images/databricks-dea.png',
         question_card_from=1,
         exam_name=f"Databricks Data Engineer {index}",
         subject_id=2,
         exam_time=90
     )
     u.run()
-    print('done '+file_path)
