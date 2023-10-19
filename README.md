@@ -12,7 +12,7 @@ and run seeder again
 pip install mysql-connector-python
 composer install
 php artisan migrate:fresh --seed
-python3 py-migration-db/udemy.py;
-python3 py-migration-db/tutorial-dojo.py;
+python3 py-migration-db/sap.py;
+python3 py-migration-db/databricks-dea.py;
 php artisan ser
 ```

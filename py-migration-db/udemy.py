@@ -27,10 +27,13 @@ class Udemy(WebFactory):
         return [option_html, is_correct]
 
     def transform_question(self, question: str):
-        return question.replace(
+        question_remove_strings = [
             ' class="ud-text-bold mc-quiz-question--question-prompt--2_dlz rt-scaffolding" data-purpose="safely-set-inner-html:rich-text-viewer:html" id="question-prompt"',
-            ''
-        )
+            '<p><br/></p>',
+        ]
+        for question_remove_string in question_remove_strings:
+            question = question.replace(question_remove_string, '')
+        return question
 
     def transform_option(self, option: str):
         remove_option_strings = [
@@ -61,35 +64,3 @@ class Udemy(WebFactory):
                 ''
             )
         return explaination
-
-
-# AWS Solution Architect Professional
-# file_paths = {
-#     '/Users/lai/Downloads/exam/sap.u1.1.html',
-#     '/Users/lai/Downloads/exam/sap.u1.2.html',
-#     '/Users/lai/Downloads/exam/sap.u1.3.html',
-# }
-
-# for index, path in enumerate(file_paths):
-#     u = Udemy(
-#         file_path=path,
-#         thumbnail='images/thumbnail1.jpeg',
-#         question_card_from=1,
-#         exam_name=f"SAP Udemy {index}",
-#     )
-#     u.run()
-
-# Databricks Data Engineer Associate
-folder_path = '/Users/lai/Downloads/exam/databricks'
-for index in range(1, 8):
-    file_path = f'{folder_path}/dea-{index}.html'
-
-    u = Udemy(
-        file_path=file_path,
-        thumbnail='images/databricks-dea.png',
-        question_card_from=1,
-        exam_name=f"Databricks Data Engineer {index}",
-        subject_id=2,
-        exam_time=90
-    )
-    u.run()

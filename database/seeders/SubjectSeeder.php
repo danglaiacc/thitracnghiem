@@ -14,17 +14,17 @@ class SubjectSeeder extends Seeder
      */
     public function run(): void
     {
-        Subject::insert([
-            'uuid' => Str::uuid(),
-            'name' => 'AWS Solutions Architect Professional SAP-C02',
-        ]);
-        Subject::insert([
-            'uuid' => Str::uuid(),
-            'name' => 'Databricks Data Engineer Associate',
-        ]);
-        Subject::insert([
-            'uuid' => Str::uuid(),
-            'name' => 'Databricks Data Engineer Professional',
-        ]);
+        // Subject::insert([
+        //     'uuid' => Str::uuid(),
+        //     'name' => 'AWS Solutions Architect Professional SAP-C02',
+        // ]);
+        // Subject::insert([
+        //     'uuid' => Str::uuid(),
+        //     'name' => 'Databricks Data Engineer Associate',
+        // ]);
+        // Subject::insert([
+        //     'uuid' => Str::uuid(),
+        //     'name' => 'Databricks Data Engineer Professional',
+        // ]);
     }
 }

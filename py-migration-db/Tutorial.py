@@ -99,21 +99,3 @@ class TutorialDojo(WebFactory):
                 ''
             )
         return explaination
-
-
-file_paths = {
-    '/Users/lai/Downloads/exam/sap.tr-1.html',
-    '/Users/lai/Downloads/exam/sap.tr-2.html',
-    '/Users/lai/Downloads/exam/sap.tr-3.html',
-    '/Users/lai/Downloads/exam/sap.tr-4.html',
-    '/Users/lai/Downloads/exam/sap.tr-5.html',
-    '/Users/lai/Downloads/exam/sap.tr-6.html',
-}
-
-for index, path in enumerate(file_paths):
-    u = TutorialDojo(
-        file_path=path,
-        thumbnail='images/thumbnail2.jpeg',
-        exam_name=f"SAP Tutorial {index}",
-    )
-    u.run()

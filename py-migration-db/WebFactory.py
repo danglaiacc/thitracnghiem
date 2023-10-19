@@ -8,21 +8,43 @@ def get_uuid():
     return str(uuid4())
 
 
+connection_params = {
+    'host': "localhost",
+    'port': 3306,
+    'user': "root",
+    'password': "root",
+    'database': "exam",
+}
+
+
+def create_subject(name: str):
+    conn = connector.connect(**connection_params)
+    cursor = conn.cursor()
+
+    subject_insert_query = f"INSERT INTO subjects (uuid, name) VALUES (%s, %s)"
+    cursor.execute(
+        subject_insert_query, (
+            str(uuid4()),
+            name,
+        )
+    )
+    subject_id = cursor.lastrowid
+    conn.commit()
+    cursor.close()
+    conn.close()
+
+    return subject_id
+
+
 class WebFactory(ABC):
     def __init__(self, file_path: str, thumbnail: str, exam_name: str, question_card_from: int = 0, exam_time: int = 180, subject_id: int = 1) -> None:
         self.file_path = file_path
         self.thumbnail = thumbnail
         self.question_card_from = question_card_from
         self.exam_name = exam_name
-        self.exam_time = exam_time
+        self.exam_time = exam_time * 60 # convert min to second
         self.subject_id = subject_id
-        self.conn = connector.connect(
-            host="localhost",
-            port=3306,
-            user="root",
-            password="root",
-            database="exam",
-        )
+        self.conn = connector.connect(**connection_params)
         self.cursor = self.conn.cursor()
 
     def read_source(self):
@@ -50,7 +72,8 @@ class WebFactory(ABC):
             explaination = question_card.select(
                 self.explaination_text_class
             )
-            explaination = '' if len(explaination) == 0 else str(explaination[0])
+            explaination = '' if len(
+                explaination) == 0 else str(explaination[0])
 
             note = f'{self.exam_name} {i}'
 
