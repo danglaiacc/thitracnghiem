@@ -2,13 +2,18 @@ from abc import ABC, abstractmethod
 from mysql import connector
 from uuid import uuid4
 import requests
+import re
 from config import cookies, headers
+import urllib
+import os
 
 
 def get_uuid():
     return str(uuid4())
 
 
+img_url_pattern = re.compile(
+    r'(?P<url>https:\/\/.*\/(?P<filename>.*?(?:\bimg|png|jpeg|jpg\b)))')
 connection_params = {
     'host': "localhost",
     'port': 3306,
@@ -41,6 +46,25 @@ def get_correct_answer_index(letters):
     return [ord(letter) - ord('a') for letter in letters]
 
 
+def download_image_explanation(explanation: str, img_folder: str):
+    matched = img_url_pattern.findall(explanation)
+
+    for (img_url, img_filename) in matched:
+        img_path = os.path.join(img_folder, img_filename)
+        print(f'start download {img_url=} to {img_path=}')
+        urllib.request.urlretrieve(
+            img_url,
+            img_path
+        )
+
+        # replace img url by local path
+        explanation = explanation.replace(img_url, img_path)
+
+    # remove local path to local server path
+    explanation = explanation.replace('/Users/lai/Desktop/thi-trac-nghiem/public', 'http://127.0.0.1:8000')
+    return explanation
+
+
 class ApiFactory(ABC):
     def __init__(self, thumbnail: str, exam_name: str, quizz_ids: list, exam_time: int = 180, subject_id: int = 1) -> None:
         self.thumbnail = thumbnail
@@ -48,6 +72,10 @@ class ApiFactory(ABC):
         self.quizz_ids = quizz_ids
         self.exam_time = exam_time * 60  # convert min to second
         self.subject_id = subject_id
+        self.img_folder = os.path.join(
+            os.getcwd(), 'public', 'images', 'subjects', str(subject_id)
+        )
+        os.makedirs(self.img_folder)
 
         self.conn = connector.connect(**connection_params)
         self.cursor = self.conn.cursor()
@@ -108,6 +136,8 @@ class ApiFactory(ABC):
         return self.cursor.lastrowid
 
     def write_question_to_db(self, question_text: str, explaination: str, note: str, exam_id: int, is_multichoice: int):
+        explaination = download_image_explanation(
+            explaination, self.img_folder)
 
         # insert to question
         question_insert_query = "INSERT INTO questions (uuid, text, explaination, note, is_multichoice) VALUES (%s, %s, %s, %s, %s)"
