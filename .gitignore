@@ -23,3 +23,5 @@ yarn-error.log
 *.swp
 
 */__pycache__/*
+__pycache__
+tst*
