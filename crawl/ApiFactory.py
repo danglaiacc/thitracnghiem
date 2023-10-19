@@ -1,15 +1,10 @@
-from abc import ABC, abstractmethod
+from abc import ABC
 from mysql import connector
-from uuid import uuid4
 import requests
 import re
 from config import cookies, headers
-import urllib
 import os
-
-
-def get_uuid():
-    return str(uuid4())
+from utils import get_uuid, get_correct_answer_index, download_images, uuid4
 
 
 img_url_pattern = re.compile(
@@ -42,26 +37,18 @@ def create_subject(name: str):
     return subject_id
 
 
-def get_correct_answer_index(letters):
-    return [ord(letter) - ord('a') for letter in letters]
+img_urls = []
 
 
-def download_image_explanation(explanation: str, img_folder: str):
+def download_image_explanation(explanation: str, folder_relative_path: str, folder_absolute_path: str):
     matched = img_url_pattern.findall(explanation)
 
     for (img_url, img_filename) in matched:
-        img_path = os.path.join(img_folder, img_filename)
-        print(f'start download {img_url=} to {img_path=}')
-        urllib.request.urlretrieve(
-            img_url,
-            img_path
-        )
-
+        img_relative_path = f'{folder_relative_path}/{img_filename}'
         # replace img url by local path
-        explanation = explanation.replace(img_url, img_path)
+        explanation = explanation.replace(img_url, img_relative_path)
+        img_urls.append([img_url,  f'{folder_absolute_path}/{img_filename}'])
 
-    # remove local path to local server path
-    explanation = explanation.replace('/Users/lai/Desktop/thi-trac-nghiem/public', 'http://127.0.0.1:8000')
     return explanation
 
 
@@ -117,6 +104,8 @@ class ApiFactory(ABC):
                     )
                     answer_index += 1
 
+        download_images(img_urls)
+
         # close connection
         self.conn.commit()
         self.cursor.close()
@@ -137,7 +126,10 @@ class ApiFactory(ABC):
 
     def write_question_to_db(self, question_text: str, explaination: str, note: str, exam_id: int, is_multichoice: int):
         explaination = download_image_explanation(
-            explaination, self.img_folder)
+            explaination,
+            f'./images/subject/{self.subject_id}',
+            self.img_folder,
+        )
 
         # insert to question
         question_insert_query = "INSERT INTO questions (uuid, text, explaination, note, is_multichoice) VALUES (%s, %s, %s, %s, %s)"

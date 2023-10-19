@@ -1,5 +1,3 @@
-import requests
-
 cookies = {
     '__udmy_2_v57r': 'a2d470ce56fe48edb957c03c58e2cea3',
     '__udmy_1_a12z_c24t': 'VGhlIGFuc3dlciB0byBsaWZlLCB0aGUgdW5pdmVyc2UsIGFuZCBldmVyeXRoaW5nIGlzIDQy',
