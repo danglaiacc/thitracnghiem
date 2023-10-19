@@ -1,18 +1,31 @@
 version: '3.8'
 services:
-  mongodb:
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: ${MONGODB_USERNAME}
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_PASSWORD}
-      MONGO_INITDB_DATABASE: ${MONGODB_DATABASE}
-
-    image: mongo:7.0.2-jammy
-    container_name: mongodb
+  splash:
+    image: scrapinghub/splash:3.5
     ports:
-      - '27017:${MONGODB_PORT}'
-    volumes:
-     - ./init-db/:/docker-entrypoint-initdb.d/
-     - dbdata6:/data/db
+      - '8050:8050'
+
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "${DB_PORT}:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+
+  # mongodb:
+  #   environment:
+  #     MONGO_INITDB_ROOT_USERNAME: ${MONGODB_USERNAME}
+  #     MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_PASSWORD}
+  #     MONGO_INITDB_DATABASE: ${MONGODB_DATABASE}
+
+  #   image: mongo:7.0.2-jammy
+  #   container_name: mongodb
+  #   ports:
+  #     - '27017:${MONGODB_PORT}'
+  #   volumes:
+  #    - ./init-db/:/docker-entrypoint-initdb.d/
+  #    - dbdata6:/data/db
   
   # mongo-express:
   #   image: mongo-express:1.0.0-20-alpine3.18
