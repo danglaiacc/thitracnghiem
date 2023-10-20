@@ -89,9 +89,11 @@ class ApiFactory(ABC):
             data = self.get_data(quizz_id)
             for item in data['results']:
                 total_question += 1
+                explanation = item['prompt']['explanation'] if 'explanation' in item['prompt'] else ''
+
                 question_id = self.write_question_to_db(
                     item['prompt']['question'],
-                    item['prompt']['explanation'],
+                    explanation,
                     'no note',
                     exam_id,
                     1 if len(item['correct_response']) > 1 else 0,
