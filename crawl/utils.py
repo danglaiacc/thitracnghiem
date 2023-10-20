@@ -1,10 +1,21 @@
 import concurrent.futures
 import requests
 from uuid import uuid4
+import os
 
 
 def get_uuid():
     return str(uuid4())
+
+
+def renew_file(file_path):
+    if os.path.exists(file_path):
+        try:
+            # Remove the file
+            os.remove(file_path)
+            print(f"File '{file_path}' has been removed.")
+        except OSError as e:
+            print(f"Error: {e}")
 
 
 def download_images(img_urls):
@@ -18,7 +29,7 @@ def download_images(img_urls):
     ) as executor:
         future_to_url = {
             executor.submit(save_image_from_url, url, output_path): url
-            for [ url, output_path] in img_urls
+            for [url, output_path] in img_urls
         }
         for future in concurrent.futures.as_completed(
             future_to_url
