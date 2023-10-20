@@ -67,7 +67,7 @@ class ApiFactory(ABC):
 
         self.conn = connector.connect(**connection_params)
         self.cursor = self.conn.cursor()
-        self.request_url = 'https://funix.udemy.com/api-2.0/quizzes/{}/assessments/?version=5&page_size=250&fields[assessment]=id,assessment_type,prompt,correct_response,section,question_plain,related_lectures&use_remote_version=true'
+        self.request_url = 'https://funix.udemy.com/api-2.0/quizzes/{}/assessments/?page_size=250&fields[assessment]=id,assessment_type,prompt,correct_response,section,question_plain,related_lectures&use_remote_version=true'
 
     def get_data(self, quizz_id: int):
         response = requests.get(
@@ -81,12 +81,14 @@ class ApiFactory(ABC):
 
     def run(self):
         exam_number = 1
+        total_question = 0
         for quizz_id in self.quizz_ids:
             exam_id = self.write_exam_to_db(f'{self.exam_name} {exam_number}')
             exam_number += 1
 
             data = self.get_data(quizz_id)
             for item in data['results']:
+                total_question += 1
                 question_id = self.write_question_to_db(
                     item['prompt']['question'],
                     item['prompt']['explanation'],
@@ -110,6 +112,7 @@ class ApiFactory(ABC):
 
         download_images(img_urls)
 
+        print(f'done with {total_question=}')
         # close connection
         self.conn.commit()
         self.cursor.close()
