@@ -41,39 +41,43 @@ img_urls = []
 
 
 def download_image_explanation(explanation: str, folder_relative_path: str, folder_absolute_path: str):
-    matched = img_url_pattern.findall(explanation)
+    # matched = img_url_pattern.findall(explanation)
 
-    for (img_url, img_filename) in matched:
-        img_relative_path = f'{folder_relative_path}/{img_filename}'
-        # replace img url by local path
-        explanation = explanation.replace(img_url, img_relative_path)
-        img_urls.append([img_url,  f'{folder_absolute_path}/{img_filename}'])
+    # for (img_url, img_filename) in matched:
+    #     img_relative_path = f'{folder_relative_path}/{img_filename}'
+    #     # replace img url by local path
+    #     explanation = explanation.replace(img_url, img_relative_path)
+    #     img_urls.append([img_url,  f'{folder_absolute_path}/{img_filename}'])
 
     return explanation
 
 
 class ApiFactory(ABC):
-    def __init__(self, thumbnail: str, exam_name: str, quizz_ids: list, exam_time: int = 180, subject_id: int = 1) -> None:
+    def __init__(self, thumbnail: str, exam_name: str, quizz_ids: list, raw_data_path: str, exam_time: int = 180, subject_id: int = 1) -> None:
         self.thumbnail = thumbnail
         self.exam_name = exam_name
         self.quizz_ids = quizz_ids
         self.exam_time = exam_time * 60  # convert min to second
         self.subject_id = subject_id
+        self.raw_data_path = raw_data_path
         self.img_folder = os.path.join(
             os.getcwd(), 'public', 'images', 'subjects', str(subject_id)
         )
-        os.makedirs(self.img_folder)
+        # os.makedirs(self.img_folder)
 
         self.conn = connector.connect(**connection_params)
         self.cursor = self.conn.cursor()
         self.request_url = 'https://funix.udemy.com/api-2.0/quizzes/{}/assessments/?version=5&page_size=250&fields[assessment]=id,assessment_type,prompt,correct_response,section,question_plain,related_lectures&use_remote_version=true'
 
     def get_data(self, quizz_id: int):
-        return requests.get(
+        response = requests.get(
             self.request_url.format(quizz_id),
             cookies=cookies,
             headers=headers,
         ).json()
+        with open(self.raw_data_path, 'a') as file:
+            file.write(str(quizz_id) + '\n~~~\n' + str(response) + "\n")
+        return response
 
     def run(self):
         exam_number = 1

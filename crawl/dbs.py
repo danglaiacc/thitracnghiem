@@ -1,4 +1,5 @@
 from ApiFactory import ApiFactory, create_subject
+import os
 
 subject_id = create_subject('AWS Database Specialty')
 
@@ -12,5 +13,6 @@ a = ApiFactory(
     ],
     exam_time=180,
     subject_id=subject_id,
+    raw_data_path=os.path.join(os.getcwd(), 'raw-data', 'dbs.data'),
 )
 a.run()
