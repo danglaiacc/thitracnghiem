@@ -81,7 +81,7 @@ class ApiFactory(ABC):
 
     def run(self):
         exam_number = 1
-        total_question = 0
+        total_question = total_correct_answers = 0
         for quizz_id in self.quizz_ids:
             exam_id = self.write_exam_to_db(f'{self.exam_name} {exam_number}')
             exam_number += 1
@@ -101,6 +101,8 @@ class ApiFactory(ABC):
 
                 correct_answers = get_correct_answer_index(
                     item['correct_response'])
+                
+                total_correct_answers += len(correct_answers)
 
                 # write option to db
                 answer_index = 0
@@ -114,7 +116,7 @@ class ApiFactory(ABC):
 
         download_images(img_urls)
 
-        print(f'done with {total_question=}')
+        print(f'done with {total_question=} {total_correct_answers=}')
         # close connection
         self.conn.commit()
         self.cursor.close()
