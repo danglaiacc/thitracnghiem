@@ -25,7 +25,30 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
         </div>
     </div>
 
-    <h5 class="{{ $isShowExplaination ? ($isCorrectAnswer ? 'text-success' : 'text-danger') : '' }}">
+    <div class="question-cards">
+        @for ($i = 0; $i < $totalQuestion; $i++)
+            <?php
+            // $background = $currentQuestionIndex == $i ? 'bg-primary' : '';
+            $background = '';
+            if ($i == $currentQuestionIndex) {
+                $background = 'bg-primary';
+            } elseif ($questions[$i]['is_submit']) {
+                if ($questions[$i]['is_submit_correct']) {
+                    $background = 'bg-success';
+                } else {
+                    $background = 'bg-danger';
+                }
+            }
+            ?>
+
+            <button class="btn border-0 btn-secondary rounded-circle {{ $background }}"
+                wire:click.prevent="loadQuestion({{ $i }})">
+                {{ $i + 1 }}
+            </button>
+        @endfor
+    </div>
+    <h5
+        class="{{ $isShowExplaination ? ($questions[$currentQuestionIndex]['is_submit_correct'] ? 'text-success' : 'text-danger') : '' }}">
         Question {{ $currentQuestionIndex + 1 }} / {{ $totalQuestion }}
     </h5>
     <div class="question-text">
@@ -94,7 +117,7 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
 
     @if ($isShowExplaination)
         <div class="explanation" target="_blank">
-            @if ($isCorrectAnswer)
+            @if ($questions[$currentQuestionIndex]['is_submit_correct'])
                 <div class="p-3 mt-2 bg-success text-white">
                     {{ ResultMessage::CORRECT_ANSWER }}
                 </div>

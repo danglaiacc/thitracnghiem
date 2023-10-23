@@ -20,7 +20,6 @@ class ReviewMode extends Component
     public $currentQuestion;
     public $currentQuestionIndex;
     public $selectedOptions = [];
-    public $isCorrectAnswer;
 
     public $isShowExplaination;
 
@@ -84,6 +83,10 @@ class ReviewMode extends Component
                 'explaination' => $keyIdQuestions[$q['question_id']]->explaination,
                 'is_multichoice' => $keyIdQuestions[$q['question_id']]->is_multichoice,
                 'is_submit' => count($q['user_answers']) > 0,
+                'is_submit_correct' => !empty($q['user_answers']) && empty(array_diff(
+                    $q['user_answers'],
+                    array_filter($q['option_ids'], fn ($optionId) => $keyIdOptions[$optionId]->is_correct),
+                )),
                 'user_answers' => $q['user_answers'],
                 'options' => array_map(fn ($optionId) => [
                     'id' => $keyIdOptions[$optionId]->id,
@@ -156,7 +159,7 @@ class ReviewMode extends Component
                 unset($question['pivot']);
                 shuffle($question['options']);
                 $question['user_answers'] = [];
-                $question['is_submit'] = false;
+                $question['is_submit'] = $question['is_submit_correct'] = false;
                 return $question;
             },
             $arrayQuestionOptions
@@ -208,11 +211,12 @@ class ReviewMode extends Component
     public function submitAnswer()
     {
         $this->isShowExplaination = true;
-        $this->isCorrectAnswer = $this->checkCorrectAnswer();
+        $isCorrectAnswer = $this->checkCorrectAnswer();
+        $this->questions[$this->currentQuestionIndex]['is_submit_correct'] = $isCorrectAnswer;
         $this->questions[$this->currentQuestionIndex]['user_answers'] = $this->selectedOptions;
         $this->questions[$this->currentQuestionIndex]['is_submit'] = true;
 
-        if ($this->isCorrectAnswer) {
+        if ($isCorrectAnswer) {
             $this->totalCorrectAnswer++;
         }
     }

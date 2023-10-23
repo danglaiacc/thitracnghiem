@@ -23,6 +23,9 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@admin.com',
             'password' => '$2y$10$y73/YlP/23EB/I3uc6xqt.r6BYUnTv4FXc9N6eN4gU8x48kC4tR3S' // admin
         ]);
+        if (env('IS_PROD_DB', true))
+            return;
+
         $this->call(SubjectSeeder::class);
         if (env('IS_PROD_DB', true))
             $this->call(ExamSeeder::class);

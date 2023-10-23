@@ -44,3 +44,9 @@ p {
 .explanation img {
     max-width: 100%;
 }
+
+.question-cards button {
+    width: 45px;
+    height: 45px;
+    margin-top: 5px;
+}
