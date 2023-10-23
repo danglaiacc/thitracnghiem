@@ -8,7 +8,7 @@ subject_id = create_subject('AWS Advanced Networking Specialty')
 key = 'ans'
 # remove raw data file
 raw_data_path = os.path.join(os.getcwd(), 'raw-data', f'{key}.data')
-is_data_from_api = False
+is_data_from_api = True
 if is_data_from_api:
     renew_file(raw_data_path)
 

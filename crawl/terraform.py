@@ -27,7 +27,7 @@ a = ApiFactory(
     ],
     exam_time=180,
     subject_id=subject_id,
-    raw_data_path=renew_file,
+    raw_data_path=raw_data_path,
     is_data_from_api=is_data_from_api,
 )
 a.run()
