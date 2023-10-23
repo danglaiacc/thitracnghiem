@@ -12,6 +12,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
       MYSQL_DATABASE: ${DB_DATABASE}
+    volumes:
+      - mysql-data:/var/lib/mysql
 
   # mongodb:
   #   environment:
@@ -42,4 +44,4 @@ services:
   #     ME_CONFIG_MONGODB_ADMINPASSWORD: ${MONGO_DB_PASSWORD}
 
 volumes:
-  dbdata6:
+  mysql-data:

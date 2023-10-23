@@ -4,6 +4,7 @@ import requests
 import re
 from config import cookies, headers
 import os
+import json
 from utils import get_uuid, get_correct_answer_index, download_images, uuid4
 
 
@@ -53,13 +54,23 @@ def download_image_explanation(explanation: str, folder_relative_path: str, fold
 
 
 class ApiFactory(ABC):
-    def __init__(self, thumbnail: str, exam_name: str, quizz_ids: list, raw_data_path: str, exam_time: int = 180, subject_id: int = 1) -> None:
+    def __init__(
+        self,
+        thumbnail: str,
+        exam_name: str,
+        quizz_ids: list,
+        raw_data_path: str,
+        exam_time: int = 180,
+        subject_id: int = 1,
+        is_data_from_api=True,
+    ) -> None:
         self.thumbnail = thumbnail
         self.exam_name = exam_name
         self.quizz_ids = quizz_ids
         self.exam_time = exam_time * 60  # convert min to second
         self.subject_id = subject_id
         self.raw_data_path = raw_data_path
+        self.is_data_from_api = is_data_from_api
         self.img_folder = os.path.join(
             os.getcwd(), 'public', 'images', 'subjects', str(subject_id)
         )
@@ -69,24 +80,35 @@ class ApiFactory(ABC):
         self.cursor = self.conn.cursor()
         self.request_url = 'https://funix.udemy.com/api-2.0/quizzes/{}/assessments/?page_size=250&fields[assessment]=id,assessment_type,prompt,correct_response,section,question_plain,related_lectures&use_remote_version=true'
 
-    def get_data(self, quizz_id: int):
+    def get_data_from_api(self, quizz_id: int):
         response = requests.get(
             self.request_url.format(quizz_id),
             cookies=cookies,
             headers=headers,
         ).json()
         with open(self.raw_data_path, 'a') as file:
-            file.write(str(quizz_id) + '\n~~~\n' + str(response) + "\n")
+            file.write(str(quizz_id) + '\n~~~\n' + json.dumps(response) + "\n")
         return response
+
+    def get_data_from_raw_file(self, exam_number: int):
+        response_line = 3 * exam_number - 1
+        with open(self.raw_data_path, 'r') as file:
+            lines = file.readlines()
+            return json.loads(lines[response_line])
 
     def run(self):
         exam_number = 1
         total_question = total_correct_answers = 0
         for quizz_id in self.quizz_ids:
             exam_id = self.write_exam_to_db(f'{self.exam_name} {exam_number}')
+
+            if self.is_data_from_api:
+                data = self.get_data_from_api(quizz_id)
+            else:
+                data = self.get_data_from_raw_file(exam_number)
+
             exam_number += 1
 
-            data = self.get_data(quizz_id)
             for item in data['results']:
                 total_question += 1
                 explanation = item['prompt']['explanation'] if 'explanation' in item['prompt'] else ''
@@ -101,7 +123,7 @@ class ApiFactory(ABC):
 
                 correct_answers = get_correct_answer_index(
                     item['correct_response'])
-                
+
                 total_correct_answers += len(correct_answers)
 
                 # write option to db
