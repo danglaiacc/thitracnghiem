@@ -108,7 +108,9 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
         </p>
         <div style="position:sticky;bottom:5px;right:5px;margin:0;padding:5px 3px;" class="d-flex justify-content-end">
             <button class="btn btn-danger" wire:click.prevent="addToHardQuestion">Add to hard</button>
-            <button class="btn btn-primary ms-2" wire:click.prevent="nextQuestion">Next</button>
+            <button class="btn btn-primary ms-2" wire:click.prevent="loadQuestion({{ $currentQuestionIndex + 1 }})">
+                Next
+            </button>
         </div>
     @endif
 
