@@ -30,7 +30,8 @@ p {
 }
 
 .exam-card img {
-    height: 300px;
+    /* height: 300px; */
+    height: auto;
     /* width: auto;
     max-width: max-content;
     text-align: center; */
