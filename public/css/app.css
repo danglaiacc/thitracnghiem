@@ -40,3 +40,7 @@ p {
 .exam-card > a {
     margin: auto;
 }
+
+.explanation img {
+    max-width: 100%;
+}
