@@ -39,6 +39,7 @@ class ReviewMode extends Component
         $this->userExam = UserExam::where([
             'user_id' => $this->userId,
             'exam_id' => $this->exam->id,
+            'is_finish' => 0,
         ])->latest()->first();
 
         if (is_null($this->userExam)) {
