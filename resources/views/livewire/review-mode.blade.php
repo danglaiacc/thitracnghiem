@@ -55,7 +55,7 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
         {!! $currentQuestion['text'] !!}
     </div>
 
-    <form wire:submit.prevent="submitAnswer" wire:key="{{ $currentQuestionIndex }}">
+    <form id="form--answer" wire:submit.prevent="submitAnswer" wire:key="{{ $currentQuestionIndex }}">
         <fieldset {{ $isShowExplaination ? 'disabled' : '' }}>
 
             @foreach ($currentQuestion['options'] as $index => $option)
@@ -82,40 +82,37 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
 
         </fieldset>
 
-        <div class="d-flex justify-content-between">
-            <div>
-                @if ($currentQuestionIndex > 0)
-                    <button class="btn btn-warning" wire:click.prevent="loadQuestion({{ $currentQuestionIndex - 1 }})">
-                        Previous
-                    </button>
-                @endif
-            </div>
-            <div>
+    </form>
+
+    <div class="d-flex justify-content-between form-button sticky-top p-2">
+        <div>
+            @if ($currentQuestionIndex > 0)
                 <button class="btn btn-warning" wire:click.prevent="loadQuestion({{ $currentQuestionIndex - 1 }})">
                     Previous
                 </button>
-                <button class="btn btn-danger" wire:click.prevent="addToHardQuestion">
-                    Add to hard
-                </button>
-                @if (!$isShowExplaination)
-                    <button class="btn btn-success" type="submit">
-                        Check
-                    </button>
-                @endif
-                @if ($currentQuestionIndex + 1 == $totalQuestion)
-                    <button class="btn btn-primary ms-2" wire:click.prevent="saveExamResult(true)">
-                        Finish
-                    </button>
-                @else
-                    <button class="btn btn-primary ms-2"
-                        wire:click.prevent="loadQuestion({{ $currentQuestionIndex + 1 }})">
-                        Next
-                    </button>
-                @endif
-            </div>
+            @endif
         </div>
-    </form>
-
+        <div>
+            <button class="btn btn-danger" wire:click.prevent="addToHardQuestion">
+                Add to hard
+            </button>
+            @if (!$isShowExplaination)
+                <button class="btn btn-success" type="submit" form="form--answer">
+                    Check
+                </button>
+            @endif
+            @if ($currentQuestionIndex + 1 == $totalQuestion)
+                <button class="btn btn-primary ms-2" wire:click.prevent="saveExamResult(true)">
+                    Finish
+                </button>
+            @else
+                <button class="btn btn-primary ms-2"
+                    wire:click.prevent="loadQuestion({{ $currentQuestionIndex + 1 }})">
+                    Next
+                </button>
+            @endif
+        </div>
+    </div>
     @if (session()->has('message'))
         <div class="alert alert-{{ session('background') }} mt-2 p-2">
             {{ session('message') }}
@@ -137,14 +134,6 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
             <p>
                 {!! $currentQuestion['explaination'] !!}
             </p>
-            <div style="position:sticky;bottom:5px;right:5px;margin:0;padding:5px 3px;"
-                class="d-flex justify-content-end">
-                <button class="btn btn-danger" wire:click.prevent="addToHardQuestion">Add to hard</button>
-                <button class="btn btn-primary ms-2"
-                    wire:click.prevent="loadQuestion({{ $currentQuestionIndex + 1 }})">
-                    Next
-                </button>
-            </div>
         </div>
     @endif
 
