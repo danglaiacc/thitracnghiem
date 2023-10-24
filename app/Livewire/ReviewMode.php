@@ -182,7 +182,7 @@ class ReviewMode extends Component
      */
     public function addToHardQuestion()
     {
-        $questionId = $this->currentQuestion->id;
+        $questionId = $this->currentQuestion->id ?? $this->currentQuestion['id'];
         $params = [
             'exam_id' => 100,
             'question_id' => $questionId,
