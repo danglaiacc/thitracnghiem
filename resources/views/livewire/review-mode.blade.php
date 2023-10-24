@@ -145,9 +145,9 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
 
 @push('js')
     <script type="text/javascript">
-        // window.onbeforeunload = function() {
-        //     return "Refresh page? Are you sure haha?";
-        // }
+        window.onbeforeunload = function() {
+            return "Refresh page? Are you sure haha?";
+        }
 
         // ============== count down timer
         // Set the date we're counting down to
