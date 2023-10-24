@@ -102,9 +102,16 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
                         Check
                     </button>
                 @endif
-                <button class="btn btn-primary" wire:click.prevent="loadQuestion({{ $currentQuestionIndex + 1 }})">
-                    Next
-                </button>
+                @if ($currentQuestionIndex + 1 == $totalQuestion)
+                    <button class="btn btn-primary ms-2" wire:click.prevent="saveExamResult(true)">
+                        Finish
+                    </button>
+                @else
+                    <button class="btn btn-primary ms-2"
+                        wire:click.prevent="loadQuestion({{ $currentQuestionIndex + 1 }})">
+                        Next
+                    </button>
+                @endif
             </div>
         </div>
     </form>

@@ -268,12 +268,18 @@ class ReviewMode extends Component
         return true;
     }
 
-    public function saveExamResult()
+    public function saveExamResult($isFinish = false)
     {
         // get use exam record and store to db
         $userExamRecord = json_encode($this->transformQuestionToStoreInUserExam(
             $this->questions,
         ));
+
+        $totalScore = 0;
+        if ($isFinish)
+        {
+            $totalScore = $this->totalCorrectAnswer / $this->totalQuestion;
+        }
 
         $this->userExam = $this->userExam->updateOrCreate([
             'id' => $this->userExam->id,
@@ -281,9 +287,9 @@ class ReviewMode extends Component
             'user_id' => $this->userId,
             'exam_id' => $this->exam->id,
             'exam_mode' => ExamMode::REVIEW_MODE,
-            'score' => 0,
+            'score' => $totalScore,
             'time_remain' => $this->exam->time,
-            'is_finish' => false,
+            'is_finish' => $isFinish,
             'record' => $userExamRecord,
         ]);
     }
