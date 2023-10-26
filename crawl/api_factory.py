@@ -12,11 +12,18 @@ img_url_pattern = re.compile(
     r"(?P<url>https:\/\/.*\/(?P<filename>.*?(?:\bimg|png|jpeg|jpg\b)))"
 )
 connection_params = {
-    "host": "localhost",
+    # "host": "localhost",
+    # "port": 3306,
+    # "user": "root",
+    # "password": "root",
+    # "database": "exam",
+    "host": "thi-trac-nghiem.mysql.database.azure.com",
     "port": 3306,
-    "user": "root",
-    "password": "root",
+    "user": "lai",
+    "password": "@8@4NCMoJh5Xhy5h",
     "database": "exam",
+    "ssl_ca": "/Users/lai/Desktop/thi-trac-nghiem/resources/certificates/db.crt.pem",
+    "ssl_disabled": False,
 }
 
 
