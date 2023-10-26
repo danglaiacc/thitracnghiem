@@ -50,3 +50,7 @@ p {
     height: 45px;
     margin-top: 5px;
 }
+
+ol.linenums {
+    list-style: none;
+}
