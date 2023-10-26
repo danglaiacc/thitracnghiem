@@ -1,22 +1,23 @@
-from udemy import Udemy, create_subject
+from udemy import Udemy
+from api_factory import create_subject
 from utils import renew_file
 import os
 
-subject_id = create_subject('Terraform Associate 2023')
+subject_id = create_subject("Terraform Associate 2023")
 
 
-key = 'terraform'
+key = "terraform"
 is_data_from_api = True
 
 # remove raw data file
-raw_data_path = os.path.join(os.getcwd(), 'raw-data', f'{key}.data')
+raw_data_path = os.path.join(os.getcwd(), "raw-data", f"{key}.data")
 
 if is_data_from_api:
     renew_file(raw_data_path)
 
 a = Udemy(
-    thumbnail=f'images/{key}-1.jpeg',
-    exam_name=key.upper()+" Udemy 1",
+    thumbnail=f"images/{key}-1.jpeg",
+    exam_name=key.upper() + " Udemy 1",
     quizz_ids=[
         4777084,
         4775582,
