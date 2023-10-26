@@ -53,7 +53,7 @@ def download_image_explanation(explanation: str, folder_relative_path: str, fold
     return explanation
 
 
-class ApiFactory(ABC):
+class Udemy(ABC):
     def __init__(
         self,
         thumbnail: str,

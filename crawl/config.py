@@ -80,3 +80,40 @@ headers = {
     'x-udemy-cache-version': '1',
 }
 
+dojo_cookies = {
+    '__stripe_mid': 'd4f00838-4484-40de-a927-6409d5dfea24a335e2',
+    'tk_or': '%22https%3A%2F%2Fcollin-smith.medium.com%2Fpassing-the-aws-certified-solutions-architect-professional-certification-sap-c02-in-2023-59bcb81c080e%22',
+    'tk_ai': 'zYJj7H0WR1UdKb6zSM6pWJj0',
+    'wordpress_logged_in_381352eae6923d5f3d963dc0df809e02': 'Lai-Dang%7C1720515655%7CNnio2299VhR4kFXgquDEPqYW7YuoILOKP3oqtF7IEIK%7Cf1607f970c351559344b8cdbdb07d215dd08beb3e7062e623e8f5566d8044634',
+    '_ga_SFXMC4GHQB': 'deleted',
+    '_gcl_au': '1.1.1770249441.1696851078',
+    'buddypanel': 'open',
+    'tk_lr': '%22%22',
+    'tk_r3d': '%22%22',
+    '_ga_L96TFJ1R9K': 'GS1.1.1698162181.44.0.1698162199.0.0.0',
+    'wfwaf-authcookie-7c5f67a9fc0a19361f6cb8373dc18036': '168618%7Cother%7Cread%7C2a29ec01b3f1a584418c95cb72aafcbf8e782fb425af037fe860c25746ea0ab5',
+    'woocommerce_items_in_cart': '1',
+    'woocommerce_cart_hash': 'e86c7409315ddbd2c1d3ed2c564f15be',
+    'wp_woocommerce_session_381352eae6923d5f3d963dc0df809e02': '168618%7C%7C1698462492%7C%7C1698458892%7C%7C4795b23eda8949ed806c9179b4374af7',
+    '_gid': 'GA1.2.208859334.1698289697',
+    '_ga_SFXMC4GHQB': 'GS1.1.1698289695.233.1.1698290548.0.0.0',
+    '_ga': 'GA1.2.980420074.1688979118',
+    '_ga_ZK5DJHGZEG': 'GS1.1.1698289750.218.1.1698290549.58.0.0',
+}
+
+dojo_headers = {
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'Accept-Language': 'vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7,fr-FR;q=0.6,fr;q=0.5',
+    'Connection': 'keep-alive',
+    # 'Cookie': '__stripe_mid=d4f00838-4484-40de-a927-6409d5dfea24a335e2; tk_or=%22https%3A%2F%2Fcollin-smith.medium.com%2Fpassing-the-aws-certified-solutions-architect-professional-certification-sap-c02-in-2023-59bcb81c080e%22; tk_ai=zYJj7H0WR1UdKb6zSM6pWJj0; wordpress_logged_in_381352eae6923d5f3d963dc0df809e02=Lai-Dang%7C1720515655%7CNnio2299VhR4kFXgquDEPqYW7YuoILOKP3oqtF7IEIK%7Cf1607f970c351559344b8cdbdb07d215dd08beb3e7062e623e8f5566d8044634; _ga_SFXMC4GHQB=deleted; _gcl_au=1.1.1770249441.1696851078; buddypanel=open; tk_lr=%22%22; tk_r3d=%22%22; _ga_L96TFJ1R9K=GS1.1.1698162181.44.0.1698162199.0.0.0; wfwaf-authcookie-7c5f67a9fc0a19361f6cb8373dc18036=168618%7Cother%7Cread%7C2a29ec01b3f1a584418c95cb72aafcbf8e782fb425af037fe860c25746ea0ab5; woocommerce_items_in_cart=1; woocommerce_cart_hash=e86c7409315ddbd2c1d3ed2c564f15be; wp_woocommerce_session_381352eae6923d5f3d963dc0df809e02=168618%7C%7C1698462492%7C%7C1698458892%7C%7C4795b23eda8949ed806c9179b4374af7; _gid=GA1.2.208859334.1698289697; _ga_SFXMC4GHQB=GS1.1.1698289695.233.1.1698290548.0.0.0; _ga=GA1.2.980420074.1688979118; _ga_ZK5DJHGZEG=GS1.1.1698289750.218.1.1698290549.58.0.0',
+    'Referer': 'https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-practice-exams/lessons/practice-exams-review-mode-5/quizzes/aws-certified-solutions-architect-professional-practice-exam-review-mode-set-4/',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'same-origin',
+    'Sec-Fetch-User': '?1',
+    'Upgrade-Insecure-Requests': '1',
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36',
+    'sec-ch-ua': '"Chromium";v="118", "Google Chrome";v="118", "Not=A?Brand";v="99"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"macOS"',
+}

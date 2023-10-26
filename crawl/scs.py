@@ -1,4 +1,4 @@
-from ApiFactory import ApiFactory, create_subject
+from udemy import Udemy, create_subject
 from utils import renew_file
 import os
 
@@ -14,7 +14,7 @@ raw_data_path = os.path.join(os.getcwd(), 'raw-data', f'{key}.data')
 if is_data_from_api:
     renew_file(raw_data_path)
 
-a = ApiFactory(
+a = Udemy(
     thumbnail=f'images/aws-{key}-1.jpeg',
     exam_name=key.upper()+" Udemy 1",
     quizz_ids=[
@@ -28,7 +28,7 @@ a = ApiFactory(
 )
 a.run()
 
-a = ApiFactory(
+a = Udemy(
     thumbnail=f'images/aws-{key}-2.jpeg',
     exam_name=key.upper()+" Udemy 2",
     quizz_ids=[
