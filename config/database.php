@@ -58,8 +58,8 @@ return [
             'prefix_indexes' => true,
             'strict' => true,
             'engine' => null,
-            'sslmode' => env('DB_SSLMODE', 'prefer'),
-            'options' => extension_loaded('pdo_mysql') ? array_filter([
+            // 'sslmode' => env('DB_SSLMODE', 'prefer'),
+            'options' => env('APP_ENV') == 'production' && extension_loaded('pdo_mysql') ? array_filter([
                 PDO::MYSQL_ATTR_SSL_CA => resource_path('certificates/db.crt.pem'),
                 PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => false,
             ]) : [],

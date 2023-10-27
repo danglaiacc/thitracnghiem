@@ -11,7 +11,7 @@ for index in range(1, 3):
 
     u = Udemy(
         file_path=file_path,
-        thumbnail='images/databricks-dep.png',
+        thumbnail='images/databricks-dep-1.jpeg',
         question_card_from=1,
         exam_name=f"Databricks DEP {index}",
         subject_id=subject_id,
