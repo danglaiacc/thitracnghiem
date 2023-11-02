@@ -8,7 +8,7 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
     <div class="d-flex justify-content-between">
         <h2>{{ $exam->name }}</h2>
         <div class="d-flex align-items-center">
-            <a class="nav-link disabled" aria-disabled="true">
+            <a wire:ignore class="nav-link disabled" aria-disabled="true">
                 <p id="demo" data-time="{{ $exam->time }}" class="mb-0"></p>
             </a>
 
@@ -44,13 +44,27 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
             <button class="btn border-0 btn-secondary rounded-circle {{ $background }}"
                 wire:click.prevent="loadQuestion({{ $i }})">
                 {{ $i + 1 }}
+                @if ($questions[$i]['is_review'])
+                    <i class="is-review bi bi-star-fill text-warning" wire:click="setReview(false)"></i>
+                @endif
             </button>
         @endfor
     </div>
-    <h5
-        class="{{ $isShowExplaination ? ($questions[$currentQuestionIndex]['is_submit_correct'] ? 'text-success' : 'text-danger') : '' }}">
-        Question {{ $currentQuestionIndex + 1 }} / {{ $totalQuestion }}
-    </h5>
+    <div class="question--number d-flex align-items-center my-2">
+        <h5
+            class="d-inline-block mb-0 {{ $isShowExplaination ? ($questions[$currentQuestionIndex]['is_submit_correct'] ? 'text-success' : 'text-danger') : '' }}">
+            Question {{ $currentQuestionIndex + 1 }} / {{ $totalQuestion }}
+        </h5>
+
+        <a href="#" class="pe-auto ms-2">
+            @if ($currentQuestion['is_review'])
+                <i class="bi bi-star-fill text-warning" wire:click="setReview(false)"></i>
+            @else
+                <i class="bi bi-star" wire:click="setReview(true)"></i>
+            @endif
+        </a>
+    </div>
+
     <div class="question-text">
         {!! $currentQuestion['text'] !!}
     </div>

@@ -84,6 +84,7 @@ class ReviewMode extends Component
                 'explaination' => $keyIdQuestions[$q['question_id']]->explaination,
                 'is_multichoice' => $keyIdQuestions[$q['question_id']]->is_multichoice,
                 'is_submit' => count($q['user_answers']) > 0,
+                'is_review' => $q['is_review'] ?? false,
                 'is_submit_correct' => !empty($q['user_answers']) && empty(array_diff(
                     $q['user_answers'],
                     array_filter($q['option_ids'], fn ($optionId) => $keyIdOptions[$optionId]->is_correct),
@@ -102,8 +103,8 @@ class ReviewMode extends Component
     private function createNewExam($examUuid)
     {
         $this->exam = Exam::with([
-            'questions' => fn ($q) => $q->select(['questions.id', 'text', 'explaination', 'is_multichoice']),
-            'questions.options' => fn ($q) => $q->select(['options.id', 'text', 'question_id', 'is_correct']),
+            'questions:id,text,explaination,is_multichoice',
+            'questions.options:id,text,question_id,is_correct',
         ])
             ->where('uuid', $examUuid)
             ->select(['id', 'name', 'thumbnail', 'time'])
@@ -123,7 +124,8 @@ class ReviewMode extends Component
             fn ($question) => [
                 'question_id' => $question['id'],
                 'option_ids' => array_map(fn ($option) => $option['id'], $question['options']),
-                'user_answers' => $question['user_answers'],
+                'user_answers' => $question['is_submit'] ? $question['user_answers'] : [],
+                'is_review' => $question['is_review'] ?? false,
             ],
             $questions
         );
@@ -160,15 +162,20 @@ class ReviewMode extends Component
                 unset($question['pivot']);
                 shuffle($question['options']);
                 $question['user_answers'] = [];
-                $question['is_submit'] = $question['is_submit_correct'] = false;
+                $question['is_submit'] = false;
+                $question['is_submit_correct'] = false;
+                $question['is_review'] = false;
                 return $question;
             },
             $arrayQuestionOptions
         );
     }
 
-    public function finishExam()
+    public function setReview($isReview)
     {
+        $this->questions[$this->currentQuestionIndex]['is_review'] = $isReview;
+        $this->currentQuestion['is_review'] = $isReview;
+        $this->saveExamResult();
     }
 
     public function render()
@@ -277,8 +284,7 @@ class ReviewMode extends Component
         ));
 
         $totalScore = 0;
-        if ($isFinish)
-        {
+        if ($isFinish) {
             $totalScore = $this->totalCorrectAnswer / $this->totalQuestion;
         }
 
