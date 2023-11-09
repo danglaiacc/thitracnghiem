@@ -29,5 +29,5 @@ Route::group(['prefix' => 'take-exam', 'as' => 'take-exam.'], function () {
 Route::group(['prefix' => 'exam', 'as' => 'exam.'], function () {
     Route::get('/', ['as' => 'index', 'uses' => ExamIndex::class]);
     Route::get('create', ['as' => 'create', 'uses' => ExamUpsert::class]);
-    Route::get('/{examUuid}', ['as' => 'upsert', 'uses' => ExamUpsert::class]);
+    Route::get('/{exam}', ['as' => 'upsert', 'uses' => ExamUpsert::class]);
 });
