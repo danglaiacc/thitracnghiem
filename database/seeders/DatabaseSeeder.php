@@ -36,23 +36,36 @@ class DatabaseSeeder extends Seeder
             ])->create();
 
             $question = Question::factory([
-                'text' => 'question 1, correct answer = [2, 5]. select TWO.',
+                'text' => 'question 1',
                 'is_multichoice' => true,
             ])->create();
 
             Option::factory([
-                'text' => 'option 2 true',
+                'text' => 'option 1 true',
                 'is_correct' => true,
                 'question_id' => $question->id,
             ])->create();
 
             Option::factory([
-                'text' => 'option 5 true',
+                'text' => 'option 2 false',
+                'is_correct' => false,
+                'question_id' => $question->id,
+            ])->create();
+
+            Option::factory([
+                'text' => 'option 3 false',
+                'is_correct' => false,
+                'question_id' => $question->id,
+            ])->create();
+
+            Option::factory([
+                'text' => 'option 4 true',
                 'is_correct' => true,
                 'question_id' => $question->id,
             ])->create();
 
-            Option::factory(3, [
+            Option::factory([
+                'text' => 'option 5 false',
                 'is_correct' => false,
                 'question_id' => $question->id,
             ])->create();
@@ -62,17 +75,30 @@ class DatabaseSeeder extends Seeder
             ])->create();
 
             $question = Question::factory([
-                'text' => 'question 2, correct answer = 1',
+                'text' => 'question 2, some thing content haha',
                 'is_multichoice' => false,
             ])->create();
 
             Option::factory([
-                'text' => 'option 1 true answer',
+                'text' => 'option 1 false',
+                'is_correct' => false,
+                'question_id' => $question->id,
+            ])->create();
+
+            Option::factory([
+                'text' => 'option 2 true',
                 'is_correct' => true,
                 'question_id' => $question->id,
             ])->create();
 
-            Option::factory(3, [
+            Option::factory([
+                'text' => 'option 3 false',
+                'is_correct' => false,
+                'question_id' => $question->id,
+            ])->create();
+
+            Option::factory([
+                'text' => 'option 4 false',
                 'is_correct' => false,
                 'question_id' => $question->id,
             ])->create();
