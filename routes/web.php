@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\Exam\Create as ExamCreate;
+use App\Livewire\Exam\Index as ExamIndex;
 use App\Livewire\Home;
 use App\Livewire\ReviewMode;
 use App\Livewire\TimedMode;
@@ -22,4 +24,9 @@ Route::get('/', Home::class);
 Route::group(['prefix' => 'take-exam', 'as' => 'take-exam.'], function () {
     Route::get('review/{exam}', ['as' => 'review', 'uses' => ReviewMode::class]);
     Route::get('timed/{exam}', ['as' => 'timed', 'uses' => TimedMode::class]);
+});
+
+Route::group(['prefix' => 'exam', 'as' => 'exam.'], function () {
+    Route::get('/', ['as' => 'index', 'uses' => ExamIndex::class]);
+    Route::get('create', ['as' => 'create', 'uses' => ExamCreate::class]);
 });
