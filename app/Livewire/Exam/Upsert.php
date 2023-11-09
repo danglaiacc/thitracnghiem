@@ -4,11 +4,11 @@ namespace App\Livewire\Exam;
 
 use Livewire\Component;
 
-class Create extends Component
+class Upsert extends Component
 {
     public function render()
     {
-        return view('livewire.exam.create')
+        return view('livewire.exam.upsert')
             ->extends('layouts.master')
             ->section('content');
     }

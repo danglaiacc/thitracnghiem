@@ -1,6 +1,6 @@
 <?php
 
-use App\Livewire\Exam\Create as ExamCreate;
+use App\Livewire\Exam\Upsert as ExamUpsert;
 use App\Livewire\Exam\Index as ExamIndex;
 use App\Livewire\Home;
 use App\Livewire\ReviewMode;
@@ -28,5 +28,6 @@ Route::group(['prefix' => 'take-exam', 'as' => 'take-exam.'], function () {
 
 Route::group(['prefix' => 'exam', 'as' => 'exam.'], function () {
     Route::get('/', ['as' => 'index', 'uses' => ExamIndex::class]);
-    Route::get('create', ['as' => 'create', 'uses' => ExamCreate::class]);
+    Route::get('create', ['as' => 'create', 'uses' => ExamUpsert::class]);
+    Route::get('/{examUuid}', ['as' => 'upsert', 'uses' => ExamUpsert::class]);
 });
