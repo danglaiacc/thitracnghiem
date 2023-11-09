@@ -18,7 +18,7 @@
     @endforeach --}}
 
     @foreach ($questions as $questionIndex => $question)
-        <div class="card">
+        <div class="card mt-2">
             <div class="card-header">
                 <input type="text" name="questions[{{ $questionIndex }}][title]"
                     wire:model="questions.{{ $questionIndex }}.title" placeholder="Question title">

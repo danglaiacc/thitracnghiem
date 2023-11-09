@@ -12,6 +12,7 @@ class Upsert extends Component
 
     protected $rules = [
         'questions.*.text' => 'required|string',
+        'questions.*.options.*.text' => 'required|string',
     ];
 
     public function mount()
