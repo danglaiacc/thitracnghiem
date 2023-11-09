@@ -4,6 +4,7 @@ namespace Tests\Unit;
 
 use App\Enums\ResultMessage;
 use App\Livewire\ReviewMode;
+use App\Models\UserExam;
 use Livewire\Livewire;
 
 class ReviewModeTest extends BaseTestcase
@@ -27,7 +28,7 @@ class ReviewModeTest extends BaseTestcase
 
         Livewire::test(ReviewMode::class, [
             'exam' => $this->exam->uuid
-        ])->set('questions', $this->getQuestionRandom())
+        ])
             ->call('saveExamResult');
         $this->assertDatabaseHas(
             'user_exams',
@@ -36,29 +37,43 @@ class ReviewModeTest extends BaseTestcase
                 'exam_id' => $this->exam->id,
                 'record' => $this->castAsJson([
                     [
-                        'option_ids' => [8, 7, 9, 6],
-                        'question_id' => 2,
+                        'option_ids' => [
+                            $this->option11->id,
+                            $this->option12->id,
+                            $this->option13->id,
+                            $this->option14->id,
+                            $this->option15->id,
+                        ],
+                        'question_id' => $this->question1->id,
                         'user_answers' => [],
+                        'is_review' => false,
                     ],
                     [
-                        'option_ids' => [1, 2, 5, 3, 4],
-                        'question_id' => 1,
+                        'option_ids' => [
+                            $this->option21->id,
+                            $this->option22->id,
+                            $this->option23->id,
+                            $this->option24->id,
+                        ],
+                        'question_id' => $this->question2->id,
                         'user_answers' => [],
+                        'is_review' => false,
                     ],
                 ]),
             ]
         );
     }
 
-    public function test_should_new_answer_store_to_user_exams_table()
+    public function test_store_new_answer_and_is_review_to_user_exams_table()
     {
         $this->createExamAndQuestion();
         Livewire::test(ReviewMode::class, [
             'exam' => $this->exam->uuid
-        ])->set('questions', $this->getQuestionRandom())
-            ->call('loadQuestion', 1) // load to multi choice question
-            ->set('selectedOptions', ["1", "2"])
+        ])
+            ->call('loadQuestion', 0) // load to multi choice question
+            ->set('selectedOptions', [$this->option13->id, $this->option12->id])
             ->call('submitAnswer')
+            ->call('setReview', true)
             ->call('saveExamResult');
 
         $this->assertDatabaseHas(
@@ -68,14 +83,27 @@ class ReviewModeTest extends BaseTestcase
                 'exam_id' => $this->exam->id,
                 'record' => $this->castAsJson([
                     [
-                        'option_ids' => [8, 7, 9, 6],
-                        'question_id' => 2,
-                        'user_answers' => [],
+                        'option_ids' => [
+                            $this->option11->id,
+                            $this->option12->id,
+                            $this->option13->id,
+                            $this->option14->id,
+                            $this->option15->id,
+                        ],
+                        'question_id' => $this->question1->id,
+                        'user_answers' => [$this->option13->id, $this->option12->id],
+                        'is_review' => true,
                     ],
                     [
-                        'option_ids' => [1, 2, 5, 3, 4],
-                        'question_id' => 1,
-                        'user_answers' => ['1', '2'],
+                        'option_ids' => [
+                            $this->option21->id,
+                            $this->option22->id,
+                            $this->option23->id,
+                            $this->option24->id,
+                        ],
+                        'question_id' => $this->question2->id,
+                        'user_answers' => [],
+                        'is_review' => false,
                     ],
                 ]),
             ]
@@ -87,41 +115,35 @@ class ReviewModeTest extends BaseTestcase
      * enter to exam, load to this question
      * assert see this result: incorrect answer
      */
-    // public function test_answer_can_show_after_pause_exam()
-    // {
-    //     $this->createExamAndQuestion();
-    //     UserExam::factory([
-    //         'user_id' => 1,
-    //         'exam_id' => $this->exam->id,
-    //         'record' => json_encode([
-    //             [
-    //                 'option_ids' => [8, 7, 9, 6],
-    //                 'question_id' => 2,
-    //                 'user_answers' => [],
-    //             ],
-    //             [
-    //                 'option_ids' => [1, 2, 5, 3, 4],
-    //                 'question_id' => 1,
-    //                 'user_answers' => ['1', '2'],
-    //             ],
-    //         ]),
-    //     ])->create();
+    public function test_answer_can_show_after_pause_exam()
+    {
+        $this->createExamAndQuestion();
 
-    //     $component = Livewire::test(ReviewMode::class, [
-    //         'exam' => $this->exam->uuid
-    //     ])->set('questions', $this->getQuestionRandom())
-    //         ->call('loadQuestion', 1); // load to multi choice question
-            
-    //         $component->assertSet('selectedOptions', ['1', '2']);
-    // }
+        Livewire::test(ReviewMode::class, [
+            'exam' => $this->exam->uuid
+        ])
+            ->call('loadQuestion', 0) // load to multi choice question
+            ->set('selectedOptions', [$this->option13->id, $this->option12->id])
+            ->call('submitAnswer')
+            ->call('setReview', true)
+            ->call('saveExamResult');
+
+        $component = Livewire::test(ReviewMode::class, [
+            'exam' => $this->exam->uuid
+        ])
+            ->call('loadQuestion', $this->question1->id); // load to multi choice question
+
+        $component->assertSet('selectedOptions', [$this->option13->id, $this->option12->id]);
+    }
 
     public function test_show_explaination_when_come_back_previous_question()
     {
         $this->createExamAndQuestion();
         Livewire::test(ReviewMode::class, [
             'exam' => $this->exam->uuid
-        ])->set('questions', $this->getQuestionRandom())
-            ->set('selectedOptions', '8')
+        ])
+            ->call('loadQuestion', 0) // load to multi choice question
+            ->set('selectedOptions', [$this->option13->id, $this->option12->id])
             ->call('submitAnswer')
             ->assertSee(ResultMessage::IN_CORRECT_ANSWER)
             ->call('loadQuestion', 1)
@@ -137,8 +159,9 @@ class ReviewModeTest extends BaseTestcase
         $this->createExamAndQuestion();
         Livewire::test(ReviewMode::class, [
             'exam' => $this->exam->uuid
-        ])->set('questions', $this->getQuestionRandom())
-            ->set('selectedOptions', "7")
+        ])
+            ->call('loadQuestion', 1)
+            ->set('selectedOptions', [$this->option21->id])
             ->call('submitAnswer')
             ->assertSee(ResultMessage::IN_CORRECT_ANSWER);
     }
@@ -148,8 +171,9 @@ class ReviewModeTest extends BaseTestcase
         $this->createExamAndQuestion();
         Livewire::test(ReviewMode::class, [
             'exam' => $this->exam->uuid
-        ])->set('questions', $this->getQuestionRandom())
-            ->set('selectedOptions', "6")
+        ])
+            ->call('loadQuestion', 1)
+            ->set('selectedOptions', [$this->option22->id])
             ->call('submitAnswer')
             ->assertSee(ResultMessage::CORRECT_ANSWER);
     }
@@ -159,9 +183,9 @@ class ReviewModeTest extends BaseTestcase
         $this->createExamAndQuestion();
         Livewire::test(ReviewMode::class, [
             'exam' => $this->exam->uuid
-        ])->set('questions', $this->getQuestionRandom())
-            ->call('loadQuestion', 1)
-            ->set('selectedOptions', ["2", "3"])
+        ])
+            ->call('loadQuestion', 0)
+            ->set('selectedOptions', [$this->option11->id, $this->option12->id])
             ->call('submitAnswer')
             ->assertSee(ResultMessage::IN_CORRECT_ANSWER);
     }
@@ -171,8 +195,8 @@ class ReviewModeTest extends BaseTestcase
         $this->createExamAndQuestion();
         Livewire::test(ReviewMode::class, [
             'exam' => $this->exam->uuid
-        ])->set('questions', $this->getQuestionRandom())
-            ->call('loadQuestion', 1)
+        ])
+            ->call('loadQuestion', 0)
             ->set('selectedOptions', [])
             ->call('submitAnswer')
             ->assertSee(ResultMessage::IN_CORRECT_ANSWER);
@@ -183,9 +207,15 @@ class ReviewModeTest extends BaseTestcase
         $this->createExamAndQuestion();
         Livewire::test(ReviewMode::class, [
             'exam' => $this->exam->uuid
-        ])->set('questions', $this->getQuestionRandom())
-            ->call('loadQuestion', 1)
-            ->set('selectedOptions', ["1", "5", "2", "3", "4"])
+        ])
+            ->call('loadQuestion', 0)
+            ->set('selectedOptions', [
+                $this->option11->id,
+                $this->option12->id,
+                $this->option13->id,
+                $this->option14->id,
+                $this->option15->id,
+            ])
             ->call('submitAnswer')
             ->assertSee(ResultMessage::IN_CORRECT_ANSWER);
     }
@@ -195,9 +225,12 @@ class ReviewModeTest extends BaseTestcase
         $this->createExamAndQuestion();
         Livewire::test(ReviewMode::class, [
             'exam' => $this->exam->uuid
-        ])->set('questions', $this->getQuestionRandom())
-            ->call('loadQuestion', 1)
-            ->set('selectedOptions', ["1", "5"])
+        ])
+            ->call('loadQuestion', 0)
+            ->set('selectedOptions', [
+                $this->option14->id,
+                $this->option11->id,
+            ])
             ->call('submitAnswer')
             ->assertSee(ResultMessage::CORRECT_ANSWER);
     }

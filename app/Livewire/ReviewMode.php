@@ -107,9 +107,14 @@ class ReviewMode extends Component
             'questions.options:id,text,question_id,is_correct',
         ])
             ->where('uuid', $examUuid)
-            ->select(['id', 'name', 'thumbnail', 'time'])
+            ->select(['id', 'name', 'thumbnail', 'time', 'allow_shuffle'])
             ->first();
-        $this->shuffleQuestionAndAnswer();
+
+        $this->questions = $this->shuffleQuestionAndAnswer(
+            $this->exam->questions,
+            $this->exam->allow_shuffle,
+        );
+
 
         $this->saveExamResult();
     }
@@ -150,17 +155,20 @@ class ReviewMode extends Component
      * shuffle question and options in each question
      * save question order in UserExam table
      */
-    private function shuffleQuestionAndAnswer()
+    private function shuffleQuestionAndAnswer($questions, bool $allowShuffle)
     {
         // transform question to array and shuffle it
-        $arrayQuestionOptions = $this->exam->questions->toArray();
-        shuffle($arrayQuestionOptions);
+        $arrayQuestionOptions = $questions->toArray();
+        if ($allowShuffle) {
+            shuffle($arrayQuestionOptions);
+        }
 
         // remove pivot key and shuffle options
-        $this->questions = array_map(
-            function ($question) {
+        return array_map(
+            function ($question) use ($allowShuffle){
                 unset($question['pivot']);
-                shuffle($question['options']);
+                // just shuffle options when allow shuffle
+                $allowShuffle && shuffle($question['options']);
                 $question['user_answers'] = [];
                 $question['is_submit'] = false;
                 $question['is_submit_correct'] = false;
