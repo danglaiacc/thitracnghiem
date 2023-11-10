@@ -76,6 +76,9 @@ class Upsert extends Component
 
         $fileContent = [];
         foreach ($this->questions as $questionIndex => $question) {
+
+            if ($question['db_status'] == DbStatus::DELETE) continue;
+
             $question['text'] = trim($question['text']);
             $question['explanation'] = trim($question['explanation']);
 
