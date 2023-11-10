@@ -13,7 +13,7 @@ use Illuminate\Support\Str;
 class Upsert extends Component
 {
     public Exam $exam;
-    public $questions, $originalQuestions;
+    public $questions, $originalQuestions, $removeQuestionUuids;
 
     protected $rules = [
         'questions.*.text' => 'required|string',
@@ -25,6 +25,7 @@ class Upsert extends Component
     public function mount()
     {
         $this->questions = $this->originalQuestions = $this->transformQuestions($this->exam->questions);
+        $this->removeQuestionUuids = [];
     }
 
     private function transformQuestions($questions)
@@ -56,7 +57,7 @@ class Upsert extends Component
         return $transformedQuestions;
     }
 
-    public function addQuestion()
+    public function addQuestionClick()
     {
         $this->questions[] = [
             'text' => '',
@@ -67,11 +68,10 @@ class Upsert extends Component
         ];
 
         $newQuestionIndex = count($this->questions) - 1;
-        $this->addOption($newQuestionIndex);
-        // dd($this->questions);
+        $this->addOptionClick($newQuestionIndex);
     }
 
-    public function addOption($questionIndex)
+    public function addOptionClick($questionIndex)
     {
         $this->questions[$questionIndex]['options'][] = [
             'text' => '',
@@ -80,10 +80,10 @@ class Upsert extends Component
         ];
     }
 
-    public function removeQuestion(string $questionUuid, int $questionIndex)
+    public function removeQuestionClick(string $questionUuid, int $questionIndex)
     {
-        // $this->removedQuestionUuid[] = $questionUuid;
-        // unset($this->questions[$questionIndex]);
+        $this->removeQuestionUuids[] = $questionUuid;
+        $this->questions[$questionIndex]['db_status'] = DbStatus::DELETE;
     }
 
     public function render()
@@ -96,9 +96,12 @@ class Upsert extends Component
      */
     public function saveExam()
     {
+        $numberDeleteQuestion = count($this->removeQuestionUuids);
+        $numberAddQuestion = 0;
         foreach ($this->questions as $question) {
             switch ($question['db_status']) {
                 case DbStatus::CREATE:
+                    $numberAddQuestion++;
                     $this->insertQuestion($question);
                     break;
                 default:
@@ -106,6 +109,11 @@ class Upsert extends Component
                     break;
             }
         }
+
+        if ($numberDeleteQuestion > 0)
+            Question::whereIn('uuid', $this->removeQuestionUuids)->delete();
+
+        session()->flash('updateExamMessage', "Add $numberAddQuestion question, update 1 question, delete=$numberDeleteQuestion");
     }
 
     private function insertQuestion($question)

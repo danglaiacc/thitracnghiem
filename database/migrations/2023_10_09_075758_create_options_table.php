@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('text', 2000);
             $table->boolean('is_correct');
-            $table->foreignId('question_id')->constrained();
+            $table->foreignId('question_id')->constrained()->onDelete('cascade');
             $table->timestamps();
 
             $table->index(['question_id']);

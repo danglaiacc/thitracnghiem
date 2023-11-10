@@ -62,10 +62,17 @@ p {
     list-style: none;
 }
 
-.exam.upsert .questions--card {
+.exam.upsert .question--card {
     margin-bottom: 60px;
 }
 
-.exam.upsert .questions--card .question--actions > button{
+.exam.upsert .question--card .question--actions > button{
     margin-right: 5px;
+}
+
+.exam.upsert .question--card--action
+{
+    background: white;
+    width: 100%;
+    padding: 8px 100px;
 }
