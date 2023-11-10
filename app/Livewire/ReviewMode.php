@@ -188,9 +188,7 @@ class ReviewMode extends Component
 
     public function render()
     {
-        return view('livewire.review-mode')
-            ->extends('layouts.master')
-            ->section('content');
+        return view('livewire.review-mode');
     }
 
     /**

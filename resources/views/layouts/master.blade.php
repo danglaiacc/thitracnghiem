@@ -22,7 +22,8 @@
     @include('layouts.navbar')
 
     <div class="container">
-        @yield('content')
+        {{-- @yield('content') --}}
+        {{ $slot }}
     </div>
 
     <script src="{{ url('./js/bootstrap.5.3.2_dist_js_bootstrap.bundle.min.js') }}"></script>

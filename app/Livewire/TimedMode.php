@@ -8,8 +8,6 @@ class TimedMode extends Component
 {
     public function render()
     {
-        return view('livewire.timed-mode')
-            ->extends('layouts.master')
-            ->section('content');
+        return view('livewire.timed-mode');
     }
 }
