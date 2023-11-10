@@ -4,6 +4,7 @@ namespace App\Livewire\Exam;
 
 use App\Enums\DbStatus;
 use App\Models\Exam;
+use App\Models\ExamQuestion;
 use App\Models\Option;
 use App\Models\Question;
 use Livewire\Component;
@@ -33,11 +34,12 @@ class Upsert extends Component
 
             $options = [];
             foreach ($question->options as $option) {
-                $options[]= [
+                $options[] = [
                     'text' => $option->text,
                     'id' => $option->id,
                     'question_id' => $option->question_id,
                     'is_correct' => $option->is_correct,
+                    'db_status' => DbStatus::NO_CHANGE,
                 ];
             }
             $transformedQuestions[] = [
@@ -48,6 +50,7 @@ class Upsert extends Component
                 'is_multichoice' => $question->is_multichoice,
                 'exam_id' => $question->exam_id,
                 'options' => $options,
+                'db_status' => DbStatus::NO_CHANGE,
             ];
         }
         return $transformedQuestions;
@@ -55,7 +58,7 @@ class Upsert extends Component
 
     public function addQuestion()
     {
-        $this->questions[] =[
+        $this->questions[] = [
             'text' => '',
             'explaination' => '',
             'exam_id' => $this->exam->id,
@@ -93,8 +96,8 @@ class Upsert extends Component
      */
     public function saveExam()
     {
-        foreach ($this->question as $question) {
-            switch ($question->db_status) {
+        foreach ($this->questions as $question) {
+            switch ($question['db_status']) {
                 case DbStatus::CREATE:
                     $this->insertQuestion($question);
                     break;
@@ -110,17 +113,22 @@ class Upsert extends Component
         $numberCorrectAnswer = count(
             array_filter($question['options'], fn ($option) => $option['is_correct'] == 1)
         );
-        $question = Question::create([
+        $createdQuestion = Question::create([
+            'uuid' => Str::uuid(),
             'text' => $question['text'],
             'is_multichoice' => $numberCorrectAnswer > 1,
             'explaination' => $question['explaination'],
         ]);
+        ExamQuestion::create([
+            'exam_id' => $this->exam->id,
+            'question_id' => $createdQuestion->id,
+        ]);
 
-        foreach ($question['options']as $option) {
+        foreach ($question['options'] as $option) {
             Option::create([
                 'text' => $option['text'],
                 'is_correct' => $option['is_correct'],
-                'question_id' => $question['id']
+                'question_id' => $createdQuestion->id,
             ]);
         }
     }

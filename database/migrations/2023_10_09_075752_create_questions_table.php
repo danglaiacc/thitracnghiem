@@ -16,7 +16,7 @@ return new class extends Migration
             $table->uuid();
             $table->text('text', 10000);
             $table->text('explaination', 10000)->nullable();
-            $table->string('note');
+            $table->string('note')->nullable();
             $table->boolean('is_multichoice')->default(false);
             $table->timestamps();
         });

@@ -7,12 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Question extends Model
 {
+    use HasFactory;
     protected $fillable = [
+        'uuid',
         'text',
         'exam_id',
         'explaination',
     ];
-    use HasFactory;
 
     public function options()
     {
