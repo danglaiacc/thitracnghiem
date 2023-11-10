@@ -19,7 +19,7 @@ class QuestionFactory extends Factory
     {
         return [
             //
-            'uuid' => Str::uuid(),
+            'uuid' => Str::uuid()->toString(),
             'text' => 'question text ' . hexdec(uniqid()),
             'explaination' => 'question explaination ' . hexdec(uniqid()),
             'note' => 'question note' . hexdec(uniqid()),

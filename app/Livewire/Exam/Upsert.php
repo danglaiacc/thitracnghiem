@@ -3,6 +3,7 @@
 namespace App\Livewire\Exam;
 
 use App\Enums\DbStatus;
+use App\Helper\QuestionHelper;
 use App\Models\Exam;
 use App\Models\ExamQuestion;
 use App\Models\Option;
@@ -24,37 +25,8 @@ class Upsert extends Component
 
     public function mount()
     {
-        $this->questions = $this->originalQuestions = $this->transformQuestions($this->exam->questions);
+        $this->questions = $this->originalQuestions = QuestionHelper::transformQuestions($this->exam->questions);
         $this->removeQuestionUuids = [];
-    }
-
-    private function transformQuestions($questions)
-    {
-        $transformedQuestions = [];
-        foreach ($questions as $question) {
-
-            $options = [];
-            foreach ($question->options as $option) {
-                $options[] = [
-                    'text' => $option->text,
-                    'id' => $option->id,
-                    'question_id' => $option->question_id,
-                    'is_correct' => $option->is_correct,
-                    'db_status' => DbStatus::NO_CHANGE,
-                ];
-            }
-            $transformedQuestions[] = [
-                'id' => $question->id,
-                'uuid' => $question->uuid,
-                'text' => $question->text,
-                'explaination' => $question->explaination,
-                'is_multichoice' => $question->is_multichoice,
-                'exam_id' => $question->exam_id,
-                'options' => $options,
-                'db_status' => DbStatus::NO_CHANGE,
-            ];
-        }
-        return $transformedQuestions;
     }
 
     public function addQuestionClick()
@@ -99,12 +71,12 @@ class Upsert extends Component
         $numberDeleteQuestion = count($this->removeQuestionUuids);
         $numberAddQuestion = $numberUpdateQuestion = 0;
         foreach ($this->questions as $questionIndex => $question) {
-            $originalQuestion = $this->originalQuestions[$questionIndex];
             if ($question['db_status'] == DbStatus::CREATE) {
                 $numberAddQuestion++;
                 $this->insertQuestion($question);
                 continue;
             }
+            $originalQuestion = $this->originalQuestions[$questionIndex];
             $question['text'] = trim($question['text']);
             $question['explaination'] = trim($question['explaination']);
 
@@ -149,9 +121,9 @@ class Upsert extends Component
         );
         $createdQuestion = Question::create([
             'uuid' => Str::uuid(),
-            'text' => $question['text'],
+            'text' => trim($question['text']),
             'is_multichoice' => $numberCorrectAnswer > 1,
-            'explaination' => $question['explaination'],
+            'explaination' => trim($question['explaination']),
         ]);
         ExamQuestion::create([
             'exam_id' => $this->exam->id,
@@ -160,7 +132,7 @@ class Upsert extends Component
 
         foreach ($question['options'] as $option) {
             Option::create([
-                'text' => $option['text'],
+                'text' => trim($option['text']),
                 'is_correct' => $option['is_correct'],
                 'question_id' => $createdQuestion->id,
             ]);

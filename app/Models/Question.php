@@ -13,6 +13,7 @@ class Question extends Model
         'text',
         'exam_id',
         'explaination',
+        'is_multichoice',
     ];
 
     public function options()
