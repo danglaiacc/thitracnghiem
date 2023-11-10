@@ -42,7 +42,7 @@ abstract class BaseTestcase extends TestCase
         ])->create();
 
         $this->question1 = Question::factory([
-            'text' => 'question 1',
+            'text' => 'question 1 text',
             'is_multichoice' => true,
         ])->create();
 

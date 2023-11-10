@@ -92,19 +92,41 @@ class Upsert extends Component
                     ]);
             }
 
+            $numberCorrectAnswer = 0;
             foreach ($question['options'] as $optionIndex => $option) {
                 $option['text'] = trim($option['text']);
+                $option['is_correct'] && $numberCorrectAnswer++;
+
+                // insert option
+                if ($option['db_status'] == DbStatus::CREATE)
+                {
+                    Option::create([
+                        'text' => $option['text'],
+                        'is_correct' => $option['is_correct'],
+                        'question_id' => $question['id'],
+                    ]);
+                    continue;
+                }
+
+                // update option
                 $originalOption = $originalQuestion['options'][$optionIndex];
                 if (
                     $option['text'] != $originalOption['text'] ||
                     $option['is_correct'] != $originalOption['is_correct']
-                ){
+                ) {
                     Option::where('id', $originalOption['id'])
                         ->update([
                             'text' => $option['text'],
                             'is_correct' => $option['is_correct'],
                         ]);
                 }
+            }
+
+            if ($numberCorrectAnswer > 1 && $question['is_multichoice'] == 0) {
+                Question::where('id', $question['id'])->update(['is_multichoice' => 1]);
+            }
+            if ($numberCorrectAnswer == 1 && $question['is_multichoice'] == 1) {
+                Question::where('id', $question['id'])->update(['is_multichoice' => 0]);
             }
         }
 

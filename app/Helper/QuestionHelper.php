@@ -18,6 +18,7 @@ class QuestionHelper
                     'id' => $option->id,
                     'question_id' => $option->question_id,
                     'is_correct' => $option->is_correct,
+                    'db_status' => DbStatus::NO_CHANGE,
                 ];
             }
             $transformedQuestions[] = [
