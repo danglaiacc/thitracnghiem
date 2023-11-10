@@ -12,7 +12,7 @@ class Question extends Model
         'uuid',
         'text',
         'exam_id',
-        'explaination',
+        'explanation',
         'is_multichoice',
     ];
 

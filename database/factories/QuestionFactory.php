@@ -21,7 +21,7 @@ class QuestionFactory extends Factory
             //
             'uuid' => Str::uuid()->toString(),
             'text' => 'question text ' . hexdec(uniqid()),
-            'explaination' => 'question explaination ' . hexdec(uniqid()),
+            'explanation' => 'question explanation ' . hexdec(uniqid()),
             'note' => 'question note' . hexdec(uniqid()),
             'is_multichoice' => rand(0, 1),
         ];

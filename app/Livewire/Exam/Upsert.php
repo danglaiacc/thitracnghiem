@@ -18,7 +18,7 @@ class Upsert extends Component
 
     protected $rules = [
         'questions.*.text' => 'required|string',
-        'questions.*.explaination' => 'required|string',
+        'questions.*.explanation' => 'required|string',
         'questions.*.options.*.text' => 'required|string',
         'questions.*.options.*.is_correct' => 'nullable',
     ];
@@ -33,7 +33,7 @@ class Upsert extends Component
     {
         $this->questions[] = [
             'text' => '',
-            'explaination' => '',
+            'explanation' => '',
             'exam_id' => $this->exam->id,
             'db_status' => DbStatus::CREATE,
             'uuid' => 'uuid',
@@ -77,18 +77,16 @@ class Upsert extends Component
                 continue;
             }
             $originalQuestion = $this->originalQuestions[$questionIndex];
-            $question['text'] = trim($question['text']);
-            $question['explaination'] = trim($question['explaination']);
 
             if (
                 $question['text'] != $originalQuestion['text'] ||
-                $question['explaination'] != $originalQuestion['explaination']
+                $question['explanation'] != $originalQuestion['explanation']
             ) {
                 $numberUpdateQuestion++;
                 Question::where('id', $question['id'])
                     ->update([
                         'text' => $question['text'],
-                        'explaination' => $question['explaination'],
+                        'explanation' => $question['explanation'],
                     ]);
             }
 
@@ -98,8 +96,7 @@ class Upsert extends Component
                 $option['is_correct'] && $numberCorrectAnswer++;
 
                 // insert option
-                if ($option['db_status'] == DbStatus::CREATE)
-                {
+                if ($option['db_status'] == DbStatus::CREATE) {
                     Option::create([
                         'text' => $option['text'],
                         'is_correct' => $option['is_correct'],
@@ -145,7 +142,7 @@ class Upsert extends Component
             'uuid' => Str::uuid(),
             'text' => trim($question['text']),
             'is_multichoice' => $numberCorrectAnswer > 1,
-            'explaination' => trim($question['explaination']),
+            'explanation' => trim($question['explanation']),
         ]);
         ExamQuestion::create([
             'exam_id' => $this->exam->id,

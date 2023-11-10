@@ -81,15 +81,15 @@ class WebFactory(ABC):
                 question_card.select(self.question_text_class)[0]
             ).replace("\n", "")
 
-            explaination = question_card.select(self.explaination_text_class)
-            explaination = "" if len(explaination) == 0 else str(explaination[0])
+            explanation = question_card.select(self.explanation_text_class)
+            explanation = "" if len(explanation) == 0 else str(explanation[0])
 
             note = f"{self.exam_name} {i}"
 
             # create question
             question_id = self.write_question_to_db(
                 question_text,
-                explaination,
+                explanation,
                 note,
                 exam_id,
             )
@@ -138,7 +138,7 @@ class WebFactory(ABC):
 
     @property
     @abstractmethod
-    def explaination_text_class(self):
+    def explanation_text_class(self):
         pass
 
     @property
@@ -160,7 +160,7 @@ class WebFactory(ABC):
         pass
 
     @abstractmethod
-    def transform_explaination(self, explaination: str):
+    def transform_explanation(self, explanation: str):
         pass
 
     def write_exam_to_db(self):
@@ -178,15 +178,15 @@ class WebFactory(ABC):
         return self.cursor.lastrowid
 
     def write_question_to_db(
-        self, question_text: str, explaination: str, note: str, exam_id: int
+        self, question_text: str, explanation: str, note: str, exam_id: int
     ):
         question_text = self.transform_question(question_text)
-        explaination = self.transform_explaination(explaination)
+        explanation = self.transform_explanation(explanation)
 
         # insert to question
-        question_insert_query = "INSERT INTO questions (uuid, text, explaination, note) VALUES (%s, %s, %s, %s)"
+        question_insert_query = "INSERT INTO questions (uuid, text, explanation, note) VALUES (%s, %s, %s, %s)"
         self.cursor.execute(
-            question_insert_query, (get_uuid(), question_text, explaination, note)
+            question_insert_query, (get_uuid(), question_text, explanation, note)
         )
 
         question_id = self.cursor.lastrowid

@@ -17,7 +17,7 @@ class UpsertTest extends BaseTestcase
         // create another 2 questions
         $question3 = Question::factory([
             "text" => "$prefix::question 3 text",
-            "explaination" => "333",
+            "explanation" => "333",
         ])->make();
         $option31 = Option::factory([
             "text" => "$prefix::option31",
@@ -34,7 +34,7 @@ class UpsertTest extends BaseTestcase
 
         $question4 = Question::factory([
             "text" => "$prefix::question 4 text",
-            "explaination" => "444",
+            "explanation" => "444",
         ])->make();
         $option41 = Option::factory([
             "text" => "$prefix::option41",
@@ -97,7 +97,7 @@ class UpsertTest extends BaseTestcase
             "questions",
             [
                 "text" => "create::question 3 text",
-                "explaination" => '333',
+                "explanation" => '333',
                 "is_multichoice" => 0,
             ],
         );
@@ -105,7 +105,7 @@ class UpsertTest extends BaseTestcase
             "questions",
             [
                 "text" => "create::question 4 text",
-                "explaination" => '444',
+                "explanation" => '444',
                 "is_multichoice" => 1,
             ],
         );

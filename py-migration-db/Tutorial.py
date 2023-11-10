@@ -11,7 +11,7 @@ class TutorialDojo(WebFactory):
         return '.wpProQuiz_question_text'
 
     @property
-    def explaination_text_class(self):
+    def explanation_text_class(self):
         return '.wpProQuiz_response'
 
     @property
@@ -73,7 +73,7 @@ class TutorialDojo(WebFactory):
 
         return option_html
 
-    def transform_explaination(self, explaination: str):
+    def transform_explanation(self, explanation: str):
         remove_expalination_strings = [
             ' class="wpProQuiz_response" style=""',
             ' class="wpProQuiz_correct" style=""',
@@ -94,8 +94,8 @@ class TutorialDojo(WebFactory):
         ]
 
         for remove_string in remove_expalination_strings:
-            explaination = explaination.replace(
+            explanation = explanation.replace(
                 remove_string,
                 ''
             )
-        return explaination
+        return explanation

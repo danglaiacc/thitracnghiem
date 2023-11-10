@@ -21,7 +21,7 @@ class ReviewMode extends Component
     public $currentQuestionIndex;
     public $selectedOptions = [];
 
-    public $isShowExplaination;
+    public $isShowExplanation;
 
     public int $totalQuestion, $totalCorrectAnswer = 0;
     public string $resultMessage;
@@ -72,7 +72,7 @@ class ReviewMode extends Component
             []
         );
 
-        $questions = Question::whereIn('id', $questionIds)->select(['id', 'text', 'explaination', 'is_multichoice'])->get();
+        $questions = Question::whereIn('id', $questionIds)->select(['id', 'text', 'explanation', 'is_multichoice'])->get();
         $options = Option::whereIn('id', $optionIds)->select(['id', 'text', 'is_correct'])->get();
         $keyIdQuestions = ArrayHelper::transformCollectionsWithIdAsKey($questions, 'id');
         $keyIdOptions = ArrayHelper::transformCollectionsWithIdAsKey($options, 'id');
@@ -81,7 +81,7 @@ class ReviewMode extends Component
             fn ($q) => [
                 'id' => $q['question_id'],
                 'text' => $keyIdQuestions[$q['question_id']]->text,
-                'explaination' => $keyIdQuestions[$q['question_id']]->explaination,
+                'explanation' => $keyIdQuestions[$q['question_id']]->explanation,
                 'is_multichoice' => $keyIdQuestions[$q['question_id']]->is_multichoice,
                 'is_submit' => count($q['user_answers']) > 0,
                 'is_review' => $q['is_review'] ?? false,
@@ -103,7 +103,7 @@ class ReviewMode extends Component
     private function createNewExam($examUuid)
     {
         $this->exam = Exam::with([
-            'questions:id,text,explaination,is_multichoice',
+            'questions:id,text,explanation,is_multichoice',
             'questions.options:id,text,question_id,is_correct',
         ])
             ->where('uuid', $examUuid)
@@ -140,7 +140,7 @@ class ReviewMode extends Component
      * [▼
         "id",
         "text",
-        "explaination",
+        "explanation",
         "is_multichoice",
         "is_submit",
         "options" , // [
@@ -224,7 +224,7 @@ class ReviewMode extends Component
      */
     public function submitAnswer()
     {
-        $this->isShowExplaination = true;
+        $this->isShowExplanation = true;
         $isCorrectAnswer = $this->checkCorrectAnswer();
         $this->questions[$this->currentQuestionIndex]['is_submit_correct'] = $isCorrectAnswer;
         $this->questions[$this->currentQuestionIndex]['user_answers'] = $this->selectedOptions;
@@ -249,7 +249,7 @@ class ReviewMode extends Component
 
         $this->currentQuestionIndex = $questionIndex;
         $this->currentQuestion = $this->questions[$this->currentQuestionIndex];
-        $this->isShowExplaination = $this->checkShowExpalination();
+        $this->isShowExplanation = $this->checkShowExpalination();
 
         // validate option from submit button (next/previous question)
         // or from history in user history

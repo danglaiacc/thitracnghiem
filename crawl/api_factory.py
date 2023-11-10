@@ -180,22 +180,22 @@ class ApiFactory(ABC):
     def write_question_to_db(
         self,
         question_text: str,
-        explaination: str,
+        explanation: str,
         note: str,
         exam_id: int,
         is_multichoice: int,
     ):
-        explaination = download_image_explanation(
-            explaination,
+        explanation = download_image_explanation(
+            explanation,
             f"./images/subject/{self.subject_id}",
             self.img_folder,
         )
 
         # insert to question
-        question_insert_query = "INSERT INTO questions (uuid, text, explaination, note, is_multichoice) VALUES (%s, %s, %s, %s, %s)"
+        question_insert_query = "INSERT INTO questions (uuid, text, explanation, note, is_multichoice) VALUES (%s, %s, %s, %s, %s)"
         self.cursor.execute(
             question_insert_query,
-            (get_uuid(), question_text, explaination, note, is_multichoice),
+            (get_uuid(), question_text, explanation, note, is_multichoice),
         )
 
         question_id = self.cursor.lastrowid

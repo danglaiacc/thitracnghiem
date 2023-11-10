@@ -52,7 +52,7 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
     </div>
     <div class="question--number d-flex align-items-center my-2">
         <h5
-            class="d-inline-block mb-0 {{ $isShowExplaination ? ($questions[$currentQuestionIndex]['is_submit_correct'] ? 'text-success' : 'text-danger') : '' }}">
+            class="d-inline-block mb-0 {{ $isShowExplanation ? ($questions[$currentQuestionIndex]['is_submit_correct'] ? 'text-success' : 'text-danger') : '' }}">
             Question {{ $currentQuestionIndex + 1 }} / {{ $totalQuestion }}
         </h5>
 
@@ -70,12 +70,12 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
     </div>
 
     <form id="form--answer" wire:submit.prevent="submitAnswer" wire:key="{{ $currentQuestionIndex }}">
-        <fieldset {{ $isShowExplaination ? 'disabled' : '' }}>
+        <fieldset {{ $isShowExplanation ? 'disabled' : '' }}>
 
             @foreach ($currentQuestion['options'] as $index => $option)
                 <?php
                 $border = '';
-                if ($isShowExplaination) {
+                if ($isShowExplanation) {
                     if ($option['is_correct']) {
                         $border = 'border-success';
                     } elseif (in_array($option['id'], $selectedOptions)) {
@@ -110,7 +110,7 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
             <button class="btn btn-danger" wire:click.prevent="addToHardQuestion">
                 Add to hard
             </button>
-            @if (!$isShowExplaination)
+            @if (!$isShowExplanation)
                 <button class="btn btn-success" type="submit" form="form--answer">
                     Check
                 </button>
@@ -133,7 +133,7 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
         </div>
     @endif
 
-    @if ($isShowExplaination)
+    @if ($isShowExplanation)
         <div class="explanation" target="_blank">
             @if ($questions[$currentQuestionIndex]['is_submit_correct'])
                 <div class="p-3 mt-2 bg-success text-white">
@@ -146,7 +146,7 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
             @endif
 
             <p>
-                {!! $currentQuestion['explaination'] !!}
+                {!! $currentQuestion['explanation'] !!}
             </p>
         </div>
     @endif

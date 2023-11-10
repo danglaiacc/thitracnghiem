@@ -135,7 +135,7 @@ class ReviewModeTest extends BaseTestcase
         $component->assertSet('selectedOptions', [$this->option13->id, $this->option12->id]);
     }
 
-    public function test_show_explaination_when_come_back_previous_question()
+    public function test_show_explanation_when_come_back_previous_question()
     {
         $this->createExamAndQuestion();
         Livewire::test(ReviewMode::class, [

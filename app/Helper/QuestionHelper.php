@@ -25,7 +25,7 @@ class QuestionHelper
                 'id' => $question->id,
                 'uuid' => $question->uuid,
                 'text' => $question->text,
-                'explaination' => $question->explaination,
+                'explanation' => $question->explanation,
                 'is_multichoice' => $question->is_multichoice,
                 'exam_id' => $question->exam_id,
                 'options' => $options,

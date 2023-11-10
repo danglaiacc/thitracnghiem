@@ -10,7 +10,7 @@ class Udemy(WebFactory):
         return '.mc-quiz-question--question-prompt--2_dlz'
 
     @property
-    def explaination_text_class(self):
+    def explanation_text_class(self):
         return 'div[class^="mc-quiz-question--explanation"]'
 
     @property
@@ -49,7 +49,7 @@ class Udemy(WebFactory):
             option = option.replace(remove_option_string, '')
         return option
 
-    def transform_explaination(self, explaination: str):
+    def transform_explanation(self, explanation: str):
         remove_strings = [
             ' class="rt-scaffolding" data-purpose="safely-set-inner-html:rich-text-viewer:html" id="question-explanation"',
             ' class="mc-quiz-question--explanation--Q5KHQ"',
@@ -59,8 +59,8 @@ class Udemy(WebFactory):
         ]
 
         for remove_string in remove_strings:
-            explaination = explaination.replace(
+            explanation = explanation.replace(
                 remove_string,
                 ''
             )
-        return explaination
+        return explanation

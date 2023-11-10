@@ -17,7 +17,7 @@ use App\Enums\DbStatus;
                             placeholder="Question text"> </textarea>
 
                         <textarea rows="1" type="text" class="form-control mt-2"
-                            wire:model="questions.{{ $questionIndex }}.explaination" placeholder="Explaination text"> </textarea>
+                            wire:model="questions.{{ $questionIndex }}.explanation" placeholder="Explanation text"> </textarea>
                     </div>
                     <div class="card-body">
                         @foreach ($question['options'] as $optionIndex => $option)
