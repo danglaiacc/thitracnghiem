@@ -99,6 +99,7 @@ class Upsert extends Component
         $numberDeleteQuestion = count($this->removeQuestionUuids);
         $numberAddQuestion = $numberUpdateQuestion = 0;
         foreach ($this->questions as $questionIndex => $question) {
+            $originalQuestion = $this->originalQuestions[$questionIndex];
             if ($question['db_status'] == DbStatus::CREATE) {
                 $numberAddQuestion++;
                 $this->insertQuestion($question);
@@ -108,8 +109,8 @@ class Upsert extends Component
             $question['explaination'] = trim($question['explaination']);
 
             if (
-                $question['text'] != $this->originalQuestions[$questionIndex]['text'] ||
-                $question['explaination'] != $this->originalQuestions[$questionIndex]['explaination']
+                $question['text'] != $originalQuestion['text'] ||
+                $question['explaination'] != $originalQuestion['explaination']
             ) {
                 $numberUpdateQuestion++;
                 Question::where('id', $question['id'])
@@ -117,6 +118,21 @@ class Upsert extends Component
                         'text' => $question['text'],
                         'explaination' => $question['explaination'],
                     ]);
+            }
+
+            foreach ($question['options'] as $optionIndex => $option) {
+                $option['text'] = trim($option['text']);
+                $originalOption = $originalQuestion['options'][$optionIndex];
+                if (
+                    $option['text'] != $originalOption['text'] ||
+                    $option['is_correct'] != $originalOption['is_correct']
+                ){
+                    Option::where('id', $originalOption['id'])
+                        ->update([
+                            'text' => $option['text'],
+                            'is_correct' => $option['is_correct'],
+                        ]);
+                }
             }
         }
 
