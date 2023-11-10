@@ -65,3 +65,7 @@ p {
 .exam.upsert .questions--card {
     margin-bottom: 60px;
 }
+
+.exam.upsert .questions--card .question--actions > button{
+    margin-right: 5px;
+}

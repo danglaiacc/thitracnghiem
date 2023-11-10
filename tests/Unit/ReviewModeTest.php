@@ -4,7 +4,6 @@ namespace Tests\Unit;
 
 use App\Enums\ResultMessage;
 use App\Livewire\ReviewMode;
-use App\Models\UserExam;
 use Livewire\Livewire;
 
 class ReviewModeTest extends BaseTestcase

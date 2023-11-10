@@ -12,6 +12,8 @@ class Upsert extends Component
     public Exam $exam;
     public $questions;
 
+    private $changeQuestions, $changeOptions, $removedQuestionUuid;
+
     protected $rules = [
         'questions.*.text' => 'required|string',
         'questions.*.explaination' => 'required|string',
@@ -22,6 +24,9 @@ class Upsert extends Component
     public function mount()
     {
         $this->questions = $this->exam->questions;
+        $this->changeQuestions = [];
+        $this->changeOptions = [];
+        $this->removedQuestionUuid = [];
     }
 
     public function addQuestion()
@@ -36,12 +41,22 @@ class Upsert extends Component
         $this->addOption($newQuestionIndex);
     }
 
+    public function saveExam()
+    {
+    }
+
     public function addOption($questionIndex)
     {
         $this->questions[$questionIndex]['options'][] = Option::factory([
             'text' => '',
             'is_correct' => false,
         ])->make();
+    }
+
+    public function removeQuestion(string $questionUuid, int $questionIndex)
+    {
+        $this->removedQuestionUuid[] = $questionUuid;
+        unset($this->questions[$questionIndex]);
     }
 
     public function render()
