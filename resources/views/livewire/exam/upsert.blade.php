@@ -17,7 +17,7 @@
                             <div class="d-flex align-items-center mb-2">
                                 <input type="checkbox" class="form-check-input me-2"
                                     wire:model="questions.{{ $questionIndex }}.options.{{ $optionIndex }}.is_correct"
-                                    {{ $option->is_correct == 1 ? 'checked' : '' }}>
+                                    {{ $option['is_correct'] == 1 ? 'checked' : '' }}>
                                 <textarea rows="1" type="text" wire:model="questions.{{ $questionIndex }}.options.{{ $optionIndex }}.text"
                                     placeholder="Option text" class="form-control"> </textarea>
                             </div>
@@ -28,7 +28,7 @@
                                 Add option
                             </button>
                             <button type="button" class="btn btn-danger"
-                                wire:click="removeQuestion('{{$question->uuid}}', {{ $questionIndex }})">
+                                wire:click="removeQuestion('{{$question['uuid']}}', {{ $questionIndex }})">
                                 Remove question
                             </button>
                         </div>
@@ -43,7 +43,7 @@
         <button type="button" class="btn btn-warning" wire:click="addQuestion">
             Add question
         </button>
-        <button type="submit" form="questions-from" class="btn btn-success" wire:click="save">
+        <button type="submit" form="questions-from" class="btn btn-success">
             Save
         </button>
     </div>
