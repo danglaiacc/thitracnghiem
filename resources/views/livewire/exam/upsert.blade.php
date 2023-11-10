@@ -5,7 +5,7 @@ use App\Enums\DbStatus;
     <h1> {{ $exam->name }} </h1>
 
     <div class="question--card">
-        <form wire:submit="saveExam" id="questions-from" wire:loading.attr="disabled">
+        <form wire:submit.prevent="saveExam" id="questions-from" wire:loading.attr="disabled">
             @foreach ($questions as $questionIndex => $question)
                 @if ($question['db_status'] == DbStatus::DELETE)
                     @continue
@@ -51,7 +51,7 @@ use App\Enums\DbStatus;
 
         <div>
             @if (session()->has('updateExamMessage'))
-                <div class="alert alert-success p-1 m-0 bg-transparent">
+                <div class="text-success p-1 m-0 bg-transparent">
                     {{ session('updateExamMessage') }}
                 </div>
             @endif

@@ -97,23 +97,33 @@ class Upsert extends Component
     public function saveExam()
     {
         $numberDeleteQuestion = count($this->removeQuestionUuids);
-        $numberAddQuestion = 0;
-        foreach ($this->questions as $question) {
-            switch ($question['db_status']) {
-                case DbStatus::CREATE:
-                    $numberAddQuestion++;
-                    $this->insertQuestion($question);
-                    break;
-                default:
-                    # code...
-                    break;
+        $numberAddQuestion = $numberUpdateQuestion = 0;
+        foreach ($this->questions as $questionIndex => $question) {
+            if ($question['db_status'] == DbStatus::CREATE) {
+                $numberAddQuestion++;
+                $this->insertQuestion($question);
+                continue;
+            }
+            $question['text'] = trim($question['text']);
+            $question['explaination'] = trim($question['explaination']);
+
+            if (
+                $question['text'] != $this->originalQuestions[$questionIndex]['text'] ||
+                $question['explaination'] != $this->originalQuestions[$questionIndex]['explaination']
+            ) {
+                $numberUpdateQuestion++;
+                Question::where('id', $question['id'])
+                    ->update([
+                        'text' => $question['text'],
+                        'explaination' => $question['explaination'],
+                    ]);
             }
         }
 
         if ($numberDeleteQuestion > 0)
             Question::whereIn('uuid', $this->removeQuestionUuids)->delete();
 
-        session()->flash('updateExamMessage', "Add $numberAddQuestion question, update 1 question, delete=$numberDeleteQuestion");
+        session()->flash('updateExamMessage', "Add $numberAddQuestion question, update $numberUpdateQuestion question, delete=$numberDeleteQuestion");
     }
 
     private function insertQuestion($question)
