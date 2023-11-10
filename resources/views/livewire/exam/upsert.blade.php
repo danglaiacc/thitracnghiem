@@ -17,7 +17,8 @@
                     @foreach ($question['options'] as $optionIndex => $option)
                         <div class="d-flex align-items-center mb-2">
                             <input type="checkbox" class="form-check-input me-2"
-                                wire:model="questions.{{ $questionIndex }}.options.{{ $optionIndex }}.is_correct">
+                                wire:model="questions.{{ $questionIndex }}.options.{{ $optionIndex }}.is_correct" {{$option->is_correct == 1 ? 'checked' : ''}}
+                                >
                             <textarea rows="1" type="text" wire:model="questions.{{ $questionIndex }}.options.{{ $optionIndex }}.text"
                                 placeholder="Option text" class="form-control">
                             </textarea>
