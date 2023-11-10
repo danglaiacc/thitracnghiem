@@ -70,7 +70,15 @@ class Upsert extends Component
     {
         $numberDeleteQuestion = count($this->removeQuestionUuids);
         $numberAddQuestion = $numberUpdateQuestion = 0;
+
+        if ($numberDeleteQuestion > 0)
+            Question::whereIn('uuid', $this->removeQuestionUuids)->delete();
+
+        $fileContent = [];
         foreach ($this->questions as $questionIndex => $question) {
+            $question['text'] = trim($question['text']);
+            $question['explanation'] = trim($question['explanation']);
+
             if ($question['db_status'] == DbStatus::CREATE) {
                 $numberAddQuestion++;
                 $this->insertQuestion($question);
@@ -91,9 +99,16 @@ class Upsert extends Component
             }
 
             $numberCorrectAnswer = 0;
+            $fileContentAnswers = [];
+            $correctAnswers = [];
             foreach ($question['options'] as $optionIndex => $option) {
                 $option['text'] = trim($option['text']);
-                $option['is_correct'] && $numberCorrectAnswer++;
+                $fileContentAnswers[] = $option['text'];
+
+                if ($option['is_correct']) {
+                    $numberCorrectAnswer++;
+                    $correctAnswers[] = chr(97 + $optionIndex);
+                }
 
                 // insert option
                 if ($option['db_status'] == DbStatus::CREATE) {
@@ -125,12 +140,24 @@ class Upsert extends Component
             if ($numberCorrectAnswer == 1 && $question['is_multichoice'] == 1) {
                 Question::where('id', $question['id'])->update(['is_multichoice' => 0]);
             }
+
+            $fileContent[] = [
+                'prompt' => [
+                    'question' => $question['text'],
+                    'explanation' => $question['explanation'],
+                    'answers' => $fileContentAnswers,
+                ],
+                'correct_response' => $correctAnswers,
+            ];
         }
 
-        if ($numberDeleteQuestion > 0)
-            Question::whereIn('uuid', $this->removeQuestionUuids)->delete();
-
         session()->flash('updateExamMessage', "Add $numberAddQuestion question, update $numberUpdateQuestion question, delete=$numberDeleteQuestion");
+
+        $filePath = '/Users/lai/Desktop/thi-trac-nghiem/raw-data/lai-aws-dea.data';
+        // write to file
+        file_put_contents($filePath, hexdec(uniqid()) . PHP_EOL . '~~~' . PHP_EOL . json_encode([
+            'results' => $fileContent,
+        ]));
     }
 
     private function insertQuestion($question)
@@ -140,9 +167,9 @@ class Upsert extends Component
         );
         $createdQuestion = Question::create([
             'uuid' => Str::uuid(),
-            'text' => trim($question['text']),
+            'text' => $question['text'],
             'is_multichoice' => $numberCorrectAnswer > 1,
-            'explanation' => trim($question['explanation']),
+            'explanation' => $question['explanation'],
         ]);
         ExamQuestion::create([
             'exam_id' => $this->exam->id,
