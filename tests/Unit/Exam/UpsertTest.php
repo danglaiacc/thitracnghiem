@@ -177,7 +177,7 @@ class UpsertTest extends BaseTestcase
         $this->assertDatabaseHas('questions', [
             'id' => $this->question2->id,
             'is_multichoice' => 1,
-            'text'=> "question 2 updated text",
+            'text' => "question 2 updated text",
         ]);
         $this->assertDatabaseHas('options', [
             'id' => $this->option22->id,
@@ -197,6 +197,36 @@ class UpsertTest extends BaseTestcase
             'text' => 'question 2 option 5 true created',
             'is_correct' => 1,
             'question_id' => $this->question2->id,
+        ]);
+    }
+
+    public function test_upsert_test_update_question_from_multi_choice_to_single_choice()
+    {
+        $this->createExamAndQuestion();
+
+        $fakeQuestion = QuestionHelper::transformQuestions([
+            $this->question1,
+            $this->question2,
+        ]);
+
+        $fakeQuestion[0]['options'][0]['text'] = 'question 1 option 1 false updated';
+        $fakeQuestion[0]['options'][0]['is_correct'] = 0;
+
+        $component = Livewire::test(Upsert::class, [
+            "exam" => $this->exam
+        ])
+            ->set('questions', $fakeQuestion)
+            ->call('saveExam');
+
+        $this->assertDatabaseHas('questions', [
+            'id' => $this->question1->id,
+            'is_multichoice' => 0,
+        ]);
+        $this->assertDatabaseHas('options', [
+            'id' => $this->option11->id,
+            'text' => 'question 1 option 1 false updated',
+            'is_correct' => 0,
+            'question_id' => $this->question1->id,
         ]);
     }
 }
