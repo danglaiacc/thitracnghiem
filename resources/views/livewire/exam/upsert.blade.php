@@ -1,27 +1,11 @@
 <div>
-    {{-- Because she competes with no one, no one can compete with her. --}}
     <h1> {{ $exam->name }} </h1>
-
-    {{-- @foreach ($questions as $questionIndex => $question)
-        <p>
-            <input type="text" wire:model="questions.{{ $questionIndex }}.text">
-        </p>
-        <span>
-            {{$questions[$questionIndex]->text}}
-        </span>
-
-        @foreach ($question->options as $optionIndex => $option)
-            <p>
-                <input type="text" wire:model="question.options.{{$optionIndex}}.text">
-            </p>
-        @endforeach
-    @endforeach --}}
 
     @foreach ($questions as $questionIndex => $question)
         <div class="card mt-2">
             <div class="card-header">
-                <input type="text" name="questions[{{ $questionIndex }}][title]"
-                    wire:model="questions.{{ $questionIndex }}.title" placeholder="Question title">
+                <input type="text" name="questions[{{ $questionIndex }}][text]"
+                    wire:model="questions.{{ $questionIndex }}.text" placeholder="Question text">
                     <br>
             </div>
             <div class="card-body">
