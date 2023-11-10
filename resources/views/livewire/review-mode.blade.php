@@ -4,7 +4,7 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
 ?>
 @section('title', $exam->name)
 
-<div class="question">
+<div class="take-exam">
     <div class="d-flex justify-content-between">
         <h2>{{ $exam->name }}</h2>
         <div class="d-flex align-items-center">
