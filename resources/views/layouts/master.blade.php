@@ -10,6 +10,7 @@
         type="image/png">
     <link href="{{ url('css/bootstrap.5.3.2.min.css') }}" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="{{ url('css/app.css') }}" type="text/css"/>
+    <link rel="stylesheet" href="{{ url('css/color.css') }}" type="text/css"/>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
     {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> --}}
