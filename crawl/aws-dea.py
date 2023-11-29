@@ -23,18 +23,6 @@ a = Udemy(
         6104092,
         6111610,
         6111614,
-    ],
-    exam_time=180,
-    subject_id=subject_id,
-    raw_data_path=raw_data_path,
-    is_data_from_api=is_data_from_api,
-)
-a.run()
-
-a = Udemy(
-    thumbnail=f"images/{key}-3.jpeg",
-    exam_name=key.upper() + " Udemy 2",
-    quizz_ids=[
         6134598,
         6134600,
         6134610,
