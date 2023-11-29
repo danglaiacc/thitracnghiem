@@ -191,6 +191,8 @@ class ApiFactory(ABC):
             self.img_folder,
         )
 
+        explanation = explanation.replace('<a ', '<a target="_blank" ')
+
         # insert to question
         question_insert_query = "INSERT INTO questions (uuid, text, explanation, note, is_multichoice) VALUES (%s, %s, %s, %s, %s)"
         self.cursor.execute(
