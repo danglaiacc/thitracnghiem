@@ -165,7 +165,7 @@ class ReviewMode extends Component
 
         // remove pivot key and shuffle options
         return array_map(
-            function ($question) use ($allowShuffle){
+            function ($question) use ($allowShuffle) {
                 unset($question['pivot']);
                 // just shuffle options when allow shuffle
                 $allowShuffle && shuffle($question['options']);
@@ -232,6 +232,8 @@ class ReviewMode extends Component
 
         if ($isCorrectAnswer) {
             $this->totalCorrectAnswer++;
+        } else {
+            $this->addToHardQuestion();
         }
     }
 

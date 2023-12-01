@@ -33,3 +33,32 @@ a = Udemy(
     is_data_from_api=is_data_from_api,
 )
 a.run()
+
+subject_id = create_subject("AWS Data Engineer - Associate 2")
+
+key = "aws-dea"
+is_data_from_api = False
+
+# remove raw data file
+raw_data_path = os.path.join(os.getcwd(), "raw-data", f"{key}-udemy-2.data")
+
+if is_data_from_api:
+    renew_file(raw_data_path)
+
+a = Udemy(
+    thumbnail=f"images/{key}-4.jpeg",
+    exam_name=key.upper() + " Udemy 1",
+    quizz_ids=[
+        6120218,
+        6120220,
+        6120222,
+        6120224,
+        6120226,
+        6120228,
+    ],
+    exam_time=180,
+    subject_id=subject_id,
+    raw_data_path=raw_data_path,
+    is_data_from_api=is_data_from_api,
+)
+a.run()
