@@ -54,6 +54,7 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
         <h5
             class="d-inline-block mb-0 {{ $isShowExplanation ? ($questions[$currentQuestionIndex]['is_submit_correct'] ? 'text-success' : 'text-danger') : '' }}">
             Question {{ $currentQuestionIndex + 1 }} / {{ $totalQuestion }}
+            {{$currentQuestion['id']}}
         </h5>
 
         <a href="#" class="pe-auto ms-2">

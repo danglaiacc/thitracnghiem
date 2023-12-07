@@ -62,3 +62,19 @@ a = Udemy(
     is_data_from_api=is_data_from_api,
 )
 a.run()
+
+# add real exam
+raw_data_path = os.path.join(os.getcwd(), "raw-data", f"{key}-udemy-3.data")
+
+a = Udemy(
+    thumbnail=f"images/{key}-1.jpeg",
+    exam_name=key.upper() + " Real Exam",
+    quizz_ids=[
+        6141676,
+    ],
+    exam_time=60,
+    subject_id=subject_id,
+    raw_data_path=raw_data_path,
+    is_data_from_api=is_data_from_api,
+)
+a.run()

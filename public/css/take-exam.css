@@ -41,6 +41,11 @@
     max-width: 100%;
 }
 
+.take-exam .question-cards {
+    max-height: 105px;
+    overflow: auto;
+}
+
 .take-exam .question-cards button {
     width: 45px;
     height: 45px;
