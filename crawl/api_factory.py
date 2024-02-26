@@ -6,17 +6,23 @@ import os
 import json
 from utils import get_uuid, get_correct_answer_index, download_images, uuid4
 from key import config_init
+from dotenv import load_dotenv
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+dotenv_path = os.path.join(parent_dir, ".env")
+load_dotenv(dotenv_path)
 
 
 img_url_pattern = re.compile(
     r"(?P<url>https:\/\/.*\/(?P<filename>.*?(?:\bimg|png|jpeg|jpg\b)))"
 )
 connection_params = {
-    "host": "localhost",
-    "port": 3306,
-    "user": "root",
-    "password": "root",
-    "database": "exam",
+    "host": os.getenv("DB_HOST"),
+    "port": os.getenv("DB_PORT"),
+    "user": os.getenv("DB_USERNAME"),
+    "password": os.getenv("DB_PASSWORD"),
+    "database": os.getenv("DB_DATABASE"),
     # "host": "thi-trac-nghiem.mysql.database.azure.com",
     # "port": 3306,
     # "user": "lai",
@@ -93,9 +99,9 @@ class ApiFactory(ABC):
     def get_data_from_api(self, quizz_id: int):
         config = config_init[self.config_key]
         response = requests.get(
-            url=config['url'].format(quizz_id),
-            cookies=config['cookies'],
-            headers=config['headers'],
+            url=config["url"].format(quizz_id),
+            cookies=config["cookies"],
+            headers=config["headers"],
         ).json()
         with open(self.raw_data_path, "a") as file:
             file.write(str(quizz_id) + "\n~~~\n" + json.dumps(response) + "\n")
@@ -191,7 +197,7 @@ class ApiFactory(ABC):
             self.img_folder,
         )
 
-        explanation = explanation.replace('<a ', '<a target="_blank" ')
+        explanation = explanation.replace("<a ", '<a target="_blank" ')
 
         # insert to question
         question_insert_query = "INSERT INTO questions (uuid, text, explanation, note, is_multichoice) VALUES (%s, %s, %s, %s, %s)"
