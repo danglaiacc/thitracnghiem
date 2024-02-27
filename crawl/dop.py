@@ -21,7 +21,7 @@ for index, path in enumerate(file_paths):
         file_path=path,
         thumbnail='images/aws-dop-tutorial-dojo.jpeg',
         subject_id=subject_id,
-        exam_name=f"SAP Tutorial {index}",
+        exam_name=f"AWS DOP Tutorial {index}",
         exam_time=180,
     )
     u.run()

@@ -210,7 +210,7 @@ class ReviewMode extends Component
             );
             $examQuestion->save();
             session()->flash('background', 'success');
-            session()->flash('message', 'OK');
+            session()->flash('message', 'Inserted this question to "hard exam"');
         } else {
             session()->flash('background', 'warning');
             session()->flash('message', 'Question has been exsited.');
