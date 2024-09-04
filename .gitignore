@@ -7,7 +7,7 @@
 /storage/*.key
 /storage/debugbar*
 /vendor
-.env
+# .env
 .env.backup
 .env.production
 .phpunit.result.cache
@@ -19,6 +19,7 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+*.lock
 
 .DS_Store
 *.swp

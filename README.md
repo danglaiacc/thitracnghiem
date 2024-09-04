@@ -8,6 +8,17 @@ IS_PROD_DB=false
 and run seeder again
 
 ## Run step
+### new
+```bash
+docker-compose up -d
+docker-compose exec php bash
+php artisan key:generate
+php artisan migrate:fresh --seed
+exit
+
+```
+
+### old
 ```sh
 pip install mysql-connector-python
 composer install
