@@ -1,9 +1,10 @@
-from abc import ABC, abstractmethod
-from bs4 import BeautifulSoup
-from mysql import connector
-from uuid import uuid4
 import os
+from abc import ABC, abstractmethod
+from uuid import uuid4
+
+from bs4 import BeautifulSoup
 from dotenv import load_dotenv
+from mysql import connector
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
@@ -16,7 +17,7 @@ def get_uuid():
 
 
 connection_params = {
-    "host": os.getenv("DB_HOST"),
+    "host": os.getenv("DB_HOST2"),
     "port": os.getenv("DB_PORT"),
     "user": os.getenv("DB_USERNAME"),
     "password": os.getenv("DB_PASSWORD"),
@@ -71,7 +72,7 @@ class WebFactory(ABC):
         self.cursor = self.conn.cursor()
 
     def read_source(self):
-        with open(self.file_path, "r") as file:
+        with open(self.file_path, "r", encoding='cp437') as file:
             html_content = file.read()
 
         return BeautifulSoup(html_content, "html.parser")
