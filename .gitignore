@@ -30,3 +30,4 @@ tst*
 
 .composer
 venv
+.config
