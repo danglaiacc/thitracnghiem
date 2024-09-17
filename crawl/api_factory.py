@@ -1,12 +1,13 @@
-from abc import ABC, abstractmethod
-from mysql import connector
-import requests
-import re
-import os
 import json
-from utils import get_uuid, get_correct_answer_index, download_images, uuid4
-from key import config_init
+import os
+import re
+from abc import ABC, abstractmethod
+
+import requests
 from dotenv import load_dotenv
+from key import config_init
+from mysql import connector
+from utils import download_images, get_correct_answer_index, get_uuid, uuid4
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
@@ -18,7 +19,7 @@ img_url_pattern = re.compile(
     r"(?P<url>https:\/\/.*\/(?P<filename>.*?(?:\bimg|png|jpeg|jpg\b)))"
 )
 connection_params = {
-    "host": os.getenv("DB_HOST"),
+    "host": os.getenv("DB_HOST2"),
     "port": os.getenv("DB_PORT"),
     "user": os.getenv("DB_USERNAME"),
     "password": os.getenv("DB_PASSWORD"),
