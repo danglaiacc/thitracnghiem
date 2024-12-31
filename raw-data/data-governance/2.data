@@ -1,0 +1,1130 @@
+{
+    "count": 40,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "_class": "assessment",
+            "id": 96936463,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What functions do data models serve in effective data management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data models serve in effective data management, including providing a common vocabulary around data, capturing and documenting explicit knowledge about an organization's data and systems, serving as a primary communications tool during projects, and providing the starting point for customization, integration, or replacement of an application.</p><p>Source: Chapter 5 Data Modeling and Design - 1.1 Business Drivers (page 123)</p>",
+                "answers": [
+                    "<p>Provide a common vocabulary around data</p>",
+                    "<p>Capture and document explicit knowledge about an organization's data and systems</p>",
+                    "<p>Serve as a primary communications tool during projects</p>",
+                    "<p>Provide the starting point for customization, integration, or replacement of an application</p>",
+                    "<p>All of the above</p>"
+                ]
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "Data Modeling and Design",
+            "question_plain": "What functions do data models serve in effective data management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936461,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of data models in the context of data management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data modeling is the process of discovering, analyzing, and scoping data requirements, as well as representing and communicating these data requirements. Therefore, the purpose of data models includes analyzing data requirements, communicating data requirements, and discovering how data fits together. All these aspects contribute to the overall role of data models in data management.</p><p>Source: Chapter 5 Data Modeling and Design - 1. Introduction&nbsp; (page 121)</p>",
+                "answers": [
+                    "<p>To analyze data requirements</p>",
+                    "<p>To communicate data requirements</p>",
+                    "<p>To discover how data fits together</p>",
+                    "<p>All of the above</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Modeling and Design",
+            "question_plain": "What is the purpose of data models in the context of data management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936499,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a Key Logger?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Key Logger is a type of attack software that records all keystrokes and sends them elsewhere on the Internet.</p><p>Source: Chapter 7&nbsp;Data&nbsp;Security - 1.3.10.8 Key Logger (page 214)</p>",
+                "answers": [
+                    "<p>A type of keyboard used for recording keystrokes.</p>",
+                    "<p>A software that enhances keyboard functionality.</p>",
+                    "<p>A tool used by website developers to track user interactions.</p>",
+                    "<p>A type of attack software that records all keystrokes and sends them elsewhere on the Internet.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Security",
+            "question_plain": "What is a Key Logger?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936497,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a threat in the context of information security?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>DMBOK defines a threat as a potential offensive action that could be taken against an organization, noting that threats can be internal or external and are not always malicious.</p><p>Source:&nbsp;Chapter 7&nbsp;Data&nbsp;Security - 1.3.2 Threat (page 214)</p>",
+                "answers": [
+                    "<p>A potential offensive action that can only be external and always malicious.</p>",
+                    "<p>A specific vulnerability that can be prioritized for remediation.</p>",
+                    "<p>An occurrence of a vulnerability leading to compromised system integrity.</p>",
+                    "<p>A potential offensive action that could be taken against an organization, which can be internal or external and not always malicious.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Security",
+            "question_plain": "What is a threat in the context of information security?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936495,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a vulnerability in the context of information security?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>DMBOK defines vulnerability as a defect or weakness in a system that allows it to be successfully attacked and compromised.</p><p>Source: Chapter 7 Data&nbsp;Security - 1.3.1 Vulnerability (page 214)</p><p><br></p>",
+                "answers": [
+                    "<p>A strength or advantage in a system that enhances its security.</p>",
+                    "<p>A term used interchangeably with exploits to describe system weaknesses.</p>",
+                    "<p>A robust password architecture for data assets.</p>",
+                    "<p>A defect or weakness in a system that allows it to be successfully attacked and compromised.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Security",
+            "question_plain": "What is a vulnerability in the context of information security?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936493,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a guiding principle for data security in an organization?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The principle of an enterprise approach, stating that data security standards and policies must be applied consistently across the entire organization.</p><p>Source: Chapter 7 Data&nbsp;Security - 1.2.2 Principles (page 214)</p>",
+                "answers": [
+                    "<p>Isolation: Keep data security responsibilities separate from other organizational functions.</p>",
+                    "<p>Reactive Management: Address data security issues as they arise, without proactively managing change.</p>",
+                    "<p>Enterprise Approach: Apply data security standards and policies inconsistently across different organizational units.</p>",
+                    "<p>Non-collaborative Effort: Exclude legal departments and audit teams from data security considerations.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Security",
+            "question_plain": "What is a guiding principle for data security in an organization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936491,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the goals of data security activities?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The goals of data security activities as enabling compliance with regulations and policies for privacy, protection, and confidentiality; ensuring stakeholder trust; and preventing inappropriate access.</p><p>Source:&nbsp;Chapter 7 Data&nbsp;Security - 1.2 Goals and Principles (page 214)</p>",
+                "answers": [
+                    "<p>Enabling appropriate access, ensuring stakeholder trust, and avoiding compliance with regulations.</p>",
+                    "<p>Enabling inappropriate access, preventing compliance with regulations, and ignoring privacy policies.</p>",
+                    "<p>Enabling compliance with regulations and policies, ensuring stakeholder trust, and preventing inappropriate access.</p>",
+                    "<p>Enabling inappropriate access, avoiding compliance with regulations, and ensuring stakeholder trust.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Security",
+            "question_plain": "What are the goals of data security activities?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936489,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>How can the use of Metadata in managing sensitive data contribute to data protection and lower costs?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Developing a master repository of data characteristics with a common standard, including security classifications and regulatory sensitivity through Metadata, enables various departments and business units to use the same Metadata. This common approach optimizes data protection, guides business usage, and leads to lower costs.</p><p>Source:&nbsp;Chapter 7 Data&nbsp;Security - 1.1.3 Security as an Asset (page 211)</p>",
+                "answers": [
+                    "<p>Enforcing different Metadata standards across departments and business units.</p>",
+                    "<p>Tagging data with Metadata only at the data element level.</p>",
+                    "<p>Developing a master repository of data characteristics with a common standard.</p>",
+                    "<p>Avoiding the use of Metadata in data protection processes.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Security",
+            "question_plain": "How can the use of Metadata in managing sensitive data contribute to data protection and lower costs?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936487,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the recommended approach to addressing data security to avoid increased overall cost and inconsistent protection?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>It is best to address data security as an enterprise initiative. Without a coordinated effort, implementing different solutions across business units can increase overall cost and potentially reduce security due to inconsistent protection. Therefore, the recommended approach is to address data security as an enterprise initiative to ensure a coordinated and consistent effort.</p><p>Source: Chapter 7&nbsp;Data Security - 1.1 Business Drivers (page 211)</p>",
+                "answers": [
+                    "<p>Implement different solutions for security needs in each business unit.</p>",
+                    "<p>Treat data security as an add on service that is not mandatory for each business unit.</p>",
+                    "<p>Task individual business units to independently manage security.</p>",
+                    "<p>Address data security as an enterprise initiative.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Security",
+            "question_plain": "What is the recommended approach to addressing data security to avoid increased overall cost and inconsistent protection?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936485,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a potential consequence of data breaches?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data breaches can cause a loss of reputation and customer confidence.</p><p>Source: Chapter 7 Daat Security - 1.1 Business Drivers (page 211)</p>",
+                "answers": [
+                    "<p>Increased customer confidence</p>",
+                    "<p>Loss of reputation</p>",
+                    "<p>Enhanced business growth</p>",
+                    "<p>Regulatory compliance rewards</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Security",
+            "question_plain": "What is a potential consequence of data breaches?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936483,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is as a crucial aspect of effective data security policies and procedures?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>DMBOK highlights that effective data security policies and procedures ensure the right people can use and update data appropriately, and inappropriate access is restricted. The central idea is understanding and complying with the privacy and confidentiality interests of stakeholders.</p><p>Source: Chapter 7 Data Security - 1.&nbsp;Introduction (page 209)</p>",
+                "answers": [
+                    "<p>Recognizing and complying with privacy and confidentiality interests of stakeholders.</p>",
+                    "<p>Deleting stakeholder unused accounts that hold data</p>",
+                    "<p>Hiring data security analysts</p>",
+                    "<p>Consulting with external data security consultants</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Data Security",
+            "question_plain": "What is as a crucial aspect of effective data security policies and procedures?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936479,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which design principle emphasizes the need to ensure that the cost of creating, storing, maintaining, using, and disposing of data does not exceed its value to the organization?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The design principle of Maintainability, which emphasizes performing all data work at a cost that yields value. It ensures that the cost of various aspects related to data (creation, storage, maintenance, usage, and disposal) does not exceed its value to the organization.</p><p>Source: Chapter 5 Data Modeling and&nbsp;Design - 4.2 Best Practices in Database Design (page 158)</p>",
+                "answers": [
+                    "<p>Performance and ease of use</p>",
+                    "<p>Reusability</p>",
+                    "<p>Integrity</p>",
+                    "<p>Maintainability</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Modeling and Design",
+            "question_plain": "Which design principle emphasizes the need to ensure that the cost of creating, storing, maintaining, using, and disposing of data does not exceed its value to the organization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936477,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What functionality do more sophisticated data modeling tools typically support?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>More sophisticated data modeling tools support forward engineering from conceptual to logical to physical to database structures, allowing the generation of database data definition language (DDL). While entry-level tools provide basic drawing functionality and features like rubber banding, the more advanced tools go beyond these features to support the entire modeling process.</p><p>Source: Chapter 5 Data Modeling and Design - 3.1 Data Modeling Tools (page 155)</p>",
+                "answers": [
+                    "<p>Basic drawing functionality for entities and relationships.</p>",
+                    "<p>Rubber banding for automatic redrawing of relationship lines.</p>",
+                    "<p>Forward engineering from conceptual to logical to physical to database structures.</p>",
+                    "<p>Naming standards validation and spellcheckers.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Modeling and Design",
+            "question_plain": "What functionality do more sophisticated data modeling tools typically support?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936475,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary purpose of a physical data model (PDM)?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A physical data model represents a detailed technical solution, often adapted to work within a set of hardware, software, and network tools. The primary purpose of a physical data model is to design a detailed technical solution that accommodates specific technology limitations.</p><p>Source: Chapter 5 Data Modeling and&nbsp;Design - 1.3.5.3 Physical (page 124)</p>",
+                "answers": [
+                    "<p>To create a conceptual representation of data.</p>",
+                    "<p>To represent business rules governing entity relationships.</p>",
+                    "<p>To design a detailed technical solution adapted to specific technology.</p>",
+                    "<p>To define logical data structures for relational databases.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Modeling and Design",
+            "question_plain": "What is the primary purpose of a physical data model (PDM)?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936473,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Why might a foreign key be created implicitly in relational data modeling schemes?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A foreign key may be created implicitly in relational data modeling schemes to represent a relationship. Additionally, it mentions that the creation of a foreign key depends on the database technology or data modeling tool and the mutual dependencies between the two entities involved. Implicit creation of foreign keys is often associated with representing relationships and enforcing data integrity constraints.</p><p>Source:&nbsp;Chapter 5 Data Modeling and Design - 1.3.3.2.5 Foreign Key (page 124)</p>",
+                "answers": [
+                    "<p>To enhance data retrieval speed.</p>",
+                    "<p>To minimize the use of relationships.</p>",
+                    "<p>To simplify the logical data model.</p>",
+                    "<p>To represent a relationship and enforce data integrity constraints.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Modeling and Design",
+            "question_plain": "Why might a foreign key be created implicitly in relational data modeling schemes?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936471,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does cardinality capture in a relationship between two entities?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Cardinality in a relationship between two entities captures how many instances of one entity (entity instances) participate in the relationship with how many instances of the other entity. Cardinality is represented by symbols on both ends of a relationship line and is crucial for specifying and enforcing data rules.</p><p>Source: Chapter 5 Data Modeling and&nbsp;Design&nbsp;- 1.3.3.2.3 Relationship Cardinality (page 124)</p>",
+                "answers": [
+                    "<p>The physical distance between entities.</p>",
+                    "<p>The type of entities involved in the relationship.</p>",
+                    "<p>How many instances of one entity participate in the relationship with how many instances of the other entity.</p>",
+                    "<p>The time duration of the relationship between entities.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Modeling and Design",
+            "question_plain": "What does cardinality capture in a relationship between two entities?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936469,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a guiding principle for data security in an organization?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The principle of an enterprise approach, stating that data security standards and policies must be applied consistently across the entire organization.</p><p>Source: Chapter 7 Data&nbsp;Security - 1.2.2 Principles (page 214)</p>",
+                "answers": [
+                    "<p>Isolation: Keep data security responsibilities separate from other organizational functions.</p>",
+                    "<p>Reactive Management: Address data security issues as they arise, without proactively managing change.</p>",
+                    "<p>Enterprise Approach: Apply data security standards and policies consistently across different organizational units.</p>",
+                    "<p>Non-collaborative Effort: Exclude legal departments and audit teams from data security considerations.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Security",
+            "question_plain": "What is a guiding principle for data security in an organization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936467,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the main characteristic of Detail transaction information?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Detail transaction information is characterized by its detailed nature, large volume, and/or rapid changes. This type of data is often produced through various systems like point-of-sale systems, social media, internet interactions, and sensors in machines, and it is referred to as Big Data.</p><p>Source: Chapter 5 Data Modeling and&nbsp;Design - 1.3 Essential Concepts (page 124)</p>",
+                "answers": [
+                    "<p>It is primarily used for classification purposes.</p>",
+                    "<p>It includes basic profiles of operational resources.</p>",
+                    "<p>Data created while operational processes are in progress.</p>",
+                    "<p>It is large volume and/or rapidly changing data.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Modeling and Design",
+            "question_plain": "What is the main characteristic of Detail transaction information?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936465,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the goal of data modeling?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The goal of data modeling is to confirm and document understanding of different perspectives. This confirmation and documentation lead to applications that align more closely with current and future business requirements.</p><p>Source: Chapter 5 Data Modeling and&nbsp;Design - 1.2 Goals and Principles (page 167)</p>",
+                "answers": [
+                    "<p>To decrease the admin work</p>",
+                    "<p>To speed up the process of Data&nbsp;Governance</p>",
+                    "<p>To create additional metrics</p>",
+                    "<p>To confirm and document understanding of different perspectives</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Modeling and Design",
+            "question_plain": "What is the goal of data modeling?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936481,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary goal of data security practices?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data security practices is to protect information assets in alignment with privacy and confidentiality regulations, contractual agreements, and business requirements. While recognizing stakeholders' privacy needs and enabling legitimate access are important aspects, the primary goal is to protect information assets in alignment with business requirements.</p><p>Source: Chapter 7 Data Security - 1.Introduction (page 209)</p>",
+                "answers": [
+                    "<p>To protect information assets in alignment with privacy and confidentiality regulations, contractual agreements, and business requirements.</p>",
+                    "<p>To protect third party vendors' data</p>",
+                    "<p>To provide data access to sensitive datasets</p>",
+                    "<p>Leverage data for competitive advantage</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Data Security",
+            "question_plain": "What is the primary goal of data security practices?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936521,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which activities are encompassed by Database Support within Data Storage and Operations?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>DMBOK outlines two sub-activities under Data Storage and Operations: Database Support and Database Technology Support. Let's assess each option:</p><p>a) <strong>Defining technical requirements and architecture:</strong> This is associated with Database Technology Support, not Database Support, which primarily focuses on data lifecycle activities.</p><p>b) <strong>Installing and administering technology:</strong> This pertains to Database Technology Support, as it involves technical requirements, architecture, and technology administration.</p><p>c) <strong>Obtaining, backing up, and purging data:</strong> This is explicitly mentioned as part of Database Support, encompassing activities related to the data lifecycle.</p><p>d) <strong>Resolving issues related to technology:</strong> While issue resolution is a part of both activities, the broader context of defining technical requirements and architecture aligns more closely with Database Technology Support.</p><p>Therefore, the correct answer is c) Obtaining, backing up, and purging data, as these activities are specifically attributed to Database Support within the realm of Data Storage and Operations.</p><p><br></p><p>Source:&nbsp;Chapter 6 Data Storage and Operations&nbsp; - 1. Introduction (page 165)</p>",
+                "answers": [
+                    "<p>Defining technical requirements and architecture</p>",
+                    "<p>Installing and administering technology</p>",
+                    "<p>Obtaining, backing up, and purging data</p>",
+                    "<p>Resolving issues related to technology</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Storage and Operations",
+            "question_plain": "Which activities are encompassed by Database Support within Data Storage and Operations?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936523,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary business driver for Data Storage and Operations activities?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>DMBOK emphasizes that business continuity is the primary driver for Data Storage and Operations activities. Let's evaluate each option:</p><p>a) <strong>Cost optimization:</strong> While cost considerations may be a factor, the text explicitly mentions business continuity as the primary driver, making cost optimization a secondary concern.</p><p>b) <strong>Maximizing data security:</strong> While data security is essential, the highlighted text emphasizes the importance of a reliable data storage infrastructure for IT operations, aligning more closely with business continuity.</p><p>c) <strong>Enhancing data analytics:</strong> The passage does not specifically mention data analytics as the primary driver for Data Storage and Operations activities. Business continuity takes precedence in the given context.</p><p>d) <strong>Business continuity:</strong> The text explicitly states that business continuity is the primary driver for Data Storage and Operations activities. Ensuring systems remain available to prevent disruption is crucial.</p><p><br></p><p>Source: Chapter 6 Data Storage and Operations&nbsp; - 1.1 Business Drivers (page 167)</p>",
+                "answers": [
+                    "<p>Cost optimization</p>",
+                    "<p>Maximizing data security</p>",
+                    "<p>Enhancing data analytics</p>",
+                    "<p>Business continuity</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Storage and Operations",
+            "question_plain": "What is the primary business driver for Data Storage and Operations activities?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936525,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the primary goals of data storage and operations?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><strong>Managing data availability, ensuring data integrity, and managing data transaction performance:</strong> These are explicitly mentioned as the primary goals in the provided text.</p><p><br>Source: Chapter 6 Data Storage and Operations&nbsp; - 1.2 Goals and Principles (page 167)</p>",
+                "answers": [
+                    "<p>Maximizing data security</p>",
+                    "<p>Minimizing data acquisition</p>",
+                    "<p>Managing data availability, ensuring data integrity, and managing data transaction performance</p>",
+                    "<p>None of the above</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Storage and Operations",
+            "question_plain": "What are the primary goals of data storage and operations?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936527,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary function of an identifier in a database?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>An identifier, also known as a key, serves the primary function of uniquely defining an instance of an entity within a database. It provides a way to distinguish one record from another.</p><p><br>Source: Chapter 5 Data Modeling and Design - 1.3.3.3.2 Identifiers (page 124)</p>",
+                "answers": [
+                    "<p>To add complexity to data</p>",
+                    "<p>To define multiple attributes for an entity</p>",
+                    "<p>To uniquely define an instance of an entity</p>",
+                    "<p>To serve as a secondary key in data relationships</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Modeling and Design",
+            "question_plain": "What is the primary function of an identifier in a database?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936529,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a domain in the context of data modeling?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>In data modeling, a domain represents the complete set of possible values that can be assigned to an attribute. It serves as a standardization of the characteristics of attributes. For instance, a \"Date\" domain would encompass all possible valid dates, and this domain can be assigned to any date attribute in a logical or physical data model.</p><p><br>Source: Chapter 5 Data Modeling and Design - 1.3.3.4 Domain (page 124)</p>",
+                "answers": [
+                    "<p>A set of key attributes</p>",
+                    "<p>A complete set of possible values for an attribute</p>",
+                    "<p>A data management framework</p>",
+                    "<p>A representation of relationships between entities</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Modeling and Design",
+            "question_plain": "What is a domain in the context of data modeling?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936531,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a logical data model, and how is it developed?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A logical data model provides a detailed representation of data requirements in support of specific usage contexts, such as application requirements. It is developed independently of any technology or specific implementation constraints. The model often starts as an extension of a conceptual data model, and in the context of relational models, attributes are added through normalization techniques while maintaining a strong relationship between attributes and the primary key of the entity.</p><p>Source: Chapter 5 Data Modeling and Design - 1.3.5.2 Logical (page 124)</p>",
+                "answers": [
+                    "<p>It is an abstract representation of data requirements, independent of technology or implementation constraints.</p>",
+                    "<p>It is a representation of implemented databases with specific technology constraints.</p>",
+                    "<p>It focuses on physical database structures and their optimization.</p>",
+                    "<p>It involves denormalization techniques to simplify data structures.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Data Modeling and Design",
+            "question_plain": "What is a logical data model, and how is it developed?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936533,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a physical data model, and how does it relate to the logical data model?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A physical data model (PDM) is a detailed technical solution that often starts with the logical data model and is then adapted to work within a particular technology. It takes into account the specific capabilities of a database management system and is tailored to the hardware, software, and network tools in use. The physical data model is more concrete and implementation-oriented compared to the abstract nature of the logical data model.</p><p>Source: Chapter 5 Data Modeling and Design - 1.3.5.3 Logical (page 124)</p>",
+                "answers": [
+                    "<p>It is an abstract representation of data requirements, independent of technology or implementation constraints.</p>",
+                    "<p>It focuses on optimizing database structures without considering specific technologies.</p>",
+                    "<p>It represents a detailed technical solution, adapted to work within specific hardware, software, and network tools.</p>",
+                    "<p>It is primarily concerned with denormalization techniques.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Modeling and Design",
+            "question_plain": "What is a physical data model, and how does it relate to the logical data model?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936535,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a Super User Account, and how is it typically managed?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A Super User Account is an account that has administrator or root access to a system and is intended for use only in emergency situations. The credentials for these accounts are highly secured, released only in emergencies with appropriate documentation and approvals, and typically have a short expiration time. The purpose is to provide access to critical system functions in urgent situations while tightly controlling and monitoring the usage to prevent abuse.</p><p><br>Source: Chapter 7 Data&nbsp;Security - 1.3.10.7 Super User Account (page 214)</p>",
+                "answers": [
+                    "<p>It is a regular user account with limited access rights.</p>",
+                    "<p>It is an account with administrator or root access, used only in emergencies.</p>",
+                    "<p>It is a temporary account for testing purposes.</p>",
+                    "<p>It is an account with unrestricted access to all system resources.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Security",
+            "question_plain": "What is a Super User Account, and how is it typically managed?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936537,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of Two-Factor Identification in system security?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Two-Factor Identification involves adding an extra layer of identification beyond passwords to enhance security. This additional factor can include a return call to the user's mobile device with a code, the use of a hardware item, or a biometric factor such as fingerprint, facial recognition, or retinal scan. The purpose is to make it much harder for unauthorized individuals to gain access to an account or user's device by requiring multiple forms of identification.</p><p><br>Source:&nbsp;Chapter 7 Data Security - 1.3.11.3.4 Multiple Factor Identification (page 214)</p>",
+                "answers": [
+                    "<p>It simplifies the login process for users.</p>",
+                    "<p>It requires users to have multiple accounts.</p>",
+                    "<p>It reduces the need for mobile devices in authentication.</p>",
+                    "<p>It adds an extra layer of identification beyond passwords.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Security",
+            "question_plain": "What is the purpose of Two-Factor Identification in system security?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936539,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary purpose of document sanitization?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Document sanitization primarily involves the process of cleaning metadata, such as tracked change history, from documents before sharing. The goal is to mitigate the risk of unintentionally sharing confidential information that might be embedded in document comments or metadata. This is particularly important in scenarios such as contract negotiations where access to sensitive information could have negative consequences.</p><p><br>Source: Chapter 7 Data Security - 4.7 Document Sanitization (page 251)</p>",
+                "answers": [
+                    "<p>Enhancing document aesthetics</p>",
+                    "<p>Adding a password to the document</p>",
+                    "<p>Cleaning metadata and tracked change history</p>",
+                    "<p>Formatting text for better readability</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Security",
+            "question_plain": "What is the primary purpose of document sanitization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936519,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are some of the key metrics recommended for measuring the scale and benefits of implementing Data Integration solutions?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The metrics for measuring the scale and benefits of implementing Data Integration solutions, and they include data availability, volume, speed, cost, and usage metrics.</p><p>Source:&nbsp;Chapter 8 Data Integration and Interoperability - 6.3 Data Integration Metrics (page 285)</p>",
+                "answers": [
+                    "<p>Employee satisfaction metrics</p>",
+                    "<p>Marketing ROI metrics</p>",
+                    "<p>Data availability, volume, speed, cost, and usage metrics</p>",
+                    "<p>Customer retention metrics</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Integration and Interoperability",
+            "question_plain": "What are some of the key metrics recommended for measuring the scale and benefits of implementing Data Integration solutions?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936517,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which tool is described as a software architecture model and a type of message-oriented middleware used to implement near real-time messaging between heterogeneous data stores, applications, and servers within the same organization?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Enterprise Service Bus (ESB) is a software architecture model and a type of message-oriented middleware used to implement near real-time messaging between heterogeneous data stores, applications, and servers within the same organization.</p><p>Source: Chapter 8 Data Integration and Interoperability - 3. Tools (page 280)</p>",
+                "answers": [
+                    "<p>Data Transformation Engine/ETL Tool</p>",
+                    "<p>Data Virtualization Server</p>",
+                    "<p>Enterprise Service Bus</p>",
+                    "<p>Business Rules Engine</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Integration and Interoperability",
+            "question_plain": "Which tool is described as a software architecture model and a type of message-oriented middleware used to implement near real-time messaging between heterogeneous data stores, applications, and servers within the same organization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936515,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is one of the purposes of performing data discovery?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The goal of data discovery is to identify potential sources of data for the data integration effort. It involves a combination of technical searches, using tools to scan Metadata and/or actual contents, and subject matter expertise, such as interviewing people who work with the relevant data.</p><p>Source:&nbsp;Chapter 8 Data Integration and Interoperability - 2.1.2 Perform Data Discovery (page 273)</p>",
+                "answers": [
+                    "<p>To identify potential sources of data for the integration effort</p>",
+                    "<p>To assess the quality of data through profiling</p>",
+                    "<p>To document high-level data lineage and detailed lineage</p>",
+                    "<p>To collect business rules for Master Data Management</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Data Integration and Interoperability",
+            "question_plain": "What is one of the purposes of performing data discovery?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936513,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the advantage of loose coupling in application design?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Loose coupling in application design is advantageous because it poses less risk in case of system unavailability. With loose coupling, data is passed between systems without waiting for a response, and one system being unavailable does not necessarily affect the availability of the other system. This design approach allows for more flexibility and independence between systems.</p><p>Source: Chapter 8&nbsp; Data Integration - 1.3.7.1 Application Coupling (page 260)</p>",
+                "answers": [
+                    "<p>It ensures synchronous interfaces</p>",
+                    "<p>It poses less risk in case of system unavailability</p>",
+                    "<p>It requires systems to wait for responses from each other</p>",
+                    "<p>It necessitates the same business continuity plan for all systems</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Integration and Interoperability",
+            "question_plain": "What is the advantage of loose coupling in application design?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936511,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of the \"transform\" process in Data Integration and Interoperability?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The transform process in Data Integration and Interoperability is responsible for making the selected data compatible with the structure of the target data store. This involves various transformations, such as format changes, structure changes, semantic conversion, de-duplication, and re-ordering. The goal is to ensure that the data is in a format that aligns with the structure of the target data store.</p><p>Source:&nbsp;Chapter 8 Data Integration and Interoperability - 1.3.1.2 Transform (page 260)</p>",
+                "answers": [
+                    "<p>To move data between data stores</p>",
+                    "<p>To mask sensitive data</p>",
+                    "<p>To make data compatible with the structure of the target data store</p>",
+                    "<p>To perform real-time processing of data</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Integration and Interoperability",
+            "question_plain": "What is the purpose of the \"transform\" process in Data Integration and Interoperability?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936509,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the central process in Data Integration and Interoperability?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The central process in Data Integration and Interoperability is Extract, Transform, and Load (ETL). This process involves extracting data, transforming it as needed, and loading it into the target system. </p><p>Source:&nbsp;Chapter 8 Data Integration and Interoperability&nbsp; -1.3.1 Extract, Transform, and Load (page 260)</p>",
+                "answers": [
+                    "<p>Extract and Move</p>",
+                    "<p>Extract, Translate, and Save</p>",
+                    "<p>Export, Transform, and Load</p>",
+                    "<p>Extract, Transform, and Load (ETL)</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Integration and Interoperability",
+            "question_plain": "What is the central process in Data Integration and Interoperability?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936507,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What principles should an organization follow when implementing Data Integration and Interoperability?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The principles that an organization should follow when implementing Data Integration and Interoperability. DMBOK emphasizes taking an enterprise perspective in design to ensure future extensibility but implementing through iterative and incremental delivery. This approach allows for adaptability and responsiveness to evolving requirements.</p><p>Source: Chapter 8 Data Integration and Interoperability - 1.2 Goals and Principles (page 260)</p>",
+                "answers": [
+                    "<p>Implement through large-scale, one-time delivery</p>",
+                    "<p>Prioritize local data needs over enterprise data needs</p>",
+                    "<p>Exclude business experts from data transformation rule design</p>",
+                    "<p>Take an enterprise perspective in design and implement iteratively and incrementally</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Integration and Interoperability",
+            "question_plain": "What principles should an organization follow when implementing Data Integration and Interoperability?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936505,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the goals of implementing Data Integration and Interoperability practices and solutions?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The goals of implementing Data Integration and Interoperability practices and solutions. One of the key goals mentioned is to lower the cost and complexity of managing solutions by developing shared models and interfaces. This approach aims to improve efficiency and reduce the challenges associated with diverse data management practices.</p><p>Source: Chapter 8 Data Integration and Interoperability&nbsp; - 1.2 Goals and Principles (page 260)</p>",
+                "answers": [
+                    "<p>Increasing data complexity and diversity</p>",
+                    "<p>Fragmenting data hubs physically and virtually</p>",
+                    "<p>Lowering cost and complexity through shared models and interfaces</p>",
+                    "<p>Limiting support for Business Intelligence and analytics</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Integration and Interoperability",
+            "question_plain": "What are the goals of implementing Data Integration and Interoperability practices and solutions?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936503,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are some key business drivers for Data Integration and Interoperability?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>DMBOK outlines several business drivers for Data Integration and Interoperability. Managing operational and transactional data complexity is highlighted as a key driver, along with the need to manage the costs associated with complexity. DMBOK also mentions the importance of addressing the overwhelming support requirements that may arise from point-to-point solutions between applications, emphasizing the efficiency and cost-effectiveness of an enterprise perspective in data integration.</p>",
+                "answers": [
+                    "<p>Managing operational and transactional data complexity</p>",
+                    "<p>Reducing support costs by using multiple technologies</p>",
+                    "<p>Implementing custom applications for each organizational need</p>",
+                    "<p>Avoiding the need for data hubs and Master Data solutions</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Data Integration and Interoperability",
+            "question_plain": "What are some key business drivers for Data Integration and Interoperability?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 96936501,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary focus of Data Integration and Interoperability?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data Integration and Interoperability (DII) involve processes related to the movement and consolidation of data, and it lists various functions such as data migration and conversion.</p><p>Source: Chapter 8 Data Integration and Interoperability - 1.&nbsp;Introduction (page 257)</p>",
+                "answers": [
+                    "<p>Managing data interfaces and providing operational intelligence.</p>",
+                    "<p>Data migration and conversion.</p>",
+                    "<p>Integration of vendor packages into an organization’s application portfolio.</p>",
+                    "<p>Archiving data and obtaining external data.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Integration and Interoperability",
+            "question_plain": "What is the primary focus of Data Integration and Interoperability?",
+            "related_lectures": []
+        }
+    ]
+}

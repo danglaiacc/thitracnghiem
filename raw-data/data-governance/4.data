@@ -1,0 +1,1133 @@
+{
+    "count": 40,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "_class": "assessment",
+            "id": 75559204,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a key factor mentioned that can contribute to poor quality data?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Factors contributing to poor quality data include \"bad planning, ‘siloed’ system design, inconsistent development processes, incomplete documentation, a lack of standards, or a lack of governance.\"</p><p><br>Source: Chapter 13 Data Quality - 1.&nbsp;Introduction (page 423)</p><p><br></p>",
+                "answers": [
+                    "<p>Having a large data warehouse</p>",
+                    "<p>Documentation</p>",
+                    "<p>Cross-functional commitment</p>",
+                    "<p>'Siloed' system design.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Quality",
+            "question_plain": "What is a key factor mentioned that can contribute to poor quality data?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75559212,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the business drivers mentioned for establishing a formal Data Quality Management program?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The business drivers mentioned in the passage for establishing a formal Data Quality Management program include:</p><ol><li><p>Increasing the value of organizational data and the opportunities to use it.</p></li><li><p>Reducing risks and costs associated with poor quality data.</p></li><li><p>Improving organizational efficiency and productivity.</p></li><li><p>Protecting and enhancing the organization’s reputation.</p></li></ol><p>Source: Chapter 13 Data Quality - 1.1 Business Drivers (page 426)</p>",
+                "answers": [
+                    "<p>Profit</p>",
+                    "<p>Increasing risks and costs associated with poor quality data.</p>",
+                    "<p>Reducing organizational efficiency and productivity.</p>",
+                    "<p>Protecting and enhancing the organization’s reputation.</p>",
+                    "<p>All of the above.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Quality",
+            "question_plain": "What are the business drivers mentioned for establishing a formal Data Quality Management program?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75559228,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Why is it essential for a Data Quality program to focus on critical data?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Focusing on critical data ensures that the Data Quality program addresses the most important data for the enterprise and its customers, allowing for prioritized improvement efforts where it matters the most.</p><p><br>Source:&nbsp;Chapter 13 Data Quality - 1.2 Goals and Principles (page 426)</p>",
+                "answers": [
+                    "<p>Change management with leadership</p>",
+                    "<p>To prioritize improvement based on the importance of data to the enterprise and its customers</p>",
+                    "<p>Non critical data is not in scope for data quality</p>",
+                    "<p>None of the above</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Quality",
+            "question_plain": "Why is it essential for a Data Quality program to focus on critical data?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75559268,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a Data Quality dimension?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A Data Quality dimension is a measurable feature or characteristic of data, similar to dimensions in the measurement of physical objects. It provides a vocabulary for defining data quality requirements and serves as the basis for measurable rules connected to potential risks in critical processes.</p><p><br>Source: Chapter 13 Data Quality - 1.3.3 Data Quality Dimensions (page 427)</p>",
+                "answers": [
+                    "<p>A unit of measurement for physical objects.</p>",
+                    "<p>A measurable feature or characteristic of data.</p>",
+                    "<p>A type of data assessment.</p>",
+                    "<p>A process for improving data quality.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Quality",
+            "question_plain": "What is a Data Quality dimension?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75559282,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the six core dimensions of data quality as described by DAMA UK in 2013?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>DAMA UK identified six core dimensions of data quality in their 2013 white paper: Completeness, Uniqueness, Timeliness, Validity, Accuracy, and Consistency. These dimensions provide a framework for assessing and improving the quality of data.</p><p><br>Source:&nbsp;Chapter 13 Data Quality - 1.3.3 Data Quality Dimensions (page 427)</p>",
+                "answers": [
+                    "<p>Clarity, Precision, Relevance, Reliability, Simplicity, Consistency.</p>",
+                    "<p>Completeness, Uniqueness, Timeliness, Validity, Accuracy, Consistency.</p>",
+                    "<p>Authenticity, Integrity, Security, Accessibility, Efficiency, Flexibility.</p>",
+                    "<p>Precision, Consistency, Relevance, Accuracy, Timeliness, Uniqueness.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Quality",
+            "question_plain": "What are the six core dimensions of data quality as described by DAMA UK in 2013?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75559332,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In addition to the six core dimensions of data quality, what are the other characteristics described in the DAMA UK white paper that impact data quality?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The DAMA UK white paper introduces additional characteristics that impact data quality, including Usability, Timing issues, Flexibility, Confidence, and Value. These characteristics contribute to the overall assessment of data quality beyond the core dimensions.</p><p><br>Source:&nbsp;Chapter 13 Data Quality - 1.3 Essential&nbsp;Concepts (page 427)</p>",
+                "answers": [
+                    "<p>Speed, Efficiency, Accessibility, Consistency, Reliability.</p>",
+                    "<p>Integrity, Accuracy, Precision, Completeness, Consistency.</p>",
+                    "<p>Usability, Timing issues, Flexibility, Confidence, Value.</p>",
+                    "<p>Relevance, Timeliness, Security, Uniqueness, Validity.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Quality",
+            "question_plain": "In addition to the six core dimensions of data quality, what are the other characteristics described in the DAMA UK white paper that impact data quality?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75559348,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the initial step in Data Quality Management efforts regarding data prioritization?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The initial step in Data Quality Management efforts regarding data prioritization involves identifying critical data by prioritizing it based on factors such as regulatory requirements, financial value, and direct impact on customers. This prioritization helps the Data Quality team focus their work efforts on the most important data in the organization.</p><p><br>Source: Chapter 13 Data Quality - 2.3 Identify Critical Data and Business Rules (page 447)</p>",
+                "answers": [
+                    "<p>Analyzing data creation processes.</p>",
+                    "<p>Identifying business rules.</p>",
+                    "<p>Assessing known uses and measurable rules.</p>",
+                    "<p>Prioritizing data based on factors such as regulatory requirements, financial value, and direct impact on customers.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Quality",
+            "question_plain": "What is the initial step in Data Quality Management efforts regarding data prioritization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75559428,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a crucial consideration when defining goals for Data Quality Improvement?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>When defining goals for Data Quality Improvement, it is crucial to set specific, achievable goals based on consistent quantification of the business value of the improvements. This ensures that improvement efforts are aligned with measurable outcomes that demonstrate a positive return on investment. Considerations such as the complexity of the data landscape, the age of the data, and cultural resistance to change are important but should be addressed within the context of achieving specific, measurable business value.</p><p><br>Source: Chapter 13 Data Quality - 2.6 Define Goals for Data Quality Improvement (page 449)</p>",
+                "answers": [
+                    "<p>The complexity of the data landscape.</p>",
+                    "<p>The age of the data.</p>",
+                    "<p>The level of cultural resistance to change.</p>",
+                    "<p>Specific, achievable goals based on consistent quantification of the business value of improvements.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Quality",
+            "question_plain": "What is a crucial consideration when defining goals for Data Quality Improvement?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75559468,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a key role of data profiling tools in the context of Data Quality Management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data profiling tools play a key role in Data Quality Management by generating high-level statistics that enable analysts to perform initial assessments of quality characteristics and identify patterns in data. These tools are essential for understanding the quality of large data sets, aiding in data discovery efforts, and providing insights into the overall health of the data. While data profiling tools are valuable for assessing data quality, detailed data transformations, data encryption, and enforcing data governance policies may involve other types of tools or processes.</p><p><br>Source: Chapter 13 Data Quality - 3.1 Data Profiling Tools (page 457)</p>",
+                "answers": [
+                    "<p>Performing detailed data transformations.</p>",
+                    "<p>Generating high-level statistics for initial quality assessment and pattern identification.</p>",
+                    "<p>Implementing data encryption and security measures.</p>",
+                    "<p>Enforcing data governance policies.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Quality",
+            "question_plain": "What is a key role of data profiling tools in the context of Data Quality Management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75559498,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which category of data quality metrics involves measurements related to the number and percentage of errors or requirement violations within a data set or across data sets?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>\"Levels of quality\" metrics involve measurements of the number and percentage of errors or requirement violations within a data set or across data sets. This category of metrics provides insights into the actual quality of the data by quantifying the extent of errors or violations. \"Return on Investment\" focuses on the cost-effectiveness of improvement efforts, \"Data Quality trends\" assess improvement over time, and \"Data issue management metrics\" cover various aspects of issue tracking and resolution.</p><p><br>Source: Chapter 13 Data Quality - 6.2 Metrics (page 466)</p>",
+                "answers": [
+                    "<p>Return on Investment</p>",
+                    "<p>Data Quality trends</p>",
+                    "<p>Levels of quality</p>",
+                    "<p>Data issue management metrics</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Quality",
+            "question_plain": "Which category of data quality metrics involves measurements related to the number and percentage of errors or requirement violations within a data set or across data sets?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75560240,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the three key dimensions often associated with Big Data?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The three key dimensions often associated with Big Data are Volume (referring to the amount of data), Variety (diversity of data types and sources), and Velocity (speed at which data is generated and processed). These characteristics highlight the challenges and opportunities presented by large and diverse datasets that are generated at high speeds. While \"Value\" and \"Visualization\" are important aspects of data analytics, they are not the primary dimensions associated with Big Data.</p><p><br>Source: Chapter 14&nbsp; Big Data and Data Science - 1.&nbsp;Introduction (page 469)</p>",
+                "answers": [
+                    "<p>Volume, Variety, Velocity</p>",
+                    "<p>Volume, Value, Visualization</p>",
+                    "<p>Variety, Velocity, Validity</p>",
+                    "<p>Velocity, Value, Variability</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Big Data and Data Science",
+            "question_plain": "What are the three key dimensions often associated with Big Data?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75560254,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Why is careful Metadata management crucial for Big Data sources?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Careful Metadata management for Big Data sources is crucial to ensure an accurate inventory of data files, their origins, and their value. Big Data often involves diverse sources and formats, making it essential to have detailed information about the data to effectively manage and derive insights. Proper Metadata management supports understanding, cataloging, and utilizing the vast and varied datasets associated with Big Data.</p><p><br>Source: Chapter 14 Big Data and Data Science - 1.2 Principles (page 471)</p>",
+                "answers": [
+                    "<p>To increase data volume</p>",
+                    "<p>To decrease data variety</p>",
+                    "<p>To ensure an accurate inventory of data files, origins, and value</p>",
+                    "<p>To accelerate data velocity</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Big Data and Data Science",
+            "question_plain": "Why is careful Metadata management crucial for Big Data sources?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75560266,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the key focus of the Data Science process, particularly in the \"Explore data using models\" phase?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The \"Explore data using models\" phase in the Data Science process focuses on applying statistical analysis and machine learning algorithms against the integrated data. This phase involves leveraging various modeling techniques to gain insights, validate, train, and evolve the model based on actual data. It is a crucial step in the iterative Data Science process where the model's feasibility is assessed, and adjustments are made to refine the requirements and improve the accuracy of predictions.</p><p><br>Source:&nbsp;Chapter 14 Big Data and Data Science - 1.3.2 The Data Science Process (page 472)</p>",
+                "answers": [
+                    "<p>Defining Big Data strategy</p>",
+                    "<p>Developing Data Science hypotheses and methods</p>",
+                    "<p>Integrating and aligning data for analysis</p>",
+                    "<p>Applying statistical analysis and machine learning algorithms against integrated data</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Big Data and Data Science",
+            "question_plain": "What is the key focus of the Data Science process, particularly in the \"Explore data using models\" phase?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75560294,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of Big Data architecture, what is the key difference between traditional data warehousing (DW/BI) and Big Data processing?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The key difference between traditional data warehousing (DW/BI) and Big Data processing is that in a traditional data warehouse, data is integrated as it is brought into the warehouse (ETL - Extract, Transform, Load), while in a Big Data environment, data is ingested and loaded before it is integrated (ELT - Extract, Load, Transform).</p><p><br>Source: Chapter 14 Big Data and Data Science - 1.3.4 Big Data Architecture Components (page 472)</p>",
+                "answers": [
+                    "<p>In traditional data warehousing, data is ingested and loaded before integration, while in Big Data processing, data is integrated before ingestion.</p>",
+                    "<p>In both traditional data warehousing and Big Data processing, the process of integration is the same.</p>",
+                    "<p>In traditional data warehousing, data is integrated as it is brought into the warehouse (ETL - Extract, Transform, Load), while in Big Data processing, data is ingested and loaded before integration (ELT - Extract, Load, Transform).</p>",
+                    "<p>In both traditional data warehousing and Big Data processing, integration is performed after data exploration.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Big Data and Data Science",
+            "question_plain": "In the context of Big Data architecture, what is the key difference between traditional data warehousing (DW/BI) and Big Data processing?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75560362,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a key purpose of a data lake?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>he primary purpose of a data lake is to serve as a central storage area for raw data, with minimal, if any, transformation. It is crucial for preventing the data lake from becoming messy, unclean, and inconsistent. Data architects or engineers use techniques like unique keys or semantic models to understand the associations within the data lake.</p><p><br>Source: Chapter 14 Big Data and Data Science - 1.3.6 Data Lake (page 472)</p>",
+                "answers": [
+                    "<p>A backup for Data Warehouses</p>",
+                    "<p>Serving as a central storage area for cooked data with extensive transformation</p>",
+                    "<p>Acting as a central storage area for raw data, with minimal, if any, transformation</p>",
+                    "<p>Acting as an online archive for fictional stories</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Big Data and Data Science",
+            "question_plain": "What is a key purpose of a data lake?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75560844,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the three types of learning algorithms in Machine Learning?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The three types of learning algorithms in Machine Learning:</p><ol><li><p>Supervised learning, which is based on generalized rules (e.g., separating SPAM from non-SPAM email).</p></li><li><p>Unsupervised learning, which is based on identifying hidden patterns (i.e., data mining).</p></li><li><p>Reinforcement learning, which is based on achieving a goal (e.g., beating an opponent at chess).</p></li></ol><p><br></p><p>Source: Chapter 14 Big Data and Data Science - 1.3.8 Machine Learning (page 472)</p>",
+                "answers": [
+                    "<p>Traditional, Progressive, Adaptive</p>",
+                    "<p>Supervised, Unsupervised, Reinforcement</p>",
+                    "<p>Basic, Intermediate, Advanced</p>",
+                    "<p>Manual, Automatic, Hybrid</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Big Data and Data Science",
+            "question_plain": "What are the three types of learning algorithms in Machine Learning?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75561252,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of explanatory modeling in the context of analytic modeling?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Explanatory modeling is the application of statistical models to data for testing causal hypotheses about theoretical constructs. Unlike predictive analytics, the purpose of explanatory modeling is not to predict outcomes but to test causal hypotheses and match model results with existing data.</p><p><br>Source: Chapter 14 Big Data and Data Science - 4.1 Analytic Modeling (page 492)</p>",
+                "answers": [
+                    "<p>To summarize or represent data structures in a compact manner</p>",
+                    "<p>To learn by example through training the model</p>",
+                    "<p>To predict outcomes based on independent test data</p>",
+                    "<p>To apply statistical models to test causal hypotheses about theoretical constructs</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Big Data and Data Science",
+            "question_plain": "What is the purpose of explanatory modeling in the context of analytic modeling?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75561264,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Why is managing ingestion and inventorying data in a Big Data environment critical?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Managing ingestion and inventorying data in a Big Data environment is critical to enable faster data exploration. This process helps prevent the data lake from becoming a swamp and allows organizations to quickly determine which areas show potential value before committing to long-term ingestion.</p><p><br>Source:&nbsp;Chapter 14 Big Data and Data Science - 5. Implementation Guidelines (page 493)</p>",
+                "answers": [
+                    "<p>It is not a critical component</p>",
+                    "<p>To ensure data becomes less organized</p>",
+                    "<p>To enable faster data exploration</p>",
+                    "<p>To facilitate organizational ownership of data</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Big Data and Data Science",
+            "question_plain": "Why is managing ingestion and inventorying data in a Big Data environment critical?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75561430,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a common measurement to show the value of a Big Data / Data Science program?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>One common measurement to show the value of a Big Data / Data Science program is the length of time between initiation and realized benefits. This metric helps assess the efficiency and effectiveness of the program in delivering tangible outcomes that justify the cost of development and process changes. Other measurements mentioned, such as counts and accuracy of models, revenue realization, and cost reduction, are also important for evaluating program success.</p><p><br>Source: Chapter 14 Big Data and Data Science - 6.6.3 Learnings and Stories (page 498)</p>",
+                "answers": [
+                    "<p>Length of time between initiation and realized benefits</p>",
+                    "<p>Number of data sources</p>",
+                    "<p>Complexity of data mode</p>",
+                    "<p>Percentage of raw data stored</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Big Data and Data Science",
+            "question_plain": "What is a common measurement to show the value of a Big Data / Data Science program?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75561438,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Why is data quality important for Big Data projects?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data quality is important for Big Data projects because reliable analytics depend on reliable underlying data. While Big Data projects may involve large and diverse datasets, ensuring the quality of the data is crucial for trustworthy and accurate analytics. Assessing data quality allows organizations to understand the information contained within the data, identify patterns, and build knowledge about the data. This is essential for making connections between different datasets and achieving meaningful insights. Data quality tools can help in tasks such as discovery, classification, profiling, and mapping, contributing to the overall success of Big Data projects.</p><p><br></p><p>Source:&nbsp;Chapter 14 Big Data and Data Science - 6.5 Data Quality (page 497)</p>",
+                "answers": [
+                    "<p>Big Data projects don't require reliable data</p>",
+                    "<p>Assessing data quality is too difficult for Big Data</p>",
+                    "<p>Reliable analytics depend on reliable underlying data</p>",
+                    "<p>Big Data projects use standardized patterns so no issues with data quality</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Big Data and Data Science",
+            "question_plain": "Why is data quality important for Big Data projects?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75561638,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the main purpose of a Capability Maturity Assessment (CMA) or Capability Maturity Model (CMM)?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The main purpose of a Capability Maturity Assessment (CMA) or Capability Maturity Model (CMM) is to guide organizations in improving their process capabilities over time. It provides a framework that describes how characteristics of a process evolve from ad hoc to optimal. The levels in the model represent a progression, and organizations can assess their maturity level, identify improvement opportunities, and develop a roadmap for enhancing their capabilities. The goal is to achieve more consistent, predictable, and reliable process execution as the organization progresses through the levels.</p><p><br>Source:&nbsp;Chapter 15 Data Management Maturity Assessment - 1. Introduction (page 501)</p>",
+                "answers": [
+                    "<p>Quickly achieve process optimization</p>",
+                    "<p>To evaluate the competence of individuals in the organization</p>",
+                    "<p>To establish criteria for evaluating software contractors</p>",
+                    "<p>To guide organizations in improving their process capabilities over time</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Management Maturity Assessment",
+            "question_plain": "What is the main purpose of a Capability Maturity Assessment (CMA) or Capability Maturity Model (CMM)?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75561652,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are some of the reasons why organizations conduct capability maturity assessments?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Organizations conduct capability maturity assessments for various reasons, including regulatory oversight, data governance planning and compliance, organizational readiness for process improvement, organizational change planning (e.g., mergers), adoption of new technology, and addressing data management issues. The assessments help organizations understand their current state, identify improvement opportunities, and plan for changes in data management practices. Compliance with regulations is one of the key drivers for conducting capability maturity assessments.</p><p><br>Chapter 15 Data Management Maturity Assessment - 1.1 Business Drivers (page 503)</p>",
+                "answers": [
+                    "<p>To achieve process optimization</p>",
+                    "<p>To comply with regulatory oversight</p>",
+                    "<p>To avoid organizational change</p>",
+                    "<p>To assess competitors' capabilities</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Management Maturity Assessment",
+            "question_plain": "What are some of the reasons why organizations conduct capability maturity assessments?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75561668,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary goal of a data management capability assessment (DMMA)?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The primary goal of a data management capability assessment (DMMA) is to evaluate the current state of critical data management activities within an organization. This assessment helps in planning for improvement by identifying strengths and weaknesses, prioritizing improvement opportunities, and implementing changes to enhance data management practices. It is not about maintaining the status quo but rather about assessing and improving data management capabilities to align with organizational goals and strategies.</p><p><br>Source:&nbsp;Chapter 15 Data Management Maturity Assessment - 1.2 Goals and Principles (page 503)</p>",
+                "answers": [
+                    "<p>To maintain the status quo in data management practices</p>",
+                    "<p>To assess competitors' data management capabilities</p>",
+                    "<p>To evaluate the current state of critical data management activities for improvement planning</p>",
+                    "<p>To eliminate the need for data governance</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Management Maturity Assessment",
+            "question_plain": "What is the primary goal of a data management capability assessment (DMMA)?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75561684,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which level of maturity in the Capability Maturity Model (CMM) is characterized by the emergence of consistent tools, role definition, and organizational awareness of data quality issues in data management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Level 2 (Repeatable) in the Capability Maturity Model (CMM) is characterized by the emergence of consistent tools and role definition to support process execution. At this level, the organization begins to use centralized tools, provides more oversight for data management, defines roles, and gains organizational awareness of data quality issues. It represents a move towards more structured and repeatable data management practices.</p><p><br>Source: Chapter 15 Data Management Maturity Assessment - 1.3.1 Assessment Levels and Characteristics (page 504)</p>",
+                "answers": [
+                    "<p>Level 0: No Capability</p>",
+                    "<p>Level 1: Initial / Ad Hoc</p>",
+                    "<p>Level 2: Repeatable</p>",
+                    "<p>Level 3: Defined</p>",
+                    "<p>Level 4: Managed</p>",
+                    "<p>Level 5: Optimization</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Management Maturity Assessment",
+            "question_plain": "Which level of maturity in the Capability Maturity Model (CMM) is characterized by the emergence of consistent tools, role definition, and organizational awareness of data quality issues in data management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75561904,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which tool is specifically mentioned as a repository for data standards, policies, methods, agendas, minutes of meetings, or decisions related to data management practices?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Knowledge Management and Metadata Repositories are specifically mentioned as tools where data standards, policies, methods, agendas, minutes of meetings, or decisions related to data management practices may be managed. These repositories play a crucial role in documenting and storing information that provides evidence of data management practices and serves as proof of practice during a maturity assessment.</p><p><br>Source:&nbsp;Chapter 15 Data Management Maturity Assessment - 3. Tools (page 514)</p>",
+                "answers": [
+                    "<p>Communication Plan</p>",
+                    "<p>Collaboration Tools</p>",
+                    "<p>Data Management Maturity Framework</p>",
+                    "<p>Knowledge Management and Metadata Repositories</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Management Maturity Assessment",
+            "question_plain": "Which tool is specifically mentioned as a repository for data standards, policies, methods, agendas, minutes of meetings, or decisions related to data management practices?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75562174,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which of the following is NOT mentioned as a sample metric for Data Management Maturity Assessment (DMMA)?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Customer satisfaction scores are not explicitly mentioned as a sample metric for Data Management Maturity Assessment (DMMA). The mentioned metrics include DMMA ratings, resource utilization rates, risk exposure, spend management, data management sustainability, achievement of initiative goals and objectives, effectiveness of communication and education, speed of change adoption, data management value, contributions to business objectives, reductions in risks, improved efficiency in operations, and rate of change.</p><p><br>Source: Chapter 15 Data Management Maturity Assessment - 6.2 Metrics (page 517)</p>",
+                "answers": [
+                    "<p>DMMA ratings</p>",
+                    "<p>Resource utilization rates</p>",
+                    "<p>Customer satisfaction scores</p>",
+                    "<p>Risk exposure</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Management Maturity Assessment",
+            "question_plain": "Which of the following is NOT mentioned as a sample metric for Data Management Maturity Assessment (DMMA)?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75562290,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary challenge mentioned that organizations face in the evolving data landscape?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>DMBOK mentions that organizations are faced with an increasing volume of data captured through a wide range of processes in a variety of formats. The increase in volume and variety adds complexity to data management, making it a primary challenge in the evolving data landscape.</p><p>Source: Chapter 16 Data Management Organization and Role Expectations - 1.&nbsp;Introduction (page 519)</p>",
+                "answers": [
+                    "<p>Lack of skilled data scientists</p>",
+                    "<p>Inconsistent data quality</p>",
+                    "<p>Increasing volume and variety of data</p>",
+                    "<p>Limited access to data</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Management Organization and Role Expectations",
+            "question_plain": "What is the primary challenge mentioned that organizations face in the evolving data landscape?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75562316,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary purpose of the operating model in Data Management Organization design?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A reliable operating model helps create accountability, facilitates communication, and provides a process to resolve issues. While it forms the basis for the organizational structure, the primary emphasis is on describing how people and functions will collaborate, making options (a) and (b) less comprehensive.</p><p><br>Source: Chapter 16 Data Management Organization and Role Expectations - 3. Data Management Organizational Constructs (page 521)</p>",
+                "answers": [
+                    "<p>Creating an organizational structure</p>",
+                    "<p>Assigning specific individuals to roles</p>",
+                    "<p>Facilitating communication and collaboration</p>",
+                    "<p>Implementing decision-making processes</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Management Organization and Role Expectations",
+            "question_plain": "What is the primary purpose of the operating model in Data Management Organization design?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75562336,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are some drawbacks of a decentralized data management model?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>One of the drawbacks of a decentralized model is the challenge of having many participants involved in decision-making, and it is generally harder to implement collaborative decisions.</p><p><br>Source: Chapter 16 Data Management Organization and Role Expectations - 3.1 Decentralized Operating Model (page 521)</p>",
+                "answers": [
+                    "<p>The cost of decision-making</p>",
+                    "<p>No way to improve data quality</p>",
+                    "<p>Difficulty in collaborative decision-making</p>",
+                    "<p>Formal structure and easy sustainability</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Management Organization and Role Expectations",
+            "question_plain": "What are some drawbacks of a decentralized data management model?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75562346,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a RACI matrix used for in the context of a networked data management model?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>RACI (Responsible, Accountable, Consulted, and Informed) matrix is used to make decentralized informality more formal by documenting a series of connections and accountabilities.</p><p><br>Source:&nbsp;Chapter 16 Data Management Organization and Role Expectations - 3.2 Network Operating Model (page 522)</p>",
+                "answers": [
+                    "<p>Quick set up of the organization</p>",
+                    "<p>Enforcing consistency of practices</p>",
+                    "<p>Documenting series of connections and accountabilities</p>",
+                    "<p>Operating as a series of known connections</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Management Organization and Role Expectations",
+            "question_plain": "What is a RACI matrix used for in the context of a networked data management model?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75562470,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a benefit of implementing a centralized data management model?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A benefit of a centralized model is that it establishes a formal executive position for data management or data governance. This provides clarity in decision-making and accountability.</p><p><br>Source:&nbsp;Chapter 16 Data Management Organization and Role Expectations - 3.3 Centralized Operating Model (page 522)</p>",
+                "answers": [
+                    "<p>Quick decision-making</p>",
+                    "<p>Formal executive position for data management or data governance</p>",
+                    "<p>Risk of knowledge loss over time</p>",
+                    "<p>Quick and easy alignment with lines of business</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Management Organization and Role Expectations",
+            "question_plain": "What is a benefit of implementing a centralized data management model?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75562494,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which factor is consistently shown to play a key role in the success of effective Data Management Organizations?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Executive sponsorship is one of the critical success factors for effective Data Management Organizations. While other factors are important, executive sponsorship is consistently highlighted as a key factor in ensuring the success of data management initiatives.</p><p><br>Source: Chapter 16 Data Management Organization and Role Expectations - 4. Critical Success Factors (page 526)</p>",
+                "answers": [
+                    "<p>Proactive change management</p>",
+                    "<p>Clear vision</p>",
+                    "<p>Evolution not revolution</p>",
+                    "<p>Executive sponsorship</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Management Organization and Role Expectations",
+            "question_plain": "Which factor is consistently shown to play a key role in the success of effective Data Management Organizations?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75562788,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which of the following is a critical success factor for effective Data Management Organizations?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Proactive change management involves planning, managing, and sustaining change within an organization. In the context of establishing a Data Management Organization (DMO), this factor is critical because it addresses the people-related challenges associated with the implementation. It recognizes that individuals and groups within the organization will react differently to the changes brought about by the DMO.</p><p>By proactively managing change, the organization can:</p><ol><li><p><strong>Address Resistance:</strong> Anticipate and address any resistance to the new data management initiative.</p></li><li><p><strong>Enhance Adoption:</strong> Increase the likelihood that individuals and teams will adopt and embrace the changes.</p></li><li><p><strong>Sustain Changes Over Time:</strong> Ensure that the DMO is sustainable over the long term by managing the transition effectively.</p></li></ol><p>Source:&nbsp;Chapter 16 Data Management Organization and Role Expectations - 4. Critical Success Factors (page 526)</p>",
+                "answers": [
+                    "<p>Employee satisfaction</p>",
+                    "<p>Office location</p>",
+                    "<p>Proactive change management</p>",
+                    "<p>Time management</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Management Organization and Role Expectations",
+            "question_plain": "Which of the following is a critical success factor for effective Data Management Organizations?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75563118,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which IT role is involved in handling, tracking, and resolving issues related to the use of information and IT infrastructure?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A Help Desk Administrator is responsible for handling, tracking, and resolving issues related to the use of information, information systems, or the IT infrastructure.</p><p><br>Source:&nbsp;Chapter 16 Data Management Organization and Role Expectations - 7.2.3 IT Roles (page 535)</p>",
+                "answers": [
+                    "<p>Data Security Administrator</p>",
+                    "<p>Technical Engineer</p>",
+                    "<p>Help Desk Administrator</p>",
+                    "<p>IT Auditor</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Management Organization and Role Expectations",
+            "question_plain": "Which IT role is involved in handling, tracking, and resolving issues related to the use of information and IT infrastructure?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75563162,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the recommended approach to measuring the cost of poor data management and the value of disciplined data management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The recommended approach is to use metrics to demonstrate the impact of improved data practices on organizational efficiency and effectiveness.</p><p>Source: Chapter 17 Data Management and Organizational Change Management - 1. Introduction (page 539)</p>",
+                "answers": [
+                    "<p>Avoid measuring the cost.&nbsp;It is not mandatory</p>",
+                    "<p>Use metrics to demonstrate the impact on organizational efficiency</p>",
+                    "<p>Rely solely on technology to measure costs and values</p>",
+                    "<p>Disregard the need for measuring data management effectiveness until you reach enough maturity</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Management and Organizational Change Management",
+            "question_plain": "What is the recommended approach to measuring the cost of poor data management and the value of disciplined data management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75563180,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>According to the fundamental 'Laws of Change,' why does change not happen in organizations?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Change in organizations does not occur merely due to announcements or system implementations. It happens when people behave differently and recognize the value in doing so.</p><p><br>Source: Chapter 17 Data Management and Organizational Change Management - 2. Laws of Change (page 540)</p>",
+                "answers": [
+                    "<p>Lack of organizational announcements</p>",
+                    "<p>Resistance from individuals</p>",
+                    "<p>Ineffective systems implementation</p>",
+                    "<p>People's behavior and recognition of value</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Management and Organizational Change Management",
+            "question_plain": "According to the fundamental 'Laws of Change,' why does change not happen in organizations?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75563192,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which of the following is NOT listed as one of the common obstacles to change in Kotter's model for major change?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>In Kotter's model for major change, lack of team work, paralyzing bureaucracy, inward-focused cultures, parochial politics, low levels of trust, arrogance, lack of or failure of leadership, and fear of the unknown are listed as common obstacles to change. Inadequate technology is not specifically mentioned among these obstacles.</p><p><br>Source:&nbsp;Chapter 17 Data Management and Organizational Change Management - 5. Kotter’s Eight Stage Process for Major Change (page 547)</p>",
+                "answers": [
+                    "<p>Lack of team work</p>",
+                    "<p>Paralyzing bureaucracy</p>",
+                    "<p>Inadequate technology</p>",
+                    "<p>Fear of the unknown</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Management and Organizational Change Management",
+            "question_plain": "Which of the following is NOT listed as one of the common obstacles to change in Kotter's model for major change?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75563230,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What approach is the most effective for breaking through the status quo in complex change situations?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>DMBOK suggests that the most effective approach for breaking through the status quo in complex change situations is to base change on a clear and compelling vision. Authoritarian decree may not work well without significant power, and micromanagement may become increasingly time-consuming as the complexity of the change increases.</p><p><br>Source:&nbsp;Chapter 17 Data Management and Organizational Change Management - 5.3 Developing a Vision and Strategy (page 555)</p>",
+                "answers": [
+                    "<p>Clear and compelling vision</p>",
+                    "<p>Authoritarian decree</p>",
+                    "<p>Micromanagement</p>",
+                    "<p>A Change Management team setup</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Data Management and Organizational Change Management",
+            "question_plain": "What approach is the most effective for breaking through the status quo in complex change situations?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75563756,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a common problem in information management initiatives, such as Data Governance programs?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A common problem in information management initiatives, like Data Governance programs, is that they are initiated in response to a specific driver or symptom of sub-optimal capability. As the symptom is addressed, the sense of dissatisfaction and urgency lessens, making it harder to sustain political or financial support.</p><p><br>Source: Chapter 17 Data Management and Organizational Change Management - 8. Sustaining Change (page 567)</p>",
+                "answers": [
+                    "<p>Lack of a clear and compelling vision</p>",
+                    "<p>Sustaining dissatisfaction and urgency</p>",
+                    "<p>Insufficient first steps</p>",
+                    "<p>Excessive political and financial support</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Management and Organizational Change Management",
+            "question_plain": "What is a common problem in information management initiatives, such as Data Governance programs?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 75563778,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is emphasized as a goal of a communications plan?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>According to DMBOK, one goal of a communications plan is to remind stakeholders of the value and benefits of the Data Management program. This is essential to gaining continued support for the effort.</p><p>Source: Chapter 17 Data Management and Organizational Change Management - 9.5 Keep Communicating (page 572)</p>",
+                "answers": [
+                    "<p>Acquiring new stakeholders</p>",
+                    "<p>Reminding stakeholders of the program's value and benefits</p>",
+                    "<p>Adapting methods of communication</p>",
+                    "<p>Celebrating successes</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Management and Organizational Change Management",
+            "question_plain": "What is emphasized as a goal of a communications plan?",
+            "related_lectures": []
+        }
+    ]
+}

@@ -1,0 +1,1485 @@
+{
+    "count": 51,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "_class": "assessment",
+            "id": 97708631,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of metadata management, what does \"data lineage\" refer to?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data lineage tracks the flow and transformation of data throughout its lifecycle, providing insights into its origins, movements, and transformations. This is crucial for understanding data quality and compliance requirements.</p>",
+                "answers": [
+                    "<p>The process of securing sensitive data</p>",
+                    "<p>The history of data from its origin to its current state</p>",
+                    "<p>The classification of different types of metadata</p>",
+                    "<p>The method for integrating disparate datasets</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "In the context of metadata management, what does \"data lineage\" refer to?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708633,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the role of a Data Steward?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A Data Steward is responsible for managing specific datasets within an organization. Their role includes ensuring that these datasets meet quality standards and comply with governance policies. They act as a bridge between business units and technical teams.</p>",
+                "answers": [
+                    "<p>To design databases for optimal performance</p>",
+                    "<p>To oversee the governance and quality of specific datasets</p>",
+                    "<p>To manage IT infrastructure related to data storage</p>",
+                    "<p>To conduct training sessions on data analytics</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What is the role of a Data Steward?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708635,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a key benefit of implementing effective document and content management practices?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Reducing operational costs significantly</p>",
+                    "<p>Increasing redundancy in document storage</p>",
+                    "<p>Limiting access to critical documents</p>",
+                    "<p>Enhancing collaboration across departments</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "What is a key benefit of implementing effective document and content management practices?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708637,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does \"data lifecycle management\" refer to?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data lifecycle management encompasses all stages of a dataset's life, from its initial creation and usage to its eventual archiving or deletion. This holistic approach ensures that organizations manage their data effectively throughout its entire lifecycle.</p>",
+                "answers": [
+                    "<p>The process of archiving historical datasets only</p>",
+                    "<p>Focusing solely on data storage solutions</p>",
+                    "<p>Managing data from creation through to deletion</p>",
+                    "<p>The analysis of data trends over time</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "What does \"data lifecycle management\" refer to?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708639,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the significance of data architecture?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data architecture serves as a blueprint for managing an organization’s data assets, outlining how different components interact and ensuring that they align with business goals. It encompasses both logical and physical designs, making it crucial for effective data management.</p>",
+                "answers": [
+                    "<p>It provides a blueprint for managing an organization's data assets.</p>",
+                    "<p>It focuses solely on physical database design.</p>",
+                    "<p>It eliminates the need for metadata management.</p>",
+                    "<p>It is only relevant for large enterprises with complex systems.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is the significance of data architecture?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708641,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a key benefit of implementing effective business intelligence (BI)</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Effective business intelligence (BI) systems provide timely and relevant insights that enhance decision-making processes within organizations. By analyzing current and historical data, BI enables organizations to make informed strategic choices.</p>",
+                "answers": [
+                    "<p>It reduces the need for data governance.</p>",
+                    "<p>It focuses only on historical data analysis.</p>",
+                    "<p>It eliminates the need for data quality management.</p>",
+                    "<p>It enhances decision-making by providing timely and relevant insights.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "What is a key benefit of implementing effective business intelligence (BI)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708643,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In terms of metadata management, what does \"descriptive metadata\" provide?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Descriptive metadata provides contextual information about datasets, including their content, purpose, and structure. This type of metadata enhances understanding and usability by allowing users to quickly assess whether a dataset meets their needs.</p>",
+                "answers": [
+                    "<p>Information about how to access datasets</p>",
+                    "<p>Technical specifications of database structures</p>",
+                    "<p>Contextual information about datasets, such as content and purpose</p>",
+                    "<p>Security classifications for sensitive information</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "In terms of metadata management, what does \"descriptive metadata\" provide?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708645,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>According to the DAMA-DMBOK framework, what role does \"data ethics\" play in data management?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data ethics emphasizes responsible and transparent use of data within organizations. This includes considerations around privacy, consent, fairness, and accountability—ensuring that organizations respect individuals' rights while leveraging data effectively.</p>",
+                "answers": [
+                    "<p>It focuses solely on legal compliance.</p>",
+                    "<p>It ensures that organizations use data responsibly and transparently.</p>",
+                    "<p>It primarily concerns technical aspects of database design.</p>",
+                    "<p>It is irrelevant in today's digital landscape. **Correct Answer:** B</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "According to the DAMA-DMBOK framework, what role does \"data ethics\" play in data management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708647,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is \"data profiling\" used for?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data profiling is a process used to assess the quality, structure, and content of datasets. It involves analyzing data to identify anomalies, inconsistencies, and patterns, which helps organizations understand their data better and improve its quality.</p>",
+                "answers": [
+                    "<p>To create new datasets from existing ones</p>",
+                    "<p>To assess the quality and structure of datasets</p>",
+                    "<p>To automate data integration processes</p>",
+                    "<p>To secure sensitive information</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What is \"data profiling\" used for?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708649,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a \"data dictionary\"?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A data dictionary is a centralized repository that defines and describes data elements, their attributes, relationships, and usage within an organization. It serves as a reference for understanding data structures and is essential for effective metadata management.</p>",
+                "answers": [
+                    "<p>A document that defines and describes data elements and their relationships</p>",
+                    "<p>A collection of all datasets within an organization</p>",
+                    "<p>A tool for automating data retrieval processes</p>",
+                    "<p>A report summarizing data usage statistics</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is a \"data dictionary\"?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708651,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In a master data management (MDM) initiative, what is the significance of \"survivorship\" rules?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Survivorship rules are critical in MDM initiatives as they determine which version of a master record should be retained when duplicates exist. These rules help ensure that the most accurate and relevant information is maintained, enhancing data integrity and usability.</p>",
+                "answers": [
+                    "<p>They dictate how to archive historical datasets.</p>",
+                    "<p>They establish security protocols for sensitive master data.</p>",
+                    "<p>They define which version of a master record should be retained when duplicates are found.</p>",
+                    "<p>They outline the process for integrating disparate datasets.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "In a master data management (MDM) initiative, what is the significance of \"survivorship\" rules?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708653,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of data governance, what does \"data stewardship council\" typically oversee?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A data stewardship council typically oversees the strategic direction and policies related to data governance within an organization. This council includes representatives from various business units who collaborate to establish best practices, standards, and accountability for managing organizational data.</p>",
+                "answers": [
+                    "<p>The technical implementation of database systems</p>",
+                    "<p>The strategic direction and policies related to data governance across the organization</p>",
+                    "<p>The financial budgeting for Data Governance projects</p>",
+                    "<p>The day-to-day operations of data entry teams</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "In the context of data governance, what does \"data stewardship council\" typically oversee?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708655,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of business intelligence (BI), what does \"data wrangling\" refer to?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data wrangling refers to the process of preparing and transforming raw data into a usable format for analysis. This involves cleaning, structuring, and enriching the data to ensure that it can be effectively analyzed by business intelligence tools.</p>",
+                "answers": [
+                    "<p>The preparation and transformation of raw data into a usable format for analysis</p>",
+                    "<p>The process of securing sensitive business intelligence reports</p>",
+                    "<p>The automation of report generation in BI tools</p>",
+                    "<p>The archiving of outdated BI reports</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "In the context of business intelligence (BI), what does \"data wrangling\" refer to?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708657,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does \"data masking\" achieve in terms of security practices?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data masking alters sensitive information so that it maintains its original format while concealing its actual value. This practice allows organizations to use real-world data for testing or training without exposing sensitive information to unauthorized users.</p>",
+                "answers": [
+                    "<p>It permanently deletes sensitive information from datasets.</p>",
+                    "<p>It alters sensitive information in a way that maintains its format but conceals its original value.</p>",
+                    "<p>It creates multiple copies of sensitive datasets for backup purposes.</p>",
+                    "<p>It restricts access to sensitive information based on user roles.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What does \"data masking\" achieve in terms of security practices?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708659,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In a relational database, what is meant by \"referential integrity,\" and why is it important?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Referential integrity ensures that relationships between tables in a relational database remain consistent through foreign key constraints. This means that any foreign key value must correspond to an existing primary key value in another table, preventing orphaned records and maintaining accurate relationships within the database.</p>",
+                "answers": [
+                    "<p>It ensures that all records in a database are unique.</p>",
+                    "<p>It restricts access to certain tables based on user permissions.</p>",
+                    "<p>It automates backup processes for critical tables.</p>",
+                    "<p>It guarantees that relationships between tables remain consistent through foreign key constraints.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "In a relational database, what is meant by \"referential integrity,\" and why is it important?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708661,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What role does \"data classification\" play in an organization's risk management strategy?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data classification categorizes information based on its sensitivity level, allowing organizations to apply appropriate security measures tailored to each category. This practice is essential for risk management as it helps protect sensitive information from unauthorized access while ensuring compliance with regulations.</p>",
+                "answers": [
+                    "<p>It focuses solely on optimizing storage costs.</p>",
+                    "<p>It categorizes data based on its sensitivity level to apply appropriate security measures.</p>",
+                    "<p>It automates the retrieval of specific datasets for analysis.</p>",
+                    "<p>It establishes guidelines for archiving historical datasets.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What role does \"data classification\" play in an organization's risk management strategy?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708663,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of cloud-based data storage solutions, what does \"data sovereignty\" refer to?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data sovereignty refers to the legal implications surrounding where data is stored geographically and which laws govern that data. Organizations must consider these factors when using cloud-based solutions to ensure compliance with local regulations regarding privacy and security.</p>",
+                "answers": [
+                    "<p>The ability to access cloud services from any location without restrictions</p>",
+                    "<p>The legal implications surrounding where data is stored geographically and which laws govern it</p>",
+                    "<p>The process of securing cloud-based applications against cyber threats</p>",
+                    "<p>The automation of backup processes in cloud environments</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "In the context of cloud-based data storage solutions, what does \"data sovereignty\" refer to?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708665,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In a data warehouse environment, what is \"ETL\" and what does it stand for?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>ETL stands for Extract, Transform, Load. It is a process used in data warehousing that involves extracting data from various source systems, transforming it into a suitable format for analysis, and loading it into a data warehouse for reporting and analysis.</p>",
+                "answers": [
+                    "<p>Extract, Transform, Load; it refers to the process of moving data from source systems into a data warehouse.</p>",
+                    "<p>Evaluate, Test, Launch; it describes the steps in software development.</p>",
+                    "<p>Extract, Transfer, Load; it focuses on real-time data integration.</p>",
+                    "<p>Extract, Transform, Link; it deals with linking datasets from different sources.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "In a data warehouse environment, what is \"ETL\" and what does it stand for?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708667,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of relational databases, what is \"normalization,\" and why is it important?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Normalization is the process of organizing tables in a relational database to reduce redundancy and improve data integrity. By structuring the database into related tables with defined relationships, normalization minimizes duplication of data and ensures consistency across records.</p>",
+                "answers": [
+                    "<p>The process of securing sensitive information within a database</p>",
+                    "<p>The method of archiving historical records for compliance</p>",
+                    "<p>The technique used to reduce redundancy and improve data integrity by organizing tables</p>",
+                    "<p>The automation of report generation from multiple tables</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "In the context of relational databases, what is \"normalization,\" and why is it important?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708669,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is \"data virtualization,\" and how does it differ from traditional data integration methods?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data virtualization provides a unified view of data from various sources without physically moving or replicating that data. Unlike traditional integration methods that require ETL processes to copy data into a central repository, virtualization allows real-time access to distributed datasets while maintaining their original locations.</p>",
+                "answers": [
+                    "<p>It involves creating physical copies of datasets for analysis.</p>",
+                    "<p>It provides a unified view of data without physically moving or replicating it.</p>",
+                    "<p>It focuses solely on cloud-based storage solutions.</p>",
+                    "<p>It automates the extraction process from multiple databases.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What is \"data virtualization,\" and how does it differ from traditional data integration methods?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708671,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In terms of compliance, what does \"data breach notification\" entail?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data breach notification refers to the legal requirement to inform affected individuals and relevant authorities when there has been unauthorized access to sensitive information. This practice is crucial for maintaining transparency and trust while complying with regulations such as GDPR or HIPAA.</p>",
+                "answers": [
+                    "<p>The automatic deletion of compromised datasets</p>",
+                    "<p>The requirement to inform affected individuals and authorities about unauthorized access to sensitive information</p>",
+                    "<p>The process of securing sensitive information during transmission</p>",
+                    "<p>The archiving of historical records for legal purposes</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "In terms of compliance, what does \"data breach notification\" entail?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708673,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In cloud computing environments, what does \"multi-tenancy\" refer to?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Multi-tenancy refers to a cloud computing model where multiple customers share the same physical resources (such as servers or databases), while their individual data remains isolated from one another. This approach allows for cost efficiency while providing secure environments for each tenant's information.</p>",
+                "answers": [
+                    "<p>The ability to access cloud services from multiple devices simultaneously</p>",
+                    "<p>A model where multiple customers share the same physical resources while keeping their data isolated</p>",
+                    "<p>The process of archiving old datasets in the cloud</p>",
+                    "<p>The automation of backup processes across different cloud providers</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "In cloud computing environments, what does \"multi-tenancy\" refer to?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708675,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In terms of big data analytics, what does \"real-time processing\" enable organizations to do?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Real-time processing enables organizations to analyze streaming data as it arrives, allowing them to gain immediate insights and respond quickly to changing conditions or events. This capability is crucial in industries such as finance or e-commerce where timely decision-making can significantly impact outcomes.</p>",
+                "answers": [
+                    "<p>Analyze historical trends over long periods</p>",
+                    "<p>Process large volumes of static datasets at scheduled intervals</p>",
+                    "<p>Analyze streaming data as it arrives for immediate insights</p>",
+                    "<p>Archive old datasets for future reference</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "In terms of big data analytics, what does \"real-time processing\" enable organizations to do?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708677,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of data quality, what does \"data cleansing\" involve?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data cleansing involves identifying and correcting inaccuracies or inconsistencies within datasets. This process is essential for improving data quality, ensuring that analyses are based on reliable information, and enhancing decision-making capabilities.</p>",
+                "answers": [
+                    "<p>The identification and correction of inaccuracies or inconsistencies in datasets</p>",
+                    "<p>The process of backing up datasets for disaster recovery</p>",
+                    "<p>The automation of report generation from multiple sources</p>",
+                    "<p>The archiving of outdated records for compliance</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "In the context of data quality, what does \"data cleansing\" involve?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708679,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of big data analytics, what does \"batch processing\" refer to?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Batch processing refers to analyzing large volumes of data that have been collected over a period at scheduled intervals. This method is often used when immediate insights are not required, allowing organizations to process and analyze large datasets efficiently.</p>",
+                "answers": [
+                    "<p>Processing data in real-time as it arrives</p>",
+                    "<p>Analyzing large volumes of data collected over a period at scheduled intervals</p>",
+                    "<p>Automating the generation of compliance reports</p>",
+                    "<p>Archiving old datasets for future reference</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "In the context of big data analytics, what does \"batch processing\" refer to?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708711,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is \"reference data,\" and why is it important?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Reference data consists of values used to categorize or classify other types of data (e.g., country codes or product categories). Proper management of reference data ensures consistency across datasets and applications, enhancing the quality of analysis and reporting.</p>",
+                "answers": [
+                    "<p>Data used to categorize or classify other types of data, providing context and consistency across systems</p>",
+                    "<p>Data that changes frequently during transactions</p>",
+                    "<p>Data that is archived for historical purposes</p>",
+                    "<p>Temporary data created during processing</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is \"reference data,\" and why is it important?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708713,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does \"data enrichment\" involve?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data enrichment involves adding additional data from external sources to improve the quality and context of existing datasets. This process enhances the value of the data by providing more comprehensive information for analysis.</p>",
+                "answers": [
+                    "<p>The process of backing up datasets for disaster recovery</p>",
+                    "<p>Adding additional data from external sources to improve the quality and context of existing datasets</p>",
+                    "<p>Automating report generation from various databases</p>",
+                    "<p>Archiving outdated records for compliance</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What does \"data enrichment\" involve?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708681,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In a master data management (MDM) system, what are \"golden records\"?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Golden records represent the most accurate and complete version of a master record after deduplication processes have been applied. These records serve as the single source of truth within an MDM system, ensuring consistency across various applications and systems.</p>",
+                "answers": [
+                    "<p>Records that are archived for historical purposes</p>",
+                    "<p>The most accurate and complete version of a master record after deduplication processes</p>",
+                    "<p>Temporary records used during ETL processes</p>",
+                    "<p>Records created solely for reporting purposes</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "In a master data management (MDM) system, what are \"golden records\"?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708683,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does \"data interoperability\" refer to in the context of integrated systems?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data interoperability refers to the ability of different systems and applications to communicate and exchange information seamlessly. This capability is essential for integrated systems as it enables organizations to leverage diverse datasets effectively while maintaining consistency across platforms.</p>",
+                "answers": [
+                    "<p>The ability of different systems to communicate and exchange information seamlessly</p>",
+                    "<p>The process of securing sensitive information during transmission</p>",
+                    "<p>The automation of backup processes across different systems</p>",
+                    "<p>The categorization of datasets based on their usage frequency</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What does \"data interoperability\" refer to in the context of integrated systems?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708685,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does \"data retention policy\" typically define in an organization?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A data retention policy defines guidelines on how long different types of data should be stored based on legal, regulatory, and business needs. This policy helps organizations manage their data lifecycle effectively while ensuring compliance with applicable laws.</p>",
+                "answers": [
+                    "<p>The process for archiving historical datasets</p>",
+                    "<p>Guidelines on how long different types of data should be stored based on legal and business needs</p>",
+                    "<p>The automation of report generation from multiple sources</p>",
+                    "<p>The categorization of datasets based on their usage frequency</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What does \"data retention policy\" typically define in an organization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708687,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In a relational database, what is the purpose of a \"foreign key\"?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A foreign key establishes a link between two tables by referencing the primary key of another table. This relationship enforces referential integrity, ensuring that records in one table correspond to valid records in another, thus maintaining accurate relationships within the database.</p>",
+                "answers": [
+                    "<p>To uniquely identify records within a table</p>",
+                    "<p>To establish a link between two tables by referencing the primary key of another table</p>",
+                    "<p>To automate backup processes for critical tables</p>",
+                    "<p>To categorize datasets based on their usage frequency</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "In a relational database, what is the purpose of a \"foreign key\"?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708689,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of big data analytics, what does \"stream processing\" enable organizations to do?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Stream processing enables organizations to analyze real-time data streams as they arrive, allowing them to gain immediate insights and respond quickly to changing conditions or events. This capability is essential in industries where timely decision-making can significantly impact outcomes.</p>",
+                "answers": [
+                    "<p>Analyze historical trends over long periods</p>",
+                    "<p>Automate the generation of compliance reports</p>",
+                    "<p>Archive old datasets for future reference</p>",
+                    "<p>Process real-time data streams as they arrive for immediate insights</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "In the context of big data analytics, what does \"stream processing\" enable organizations to do?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708691,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What role does \"data visualization\" play in decision-making processes?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data visualization plays a crucial role in decision-making processes by presenting complex data in graphical formats (such as charts or dashboards). This approach enhances understanding and facilitates insights, enabling stakeholders to make informed decisions quickly based on visual representations of key metrics.</p>",
+                "answers": [
+                    "<p>It focuses solely on optimizing storage costs.</p>",
+                    "<p>It presents complex data in graphical formats to enhance understanding and facilitate insights.</p>",
+                    "<p>It automates the retrieval of specific datasets for analysis.</p>",
+                    "<p>It establishes guidelines for archiving historical datasets.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What role does \"data visualization\" play in decision-making processes?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708693,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In terms of database design, what does \"denormalization\" achieve?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Denormalization improves query performance by combining tables into fewer, larger tables, which can reduce the number of joins needed during queries. While it may introduce some redundancy, it is often used in read-heavy environments to enhance performance.</p>",
+                "answers": [
+                    "<p>It reduces redundancy by organizing tables into smaller structures.</p>",
+                    "<p>It improves query performance by combining tables into fewer, larger tables.</p>",
+                    "<p>It automates the backup processes for critical tables.</p>",
+                    "<p>It categorizes datasets based on their usage frequency.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "In terms of database design, what does \"denormalization\" achieve?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708695,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of big data technologies, what does \"NoSQL\" refer to?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>NoSQL refers to non-relational database systems designed to handle large volumes of unstructured or semi-structured data. These databases are optimized for scalability and flexibility, making them suitable for big data applications where traditional relational databases may struggle.</p>",
+                "answers": [
+                    "<p>Non-relational database systems designed to handle large volumes of unstructured or semi-structured data</p>",
+                    "<p>A type of relational database that uses SQL as its query language</p>",
+                    "<p>A method for securing sensitive information in databases</p>",
+                    "<p>An automated reporting tool for analyzing structured datasets</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "In the context of big data technologies, what does \"NoSQL\" refer to?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708697,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In cloud computing environments, what does \"service-level agreement (SLA)\" define?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A service-level agreement (SLA) defines the terms outlining expected service performance levels between a cloud service provider and a customer. SLAs typically include metrics such as uptime guarantees, response times, and support availability, ensuring that both parties have clear expectations regarding service delivery.</p>",
+                "answers": [
+                    "<p>The technical specifications required for cloud applications</p>",
+                    "<p>The terms outlining the expected service performance levels between a provider and a customer</p>",
+                    "<p>The process for securing sensitive information during transmission</p>",
+                    "<p>The categorization of datasets based on their usage frequency</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "In cloud computing environments, what does \"service-level agreement (SLA)\" define?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708699,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does \"encryption\" achieve?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Encryption converts readable data into an unreadable format using algorithms, preventing unauthorized access. This security measure protects sensitive information both at rest (stored data) and in transit (data being transmitted).</p>",
+                "answers": [
+                    "<p>It automates backup processes for critical tables.</p>",
+                    "<p>It converts readable data into an unreadable format to prevent unauthorized access.</p>",
+                    "<p>It categorizes datasets based on their usage frequency.</p>",
+                    "<p>It secures sensitive information during transmission only.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What does \"encryption\" achieve?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708701,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of data architecture, what does \"logical data model\" represent?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A logical data model is an abstract representation that defines data elements, relationships, and constraints without specifying how they will be physically implemented in a database. It serves as a blueprint for designing the physical database structure.</p>",
+                "answers": [
+                    "<p>An abstract representation that defines data elements, relationships, and constraints without specifying physical implementation</p>",
+                    "<p>A detailed schema that includes all database tables and their relationships</p>",
+                    "<p>A method for securing sensitive information in databases</p>",
+                    "<p>The physical storage details of the database</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "In the context of data architecture, what does \"logical data model\" represent?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708703,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is \"data governance maturity assessment,\" and why is it important?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A data governance maturity assessment evaluates the effectiveness of current governance practices within an organization. This assessment helps identify strengths and weaknesses, guiding improvements in policies, processes, and roles related to data management.</p>",
+                "answers": [
+                    "<p>Evaluating the technical specifications of database systems</p>",
+                    "<p>Automating report generation from various databases</p>",
+                    "<p>Assessing the effectiveness of current data governance practices to identify areas for improvement</p>",
+                    "<p>Securing sensitive information during transmission</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "What is \"data governance maturity assessment,\" and why is it important?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708705,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of cloud computing, what does \"multi-tenancy\" refer to?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Multi-tenancy refers to a cloud computing model where multiple customers share the same physical resources (such as servers or databases), while their individual data remains isolated from one another. This approach allows for cost efficiency while providing secure environments for each tenant's information.</p>",
+                "answers": [
+                    "<p>The ability to access cloud services from any location without restrictions</p>",
+                    "<p>A model where multiple customers share the same physical resources while keeping their data isolated</p>",
+                    "<p>The process of archiving old datasets in the cloud</p>",
+                    "<p>The automation of backup processes across different cloud providers</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "In the context of cloud computing, what does \"multi-tenancy\" refer to?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708707,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In terms of machine learning, what does \"training dataset\" refer to?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A training dataset is the subset of data used to train a machine learning model to recognize patterns and make predictions. The quality and representativeness of this dataset are critical for the model's performance on unseen data.</p>",
+                "answers": [
+                    "<p>The subset of data used to train the model to recognize patterns and make predictions</p>",
+                    "<p>The dataset used to evaluate model performance after deployment</p>",
+                    "<p>The dataset created from existing records for testing purposes</p>",
+                    "<p>The automation of report generation from various databases</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "In terms of machine learning, what does \"training dataset\" refer to?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708709,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of data quality, what does \"data validation\" involve?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data validation involves ensuring that data meets predefined criteria or standards before it is used or processed. This step is crucial for maintaining high data quality and preventing errors in analysis or reporting.</p>",
+                "answers": [
+                    "<p>The process of creating new datasets from existing ones</p>",
+                    "<p>Ensuring that data meets predefined criteria or standards before it is used or processed</p>",
+                    "<p>Automating report generation from various databases</p>",
+                    "<p>Archiving outdated records for compliance</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "In the context of data quality, what does \"data validation\" involve?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708715,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does \"data archiving\" refer to in an organization's data management strategy?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data archiving refers to storing inactive or historical data in a separate location to free up space in active databases. This practice helps organizations maintain performance while ensuring that important historical records are preserved for future reference.</p>",
+                "answers": [
+                    "<p>The process of permanently deleting outdated records</p>",
+                    "<p>Automating report generation from various databases</p>",
+                    "<p>Securing sensitive information during transmission</p>",
+                    "<p>Storing inactive or historical data in a separate location to free up space in active databases</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "What does \"data archiving\" refer to in an organization's data management strategy?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708717,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In terms of cybersecurity, what does \"penetration testing\" involve?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Penetration testing involves evaluating the effectiveness of current security practices by simulating attacks on systems. This proactive approach helps identify vulnerabilities before they can be exploited by malicious actors.</p>",
+                "answers": [
+                    "<p>Evaluating the effectiveness of current security practices by simulating attacks on systems</p>",
+                    "<p>Automating incident response processes</p>",
+                    "<p>Securing sensitive information during transmission</p>",
+                    "<p>Archiving old security tests</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "In terms of cybersecurity, what does \"penetration testing\" involve?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708719,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In terms of business intelligence (BI), what does \"self-service BI\" enable users to do?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Self-service BI enables users to create their own reports and analyses without needing extensive technical skills or IT support. This capability empowers business users to make informed decisions quickly based on relevant data insights.</p>",
+                "answers": [
+                    "<p>Rely solely on IT teams for generating reports</p>",
+                    "<p>Access only historical data without real-time insights</p>",
+                    "<p>Create their own reports and analyses without needing extensive technical skills or IT support</p>",
+                    "<p>Automate all reporting processes without user intervention</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "In terms of business intelligence (BI), what does \"self-service BI\" enable users to do?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708725,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is \"big data\" typically characterized by?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Big data is characterized by high volume (large amounts of data), variety (different types of data), and velocity (the speed at which data is generated and processed).</p>",
+                "answers": [
+                    "<p>High volume, variety, and velocity of data</p>",
+                    "<p>Data stored in relational databases only</p>",
+                    "<p>Data that is easy to analyze using traditional methods</p>",
+                    "<p>Data that is slow to collect due to size</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is \"big data\" typically characterized by?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708727,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does \"data reconciliation\" typically involve?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data reconciliation involves comparing two sets of records (such as financial transactions or balances) to ensure they match accurately, which is crucial for maintaining financial integrity.</p>",
+                "answers": [
+                    "<p>Comparing two sets of records to ensure they match accurately</p>",
+                    "<p>Comparing physical dataset with virtual one</p>",
+                    "<p>Preparing snapshots of the data for future data cleansing</p>",
+                    "<p>None of the above</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What does \"data reconciliation\" typically involve?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708729,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In terms of database design, what does \"schema\" refer to?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>In a database management system (DBMS), a schema refers to the structure that defines how data is organized within the database, including tables, fields, relationships, and constraints.</p>",
+                "answers": [
+                    "<p>The structure defining how data is organized within the database</p>",
+                    "<p>The physical storage details of the database</p>",
+                    "<p>The technical limitations of the hardware that limit the possible database design</p>",
+                    "<p>None of the above</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "In terms of database design, what does \"schema\" refer to?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708731,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which of the following is a key component of data quality management?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data profiling is a key component of DQM as it involves analyzing existing data to understand its structure and identify quality issues.</p>",
+                "answers": [
+                    "<p>Data visualization</p>",
+                    "<p>Data profiling</p>",
+                    "<p>Data archiving</p>",
+                    "<p>Data retrieval</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "Which of the following is a key component of data quality management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708723,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of data quality, what does \"data accuracy\" refer to?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data accuracy refers to the extent to which data reflects the real-world entities it represents. High accuracy is essential for reliable decision-making and analysis.</p>",
+                "answers": [
+                    "<p>The degree to which data is complete and free from errors</p>",
+                    "<p>The process of ensuring data is stored securely</p>",
+                    "<p>The extent to which data reflects the real-world entities it represents</p>",
+                    "<p>The extent to which the data is captured on time </p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "In the context of data quality, what does \"data accuracy\" refer to?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 97708721,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of data quality, what does \"data completeness\" refer to?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data completeness refers to the degree to which all required data is present in a dataset. Ensuring completeness is essential for accurate analysis and decision-making, as missing data can lead to incorrect conclusions.</p>",
+                "answers": [
+                    "<p>The degree to which all required data is present in a dataset</p>",
+                    "<p>The number of complete databases</p>",
+                    "<p>The automation of report generation from various databases</p>",
+                    "<p>The number of sensitive data points in a dataset</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "In the context of data quality, what does \"data completeness\" refer to?",
+            "related_lectures": []
+        }
+    ]
+}

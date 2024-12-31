@@ -1,0 +1,1160 @@
+{
+    "count": 40,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "_class": "assessment",
+            "id": 84851487,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the primary business drivers for document and content management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The primary business drivers for document and content management include regulatory compliance, the ability to respond to litigation and e-discovery requests, and business continuity requirements. Additionally, gaining efficiencies is highlighted as a driver for improving document management, with technological advances helping organizations streamline processes, manage workflow, eliminate repetitive manual tasks, and enable collaboration. Therefore, the primary focus is on cost reduction and operational efficiency, making option A the correct answer.</p><p>Source:&nbsp;Chapter 9 Document and Content Management - 1.1 Business Drivers (page 289)</p>",
+                "answers": [
+                    "<p>Cost reduction and operational efficiency</p>",
+                    "<p>Marketing and customer satisfaction</p>",
+                    "<p>Technology innovation and automation</p>",
+                    "<p>Employee training and development</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Document and Content Management",
+            "question_plain": "What are the primary business drivers for document and content management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851531,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the primary components of a Data Warehouse (DW)?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A Data Warehouse (DW) consists of two primary components: an integrated decision support database and the related software programs used to collect, cleanse, transform, and store data from various operational and external sources.</p><p>Source:&nbsp;Chapter 11 Data Warehousing and Business Intelligence - 1.3.2 Data Warehouse (page 361)</p>",
+                "answers": [
+                    "<p>Social media platforms and project management software</p>",
+                    "<p>Integrated decision support database and related software programs</p>",
+                    "<p>Web development tools and business process automation</p>",
+                    "<p>Data analysis tools and statistical software</p>",
+                    "<p>Customer relationship management (CRM) software</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Warehousing and Business Intelligence",
+            "question_plain": "What are the primary components of a Data Warehouse (DW)?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851529,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does the term Business Intelligence (BI) encompass?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The term Business Intelligence (BI) has two meanings. Firstly, it refers to a type of data analysis aimed at understanding organizational activities and opportunities, which can lead to improved organizational success. Secondly, it refers to a set of technologies that support this kind of data analysis.</p><p>Source:&nbsp;Chapter 11 Data Warehousing and Business Intelligence - 1.3.1 Business Intelligence (page 362)</p>",
+                "answers": [
+                    "<p>Data storage technologies</p>",
+                    "<p>Data analysis aimed at understanding organizational activities and opportunities</p>",
+                    "<p>Web development tools</p>",
+                    "<p>Social media platforms</p>",
+                    "<p>Business process automation</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Warehousing and Business Intelligence",
+            "question_plain": "What does the term Business Intelligence (BI) encompass?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851527,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are some of guiding principles for the implementation of a Data Warehouse?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The guiding principles for the implementation of a Data Warehouse include focusing on business goals, starting with the end in mind, thinking and designing globally while acting and building locally, summarizing and optimizing last (not first), promoting transparency and self-service, building Metadata with the warehouse, collaborating with other data initiatives, and recognizing that one size does not fit all. Therefore, the correct answer is \"All of the above.\"</p><p>Source: Chapter 11 Data Warehousing and Business Intelligence - 1.2 Goals and Principles (page 361)</p>",
+                "answers": [
+                    "<p>Focus on business goals</p>",
+                    "<p>One size does not fit all</p>",
+                    "<p>Summarize and optimize last, not first</p>",
+                    "<p>Promote transparency and self-service</p>",
+                    "<p>All of the above</p>"
+                ]
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "Data Warehousing and Business Intelligence",
+            "question_plain": "What are some of guiding principles for the implementation of a Data Warehouse?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851525,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the primary drivers for the development of Data Warehousing?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The primary drivers for data warehousing include supporting operational functions, compliance requirements, and Business Intelligence (BI) activities. While compliance requirements, such as providing historical data for regulatory purposes, play a role, the core motivations revolve around improving operational efficiency and gaining insights through BI. Data Warehouses serve as a centralized repository that supports these objectives.</p><p>Source:&nbsp;Chapter 11 Data Warehousing and Business Intelligence - 1.1 Business Drivers (page 361)</p>",
+                "answers": [
+                    "<p>Supporting data redundancy</p>",
+                    "<p>Compliance requirements and historical data storage</p>",
+                    "<p>Operational efficiency, compliance requirements, and Business Intelligence (BI)</p>",
+                    "<p>Predictive analytics and retrospective assessment</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Warehousing and Business Intelligence",
+            "question_plain": "What are the primary drivers for the development of Data Warehousing?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851523,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which of the following metrics is related to denoting the confidence of a subject area entity or associated attribute and its fit-for-purpose for use across the organization?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data quality and compliance metrics should denote the confidence (as a percentage) of a subject area entity or associated attribute and its fit-for-purpose for use across the organization.</p><p><br>Source:&nbsp;Chapter 10 Reference and Master Data -&nbsp; 6.1 Metrics (page 356)</p>",
+                "answers": [
+                    "<p>Data change activity</p>",
+                    "<p>Data ingestion and consumption</p>",
+                    "<p>Service Level Agreements</p>",
+                    "<p>Data quality and compliance</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Reference and Master Data",
+            "question_plain": "Which of the following metrics is related to denoting the confidence of a subject area entity or associated attribute and its fit-for-purpose for use across the organization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851521,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does the term Business Intelligence (BI) encompass?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "Data storage technologies are not encompassed by the term Business Intelligence (BI). BI focuses on analyzing and understanding data to make informed business decisions, rather than solely on storing data.",
+                    "Data analysis aimed at understanding organizational activities and opportunities is correct. Business Intelligence (BI) involves analyzing data to gain insights into business operations, trends, and opportunities for improvement.",
+                    "Web development tools are not typically included in the scope of Business Intelligence (BI). BI focuses on data analysis and decision-making, rather than web development.",
+                    "Social media platforms are not directly related to Business Intelligence (BI). While social media data can be analyzed as part of BI efforts, BI primarily focuses on internal organizational data for decision-making.",
+                    "Business process automation is not synonymous with Business Intelligence (BI). While BI can inform and improve business processes, automation is a separate concept focused on streamlining and optimizing workflows."
+                ],
+                "explanation": "<p>The term Business Intelligence (BI) has two meanings. Firstly, it refers to a type of data analysis aimed at understanding organizational activities and opportunities, which can lead to improved organizational success. Secondly, it refers to a set of technologies that support this kind of data analysis.</p><p>Source:&nbsp;Chapter 11 Data Warehousing and Business Intelligence - 1.3.1 Business Intelligence (page 362)</p>",
+                "answers": [
+                    "<p>Data storage technologies</p>",
+                    "<p>Data analysis aimed at understanding organizational activities and opportunities</p>",
+                    "<p>Web development tools</p>",
+                    "<p>Social media platforms</p>",
+                    "<p>Business process automation</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Warehousing and Business Intelligence",
+            "question_plain": "What does the term Business Intelligence (BI) encompass?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851519,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is identified as one of the most challenging cultural changes associated with Reference and Master Data Management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>DMBOK mentions that perhaps the most challenging cultural change is central to governance, specifically determining which individuals are accountable for which decisions. This involves centralizing decision-making and accountability, making it the most challenging aspect in the context of Reference and Master Data Management. While advanced technology is mentioned, it is not highlighted as the most challenging cultural change. Reducing data complexity is a potential goal but not explicitly identified as the most challenging cultural change. Accelerating data processes is not discussed as a cultural change but rather as a potential perception of MDM or RDM efforts by those who manage data locally.<br><br>Source: Chapter 10 Reference and Master Data - 5. Organization and Cultural Change (page 355)</p>",
+                "answers": [
+                    "<p>Implementing MDM technology</p>",
+                    "<p>Centralizing decision-making and accountability</p>",
+                    "<p>Reducing data complexity</p>",
+                    "<p>Accelerating data processes</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Reference and Master Data",
+            "question_plain": "What is identified as one of the most challenging cultural changes associated with Reference and Master Data Management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851517,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a crucial factor for the success of Master Data Management (MDM) programs?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>MDM programs will fail without proper governance. Data governance professionals are expected to understand the challenges of MDM and Reference Data Management (RDM) and assess the organization's maturity and ability to meet them. This highlights the importance of governance in ensuring the success of MDM initiatives. Advanced technology and quick implementation are not explicitly mentioned as factors crucial for success.</p><p><br></p><p>Source: Chapter 10 Reference and Master Data - 4. Implementation Guidelines (page 353)</p>",
+                "answers": [
+                    "<p>Advanced technology</p>",
+                    "<p>Quick implementation</p>",
+                    "<p>Proper governance</p>",
+                    "<p>At least 5 Data Stewards</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Reference and Master Data",
+            "question_plain": "What is a crucial factor for the success of Master Data Management (MDM) programs?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851515,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is Master Data Management (MDM) according to Gartner?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Gartner defines Master Data Management (MDM) as a discipline that involves people, processes, and technology to ensure the uniformity, accuracy, stewardship, semantic consistency, and accountability of the enterprise's official shared Master Data assets. It emphasizes that MDM is not a specific application solution but a broader approach.</p><p><br>Source:&nbsp;Chapter 10 Reference and Master Data - 1.3.3.3 Master Data Management (page 330)</p>",
+                "answers": [
+                    "<p>A specific application solution for managing Master Data.</p>",
+                    "<p>A technology-enabled discipline involving people, processes, and technology to ensure the uniformity, accuracy, stewardship, semantic consistency, and accountability of the enterprise’s official shared Master Data assets.</p>",
+                    "<p>A set of tools and software used to reconcile data inconsistencies.</p>",
+                    "<p>A process that guarantees the accuracy and reliability of Master Data.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Reference and Master Data",
+            "question_plain": "What is Master Data Management (MDM) according to Gartner?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851513,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of Master Data?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Master Data serves the purpose of providing context for business transactions and analysis.</p><p>Source:&nbsp;Chapter 10 Reference and Master Data - 1.3.3 Master Data (page 330)</p>",
+                "answers": [
+                    "<p>To provide context for business transactions and analysis.</p>",
+                    "<p>To decrease data costs</p>",
+                    "<p>To provide context of unstructured data</p>",
+                    "<p>None of the above</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Reference and Master Data",
+            "question_plain": "What is the purpose of Master Data?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851511,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are all the different structures for Reference Data?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>DMBOK mentions various structures for Reference Data, including lists, cross-reference lists, taxonomies, ontologies, proprietary/internal reference data, industry reference data, geographic/geo-statistical data, computational reference data, and standard reference data set metadata.</p><p><br></p><p>Source: Chapter 10 Reference and Master Data - 1.3&nbsp;Essential Concepts (page 330)</p>",
+                "answers": [
+                    "<p>Lists, ontologies, industry reference data, and computational reference data.</p>",
+                    "<p>Lists, cross-reference lists, taxonomies, ontologies, proprietary/internal reference data, industry reference data, geographic/geo-statistical data, computational reference data, and standard reference data set metadata.</p>",
+                    "<p>Lists, cross-reference lists, taxonomies, and ontologies.</p>",
+                    "<p>Lists, cross-reference lists, taxonomies, ontologies, proprietary/internal reference data, industry reference data, and geographic/geo-statistical data.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Reference and Master Data",
+            "question_plain": "What are all the different structures for Reference Data?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851507,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What IS&nbsp;NOT a driver for initiating a Master Data Management program are:</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Common drivers for initiating both Master Data Management (MDM) and Reference Data Management (RDM) programs include reducing costs, managing data quality, and simplifying the IT landscape.</p><p>Source: Chapter 10 Reference and Master Data - 1.1 Business Drivers (page 328)</p>",
+                "answers": [
+                    "<p>Meeting organizational data requirements</p>",
+                    "<p>Managing data quality</p>",
+                    "<p>Managing the costs of data integration</p>",
+                    "<p>Reducing risk</p>",
+                    "<p>Change in company leadership</p>"
+                ]
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "Reference and Master Data",
+            "question_plain": "What IS&nbsp;NOT a driver for initiating a Master Data Management program are:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851509,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the goals of a Reference and Master Data Management program?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>DMBOK outlines the goals of a Reference and Master Data Management program, which include ensuring the organization has complete, consistent, current, and authoritative data, enabling data sharing, and lowering costs and reducing complexity through standards, common data models, and integration patterns.</p><p><br></p><p>Source:&nbsp;Chapter 10 Reference and Master Data - 1.2 Goals and Principles (page 329)</p>",
+                "answers": [
+                    "<p>Ensuring data inconsistencies, enabling data sharing, and increasing data complexity.</p>",
+                    "<p>Lowering costs, reducing complexity, and achieving complete, consistent, and current data.</p>",
+                    "<p>Increasing data usage, implementing common data models, and reducing data integration.</p>",
+                    "<p>Authorizing Master and Reference Data, implementing integration patterns, and reducing organizational processes.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Reference and Master Data",
+            "question_plain": "What are the goals of a Reference and Master Data Management program?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851485,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary focus of Document and Content Management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The primary focus of Document and Content Management is on maintaining the integrity of and enabling access to documents and other unstructured or semi-structured information.</p><p>Source:&nbsp;Chapter 9 Document and Content Management - 1. Introduction (page 287)</p>",
+                "answers": [
+                    "<p>Managing structured data in relational databases</p>",
+                    "<p>Controlling access to external data sources</p>",
+                    "<p>Maintaining the integrity and enabling access to unstructured or semi-structured information</p>",
+                    "<p>Implementing security measures for data warehouses</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Document and Content Management",
+            "question_plain": "What is the primary focus of Document and Content Management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851489,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the principles outlined in the Generally Acceptable Recordkeeping Principles (GARP) by ARMA International for managing records and information?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The Generally Acceptable Recordkeeping Principles (GARP) by ARMA International outline the following principles for managing records and information:</p><ol><li><p>Principle of Accountability</p></li><li><p>Principle of Integrity</p></li><li><p>Principle of Protection</p></li><li><p>Principle of Compliance</p></li><li><p>Principle of Availability</p></li><li><p>Principle of Retention</p></li><li><p>Principle of Disposition</p></li><li><p>Principle of Transparency</p></li></ol><p>These principles provide a framework for effective information governance and recordkeeping.</p><p><br></p><p>Source: Chapter 9 Document and Content Management - 1.2 Goals and Principles (page 289)</p>",
+                "answers": [
+                    "<p>Accountability, Integrity, Protection, Compliance, Availability, Retention, Disposition, Transparency</p>",
+                    "<p>Profit, Integrity, Protection, Compliance</p>",
+                    "<p>Accessibility, Security, Flexibility, Innovation</p>",
+                    "<p>Customization, Collaboration, Optimization, Innovation</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Document and Content Management",
+            "question_plain": "What are the principles outlined in the Generally Acceptable Recordkeeping Principles (GARP) by ARMA International for managing records and information?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851491,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does the term \"Content Management\" involve, and what is the distinction when it encompasses the entire enterprise?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Content management involves the processes, techniques, and technologies for organizing, categorizing, and structuring information resources so that they can be stored, published, and reused in multiple ways. When the scope of content management extends to cover the entire enterprise, it is known as Enterprise Content Management (ECM). ECM involves managing the entire lifecycle of content across an organization, not just limited to specific websites or portals.</p><p><br></p><p>Source: Chapter 9 Document and Content Management - 1.3.1.1 Content Management (page 290)</p>",
+                "answers": [
+                    "<p>Content management involves organizing and structuring information for websites and portals; when it encompasses the entire enterprise, it is referred to as Enterprise Resource Planning (ERP).</p>",
+                    "<p>Content management involves daily changes through controlled processes for creation and modification; when it encompasses the entire enterprise, it is referred to as Business Process Management (BPM).</p>",
+                    "<p>Content management involves organizing, categorizing, and structuring information for various uses; when it encompasses the entire enterprise, it is referred to as Enterprise Content Management (ECM).</p>",
+                    "<p>Content management involves managing formal documents; when it encompasses the entire enterprise, it is referred to as Knowledge Management (KM).</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Document and Content Management",
+            "question_plain": "What does the term \"Content Management\" involve, and what is the distinction when it encompasses the entire enterprise?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851493,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does document management involve, and what are some key aspects of managing the lifecycle of documents and records?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Document management encompasses the processes, techniques, and technologies for controlling and organizing both electronic and paper documents throughout their lifecycle. Key aspects of managing the lifecycle of documents and records include inventory (identification of documents), policy creation and enforcement (including retention policies), classification, storage, retrieval and circulation (allowing access in accordance with policies), and preservation and disposal (archiving and destroying documents according to organizational needs, statutes, and regulations). Document management involves more than just physical storage; it includes the entire process of handling documents from creation to destruction.</p><p><br></p><p>Source:&nbsp;Chapter 9 Document and Content Management - 1.3.3.1 Document Management (page 290)</p>",
+                "answers": [
+                    "<p>Document management involves only paper documents, and its key aspects include inventory, policy creation, and preservation.</p>",
+                    "<p>Document management involves controlling and organizing both electronic and paper documents throughout their lifecycle; key aspects include inventory, policy creation, storage, retrieval, and disposal.</p>",
+                    "<p>Document management focuses on file content and treats each file as a separate entity; key aspects include policy creation, storage, and preservation.</p>",
+                    "<p>Document management is concerned with data management professionals' decisions about document classification and retention; key aspects include inventory and preservation.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Document and Content Management",
+            "question_plain": "What does document management involve, and what are some key aspects of managing the lifecycle of documents and records?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851495,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the estimated percentage of all stored data that is maintained outside of relational databases?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>It is estimated that as much as 80% of all stored data is maintained outside of relational databases. Unstructured data, which lacks a data model similar to relational databases, constitutes a significant portion of electronic information in various formats, including word processing documents, emails, social media, and more.</p><p>Source: Chapter 9 Document and Content Management - 1.3.10 Unstructured Data (page 290)</p>",
+                "answers": [
+                    "<p>5%</p>",
+                    "<p>30%</p>",
+                    "<p>80%</p>",
+                    "<p>100%</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Document and Content Management",
+            "question_plain": "What is the estimated percentage of all stored data that is maintained outside of relational databases?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851497,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does the planning for a document's lifecycle involve in the practice of document management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The practice of document management involves planning for a document’s entire lifecycle. This includes the stages from its creation or receipt through its distribution, storage, retrieval, archiving, and potential destruction. Planning encompasses the development of classification/indexing systems and taxonomies to facilitate document storage and retrieval. Moreover, it necessitates the creation of policies specifically for records, ensuring adherence to retention policies aligned with company standards and government regulations.</p><p><br></p><p>Source: Chapter 9 Document and Content Management - 2.1 Plan for Lifecycle Management (page 305)</p>",
+                "answers": [
+                    "<p>Developing classification systems</p>",
+                    "<p>Only creating policies for records</p>",
+                    "<p>Planning for the document's creation but not for its destruction</p>",
+                    "<p>Planning from the document's creation to potential destruction, including policy creation for records</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Document and Content Management",
+            "question_plain": "What does the planning for a document's lifecycle involve in the practice of document management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851499,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the first step involved in managing content in the document management lifecycle?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Capturing content is the initial step in managing it within the document management lifecycle. This involves the collection of electronic content, which may already be in a format suitable for storage in electronic repositories. For paper content, it includes scanning, uploading to the corporate system, indexing, and storage in the repository. The content should be tagged with appropriate Metadata during capture for retrieval and contextual understanding. Automated workflows and recognition technologies can aid in the capture process, providing audit trails.</p><p>Source: Chapter 9 Document and Content Management - 2.2 Manage the Lifecycle (page 308)</p>",
+                "answers": [
+                    "<p>Backup and recovery</p>",
+                    "<p>Versioning and control</p>",
+                    "<p>Capture records and content</p>",
+                    "<p>Manage retention and disposal</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Document and Content Management",
+            "question_plain": "What is the first step involved in managing content in the document management lifecycle?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851501,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the potential challenge when delivering content through different channels, especially when structured data from databases is formatted into HTML?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The potential challenge highlighted in the passage is that when structured data from databases is formatted into HTML for delivery through various channels, it can become difficult to recover the original structured data. This difficulty arises because separating the data from the formatting is not always straightforward.</p><p><br>Source:&nbsp;Chapter&nbsp; 9 Document and Content Management - 2.3 Publish and Deliver Content (page 311)</p>",
+                "answers": [
+                    "<p>Cost</p>",
+                    "<p>User experience</p>",
+                    "<p>Difficulty recovering the original structured data</p>",
+                    "<p>None of the above</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Document and Content Management",
+            "question_plain": "What is the potential challenge when delivering content through different channels, especially when structured data from databases is formatted into HTML?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851503,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of a litigation response playbook?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A litigation response playbook defines the target environment for e-discovery and assesses if gaps exist between current and target environments. The purpose is to plan for litigation response by documenting business processes, roles, responsibilities, and identifying risks to proactively prevent situations that might result in litigation.</p><p>Source: Chapter 9 Document and Content Management - 4.1 Litigation Response Playbook (page 318)</p>",
+                "answers": [
+                    "<p>To initiate e-discovery activities during a lawsuit.</p>",
+                    "<p>To assess gaps between current and target environments for e-discovery.</p>",
+                    "<p>To draft policies related to document retention and archiving.</p>",
+                    "<p>To identify legal issues for a potential lawsuit.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Document and Content Management",
+            "question_plain": "What is the purpose of a litigation response playbook?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851505,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the suggested solution to address the issues arising from the organic evolution of systems and data in organizations?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The issues arising from the organic evolution of systems and data, such as inconsistencies in data structure and values, can be reduced through the management of Master Data and Reference Data.</p><p>Source:&nbsp;Chapter 10 Reference and Master Data - 1. Introduction (page 327)</p>",
+                "answers": [
+                    "<p>Implementing isolated systems for each business unit.</p>",
+                    "<p>Reducing access to customer lists and geographic location codes.</p>",
+                    "<p>Managing Master Data and Reference Data.</p>",
+                    "<p>Ignoring inconsistencies in data structure.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Reference and Master Data",
+            "question_plain": "What is the suggested solution to address the issues arising from the organic evolution of systems and data in organizations?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851563,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which of the following metrics is suggested for measuring Metadata environments by comparing ideal coverage of enterprise Metadata to actual coverage?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The suggested metric for measuring Metadata environments by comparing ideal coverage of enterprise Metadata to actual coverage is \"Metadata repository completeness.\" This metric involves assessing the extent to which the Metadata repository covers all artifacts and instances within the defined scope.</p><p><br>Source:&nbsp;Chapter 12 Metadata Management - 6.4 Metrics (page 420)</p>",
+                "answers": [
+                    "<p>Metadata Management Maturity</p>",
+                    "<p>Steward representation</p>",
+                    "<p>Metadata usage</p>",
+                    "<p>Metadata repository completeness</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Metadata Management",
+            "question_plain": "Which of the following metrics is suggested for measuring Metadata environments by comparing ideal coverage of enterprise Metadata to actual coverage?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851561,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the term used to describe the process of connecting pieces of data lineage, resulting in a holistic visualization of the data as it moves from its original locations to its final destination?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The process of connecting pieces of data lineage, resulting in a holistic visualization of the data as it moves from its original locations to its final destination, is referred to as \"Lineage stitching.\" It involves combining the 'As Implemented Lineage' from various tools with the 'As Designed Lineage' to create a comprehensive view of data movement.</p><p><br>Source: Chapter 12 Metadata Management - 4.1 Data Lineage and Impact Analysis (page 415)</p>",
+                "answers": [
+                    "<p>Data stitching</p><p><br></p>",
+                    "<p>Metadata augmentation</p>",
+                    "<p>Lineage stitching</p>",
+                    "<p>As Designed Lineage</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Metadata Management",
+            "question_plain": "What is the term used to describe the process of connecting pieces of data lineage, resulting in a holistic visualization of the data as it moves from its original locations to its final destination?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851559,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary tool used for managing Metadata?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The primary tool used to manage Metadata is the Metadata repository. A Metadata repository is a centralized database or storage system that stores and manages Metadata related to an organization's data and information assets. It serves as a central hub for collecting, organizing, and retrieving Metadata from various sources, including tools that produce and use Metadata. The repository often includes an integration layer to gather Metadata automatically and an interface for manual updates.</p><p><br>Source: Chapter 12 Metadata Management - 3. Tools (page 414)</p>",
+                "answers": [
+                    "<p>Data warehouses</p>",
+                    "<p>Business Intelligence tools</p>",
+                    "<p>Metadata repository</p>",
+                    "<p>Data marts</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Metadata Management",
+            "question_plain": "What is the primary tool used for managing Metadata?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851557,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does a Metadata strategy primarily aim to accomplish?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A Metadata strategy primarily aims to manage and evolve Metadata practices within an organization. It includes defining how an organization intends to handle its Metadata, move from the current state to future state practices, and provide a framework for development teams to improve Metadata management. The strategy outlines goals, objectives, and the enterprise Metadata architecture for the organization.</p><p><br>Source: Chapter 12 Metadata Management - 2.1 Define Metadata Strategy (page 409)</p>",
+                "answers": [
+                    "<p>Management and evolution of Metadata practices.</p>",
+                    "<p>Short-term data governance.</p>",
+                    "<p>Implementation of data warehouses.</p>",
+                    "<p>Optimization of data storage structures.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Metadata Management",
+            "question_plain": "What does a Metadata strategy primarily aim to accomplish?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851555,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does Business Metadata primarily focus on?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Business Metadata primarily focuses on the content and condition of the data. It includes non-technical information such as names and definitions of concepts, subject areas, entities, and attributes. Business Metadata also encompasses details like attribute data types, attribute properties, range descriptions, calculations, algorithms, business rules, and valid domain values with their definitions. This type of Metadata is essential for understanding the meaning and context of the data from a business perspective.</p><p><br>Source: Chapter 12 Metadata Management - 1.3.2.1 Business Metadata (page 397)</p>",
+                "answers": [
+                    "<p>Data relationships and structures.</p>",
+                    "<p>Technical details of data storage.</p>",
+                    "<p>Content and condition of the data.</p>",
+                    "<p>Administrative aspects of data management.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Metadata Management",
+            "question_plain": "What does Business Metadata primarily focus on?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851553,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Outside of information technology, for example, in library or information science, Metadata is described using a different set of categories:</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>In library or information science, Metadata is categorized into the following types:</p><ul><li><p><strong>Descriptive Metadata:</strong> Describes a resource and enables its identification and retrieval. Examples include title, author, and subject.</p></li><li><p><strong>Structural Metadata:</strong> Describes relationships within and among resources and their component parts. Examples include the number of pages or chapters in a book.</p></li><li><p><strong>Administrative Metadata:</strong> Used to manage resources over their lifecycle and includes information like version numbers and archive dates.</p></li></ul><p>These categories are more specific to the needs of library and information science.</p><p><br>Source: Chapter 12 Metadata Management - 1.3.2 Types of Metadata (page 397)</p>",
+                "answers": [
+                    "<p>Business, technical, and operational.</p>",
+                    "<p>Informational, structural, and administrative.</p>",
+                    "<p>Descriptive, structural, and administrative.</p>",
+                    "<p>Descriptive, business, and operational.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Metadata Management",
+            "question_plain": "Outside of information technology, for example, in library or information science, Metadata is described using a different set of categories:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851551,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the three traditional types of Metadata often used to categorize information in the IT context?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>In the IT context, Metadata is commonly categorized into three types:</p><ul><li><p><strong>Business Metadata:</strong> Describes the business context, meaning, and usage of the data. It helps users understand the business relevance of the data.</p></li><li><p><strong>Technical Metadata:</strong> Describes the technical aspects of data, such as data types, formats, and structures. It is essential for IT professionals who manage and maintain the data.</p></li><li><p><strong>Operational Metadata:</strong> Describes the operational processes and activities related to data, including data lineage, data quality, and data usage statistics.</p></li></ul><p>These three categories help organize Metadata based on its origin and purpose in the IT domain.</p><p><br>Source: Chapter 12 Metadata Management - 1.3.2 Types of Metadata (page 397)</p>",
+                "answers": [
+                    "<p>Descriptive, structural, and administrative.</p>",
+                    "<p>Business, technical, and operational.</p>",
+                    "<p>Informational, structural, and administrative.</p>",
+                    "<p>Descriptive, business, and operational.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Metadata Management",
+            "question_plain": "What are the three traditional types of Metadata often used to categorize information in the IT context?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851549,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the goals of Metadata management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The goals of Metadata management include:</p><ul><li><p>Documenting and managing organizational knowledge of data-related business terminology.</p></li><li><p>Collecting and integrating Metadata from diverse sources.</p></li><li><p>Ensuring Metadata quality, consistency, currency, and security.</p></li><li><p>Providing standard ways to make Metadata accessible to Metadata consumers.</p></li><li><p>Establishing or enforcing the use of technical Metadata standards to enable data exchange.</p></li></ul><p>All these goals contribute to effective Metadata management, ensuring a consistent understanding of data across the organization.<br><br>Source: Chapter 12 Metadata Management - 1.2 Goals and Principles (page 396)</p>",
+                "answers": [
+                    "<p>Document and manage organizational knowledge of data-related business terminology.</p>",
+                    "<p>Collect and integrate Metadata from diverse sources.</p>",
+                    "<p>Ensure Metadata quality, consistency, currency, and security.</p>",
+                    "<p>Provide standard ways to make Metadata accessible to Metadata consumers.</p>",
+                    "<p>Establish or enforce the use of technical Metadata standards to enable data exchange.</p>",
+                    "<p>All of the above.</p>"
+                ]
+            },
+            "correct_response": [
+                "f"
+            ],
+            "section": "Metadata Management",
+            "question_plain": "What are the goals of Metadata management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851547,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the benefits of well-managed Metadata in an organization's data management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Well-managed Metadata in an organization's data management provides various benefits, including:</p><ul><li><p>Reducing training costs and lowering the impact of staff turnover.</p></li><li><p>Increasing confidence in data by providing context and enabling data quality measurement.</p></li><li><p>Supporting regulatory compliance.</p></li><li><p>Improving operational efficiency by identifying redundant data and processes.</p></li></ul><p>These benefits contribute to a more efficient, reliable, and compliant data management environment.</p><p><br>Source:&nbsp;Chapter 12 Metadata Management - 1.1 Business Drivers (page 395)</p>",
+                "answers": [
+                    "<p>Reducing training costs and lowering the impact of staff turnover.</p>",
+                    "<p>Increasing confidence in data by providing context and enabling data quality measurement.</p>",
+                    "<p>Supporting regulatory compliance.</p>",
+                    "<p>Improving operational efficiency by identifying redundant data and processes.</p>",
+                    "<p>All of the above.</p>",
+                    "<p>Only B, C, and D.</p>"
+                ]
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "Metadata Management",
+            "question_plain": "What are the benefits of well-managed Metadata in an organization's data management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851545,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary role of Metadata in data management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Metadata plays a crucial role in data management by enabling the organization to manage its data as an asset. It includes information about technical and business processes, data rules, constraints, logical and physical data structures, and more. Metadata helps organizations understand their data, systems, and workflows, contributing to data quality assessment and supporting the management of databases and applications. Without reliable Metadata, an organization may not know essential details about its data, hindering its ability to manage data effectively.<br><br>Source: Chapter 12 Metadata Management - 1. Introduction (page 393)</p>",
+                "answers": [
+                    "<p>Metadata serves as a backup for organizational data.</p>",
+                    "<p>Metadata is essential for compliance reporting.</p>",
+                    "<p>Metadata helps in data quality assessment only.</p>",
+                    "<p>Metadata enables the organization to manage its data as an asset.</p>",
+                    "<p>Metadata is primarily focused on managing data lifecycles.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Metadata Management",
+            "question_plain": "What is the primary role of Metadata in data management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851543,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Why are Service Level Agreements (SLAs) important in the context of data warehousing?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Service Level Agreements (SLAs) are crucial in the context of data warehousing because they help in specifying both business and technical expectations for the environments. SLAs define parameters such as response time, data retention, and availability requirements, ensuring that the data warehousing system meets the needs of different business classes and their supporting systems.</p><p><br>Source:&nbsp;Chapter 11 Data Warehousing and Business Intelligence - 6.3 Service Level Agreements (page 388)</p>",
+                "answers": [
+                    "<p>SLAs are not relevant for data warehousing environments.</p>",
+                    "<p>SLAs help in specifying business and technical expectations.</p>",
+                    "<p>SLAs primarily focus on data retention in data warehousing.</p>",
+                    "<p>SLAs are only applicable to Operational Data Stores (ODS) but not to data marts.</p>",
+                    "<p>SLAs are primarily concerned with response time in&nbsp; data marts.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Warehousing and Business Intelligence",
+            "question_plain": "Why are Service Level Agreements (SLAs) important in the context of data warehousing?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851541,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does the term \"self-service\" refer to in the context of Business Intelligence (BI)?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>In the context of BI, \"self-service\" refers to the capability for users to independently access and utilize BI functionality without extensive involvement from IT. This includes tasks such as ad hoc reporting, data exploration, and dashboard creation.<br><br>Source:&nbsp;Chapter 11 Data Warehousing and Business Intelligence - 4.2 Self-Service BI (page 384)</p>",
+                "answers": [
+                    "<p>Automated data loading processes.</p>",
+                    "<p>Governing user activity within a portal.</p>",
+                    "<p>User-driven access to BI functionality without heavy IT involvement.</p>",
+                    "<p>Collaborative forums for data analysis.</p>",
+                    "<p>Maintenance of visualization and statistical analysis tooling.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Warehousing and Business Intelligence",
+            "question_plain": "What does the term \"self-service\" refer to in the context of Business Intelligence (BI)?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851539,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>When choosing tools for a Data Warehouse/BI project, what factors should be considered?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Choosing the initial set of tools for a Data Warehouse/BI project involves considering factors such as near-term requirements, non-functional specifications, and next-generation requirements. These criteria are essential for ensuring that the selected tools meet the project's current and future needs.</p><p><br>Source:&nbsp;Chapter 11 Data Warehousing and Business Intelligence - 3. Tools (page 378)</p>",
+                "answers": [
+                    "<p>Near-term requirements, non-functional specifications, and next-generation requirements.</p>",
+                    "<p>Cost and leadership preferences</p>",
+                    "<p>Interface and cost</p>",
+                    "<p>Preferences of the dev team</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Data Warehousing and Business Intelligence",
+            "question_plain": "When choosing tools for a Data Warehouse/BI project, what factors should be considered?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851537,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>When defining a population approach for a Data Warehouse (DW) in a DW/BI effort, what are key factors to consider?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Key factors to consider when defining a population approach for a DW, and these factors include required latency, availability of sources, batch windows, dimensional aspects, and timeframe consistency. These considerations are crucial for determining how data will be populated into the DW and ensuring its quality and consistency.</p><p><br>Source:&nbsp;Chapter 11 Data Warehousing and Business Intelligence - 2.4 Populate the Data Warehouse (page 374)</p>",
+                "answers": [
+                    "<p>Temperature, humidity, and geographical location.</p>",
+                    "<p>The color scheme of the user interface.</p>",
+                    "<p>Required latency, availability of sources, batch windows, dimensional aspects, and timeframe consistency.</p>",
+                    "<p>The preferred programming languages of the development team.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Warehousing and Business Intelligence",
+            "question_plain": "When defining a population approach for a Data Warehouse (DW) in a DW/BI effort, what are key factors to consider?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851535,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a common reason for utilizing full loads in the context of Data Warehouses?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Full loads in the context of Data Warehouses are often employed when dealing with legacy systems that lack native time stamping capabilities. In such cases, full loads may be necessary to capture changes in the absence of timestamped data.</p><p><br>Source: Chapter 11 Data Warehousing and Business Intelligence - 1.3.8.2 Batch Change Data Capture (page 362)</p>",
+                "answers": [
+                    "<p>Real-time processing requirements</p>",
+                    "<p>Efficient handling of change data</p>",
+                    "<p>Compatibility with structured data</p>",
+                    "<p>Legacy systems without native time stamping</p>",
+                    "<p>Simplification of data models</p>",
+                    "<p>Integration of unstructured data</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Warehousing and Business Intelligence",
+            "question_plain": "What is a common reason for utilizing full loads in the context of Data Warehouses?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 84851533,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does Data Warehousing primarily focus on?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data Warehousing traditionally focuses on structured data, which includes elements organized in defined fields, either in files or tables, as documented in data models. It aims to provide an integrated and historical business context for operational data by enforcing business rules and maintaining appropriate business data relationships.</p><p><br>Source: Chapter 11 Data Warehousing and Business Intelligence - 1.3.3 Data Warehousing (page 362)</p>",
+                "answers": [
+                    "<p>Real-time data processing</p>",
+                    "<p>Random data sampling</p>",
+                    "<p>Structured data with predefined attributes</p>",
+                    "<p>Predictive analytics</p>",
+                    "<p>Unstructured data storage</p>",
+                    "<p>Semantic data modeling</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Warehousing and Business Intelligence",
+            "question_plain": "What does Data Warehousing primarily focus on?",
+            "related_lectures": []
+        }
+    ]
+}

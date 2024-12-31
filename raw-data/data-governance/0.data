@@ -1,0 +1,1728 @@
+{
+    "count": 50,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "_class": "assessment",
+            "id": 92356595,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>Which 3 are Data Management Subject Areas?</p>",
+                "relatedLectureIds": [
+                    "31730192"
+                ],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data matching refers to the process of comparing two different sets of data and matching them against each other. This is not a Data Management Subject Area.</p>",
+                "answers": [
+                    "<p>Data Governance</p>",
+                    "<p>Metadata</p>",
+                    "<p>Data&nbsp;Matching</p>",
+                    "<p>Data Quality</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b",
+                "d"
+            ],
+            "section": "",
+            "question_plain": "Which 3 are Data Management Subject Areas?",
+            "related_lectures": [
+                {
+                    "_class": "lecture",
+                    "id": 31730192,
+                    "title": "Data Management Subject Areas",
+                    "created": "2022-04-08T07:28:04Z",
+                    "is_published": true,
+                    "asset": {
+                        "_class": "asset",
+                        "id": 42878754,
+                        "asset_type": "Video",
+                        "title": "Lecture 4 - Data Management Subject Areas.mp4",
+                        "created": "2022-08-04T14:20:06Z"
+                    },
+                    "object_index": 4,
+                    "url": "/course/data-management-masterclass-the-complete-course/learn/lecture/31730192"
+                }
+            ]
+        },
+        {
+            "_class": "assessment",
+            "id": 92356597,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which of the following activities is part of the data integration process?</p>",
+                "relatedLectureIds": [
+                    "32260506"
+                ],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data integration involves combining and transforming data from different sources to create a unified and consistent view. Data transformation is the process of converting, cleaning, and restructuring data to meet the integration requirements. Data modeling, data profiling, and data archival are not directly related to the integration process.</p>",
+                "answers": [
+                    "<p>Data modeling</p>",
+                    "<p>Data profiling</p>",
+                    "<p>Data archival</p>",
+                    "<p>Data transformation</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "Which of the following activities is part of the data integration process?",
+            "related_lectures": [
+                {
+                    "_class": "lecture",
+                    "id": 32260506,
+                    "title": "ETL",
+                    "created": "2022-05-17T07:54:23Z",
+                    "is_published": true,
+                    "asset": {
+                        "_class": "asset",
+                        "id": 41374656,
+                        "asset_type": "Video",
+                        "title": "Lecture 56 - ETL.mp4",
+                        "created": "2022-05-17T08:06:16Z"
+                    },
+                    "object_index": 93,
+                    "url": "/course/data-management-masterclass-the-complete-course/learn/lecture/32260506"
+                }
+            ]
+        },
+        {
+            "_class": "assessment",
+            "id": 92356599,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of data modeling in data management?</p>",
+                "relatedLectureIds": [
+                    "32000112"
+                ],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data modeling is used to define the structure and relationships of data within an organization. </p>",
+                "answers": [
+                    "<p>Creating visual representations of data flows</p>",
+                    "<p>Identifying data quality issues</p>",
+                    "<p>Defining the structure and relationships of data</p>",
+                    "<p>Establishing data access controls</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "What is the purpose of data modeling in data management?",
+            "related_lectures": [
+                {
+                    "_class": "lecture",
+                    "id": 32000112,
+                    "title": "What is Data Modeling",
+                    "created": "2022-04-27T10:54:18Z",
+                    "is_published": true,
+                    "asset": {
+                        "_class": "asset",
+                        "id": 41024522,
+                        "asset_type": "Video",
+                        "title": "Lecture 18 - What is Data Modeling.mp4",
+                        "created": "2022-04-27T13:51:42Z"
+                    },
+                    "object_index": 49,
+                    "url": "/course/data-management-masterclass-the-complete-course/learn/lecture/32000112"
+                }
+            ]
+        },
+        {
+            "_class": "assessment",
+            "id": 92356601,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What do we use to improve the accuracy and conistency of data?</p>",
+                "relatedLectureIds": [
+                    "31788120"
+                ],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Data quality management</p>",
+                    "<p>Business Intelligence</p>",
+                    "<p>Master data management</p>",
+                    "<p>Metadata management</p>",
+                    "<p>Data modeling</p>",
+                    "<p>Data architecture</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What do we use to improve the accuracy and conistency of data?",
+            "related_lectures": [
+                {
+                    "_class": "lecture",
+                    "id": 31788120,
+                    "title": "What is Data Quality Management",
+                    "created": "2022-04-12T12:27:19Z",
+                    "is_published": true,
+                    "asset": {
+                        "_class": "asset",
+                        "id": 40738552,
+                        "asset_type": "Video",
+                        "title": "Lecture 3 - What is Data Quality Management.mp4",
+                        "created": "2022-04-12T12:28:27Z"
+                    },
+                    "object_index": 175,
+                    "url": "/course/data-management-masterclass-the-complete-course/learn/lecture/31788120"
+                }
+            ]
+        },
+        {
+            "_class": "assessment",
+            "id": 92356603,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What isone of the objectives of Data Governance?</p>",
+                "relatedLectureIds": [
+                    "31774508"
+                ],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Manage data expenses for the company</p>",
+                    "<p>Hiring data experts to handle all subject areas</p>",
+                    "<p>Ensuring compliance with regulatory requirements</p>",
+                    "<p>Defining data architecture and infrastructure</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "What isone of the objectives of Data Governance?",
+            "related_lectures": [
+                {
+                    "_class": "lecture",
+                    "id": 31774508,
+                    "title": "Why is Data Governance Important?",
+                    "created": "2022-04-11T12:38:40Z",
+                    "is_published": true,
+                    "asset": {
+                        "_class": "asset",
+                        "id": 40717330,
+                        "asset_type": "Video",
+                        "title": "Lecture 3 - 7 Reasons why you need Data Governance.mp4",
+                        "created": "2022-04-11T12:40:20Z"
+                    },
+                    "object_index": 26,
+                    "url": "/course/data-management-masterclass-the-complete-course/learn/lecture/31774508"
+                }
+            ]
+        },
+        {
+            "_class": "assessment",
+            "id": 92356605,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>Select the 3 Data Quality Dimensions</p>",
+                "relatedLectureIds": [
+                    "31788130"
+                ],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Accuracy</p>",
+                    "<p>Completeness</p>",
+                    "<p>Consistency</p>",
+                    "<p>Discreteness</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b",
+                "c"
+            ],
+            "section": "",
+            "question_plain": "Select the 3 Data Quality Dimensions",
+            "related_lectures": [
+                {
+                    "_class": "lecture",
+                    "id": 31788130,
+                    "title": "Data Quality Dimensions",
+                    "created": "2022-04-12T12:27:40Z",
+                    "is_published": true,
+                    "asset": {
+                        "_class": "asset",
+                        "id": 40738562,
+                        "asset_type": "Video",
+                        "title": "Lecture 6 - WHat is a Data Quality Dimension.mp4",
+                        "created": "2022-04-12T12:28:52Z"
+                    },
+                    "object_index": 177,
+                    "url": "/course/data-management-masterclass-the-complete-course/learn/lecture/31788130"
+                }
+            ]
+        },
+        {
+            "_class": "assessment",
+            "id": 92356607,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which data management component focuses on managing data storage and retrieval processes?</p>",
+                "relatedLectureIds": [
+                    "33196612"
+                ],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Metadata management</p>",
+                    "<p>Master data management</p>",
+                    "<p>Data warehousing</p>",
+                    "<p>Data governance</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "Which data management component focuses on managing data storage and retrieval processes?",
+            "related_lectures": [
+                {
+                    "_class": "lecture",
+                    "id": 33196612,
+                    "title": "Data Warehouse",
+                    "created": "2022-07-22T12:23:14Z",
+                    "is_published": true,
+                    "asset": {
+                        "_class": "asset",
+                        "id": 42657158,
+                        "asset_type": "Video",
+                        "title": "Lecture 114 - Data Warehouse.mp4",
+                        "created": "2022-07-24T13:12:38Z"
+                    },
+                    "object_index": 124,
+                    "url": "/course/data-management-masterclass-the-complete-course/learn/lecture/33196612"
+                }
+            ]
+        },
+        {
+            "_class": "assessment",
+            "id": 92356609,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which data management subect area involves defining and managing data access permissions?</p>",
+                "relatedLectureIds": [
+                    "32161574"
+                ],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Data modeling</p>",
+                    "<p>Data quality</p>",
+                    "<p>Data intergration</p>",
+                    "<p>Data Security</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "Which data management subect area involves defining and managing data access permissions?",
+            "related_lectures": [
+                {
+                    "_class": "lecture",
+                    "id": 32161574,
+                    "title": "What is Data Security",
+                    "created": "2022-05-09T14:53:53Z",
+                    "is_published": true,
+                    "asset": {
+                        "_class": "asset",
+                        "id": 41250162,
+                        "asset_type": "Video",
+                        "title": "Lecture 32 - What is Data Security.mp4",
+                        "created": "2022-05-10T10:05:15Z"
+                    },
+                    "object_index": 63,
+                    "url": "/course/data-management-masterclass-the-complete-course/learn/lecture/32161574"
+                }
+            ]
+        },
+        {
+            "_class": "assessment",
+            "id": 92356611,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is ETL used for?</p>",
+                "relatedLectureIds": [
+                    "32260506"
+                ],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>To extract, transform and load data from a source system to a central data repository</p>",
+                    "<p>To improve the quality of the data using the latest industry best practices</p>",
+                    "<p>To create a visual representation of the flow of data within the data ecosystem</p>",
+                    "<p>To transform metadata into masterdata</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is ETL used for?",
+            "related_lectures": [
+                {
+                    "_class": "lecture",
+                    "id": 32260506,
+                    "title": "ETL",
+                    "created": "2022-05-17T07:54:23Z",
+                    "is_published": true,
+                    "asset": {
+                        "_class": "asset",
+                        "id": 41374656,
+                        "asset_type": "Video",
+                        "title": "Lecture 56 - ETL.mp4",
+                        "created": "2022-05-17T08:06:16Z"
+                    },
+                    "object_index": 93,
+                    "url": "/course/data-management-masterclass-the-complete-course/learn/lecture/32260506"
+                }
+            ]
+        },
+        {
+            "_class": "assessment",
+            "id": 92356613,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary purpose of data architecture?</p>",
+                "relatedLectureIds": [
+                    "31799648"
+                ],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Establishing data access rules</p>",
+                    "<p>Integrating data from external sources</p>",
+                    "<p>Designing the structure and organization of data</p>",
+                    "<p>Defining data quality rules</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "What is the primary purpose of data architecture?",
+            "related_lectures": [
+                {
+                    "_class": "lecture",
+                    "id": 31799648,
+                    "title": "What is Data Architecture",
+                    "created": "2022-04-13T06:58:42Z",
+                    "is_published": true,
+                    "asset": {
+                        "_class": "asset",
+                        "id": 40756692,
+                        "asset_type": "Video",
+                        "title": "DataArchitecture1_WhatIsDataArchitecture.mp4",
+                        "created": "2022-04-13T08:27:13Z"
+                    },
+                    "object_index": 42,
+                    "url": "/course/data-management-masterclass-the-complete-course/learn/lecture/31799648"
+                }
+            ]
+        },
+        {
+            "_class": "assessment",
+            "id": 92356615,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which one <strong>IS&nbsp;NOT </strong>a data security risk?</p>",
+                "relatedLectureIds": [
+                    "32161610"
+                ],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Data visualization</p>",
+                    "<p>Phishing</p>",
+                    "<p>Malware</p>",
+                    "<p>SQL Injections</p>",
+                    "<p>Zero-day Exploit</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Which one IS&nbsp;NOT a data security risk?",
+            "related_lectures": [
+                {
+                    "_class": "lecture",
+                    "id": 32161610,
+                    "title": "Data Security Risks Intro",
+                    "created": "2022-05-09T14:55:44Z",
+                    "is_published": true,
+                    "asset": {
+                        "_class": "asset",
+                        "id": 41267992,
+                        "asset_type": "Video",
+                        "title": "Lecture 35 - Data Security Risks Intro.mp4",
+                        "created": "2022-05-11T07:14:51Z"
+                    },
+                    "object_index": 68,
+                    "url": "/course/data-management-masterclass-the-complete-course/learn/lecture/32161610"
+                }
+            ]
+        },
+        {
+            "_class": "assessment",
+            "id": 92356635,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a key purpose of a data lake?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>he primary purpose of a data lake is to serve as a central storage area for raw data, with minimal, if any, transformation. It is crucial for preventing the data lake from becoming messy, unclean, and inconsistent. Data architects or engineers use techniques like unique keys or semantic models to understand the associations within the data lake.</p><p><br>Source: Chapter 14 Big Data and Data Science - 1.3.6 Data Lake (page 472)</p>",
+                "answers": [
+                    "<p>A backup for Data Warehouses</p>",
+                    "<p>Serving as a central storage area for cooked data with extensive transformation</p>",
+                    "<p>Acting as a central storage area for raw data, with minimal, if any, transformation</p>",
+                    "<p>Acting as an online archive for fictional stories</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "What is a key purpose of a data lake?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92356643,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which factor is consistently shown to play a key role in the success of effective Data Management Organizations?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Executive sponsorship is one of the critical success factors for effective Data Management Organizations. While other factors are important, executive sponsorship is consistently highlighted as a key factor in ensuring the success of data management initiatives.</p><p><br>Source: Chapter 16 Data Management Organization and Role Expectations - 4. Critical Success Factors (page 526)</p>",
+                "answers": [
+                    "<p>Proactive change management</p>",
+                    "<p>Clear vision</p>",
+                    "<p>Evolution not revolution</p>",
+                    "<p>Executive sponsorship</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "Which factor is consistently shown to play a key role in the success of effective Data Management Organizations?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92356671,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the goals of Metadata management?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The goals of Metadata management include:</p><ul><li><p>Documenting and managing organizational knowledge of data-related business terminology.</p></li><li><p>Collecting and integrating Metadata from diverse sources.</p></li><li><p>Ensuring Metadata quality, consistency, currency, and security.</p></li><li><p>Providing standard ways to make Metadata accessible to Metadata consumers.</p></li><li><p>Establishing or enforcing the use of technical Metadata standards to enable data exchange.</p></li></ul><p>All these goals contribute to effective Metadata management, ensuring a consistent understanding of data across the organization.<br><br>Source: Chapter 12 Metadata Management - 1.2 Goals and Principles (page 396)</p>",
+                "answers": [
+                    "<p>Document and manage organizational knowledge of data-related business terminology.</p>",
+                    "<p>Collect and integrate Metadata from diverse sources.</p>",
+                    "<p>Ensure Metadata quality, consistency, currency, and security.</p>",
+                    "<p>Provide standard ways to make Metadata accessible to Metadata consumers.</p>",
+                    "<p>Establish or enforce the use of technical Metadata standards to enable data exchange.</p>",
+                    "<p>All of the above.</p>"
+                ]
+            },
+            "correct_response": [
+                "f"
+            ],
+            "section": "",
+            "question_plain": "What are the goals of Metadata management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92356683,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the primary business drivers for document and content management?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The primary business drivers for document and content management include regulatory compliance, the ability to respond to litigation and e-discovery requests, and business continuity requirements. Additionally, gaining efficiencies is highlighted as a driver for improving document management, with technological advances helping organizations streamline processes, manage workflow, eliminate repetitive manual tasks, and enable collaboration. Therefore, the primary focus is on cost reduction and operational efficiency, making option A the correct answer.</p><p>Source:&nbsp;Chapter 9 Document and Content Management - 1.1 Business Drivers</p>",
+                "answers": [
+                    "<p>Cost reduction and operational efficiency</p>",
+                    "<p>Marketing and customer satisfaction</p>",
+                    "<p>Technology innovation and automation</p>",
+                    "<p>Employee training and development</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What are the primary business drivers for document and content management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92356695,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the primary components of a Data Warehouse (DW)?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A Data Warehouse (DW) consists of two primary components: an integrated decision support database and the related software programs used to collect, cleanse, transform, and store data from various operational and external sources.</p><p>Source:&nbsp;Chapter 11 Data Warehousing and Business Intelligence - 1.3.2 Data Warehouse</p>",
+                "answers": [
+                    "<p>Social media platforms and project management software</p>",
+                    "<p>Integrated decision support database and related software programs</p>",
+                    "<p>Web development tools and business process automation</p>",
+                    "<p>Data analysis tools and statistical software</p>",
+                    "<p>Customer relationship management (CRM) software</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What are the primary components of a Data Warehouse (DW)?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92356701,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does the term Business Intelligence (BI) encompass?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The term Business Intelligence (BI) has two meanings. Firstly, it refers to a type of data analysis aimed at understanding organizational activities and opportunities, which can lead to improved organizational success. Secondly, it refers to a set of technologies that support this kind of data analysis.</p><p>Source:&nbsp;Chapter 11 Data Warehousing and Business Intelligence - 1.3.1 Business Intelligence</p>",
+                "answers": [
+                    "<p>Data storage technologies</p>",
+                    "<p>Data analysis aimed at understanding organizational activities and opportunities</p>",
+                    "<p>Web development tools</p>",
+                    "<p>Social media platforms</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What does the term Business Intelligence (BI) encompass?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92356717,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of Master Data?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Master Data serves the purpose of providing context for business transactions and analysis.</p><p>Source:&nbsp;Chapter 10 Reference and Master Data - 1.3.3 Master Data</p>",
+                "answers": [
+                    "<p>To provide context for business transactions and analysis.</p>",
+                    "<p>To decrease data costs</p>",
+                    "<p>To provide context of unstructured data</p>",
+                    "<p>None of the above</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is the purpose of Master Data?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92356849,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does Data Warehousing primarily focus on?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data Warehousing traditionally focuses on structured data, which includes elements organized in defined fields, either in files or tables, as documented in data models. It aims to provide an integrated and historical business context for operational data by enforcing business rules and maintaining appropriate business data relationships.</p><p><br>Source: Chapter 11 Data Warehousing and Business Intelligence - 1.3.3 Data Warehousing</p>",
+                "answers": [
+                    "<p>Real-time data processing</p>",
+                    "<p>Random data sampling</p>",
+                    "<p>Structured data with predefined attributes</p>",
+                    "<p>Predictive analytics</p>",
+                    "<p>Unstructured data storage</p>",
+                    "<p>Semantic data modeling</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "What does Data Warehousing primarily focus on?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92356977,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Why are Service Level Agreements (SLAs) important in the context of data warehousing?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Service Level Agreements (SLAs) are crucial in the context of data warehousing because they help in specifying both business and technical expectations for the environments. SLAs define parameters such as response time, data retention, and availability requirements, ensuring that the data warehousing system meets the needs of different business classes and their supporting systems.</p><p><br>Source:&nbsp;Chapter 11 Data Warehousing and Business Intelligence - 6.3 Service Level Agreements</p>",
+                "answers": [
+                    "<p>SLAs are not relevant for data warehousing environments.</p>",
+                    "<p>SLAs help in specifying business and technical expectations.</p>",
+                    "<p>SLAs primarily focus on data retention in data warehousing.</p>",
+                    "<p>SLAs are only applicable to Operational Data Stores (ODS) but not to data marts.</p>",
+                    "<p>SLAs are primarily concerned with response time in&nbsp; data marts.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "Why are Service Level Agreements (SLAs) important in the context of data warehousing?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92356617,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which one <strong>IS&nbsp;NOT</strong> a Data Architecture role?</p>",
+                "relatedLectureIds": [
+                    "31799650"
+                ],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Data Architect</p>",
+                    "<p>Data Integration Developer</p>",
+                    "<p>Data Engineer</p>",
+                    "<p>Payroll analyst</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "Which one IS&nbsp;NOT a Data Architecture role?",
+            "related_lectures": [
+                {
+                    "_class": "lecture",
+                    "id": 31799650,
+                    "title": "Data Architecture Roles",
+                    "created": "2022-04-13T06:59:00Z",
+                    "is_published": true,
+                    "asset": {
+                        "_class": "asset",
+                        "id": 41019030,
+                        "asset_type": "Video",
+                        "title": "Lecture 17 - Data Architecture.mp4",
+                        "created": "2022-04-27T07:46:23Z"
+                    },
+                    "object_index": 48,
+                    "url": "/course/data-management-masterclass-the-complete-course/learn/lecture/31799650"
+                }
+            ]
+        },
+        {
+            "_class": "assessment",
+            "id": 92356619,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>Which are the 3 levels of Data Models? (select the 3 correct answers)</p>",
+                "relatedLectureIds": [
+                    "32000122"
+                ],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Non-Physical data model</p>",
+                    "<p>Logical data model</p>",
+                    "<p>Conceptual data model</p>",
+                    "<p>Physical data model</p>"
+                ]
+            },
+            "correct_response": [
+                "b",
+                "c",
+                "d"
+            ],
+            "section": "",
+            "question_plain": "Which are the 3 levels of Data Models? (select the 3 correct answers)",
+            "related_lectures": [
+                {
+                    "_class": "lecture",
+                    "id": 32000122,
+                    "title": "The 3 Levels of Data Models",
+                    "created": "2022-04-27T10:54:48Z",
+                    "is_published": true,
+                    "asset": {
+                        "_class": "asset",
+                        "id": 41035844,
+                        "asset_type": "Video",
+                        "title": "Lecture 20 - The 3 Levels of Data Models.mp4",
+                        "created": "2022-04-28T07:09:14Z"
+                    },
+                    "object_index": 51,
+                    "url": "/course/data-management-masterclass-the-complete-course/learn/lecture/32000122"
+                }
+            ]
+        },
+        {
+            "_class": "assessment",
+            "id": 92356621,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which one <strong>IS&nbsp;NOT</strong> a Business&nbsp;Intelligence tool?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Tableau</p>",
+                    "<p>Linux</p>",
+                    "<p>Microsoft Power BI</p>",
+                    "<p>QlikView</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "Which one IS&nbsp;NOT a Business&nbsp;Intelligence tool?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92356623,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is administrative metadata?</p>",
+                "relatedLectureIds": [
+                    "32867128"
+                ],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Administrative metadata provides information to help manage a resource, such as when and how it was created, file type and other technical information, and who can access it.</p>",
+                    "<p>Administrative metadata provides information about the data quality, this helps to make it less time consuming to to admin work.</p>",
+                    "<p>Administrative metadata is the process of utilizing data to do admin work.</p>",
+                    "<p>Administrative metadata is the process of turning basic metadata into administrative metadata used to do admin work.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is administrative metadata?",
+            "related_lectures": [
+                {
+                    "_class": "lecture",
+                    "id": 32867128,
+                    "title": "Administrative metadata",
+                    "created": "2022-06-29T15:08:49Z",
+                    "is_published": true,
+                    "asset": {
+                        "_class": "asset",
+                        "id": 42606738,
+                        "asset_type": "Video",
+                        "title": "Lecture 92 - Administrative metadata.mp4",
+                        "created": "2022-07-21T08:11:38Z"
+                    },
+                    "object_index": 161,
+                    "url": "/course/data-management-masterclass-the-complete-course/learn/lecture/32867128"
+                }
+            ]
+        },
+        {
+            "_class": "assessment",
+            "id": 92356625,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a crucial consideration when defining goals for Data Quality Improvement?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>When defining goals for Data Quality Improvement, it is crucial to set specific, achievable goals based on consistent quantification of the business value of the improvements. This ensures that improvement efforts are aligned with measurable outcomes that demonstrate a positive return on investment. Considerations such as the complexity of the data landscape, the age of the data, and cultural resistance to change are important but should be addressed within the context of achieving specific, measurable business value.</p><p><br>Source: Chapter 13 Data Quality - 2.6 Define Goals for Data Quality Improvement (page 449)</p>",
+                "answers": [
+                    "<p>The complexity of the data landscape.</p>",
+                    "<p>The age of the data.</p>",
+                    "<p>The level of cultural resistance to change.</p>",
+                    "<p>Specific, achievable goals based on consistent quantification of the business value of improvements.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "What is a crucial consideration when defining goals for Data Quality Improvement?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92357357,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the benefits of well-managed Metadata in an organization's data management?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Well-managed Metadata in an organization's data management provides various benefits, including:</p><ul><li><p>Reducing training costs and lowering the impact of staff turnover.</p></li><li><p>Increasing confidence in data by providing context and enabling data quality measurement.</p></li><li><p>Supporting regulatory compliance.</p></li><li><p>Improving operational efficiency by identifying redundant data and processes.</p></li></ul><p>These benefits contribute to a more efficient, reliable, and compliant data management environment.</p><p><br>Source:&nbsp;Chapter 12 Metadata Management - 1.1 Business Drivers</p>",
+                "answers": [
+                    "<p>Reducing training costs and lowering the impact of staff turnover.</p>",
+                    "<p>Increasing confidence in data by providing context and enabling data quality measurement.</p>",
+                    "<p>Supporting regulatory compliance.</p>",
+                    "<p>Improving operational efficiency by identifying redundant data and processes.</p>",
+                    "<p>All of the above.</p>",
+                    "<p>Only B, C, and D.</p>"
+                ]
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "What are the benefits of well-managed Metadata in an organization's data management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92357361,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Outside of information technology, for example, in library or information science, Metadata is described using a different set of categories:</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>In library or information science, Metadata is categorized into the following types:</p><ul><li><p><strong>Descriptive Metadata:</strong> Describes a resource and enables its identification and retrieval. Examples include title, author, and subject.</p></li><li><p><strong>Structural Metadata:</strong> Describes relationships within and among resources and their component parts. Examples include the number of pages or chapters in a book.</p></li><li><p><strong>Administrative Metadata:</strong> Used to manage resources over their lifecycle and includes information like version numbers and archive dates.</p></li></ul><p>These categories are more specific to the needs of library and information science.</p><p><br>Source: Chapter 12 Metadata Management - 1.3.2 Types of Metadata</p>",
+                "answers": [
+                    "<p>Business, technical, and operational.</p>",
+                    "<p>Informational, structural, and administrative.</p>",
+                    "<p>Descriptive, structural, and administrative.</p>",
+                    "<p>Descriptive, business, and operational.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "Outside of information technology, for example, in library or information science, Metadata is described using a different set of categories:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92357365,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does the term \"self-service\" refer to in the context of Business Intelligence (BI)?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>In the context of BI, \"self-service\" refers to the capability for users to independently access and utilize BI functionality without extensive involvement from IT. This includes tasks such as ad hoc reporting, data exploration, and dashboard creation.<br><br>Source:&nbsp;Chapter 11 Data Warehousing and Business Intelligence - 4.2 Self-Service BI</p>",
+                "answers": [
+                    "<p>Automated data loading processes.</p>",
+                    "<p>Governing user activity within a portal.</p>",
+                    "<p>User-driven access to BI functionality without heavy IT involvement.</p>",
+                    "<p>Collaborative forums for data analysis.</p>",
+                    "<p>Maintenance of visualization and statistical analysis tooling.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "What does the term \"self-service\" refer to in the context of Business Intelligence (BI)?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92357369,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a crucial factor for the success of Master Data Management (MDM) programs?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>MDM programs will fail without proper governance. Data governance professionals are expected to understand the challenges of MDM and Reference Data Management (RDM) and assess the organization's maturity and ability to meet them. This highlights the importance of governance in ensuring the success of MDM initiatives. Advanced technology and quick implementation are not explicitly mentioned as factors crucial for success.</p><p><br></p><p>Source: Chapter 10 Reference and Master Data - 4. Implementation Guidelines</p>",
+                "answers": [
+                    "<p>Advanced technology</p>",
+                    "<p>Quick implementation</p>",
+                    "<p>Proper governance</p>",
+                    "<p>At least 5 Data Stewards</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "What is a crucial factor for the success of Master Data Management (MDM) programs?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92357391,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What IS&nbsp;NOT a driver for initiating a Master Data Management program are:</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Common drivers for initiating both Master Data Management (MDM) and Reference Data Management (RDM) programs include reducing costs, managing data quality, and simplifying the IT landscape.</p><p>Source: Chapter 10 Reference and Master Data - 1.1 Business Drivers</p>",
+                "answers": [
+                    "<p>Meeting organizational data requirements</p>",
+                    "<p>Managing data quality</p>",
+                    "<p>Managing the costs of data integration</p>",
+                    "<p>Reducing risk</p>",
+                    "<p>Change in company leadership</p>"
+                ]
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "What IS&nbsp;NOT a driver for initiating a Master Data Management program are:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92357485,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are some key business drivers for Data Integration and Interoperability?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>DMBOK outlines several business drivers for Data Integration and Interoperability. Managing operational and transactional data complexity is highlighted as a key driver, along with the need to manage the costs associated with complexity. DMBOK also mentions the importance of addressing the overwhelming support requirements that may arise from point-to-point solutions between applications, emphasizing the efficiency and cost-effectiveness of an enterprise perspective in data integration.</p>",
+                "answers": [
+                    "<p>Managing operational and transactional data complexity</p>",
+                    "<p>Reducing support costs by using multiple technologies</p>",
+                    "<p>Implementing custom applications for each organizational need</p>",
+                    "<p>Avoiding the need for data hubs and Master Data solutions</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What are some key business drivers for Data Integration and Interoperability?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92357501,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the central process in Data Integration and Interoperability?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The central process in Data Integration and Interoperability is Extract, Transform, and Load (ETL). This process involves extracting data, transforming it as needed, and loading it into the target system. </p><p>Source:&nbsp;Chapter 8 Data Integration and Interoperability&nbsp; -1.3.1 Extract, Transform, and Load</p>",
+                "answers": [
+                    "<p>Extract and Move</p>",
+                    "<p>Extract, Translate, and Save</p>",
+                    "<p>Export, Transform, and Load</p>",
+                    "<p>Extract, Transform, and Load (ETL)</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "What is the central process in Data Integration and Interoperability?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92357511,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the primary goals of data storage and operations?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><strong>Managing data availability, ensuring data integrity, and managing data transaction performance:</strong> These are explicitly mentioned as the primary goals in the provided text.</p><p><br>Source: Chapter 6 Data Storage and Operations&nbsp; - 1.2 Goals and Principles</p>",
+                "answers": [
+                    "<p>Maximizing data security</p>",
+                    "<p>Minimizing data acquisition</p>",
+                    "<p>Managing data availability, ensuring data integrity, and managing data transaction performance</p>",
+                    "<p>None of the above</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "What are the primary goals of data storage and operations?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92357525,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a logical data model, and how is it developed?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A logical data model provides a detailed representation of data requirements in support of specific usage contexts, such as application requirements. It is developed independently of any technology or specific implementation constraints. The model often starts as an extension of a conceptual data model, and in the context of relational models, attributes are added through normalization techniques while maintaining a strong relationship between attributes and the primary key of the entity.</p><p>Source: Chapter 5 Data Modeling and Design - 1.3.5.2 Logical</p>",
+                "answers": [
+                    "<p>It is an abstract representation of data requirements, independent of technology or implementation constraints.</p>",
+                    "<p>It is a representation of implemented databases with specific technology constraints.</p>",
+                    "<p>It focuses on physical database structures and their optimization.</p>",
+                    "<p>It involves denormalization techniques to simplify data structures.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is a logical data model, and how is it developed?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92357529,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a physical data model, and how does it relate to the logical data model?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A physical data model (PDM) is a detailed technical solution that often starts with the logical data model and is then adapted to work within a particular technology. It takes into account the specific capabilities of a database management system and is tailored to the hardware, software, and network tools in use. The physical data model is more concrete and implementation-oriented compared to the abstract nature of the logical data model.</p><p>Source: Chapter 5 Data Modeling and Design - 1.3.5.3 Logical</p>",
+                "answers": [
+                    "<p>It is an abstract representation of data requirements, independent of technology or implementation constraints.</p>",
+                    "<p>It focuses on optimizing database structures without considering specific technologies.</p>",
+                    "<p>It represents a detailed technical solution, adapted to work within specific hardware, software, and network tools.</p>",
+                    "<p>It is primarily concerned with denormalization techniques.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "What is a physical data model, and how does it relate to the logical data model?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92357533,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of Two-Factor Identification in system security?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Two-Factor Identification involves adding an extra layer of identification beyond passwords to enhance security. This additional factor can include a return call to the user's mobile device with a code, the use of a hardware item, or a biometric factor such as fingerprint, facial recognition, or retinal scan. The purpose is to make it much harder for unauthorized individuals to gain access to an account or user's device by requiring multiple forms of identification.</p><p><br>Source:&nbsp;Chapter 7 Data Security - 1.3.11.3.4 Multiple Factor Identification</p>",
+                "answers": [
+                    "<p>It simplifies the login process for users.</p>",
+                    "<p>It requires users to have multiple accounts.</p>",
+                    "<p>It reduces the need for mobile devices in authentication.</p>",
+                    "<p>It adds an extra layer of identification beyond passwords.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "What is the purpose of Two-Factor Identification in system security?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92357659,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary goal of data security practices?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data security practices is to protect information assets in alignment with privacy and confidentiality regulations, contractual agreements, and business requirements. While recognizing stakeholders' privacy needs and enabling legitimate access are important aspects, the primary goal is to protect information assets in alignment with business requirements.</p><p>Source: Chapter 7 Data Security - 1.Introduction</p>",
+                "answers": [
+                    "<p>To protect information assets in alignment with privacy and confidentiality regulations, contractual agreements, and business requirements.</p>",
+                    "<p>To protect third party vendors' data</p>",
+                    "<p>To provide data access to sensitive datasets</p>",
+                    "<p>Leverage data for competitive advantage</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is the primary goal of data security practices?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92357673,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What are the goals of data security activities?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The goals of data security activities as enabling compliance with regulations and policies for privacy, protection, and confidentiality; ensuring stakeholder trust; and preventing inappropriate access.</p><p>Source:&nbsp;Chapter 7 Data&nbsp;Security - 1.2 Goals and Principles</p>",
+                "answers": [
+                    "<p>Enabling appropriate access, ensuring stakeholder trust, and avoiding compliance with regulations.</p>",
+                    "<p>Enabling inappropriate access, preventing compliance with regulations, and ignoring privacy policies.</p>",
+                    "<p>Enabling compliance with regulations and policies, ensuring stakeholder trust, and preventing inappropriate access.</p>",
+                    "<p>Enabling inappropriate access, avoiding compliance with regulations, and ensuring stakeholder trust.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "What are the goals of data security activities?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92357681,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a Key Logger?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Key Logger is a type of attack software that records all keystrokes and sends them elsewhere on the Internet.</p><p>Source: Chapter 7&nbsp;Data&nbsp;Security - 1.3.10.8 Key Logger </p>",
+                "answers": [
+                    "<p>A type of keyboard used for recording keystrokes.</p>",
+                    "<p>A software that enhances keyboard functionality.</p>",
+                    "<p>A tool used by website developers to track user interactions.</p>",
+                    "<p>A type of attack software that records all keystrokes and sends them elsewhere on the Internet.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "What is a Key Logger?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92357939,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a common driver for data governance, especially in heavily regulated industries like financial services and healthcare?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The most common driver for data governance, especially in heavily regulated industries like financial services and healthcare, is regulatory compliance. Responding to evolving legislation requires strict data governance processes. While other factors like analytics and business needs may lead to data governance, compliance remains a primary driver.</p><p>Chapter 3 Data Governance - 1.1 Business Drivers</p>",
+                "answers": [
+                    "<p>Master Data Management (MDM)</p>",
+                    "<p>Advanced analytics and Data Science</p>",
+                    "<p>Regulatory compliance</p>",
+                    "<p>Improving efficiency in development projects</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "What is a common driver for data governance, especially in heavily regulated industries like financial services and healthcare?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92358195,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of&nbsp;Data&nbsp;Governance, what is the primary focus of Data Stewards in an organization?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data Stewards are responsible for ensuring that, day-to-day and project-by-project, data governance policies and initiatives are adhered to. This involves influencing decisions to ensure that data is managed in ways that support the overall goals of the organization. While Data Stewards may also be involved in other activities like creating and managing core Metadata, documenting rules and standards, and managing data quality issues, their primary focus is on the execution of operational data governance activities.</p><p>Source: Chapter 3 Data&nbsp;Governance - Essential Concepts </p>",
+                "answers": [
+                    "<p>Defining and managing business terminology</p>",
+                    "<p>Execution of operational data governance activities</p>",
+                    "<p>Documenting rules and standards for data</p>",
+                    "<p>Overseeing a data domain across business functions</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "In the context of&nbsp;Data&nbsp;Governance, what is the primary focus of Data Stewards in an organization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92358325,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary goal of data management within an organization?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The goals of data management within an organization, which include capturing, storing, protecting, and ensuring the integrity of data assets, ensuring data quality and information privacy, and preventing unauthorized or inappropriate access, manipulation, or use of data. Therefore, the primary goals involve ensuring the privacy, integrity, and effective use of data assets, making option D the correct answer. Options A, B, and C are inconsistent with the stated goals in&nbsp;DMBOK.</p><p>Source: Chapter 1 Data Management - 1.2 Goals</p>",
+                "answers": [
+                    "<p>Prioritizing stakeholders over enterprise information needs.</p>",
+                    "<p>Allowing unauthorized access to enhance data utility.</p>",
+                    "<p>Increase the number of data assets</p>",
+                    "<p>Ensuring the privacy, integrity, and effective use of data assets.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "What is the primary goal of data management within an organization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92358339,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of using data governance scorecards in an organization?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data governance scorecards are used to collect and track metrics related to data governance activities and ensure compliance with established data governance policies. These scorecards provide a systematic way to measure and report the effectiveness of data governance initiatives, helping organizations monitor their progress, identify areas for improvement, and demonstrate adherence to data governance principles. Automated scorecards streamline the reporting process and enable data governance bodies, such as the Data Governance Council and Steering Committees, to make informed decisions based on quantitative assessments of data governance performance.</p><p><br>Source:&nbsp;Chapter 4 Data&nbsp;Governance - 3.5 Data Governance Scorecards</p>",
+                "answers": [
+                    "<p>To replace manual data governance activities</p>",
+                    "<p>To track compliance with data governance policies</p>",
+                    "<p>To automate data governance council meetings</p>",
+                    "<p>To generate metrics for data management</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What is the purpose of using data governance scorecards in an organization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92358355,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of using frameworks in data management?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Frameworks in data management serve the purpose of providing a comprehensive understanding of the discipline. They help professionals see relationships between different components of data management, align functions, and navigate the challenges associated with deriving value from an abstract enterprise asset. Frameworks are tools that offer perspectives to clarify strategy, develop roadmaps, organize teams, and align functions within an organization. The use of frameworks encourages collaboration between people responsible for various aspects of data management, facilitating a more holistic and coordinated approach.</p><p><br>Source: Chapter 1 Data Management Process -&nbsp; 3. Data Management Frameworks </p>",
+                "answers": [
+                    "<p>To create abstract enterprise assets</p>",
+                    "<p>To speed up the process of data onboarding</p>",
+                    "<p>To decrease costs associated with data professionals</p>",
+                    "<p>To comprehensively understand data management, see relationships between components, and align functions</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "What is the purpose of using frameworks in data management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92358363,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a key component of establishing an ethical data culture?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A key component of establishing an ethical data culture is providing training and oversight for expected behaviors. DMBOK emphasizes the importance of understanding existing practices, defining expected behaviors, codifying policies and a code of ethics, and providing training and oversight to enforce ethical behavior.</p><p>Source: Chapter 2 Data Handling Ethics - 3.5 Establishing an Ethical&nbsp;Data Culture</p>",
+                "answers": [
+                    "<p>Keeping existing data handling practices unchanged</p>",
+                    "<p>Focusing solely on legal compliance</p>",
+                    "<p>Providing training and oversight for expected behaviors</p>",
+                    "<p>Changing the company leadership</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "What is a key component of establishing an ethical data culture?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92358371,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a \"data dictionary\"?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A data dictionary is a centralized repository that defines and describes data elements, their attributes, relationships, and usage within an organization. It serves as a reference for understanding data structures and is essential for effective metadata management.</p>",
+                "answers": [
+                    "<p>A document that defines and describes data elements and their relationships</p>",
+                    "<p>A collection of all datasets within an organization</p>",
+                    "<p>A tool for automating data retrieval processes</p>",
+                    "<p>A report summarizing data usage statistics</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is a \"data dictionary\"?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92358467,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of relational databases, what is \"normalization,\" and why is it important?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Normalization is the process of organizing tables in a relational database to reduce redundancy and improve data integrity. By structuring the database into related tables with defined relationships, normalization minimizes duplication of data and ensures consistency across records.</p>",
+                "answers": [
+                    "<p>The process of securing sensitive information within a database</p>",
+                    "<p>The method of archiving historical records for compliance</p>",
+                    "<p>The technique used to reduce redundancy and improve data integrity by organizing tables</p>",
+                    "<p>The automation of report generation from multiple tables</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "In the context of relational databases, what is \"normalization,\" and why is it important?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92358477,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is \"data profiling\" used for?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data profiling is a process used to assess the quality, structure, and content of datasets. It involves analyzing data to identify anomalies, inconsistencies, and patterns, which helps organizations understand their data better and improve its quality.</p>",
+                "answers": [
+                    "<p>To create new datasets from existing ones</p>",
+                    "<p>To assess the quality and structure of datasets</p>",
+                    "<p>To automate data integration processes</p>",
+                    "<p>To secure sensitive information</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What is \"data profiling\" used for?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92358481,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is \"data virtualization,\" and how does it differ from traditional data integration methods?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data virtualization provides a unified view of data from various sources without physically moving or replicating that data. Unlike traditional integration methods that require ETL processes to copy data into a central repository, virtualization allows real-time access to distributed datasets while maintaining their original locations.</p>",
+                "answers": [
+                    "<p>It involves creating physical copies of datasets for analysis.</p>",
+                    "<p>It provides a unified view of data without physically moving or replicating it.</p>",
+                    "<p>It focuses solely on cloud-based storage solutions.</p>",
+                    "<p>It automates the extraction process from multiple databases.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What is \"data virtualization,\" and how does it differ from traditional data integration methods?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 92358483,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What role does \"data classification\" play in an organization's risk management strategy?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data classification categorizes information based on its sensitivity level, allowing organizations to apply appropriate security measures tailored to each category. This practice is essential for risk management as it helps protect sensitive information from unauthorized access while ensuring compliance with regulations.</p>",
+                "answers": [
+                    "<p>It focuses solely on optimizing storage costs.</p>",
+                    "<p>It categorizes data based on its sensitivity level to apply appropriate security measures.</p>",
+                    "<p>It automates the retrieval of specific datasets for analysis.</p>",
+                    "<p>It establishes guidelines for archiving historical datasets.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What role does \"data classification\" play in an organization's risk management strategy?",
+            "related_lectures": []
+        }
+    ]
+}
