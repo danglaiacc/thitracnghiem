@@ -1,0 +1,1130 @@
+{
+    "count": 40,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "_class": "assessment",
+            "id": 93421697,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the key factor that organizations need to address for the success of Data Governance (DG)?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "Implementing data management projects is important for overall data management success, but it is not the key factor specifically for the success of Data Governance (DG). Data Governance focuses on establishing policies, processes, and controls to ensure data is managed effectively and meets organizational needs.",
+                    "Setting and enforcing Data Quality and Data Architecture standards are essential components of Data Governance, but they are not the key factor that organizations need to address for the success of Data Governance. While these standards are important for data integrity and consistency, managing cultural change and leadership support play a more critical role in the success of Data Governance.",
+                    "Achieving data-related regulatory compliance is crucial for organizations to avoid legal issues and maintain trust with stakeholders. However, it is not the key factor that organizations need to address for the success of Data Governance. Data Governance goes beyond regulatory compliance to ensure data is managed strategically and effectively to support business goals.",
+                    "Managing cultural change with strong leadership support is the key factor that organizations need to address for the success of Data Governance. Without buy-in from leadership and a culture that values data management, Data Governance initiatives are likely to face resistance and struggle to be implemented effectively. Strong leadership support can drive organizational alignment, resource allocation, and accountability for data management practices."
+                ],
+                "explanation": "<p>For organizations to succeed in benefiting from data as a corporate asset, addressing cultural change is crucial. Cultural change is a major challenge and emphasizes the need for strong leadership support in managing this aspect, especially when significant behavioral changes are required in data governance and data management.</p><p>Source: Chapter 3 -&nbsp;Data&nbsp;Governance - Introduction (page 67)</p>",
+                "answers": [
+                    "<p>Implementing data management projects</p>",
+                    "<p>Setting and enforcing Data Quality and Data Architecture standards</p>",
+                    "<p>Achieving data-related regulatory compliance</p>",
+                    "<p>Managing cultural change with strong leadership support</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Governance",
+            "question_plain": "What is the key factor that organizations need to address for the success of Data Governance (DG)?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421699,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a common driver for data governance, especially in heavily regulated industries like financial services and healthcare?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "Master Data Management (MDM) focuses on managing and maintaining consistent and accurate master data across an organization. While MDM is important for data governance, it is not the primary driver, especially in heavily regulated industries like financial services and healthcare where regulatory compliance is a more critical factor.",
+                    "Advanced analytics and Data Science are important components of data management, but they are not the primary driver for data governance in heavily regulated industries like financial services and healthcare. While these areas may benefit from effective data governance, regulatory compliance is a more significant driver in these industries.",
+                    "Regulatory compliance is a critical driver for data governance in heavily regulated industries like financial services and healthcare. Compliance with regulations such as GDPR, HIPAA, and PCI DSS requires organizations to have strong data governance practices in place to ensure data security, privacy, and integrity.",
+                    "Improving efficiency in development projects is a valid goal of data governance, but it is not the primary driver, especially in heavily regulated industries like financial services and healthcare. While data governance can certainly help improve efficiency, regulatory compliance is a more pressing concern in these industries."
+                ],
+                "explanation": "<p>The most common driver for data governance, especially in heavily regulated industries like financial services and healthcare, is regulatory compliance. Responding to evolving legislation requires strict data governance processes. While other factors like analytics and business needs may lead to data governance, compliance remains a primary driver.</p><p>Chapter 3 Data Governance - 1.1 Business Drivers (page 70)</p>",
+                "answers": [
+                    "<p>Master Data Management (MDM)</p>",
+                    "<p>Advanced analytics and Data Science</p>",
+                    "<p>Regulatory compliance</p>",
+                    "<p>Improving efficiency in development projects</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Governance",
+            "question_plain": "What is a common driver for data governance, especially in heavily regulated industries like financial services and healthcare?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421701,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In the context of&nbsp;Data&nbsp;Governance, what is the primary focus of Data Stewards in an organization?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data Stewards are responsible for ensuring that, day-to-day and project-by-project, data governance policies and initiatives are adhered to. This involves influencing decisions to ensure that data is managed in ways that support the overall goals of the organization. While Data Stewards may also be involved in other activities like creating and managing core Metadata, documenting rules and standards, and managing data quality issues, their primary focus is on the execution of operational data governance activities.</p><p>Source: Chapter 3 Data&nbsp;Governance - Essential Concepts (page 72)</p>",
+                "answers": [
+                    "<p>Defining and managing business terminology</p>",
+                    "<p>Execution of operational data governance activities</p>",
+                    "<p>Documenting rules and standards for data</p>",
+                    "<p>Overseeing a data domain across business functions</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Governance",
+            "question_plain": "In the context of&nbsp;Data&nbsp;Governance, what is the primary focus of Data Stewards in an organization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421703,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of assessing \"Capacity to Change\" in the context of Data Governance (DG)?</p>",
+                "relatedLectureIds": [],
+                "links": [],
+                "feedbacks": [
+                    "Assessing the organization's ability to use data effectively is more related to data utilization and analytics rather than the capacity to change in the context of Data Governance. It focuses on the organization's data-driven decision-making processes rather than its readiness for behavioral change required for DG.",
+                    "Measuring the organization's current data management capabilities is important for understanding the existing infrastructure and processes in place for managing data. However, it does not directly address the assessment of the organization's capacity to change, which involves evaluating its readiness and willingness to adopt new behaviors and practices for effective Data Governance.",
+                    "Identifying potential resistance points to behavioral change required for DG is the correct purpose of assessing \"Capacity to Change\" in the context of Data Governance. This involves recognizing areas where individuals or departments may be hesitant or unwilling to embrace new data management practices, policies, or procedures, which is crucial for successful implementation of DG initiatives.",
+                    "Assessing the organization's collaboration in data management focuses on how different departments or teams work together to manage data effectively. While collaboration is important for successful Data Governance, it does not directly address the assessment of the organization's capacity to change and adapt to new data governance practices and principles."
+                ],
+                "explanation": "<p>\"Capacity to Change\" is crucial for Data Governance (DG) because DG requires behavioral change. The assessment helps in measuring the organization's capacity to change behaviors required for adapting DG and identifying potential resistance points.</p><p>Source: Chapter 3 Data&nbsp;Governance - 2.2 Perform Readiness Testing (page 79)</p>",
+                "answers": [
+                    "<p>Evaluating the organization's ability to use data effectively</p>",
+                    "<p>Measuring the organization's current data management capabilities</p>",
+                    "<p>Identifying potential resistance points to behavioral change required for DG</p>",
+                    "<p>Assessing the organization's collaboration in data management</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Governance",
+            "question_plain": "What is the purpose of assessing \"Capacity to Change\" in the context of Data Governance (DG)?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421705,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>If the CDO is not directly in control of all data acquisition-related budgets, what is the role of the Chief Data Officer (CDO) regarding Budget and Funding?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>If the Chief Data Officer (CDO) is not directly in control of all data acquisition-related budgets, the CDO can serve as a focal point for preventing duplicate efforts and ensuring optimization of acquired data assets. This involves coordinating and aligning budget and funding efforts related to data acquisition, even if the CDO does not have direct control over all the budgets.</p><p>Source: Chapter 3 Data Governance - 2.4 Develop&nbsp;Organizational Touch&nbsp;Points (page 81)</p>",
+                "answers": [
+                    "<p>Enforcing standard contract language in data management contracts</p>",
+                    "<p>Preventing duplicate efforts and ensuring optimization of acquired data assets</p>",
+                    "<p>Ongoing monitoring of local, national, and international regulatory environments</p>",
+                    "<p>No involvement</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Governance",
+            "question_plain": "If the CDO is not directly in control of all data acquisition-related budgets, what is the role of the Chief Data Officer (CDO) regarding Budget and Funding?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421707,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Why are tools mentioned in the context of Data Governance?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data Governance (DG) is fundamentally about organizational behavior and cannot be solved solely through technology, tools play a crucial role in supporting the overall DG process. The mentioned functions of tools include assisting in managing the work and data of a DG program effectively, along with providing metrics to support these tasks. Tools are not presented as the primary solution to organizational behavior challenges, but rather as supportive instruments for the DG program's operational aspects.</p><p>Source - Chapter 3 Data&nbsp;Governance - Tools and Techniques (page 92)</p>",
+                "answers": [
+                    "<p>Tools are the primary solution to organizational behavior challenges.</p>",
+                    "<p>DG programs need tools to effectively communicate key messages to stakeholders.</p>",
+                    "<p>Technology is the sole method for solving DG-related problems.</p>",
+                    "<p>Tools assist in managing the work and data of a DG program, along with supporting metrics.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Governance",
+            "question_plain": "Why are tools mentioned in the context of Data Governance?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421709,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What tools are necessary for managing and communicating changes in a Data Governance (DG) program?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The tools for managing and communicating changes in a Data Governance (DG) program include a Business/DG strategy map, DG roadmap, ongoing business case for DG, and DG metrics. These tools are essential for the DG team to be flexible, adjust its approach based on changing conditions, and connect DG activities with business needs while obtaining ongoing support for the program.</p><p>Source: Chapter 3 Data&nbsp;Governance - 4.2 Adjustment and Communication (page 94)</p>",
+                "answers": [
+                    "<p>Data governance technology solutions</p>",
+                    "<p>Business / DG strategy map, DG roadmap, ongoing business case for DG, and DG metrics</p>",
+                    "<p>Business Plan and Project Plan</p>",
+                    "<p>None of the above</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Governance",
+            "question_plain": "What tools are necessary for managing and communicating changes in a Data Governance (DG) program?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421711,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary purpose of metrics in a Data Governance program?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The primary purpose of metrics in a Data Governance (DG) program is to measure progress and success. These metrics are crucial for demonstrating how DG participants have added business value and attained objectives. While metrics may cover various aspects, such as compliance, speed of change adoption, and sustainability, the emphasis in this context is on measuring the effectiveness and value of the DG program.</p><p>Source: Chapter 3 Data Governance - 5.&nbsp;Metrics (page 94)</p>",
+                "answers": [
+                    "<p>To enforce compliance with data governance requirements.</p>",
+                    "<p>To assess the speed of change adoption.</p>",
+                    "<p>To measure progress, success, and the added business value of DG participants.</p>",
+                    "<p>To verify the organization's alignment with wider business and data management strategies.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Governance",
+            "question_plain": "What is the primary purpose of metrics in a Data Governance program?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421713,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Why is a focus on managing change crucial in the context of implementing a Data Governance program?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The effective and long-lasting data governance programs require a cultural shift in organizational thinking and behavior about data. Ignoring the cultural aspect and failing to focus on managing change diminish the chances of success in data governance. Therefore, the primary reason for emphasizing change management is to avoid reducing the likelihood of success in the DG program.</p><p>Source: Chapter 3 Data&nbsp;Governance - 4.1 Organization and Culture (page 93)</p>",
+                "answers": [
+                    "<p>To resist any cultural shift within the organization.</p>",
+                    "<p>To decrease the learning curve associated with new DG methods.</p>",
+                    "<p>Ignoring company culture will diminish the chances of success in data governance.</p>",
+                    "<p>To ensure the formality and discipline of data governance are maintained.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Governance",
+            "question_plain": "Why is a focus on managing change crucial in the context of implementing a Data Governance program?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421715,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the usual approach to implementing Data Governance (DG) programs?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The standard and effective approach to implementing Data Governance (DG) programs involves starting incrementally with small, isolated projects or specific business areas. This approach allows organizations to pilot DG principles on a manageable scale, identify challenges, and fine-tune their processes before scaling up to the entire organization. Option (B) correctly reflects this incremental strategy, aligning with best practices in DG implementation.</p><p>Options (A) and (C) suggest less favorable approaches. Implementing organization-wide initially can be overwhelming and may encounter more resistance, while developing the program without an operating plan lacks the strategic guidance necessary for successful DG.</p><p>Option (D) refers to implementing concurrently with Master Data Management (MDM), which is a specific project often chosen for incremental DG adoption, making it a potentially viable strategy. However, the more general and widely applicable answer is to start with small, isolated projects.</p><p>Source: Chapter 3 Data Governance - 4. Implementation&nbsp;Guidelines (page 93)</p>",
+                "answers": [
+                    "<p>Implementing organization-wide in the initial phase.</p>",
+                    "<p>Applying to small, isolated projects first.</p>",
+                    "<p>Developing the program without an operating plan.</p>",
+                    "<p>Implementing concurrently with Master Data Management (MDM).</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Governance",
+            "question_plain": "What is the usual approach to implementing Data Governance (DG) programs?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421717,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary challenge organizations face in actively managing data as an asset?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Many organizations recognize data as a vital enterprise asset but struggle to actively manage it for ongoing value. Deriving value from data requires intention, planning, coordination, and commitment, along with management and leadership. The primary challenge is not the lack of recognition (option A) or the inability to transact business without data (option B). While investment in data management professionals is essential, the central issue is the difficulty in extracting ongoing value from data (option D).</p><p>Source: Chapter 1 Data Management - Introduction (page 17)</p>",
+                "answers": [
+                    "<p>Lack of recognition about the importance of data.</p>",
+                    "<p>Inability to transact business without data.</p>",
+                    "<p>Insufficient investment in data management professionals.</p>",
+                    "<p>Difficulty in deriving ongoing value from data.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Management Process",
+            "question_plain": "What is the primary challenge organizations face in actively managing data as an asset?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421719,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary goal of data management within an organization?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The goals of data management within an organization, which include capturing, storing, protecting, and ensuring the integrity of data assets, ensuring data quality and information privacy, and preventing unauthorized or inappropriate access, manipulation, or use of data. Therefore, the primary goals involve ensuring the privacy, integrity, and effective use of data assets, making option D the correct answer. Options A, B, and C are inconsistent with the stated goals in&nbsp;DMBOK.</p><p>Source: Chapter 1 Data Management - 1.2 Goals (page 17)</p>",
+                "answers": [
+                    "<p>Prioritizing stakeholders over enterprise information needs.</p>",
+                    "<p>Allowing unauthorized access to enhance data utility.</p>",
+                    "<p>Increase the number of data assets</p>",
+                    "<p>Ensuring the privacy, integrity, and effective use of data assets.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Management Process",
+            "question_plain": "What is the primary goal of data management within an organization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421721,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is emphasized regarding the nature of data in DMBOK Chapter 1?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data is not always simple or straightforward; it is a means of representation that stands for things other than itself. Data requires interpretation and context to be meaningful, and this interpretation is influenced by the representational system, which includes a common vocabulary and relationships between components (context or Metadata).</p><p>Source: Chapter 1 Data Management - 2.1 Data (page 18)</p>",
+                "answers": [
+                    "<p>Data is solely limited to information stored in digital form.</p>",
+                    "<p>Data primarily represents simple and straightforward facts.</p>",
+                    "<p>Data requires minimal interpretation and context.</p>",
+                    "<p>Data is a means of representation that needs interpretation and context.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Management Process",
+            "question_plain": "What is emphasized regarding the nature of data in DMBOK Chapter 1?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421723,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is true regarding the value of data?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Organizations depend on their data assets to make more effective decisions, create new products and services, and improve operational efficiency. Businesses, government agencies, educational institutions, and not-for-profit organizations all need high-quality data to guide their activities. </p><p>Source: Chapter 1&nbsp; Data Management - 2.3 Data as an&nbsp;Organizational Asset (page 20)</p>",
+                "answers": [
+                    "<p>Data is primarily used for operational efficiency in government agencies.</p>",
+                    "<p>Monetization of data is universally adopted in organizations.</p>",
+                    "<p>Being data-driven involves making decisions based on instincts.</p>",
+                    "<p>Organizations rely on data assets for effective decision-making and efficiency.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Management Process",
+            "question_plain": "What is true regarding the value of data?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421725,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a key principle for data management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The DMBOK highlights several principles related to data management. However, the key principle emphasized is that effective data management requires leadership commitment. The passage mentions that data management involves a complex set of processes that require coordination, collaboration, and commitment. Leadership commitment is crucial for the success of data management practices. Options A, B, and C are not consistent with the central emphasis on the importance of leadership commitment in effective data management.</p><p>Source: Chapter 1 Data Management - 2.4 Data Management Principles (page 21)</p><p><br></p>",
+                "answers": [
+                    "<p>Data is solely consumed when used, similar to financial assets.</p>",
+                    "<p>Metadata is not essential for managing data effectively.</p>",
+                    "<p>Data management practices do not need to consider the data lifecycle.</p>",
+                    "<p>Effective data management requires leadership commitment.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Management Process",
+            "question_plain": "What is a key principle for data management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421727,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a crucial requirement for effective data management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Effective data management requires leadership commitment and the involvement of everyone at all levels of the organization. DMBOK highlights the importance of committed leadership in recognizing data as an asset, approaching data strategically, and managing data challenges.</p><p>Source: Chapter 1 &nbsp;Data Management - 2.3 Data Management Challenges (page 23)</p>",
+                "answers": [
+                    "<p>Strict adherence to technological advancements.</p>",
+                    "<p>Leadership commitment and involvement at all levels of the organization.</p>",
+                    "<p>Isolation of data management from other business functions.</p>",
+                    "<p>Data management tactics driven solely by business strategy.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Management Process",
+            "question_plain": "What is a crucial requirement for effective data management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421729,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is one of the components that should be included in a data management strategy?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Components of a data management strategy should include descriptions of data management roles and organizations, along with a summary of their responsibilities and decision rights. DMBOK emphasizes the importance of outlining the organizational structure and roles within the context of data management strategy.</p><p>Source:&nbsp;Chapter 1&nbsp;Data Management - 2.6 Data Management Strategy (page 31)</p>",
+                "answers": [
+                    "<p>Detailed technical specifications for data systems.</p>",
+                    "<p>A roadmap for implementing advanced analytics.</p>",
+                    "<p>Descriptions of data management roles and organizations.</p>",
+                    "<p>Specific marketing strategies for promoting data management.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Management Process",
+            "question_plain": "What is one of the components that should be included in a data management strategy?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421731,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of frameworks in data management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Frameworks in data management serve the purpose of providing a comprehensive understanding of data management and showing relationships between its components. Frameworks help professionals comprehend data management, align functions, and collaborate effectively.</p><p>Source:&nbsp;Chapter 1 Data Management -&nbsp; 3. Data Management Frameworks (page 33)</p>",
+                "answers": [
+                    "<p>To enforce strict rules and regulations.</p>",
+                    "<p>To replace human collaboration in organizations.</p>",
+                    "<p>To provide a comprehensive understanding of data management and show relationships between its components.</p>",
+                    "<p>To eliminate challenges inherent in deriving value from enterprise assets.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Management Process",
+            "question_plain": "What is the purpose of frameworks in data management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421733,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What does planning for better data involve?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Planning for better data involves recognizing that organizations can control how they obtain and create data by viewing data as a product. Making decisions about data throughout its lifecycle is emphasized as part of this planning process. Therefore, the correct answer is option C.</p><p>Source: Chapter 1 Data Management - 2.5.4 Planning for Better Data (page 23 section of 2.5 Data Management Challenges)</p>",
+                "answers": [
+                    "<p>Accidental decision-making without a strategic approach.</p>",
+                    "<p>Recognizing that organizations cannot control how they obtain and create data.</p>",
+                    "<p>Viewing data as a product and making decisions about it throughout its lifecycle.</p>",
+                    "<p>Ignoring the relationship between business processes and technology.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Management Process",
+            "question_plain": "What does planning for better data involve?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421735,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a central tenet of data management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A central tenet of data management is that both data and information need to be managed. DMBOK emphasizes that managing them together with uses and customer requirements in mind leads to higher quality.</p><p>Source: Chapter 1 Data Management - 2.2 Data and&nbsp;Information (page 20)</p>",
+                "answers": [
+                    "<p>Data and information are separate entities.</p>",
+                    "<p>The layered pyramid accurately represents the relationship between data, information, knowledge, and wisdom.</p>",
+                    "<p>Data simply exists and does not need to be created.</p>",
+                    "<p>Both data and information need to be managed, and managing them together improves their quality.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Management Process",
+            "question_plain": "What is a central tenet of data management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421737,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Why is handling data in an ethical manner important for the long-term success of an organization?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Handling data in an ethical manner is necessary for the long-term success of an organization because unethical data handling can result in the loss of reputation and customers. Also unethical practices are sometimes illegal.</p><p>Source: Chapter 2 Data Handling Ethics - Introduction (page 49)</p>",
+                "answers": [
+                    "<p>It ensures compliance with laws and regulations.</p>",
+                    "<p>It contributes to economic value by accessing data.</p>",
+                    "<p>It protects data from unauthorized access.</p>",
+                    "<p>It avoids risks to the organization's reputation, loss of customers, and potential legal consequences.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Handling Ethics",
+            "question_plain": "Why is handling data in an ethical manner important for the long-term success of an organization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421739,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the central idea behind the ethics of data handling?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Ethics of data handling are concerned with principles such as fairness, respect, responsibility, integrity, quality, reliability, transparency, and trust. Also data ethics are a matter of social responsibility.</p><p>Source: Chapter 2 Data Handling Ethics - 1. Introduction (page 49)</p>",
+                "answers": [
+                    "<p>Ethical data handling is a matter of social responsibility and involves principles like fairness, respect, and transparency.</p>",
+                    "<p>Ethical principles focus on maximizing economic value from data.</p>",
+                    "<p>Ethical handling of data is only a legal requirement.</p>",
+                    "<p>Organizations should prioritize technical perspectives over ethical considerations.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Data Handling Ethics",
+            "question_plain": "What is the central idea behind the ethics of data handling?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421741,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Why is an ethical approach to data use considered a competitive business advantage?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Ethical approach to data use is recognized as a competitive business advantage because it increases the trustworthiness of an organization, leading to better relationships with stakeholders.</p><p>Source:&nbsp;Chapter 2 Data Handling Ethics - 2. Business Drivers (page 51)</p>",
+                "answers": [
+                    "<p>It helps in achieving data breaches and hacking.</p>",
+                    "<p>It ensures a vacuum-like environment for data handling.</p>",
+                    "<p>It increases the trustworthiness of an organization, leading to better relationships with stakeholders.</p>",
+                    "<p>It eliminates the need for Chief Data Officers and Chief Risk Officers.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Handling Ethics",
+            "question_plain": "Why is an ethical approach to data use considered a competitive business advantage?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421743,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which ethical principle reflects the requirement to treat people in a way that respects their dignity and autonomy as human individuals, especially in cases of 'diminished autonomy'?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The ethical principle of \"Respect for Persons,\" which reflects the fundamental ethical requirement that people be treated in a way that respects their dignity and autonomy as human individuals.</p>",
+                "answers": [
+                    "<p>Beneficence</p>",
+                    "<p>Respect for Law and Public Interest</p>",
+                    "<p>Justice</p>",
+                    "<p>Respect for Persons</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Handling Ethics",
+            "question_plain": "Which ethical principle reflects the requirement to treat people in a way that respects their dignity and autonomy as human individuals, especially in cases of 'diminished autonomy'?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421745,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is one of the ethical challenges associated with data integration?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The ethical challenges associated with data integration, and one of them is the issue of unreliable Metadata. Unreliable Metadata, including inconsistent definitions, documentation of data's origin, and lineage, poses ethical risks in data handling.</p><p>Source: Chapter 2 Data Handling&nbsp;Ethics - 3.4 Risks of Unethical Data Handling Practices (page 56)</p>",
+                "answers": [
+                    "<p>Lack of data quality standards</p>",
+                    "<p>Unreliable Metadata</p>",
+                    "<p>Data variety</p>",
+                    "<p>Data aggregation</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Handling Ethics",
+            "question_plain": "What is one of the ethical challenges associated with data integration?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421747,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is one of the unethical data practices?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Statistical smoothing of numbers over a period could completely change the perception of the number, and this practice can mislead individuals.</p><p>Source: Chapter 2 Data Handling Ethics - 3.4&nbsp; Risks of Unethical Data Handling Practices (page 56)</p>",
+                "answers": [
+                    "<p>Providing clear, unambiguous definitions in data presentations</p>",
+                    "<p>Using statistical smoothing techniques for data analysis</p>",
+                    "<p>Transparency in the use of data for decision-making</p>",
+                    "<p>None of the above</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Handling Ethics",
+            "question_plain": "What is one of the unethical data practices?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421749,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a key component of establishing an ethical data culture?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A key component of establishing an ethical data culture is providing training and oversight for expected behaviors. DMBOK emphasizes the importance of understanding existing practices, defining expected behaviors, codifying policies and a code of ethics, and providing training and oversight to enforce ethical behavior.</p><p>Source: Chapter 2 Data Handling Ethics - 3.5 Establishing an Ethical&nbsp;Data Culture (page 60)</p>",
+                "answers": [
+                    "<p>Keeping existing data handling practices unchanged</p>",
+                    "<p>Focusing solely on legal compliance</p>",
+                    "<p>Providing training and oversight for expected behaviors</p>",
+                    "<p>Changing the company leadership</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Handling Ethics",
+            "question_plain": "What is a key component of establishing an ethical data culture?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421751,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which organization's certification requires data management professionals to subscribe to a formal code of ethics, including an obligation to handle data ethically?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>DAMA International's Certified Data Management Professional (CDMP) certification requires data management professionals to subscribe to a formal code of ethics, including an obligation to handle data ethically.</p><p>Source: Chapter 2 Data Handling Ethics - 3.6 Data Ethics and Governance (page 64)</p>",
+                "answers": [
+                    "<p>International Data Ethics Association (IDEA)</p>",
+                    "<p>Data Governance Institute (DGI)</p>",
+                    "<p>DAMA International (CDMP certification)</p>",
+                    "<p>Legal and Ethical Data Professionals (LEDP)</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Handling Ethics",
+            "question_plain": "Which organization's certification requires data management professionals to subscribe to a formal code of ethics, including an obligation to handle data ethically?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421753,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which organization established Guidelines and Principles for Fair Information Processing that served as the basis for the European Union’s data protection laws?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>In 1980, the Organization for Economic Co-operation and Development (OECD) established Guidelines and Principles for Fair Information Processing, which became the basis for the European Union’s data protection laws.</p><p>Source: Chapter 2 Data&nbsp;Handling&nbsp;Ethics - 3.2 Principles Behind Data Privacy Law (page 53)</p>",
+                "answers": [
+                    "<p>Organization for Economic Co-operation and Development (OECD)</p>",
+                    "<p>European Convention of Human Rights</p>",
+                    "<p>United States Privacy Act of 1974</p>",
+                    "<p>Federal Trade Commission (FTC)</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Data Handling Ethics",
+            "question_plain": "Which organization established Guidelines and Principles for Fair Information Processing that served as the basis for the European Union’s data protection laws?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421775,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a crucial aspect of establishing a culture of ethical data handling within an organization?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Establishing a culture of ethical data handling involves several key elements, and strong leadership is crucial. In addition to leadership, having clear policies that define expected behaviors, codifying these in a code of ethics, and providing training and oversight are essential components. The inclusion of an Organizational Change Management (OCM) process is highlighted in the explanation because changing culture and improving ethical behavior often require a structured and formalized approach.</p><p><br>Source:&nbsp;Chapter 2 Data Handling Ethics - 3.5 Establishing an Ethical Data Culture (page 60)</p>",
+                "answers": [
+                    "<p>Introducing new practices by hiring Data Ethics experts</p>",
+                    "<p>Codifying behaviors without policies</p>",
+                    "<p>Having strong leadership, clear policies, and an Organizational Change Management (OCM) process</p>",
+                    "<p>None of the above</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Handling Ethics",
+            "question_plain": "What is a crucial aspect of establishing a culture of ethical data handling within an organization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421773,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of using frameworks in data management?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Frameworks in data management serve the purpose of providing a comprehensive understanding of the discipline. They help professionals see relationships between different components of data management, align functions, and navigate the challenges associated with deriving value from an abstract enterprise asset. Frameworks are tools that offer perspectives to clarify strategy, develop roadmaps, organize teams, and align functions within an organization. The use of frameworks encourages collaboration between people responsible for various aspects of data management, facilitating a more holistic and coordinated approach.</p><p><br>Source: Chapter 1 Data Management Process -&nbsp; 3. Data Management Frameworks (page 33)</p>",
+                "answers": [
+                    "<p>To create abstract enterprise assets</p>",
+                    "<p>To speed up the process of data onboarding</p>",
+                    "<p>To decrease costs associated with data professionals</p>",
+                    "<p>To comprehensively understand data management, see relationships between components, and align functions</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Management Process",
+            "question_plain": "What is the purpose of using frameworks in data management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421771,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>How can data be classified within a data management system?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data within a data management system can be classified based on different criteria. One common classification is based on the type of data, which includes categories such as transactional data, Reference Data, Master Data, and Metadata. These classifications help in understanding the nature of the data, its lifecycle management requirements, associated risks, and its role within the organization. Other criteria mentioned, such as encryption type, location of the data center, and brand of the storage device, are not typically used for classifying types of data but may be relevant for other aspects of data management.</p><p><br>Source: Chapter 1 Data Management Process - 2.5.10 Different Types of Data (page 82)</p>",
+                "answers": [
+                    "<p>By the type of encryption used</p>",
+                    "<p>By the location of the data center</p>",
+                    "<p>By the type of data (e.g., transactional data, Reference Data, Master Data, Metadata)</p>",
+                    "<p>By the type of the storage device</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Management Process",
+            "question_plain": "How can data be classified within a data management system?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421769,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the typical process for developing and finalizing goals, principles, and policies in a data governance initiative?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>In a typical data governance initiative, data management professionals or a combination of data management professionals and business policy staff draft goals, principles, and policies. These drafts are then reviewed and refined by Data Stewards and management. The final review, revision, and adoption take place under the purview of the Data Governance Council or a similar governing body. This process ensures that the goals, principles, and policies align with the organization's Data Governance Strategy and are approved by key stakeholders before implementation.</p><p><br>Source:&nbsp;Chapter 4 Data&nbsp;Governance - 2.7 Develop&nbsp;Goals,&nbsp;Principles, and Policies (page 83)</p>",
+                "answers": [
+                    "<p>Data Governance Council drafts and finalizes them</p>",
+                    "<p>Data management professionals draft, Data Stewards/management review, and Data Governance Council conducts the final review</p>",
+                    "<p>Business owners draft, Data Governance Office certifies, and Data Stewards refine them</p>",
+                    "<p>Data Stewardship Steering Committee drafts and enforces them</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Governance",
+            "question_plain": "What is the typical process for developing and finalizing goals, principles, and policies in a data governance initiative?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421767,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of using data governance scorecards in an organization?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data governance scorecards are used to collect and track metrics related to data governance activities and ensure compliance with established data governance policies. These scorecards provide a systematic way to measure and report the effectiveness of data governance initiatives, helping organizations monitor their progress, identify areas for improvement, and demonstrate adherence to data governance principles. Automated scorecards streamline the reporting process and enable data governance bodies, such as the Data Governance Council and Steering Committees, to make informed decisions based on quantitative assessments of data governance performance.</p><p><br>Source:&nbsp;Chapter 4 Data&nbsp;Governance - 3.5 Data Governance Scorecards (page 93)</p>",
+                "answers": [
+                    "<p>To replace manual data governance activities</p>",
+                    "<p>To track compliance with data governance policies</p>",
+                    "<p>To automate data governance council meetings</p>",
+                    "<p>To generate metrics for data management</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Governance",
+            "question_plain": "What is the purpose of using data governance scorecards in an organization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421765,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a key consideration in data asset valuation?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Data asset valuation involves understanding the economic value of data to an organization. Unlike interchangeable assets, data sets are non-fungible, and their value is tied to how they are used. One aspect of measuring this value is the replacement cost, which refers to the recovery cost of data lost in various scenarios, such as a disaster or data breach. This cost includes transactions, domains, catalogs, documents, and metrics. Assessing the replacement cost helps organizations understand the economic impact of potential data loss and the investment needed for recovery.</p><p><br></p><p>Source:&nbsp;Chapter 4 Data&nbsp;Governance- 1.3.7 Data Asset Valuation (page 72)</p>",
+                "answers": [
+                    "<p>Interchangeability of data</p>",
+                    "<p>Replacement cost of data</p>",
+                    "<p>Market volatility impact on data</p>",
+                    "<p>Uniformity of data across organizations</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "Data Governance",
+            "question_plain": "What is a key consideration in data asset valuation?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421763,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a typical responsibility of a Chief Data Steward in a data governance organization?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Chief Data Stewards often play a leadership role in data governance by overseeing and coordinating activities within committees or bodies dedicated to governing data. They provide strategic direction and ensure that data governance aligns with the organization's goals.</p><p><br></p><p>Source:&nbsp;Chapter 3 Data Governance - 1.3.5 Types of Data Stewards (page 72)</p>",
+                "answers": [
+                    "<p>Conducting data quality assessments</p>",
+                    "<p>Managing database administration tasks</p>",
+                    "<p>Chairing data governance bodies or committees</p>",
+                    "<p>Writing code for data integration processes</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "Data Governance",
+            "question_plain": "What is a typical responsibility of a Chief Data Steward in a data governance organization?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421761,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which one of the following is a Data Architecture Governance activity:</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Source:&nbsp;Chapter 4 Data Architecture&nbsp; - 6&nbsp;Data&nbsp;Architecture Governance (page 118)</p>",
+                "answers": [
+                    "<p>Overseeing projects</p>",
+                    "<p>Managing architectural designs, lifecycle, and tools</p>",
+                    "<p>Defining standards</p>",
+                    "<p>All of the above</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Architecture",
+            "question_plain": "Which one of the following is a Data Architecture Governance activity:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421759,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which of the following is considered a metric in Data Architecture governance activities?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Metrics in Data Architecture governance include items like architecture standard compliance rate, as mentioned in DMBOK.</p><p>Source: Chapter 4 Data Architecture - 6.1 Metrics (page 118)</p>",
+                "answers": [
+                    "<p>Architecture standard compliance rate</p>",
+                    "<p>Business event subject areas</p>",
+                    "<p>Business process governance</p>",
+                    "<p>Data Steward assignments</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Data Architecture",
+            "question_plain": "Which of the following is considered a metric in Data Architecture governance activities?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421757,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a common business driver for implementing Data Architecture, as highlighted in the Data Management Body of Knowledge (DMBOK)?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>According to the DMBOK, the goal of data architecture is to be the bridge between the data strategy and technology execution</p><p><br>Source: Chapter 4 Data Architecture - 1.1 Business Drivers (page 99)</p>",
+                "answers": [
+                    "<p>Bridge between the data strategy and technology execution</p>",
+                    "<p>Employee training</p>",
+                    "<p>Office space optimization</p>",
+                    "<p>Marketing campaign effectiveness</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "Data Architecture",
+            "question_plain": "What is a common business driver for implementing Data Architecture, as highlighted in the Data Management Body of Knowledge (DMBOK)?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 93421755,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the primary reason for managing data in an ethical manner?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>For data management professionals and the organizations they work for, data ethics are a matter of social responsibility. Managing data in an ethical manner is necessary for the long-term success of an organization, and unethical data handling can result in the loss of reputation and customers. Therefore, the primary reason for managing data ethically is to fulfill social responsibility.</p><p>Source: Chapter 2 Data Handling Ethics - 1.&nbsp;Introduction (page 49)</p>",
+                "answers": [
+                    "<p>To comply with legal requirements</p>",
+                    "<p>To prevent economic loss</p>",
+                    "<p>To avoid reputational damage</p>",
+                    "<p>To fulfill social responsibility</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "Data Handling Ethics",
+            "question_plain": "What is the primary reason for managing data in an ethical manner?",
+            "related_lectures": []
+        }
+    ]
+}
