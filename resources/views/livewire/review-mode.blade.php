@@ -64,40 +64,45 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
                 <i class="bi bi-star" wire:click="setReview(true)"></i>
             @endif
         </a>
+
+        <button id="copy-question-content" class="btn btn-light btn-sm">Copy content</button>
+
     </div>
 
-    <div class="question-text">
-        {!! $currentQuestion['text'] !!}
-    </div>
+    <div id="question-content">
+        <div class="question-text">
+            {!! $currentQuestion['text'] !!}
+        </div>
 
-    <form id="form--answer" wire:submit.prevent="submitAnswer" wire:key="{{ $currentQuestionIndex }}">
-        <fieldset {{ $isShowExplanation ? 'disabled' : '' }}>
+        <form id="form--answer" wire:submit.prevent="submitAnswer" wire:key="{{ $currentQuestionIndex }}">
+            <fieldset {{ $isShowExplanation ? 'disabled' : '' }}>
 
-            @foreach ($currentQuestion['options'] as $index => $option)
-                <?php
-                $border = '';
-                if ($isShowExplanation) {
-                    if ($option['is_correct']) {
-                        $border = 'border-success';
-                    } elseif (in_array($option['id'], $selectedOptions)) {
-                        $border = 'border-danger';
+                @foreach ($currentQuestion['options'] as $index => $option)
+                    <?php
+                    $border = '';
+                    if ($isShowExplanation) {
+                        if ($option['is_correct']) {
+                            $border = 'border-success';
+                        } elseif (in_array($option['id'], $selectedOptions)) {
+                            $border = 'border-danger';
+                        }
                     }
-                }
-                ?>
-                <div class="question--answer-item form-check border border-2 {{ $border }}">
-                    {{-- {{ json_encode($currentQuestion['user_answers'])}} --}}
-                    <input class="form-check-input" type="{{ $checkBoxType }}" value={{ $option['id'] }}
-                        id="answer-{{ $index }}" wire:model.defer="selectedOptions">
+                    ?>
+                    <div class="question--answer-item form-check border border-2 {{ $border }}">
+                        {{-- {{ json_encode($currentQuestion['user_answers'])}} --}}
+                        <input class="form-check-input" type="{{ $checkBoxType }}" value={{ $option['id'] }}
+                            id="answer-{{ $index }}" wire:model.defer="selectedOptions">
 
-                    <label class="form-check-label answer-item--text" for="answer-{{ $index }}">
-                        {!! $option['text'] !!}
-                    </label>
-                </div>
-            @endforeach
+                        <label class="form-check-label answer-item--text" for="answer-{{ $index }}">
+                            {!! $option['text'] !!}
+                        </label>
+                    </div>
+                @endforeach
 
-        </fieldset>
+            </fieldset>
 
-    </form>
+        </form>
+    </div>
 
     <div class="d-flex justify-content-between form-button sticky-top p-2">
         <div>
@@ -200,5 +205,15 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
                 document.getElementById("demo").innerHTML = "EXPIRED";
             }
         }, 1000);
+        document.getElementById('copy-question-content').addEventListener('click', function() {
+            let textToCopy = document.getElementById('question-content').innerText;
+            const textarea = document.createElement('textarea');
+            textToCopy = textToCopy.replace(/^\s*[\r\n]/gm, '');
+            textarea.value = textToCopy;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+        });
     </script>
 @endpush
