@@ -16,6 +16,7 @@ class ReviewMode extends Component
 {
     public $exam;
     public $questions;
+    public $explanationMore;
 
     public $currentQuestion;
     public $currentQuestionIndex;
@@ -307,5 +308,23 @@ class ReviewMode extends Component
             'is_finish' => $isFinish,
             'record' => $userExamRecord,
         ]);
+    }
+
+    public function addExplanation() {
+        $questionId = $this->currentQuestion->id ?? $this->currentQuestion['id'];
+        $question = Question::where('id', $questionId)->select(['id', 'explanation'])->first();
+
+        // append new text for explanation
+        $newExplanation = $question->explanation . '<br>' . $this->explanationMore;
+        $question->update([
+            'explanation' => $newExplanation
+        ]);
+
+        // refresh model
+        $this->questions[$this->currentQuestionIndex]['explanation'] = $newExplanation;
+        $this->currentQuestion['explanation'] = $newExplanation;
+
+        // clear explanationMore
+        $this->explanationMore = '';
     }
 }

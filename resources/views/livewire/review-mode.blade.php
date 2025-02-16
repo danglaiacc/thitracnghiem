@@ -149,6 +149,15 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
             <p>
                 {!! $currentQuestion['explanation'] !!}
             </p>
+        
+            <form id="form--add-explanation" wire:submit.prevent="addExplanation" wire:key="{{ $currentQuestionIndex }}">
+                <button class="btn btn-info" type="submit" form="form--add-explanation">
+                    Add explanation
+                </button>
+                <textarea rows="3" type="text" class="form-control mt-2"
+                    wire:model="explanationMore" placeholder="More explanation">
+                </textarea>
+            </form>
         </div>
     @endif
 
