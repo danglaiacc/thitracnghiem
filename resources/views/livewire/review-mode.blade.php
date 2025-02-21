@@ -65,7 +65,9 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
             @endif
         </a>
 
-        <button id="copy-question-content" class="btn btn-light btn-sm">Copy content</button>
+        <button id="copy-question-content" class="btn btn-sm">
+            <i class="bi bi-copy"></i>
+        </button>
 
     </div>
 
@@ -159,8 +161,9 @@ $checkBoxType = $currentQuestion['is_multichoice'] ? 'checkbox' : 'radio';
                 <button class="btn btn-info" type="submit" form="form--add-explanation">
                     Add explanation
                 </button>
-                <textarea rows="3" type="text" class="form-control mt-2"
+                <textarea rows="5" type="text" class="form-control mt-2"
                     wire:model="explanationMore" placeholder="More explanation">
+                    {{ $explanationMore }}
                 </textarea>
             </form>
         </div>

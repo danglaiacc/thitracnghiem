@@ -253,6 +253,7 @@ class ReviewMode extends Component
         $this->currentQuestionIndex = $questionIndex;
         $this->currentQuestion = $this->questions[$this->currentQuestionIndex];
         $this->isShowExplanation = $this->checkShowExpalination();
+        $this->explanationMore = $this->currentQuestion['explanation'];
 
         // validate option from submit button (next/previous question)
         // or from history in user history
@@ -315,7 +316,8 @@ class ReviewMode extends Component
         $question = Question::where('id', $questionId)->select(['id', 'explanation'])->first();
 
         // append new text for explanation
-        $newExplanation = $question->explanation . '<br>' . $this->explanationMore;
+        // $newExplanation = $question->explanation . '<br>' . $this->explanationMore;
+        $newExplanation = $this->explanationMore;
         $question->update([
             'explanation' => $newExplanation
         ]);
@@ -325,6 +327,6 @@ class ReviewMode extends Component
         $this->currentQuestion['explanation'] = $newExplanation;
 
         // clear explanationMore
-        $this->explanationMore = '';
+        // $this->explanationMore = '';
     }
 }
