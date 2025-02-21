@@ -1,0 +1,1821 @@
+{
+    "count": 76,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "_class": "assessment",
+            "id": 79615830,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "An Enterprise Content Management system (ECM) stores the following?",
+                "answers": [
+                    "Code and test scripts for enterprise development environments",
+                    "Information to be displayed on websites and contained in documents",
+                    "Documents and images, but not multimedia",
+                    "Kanban boards",
+                    "Backups of the enterprise's data warehouse"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "An Enterprise Content Management system (ECM) stores the following?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615848,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "A security mechanism that searches for customer bank account details in outgoing emails is achieving the goal of:",
+                "answers": [
+                    "None of these",
+                    "ensuring stakeholder requirements for service design and experience are met.",
+                    "ensuring stakeholder requirements for concise definitions and usage are met.",
+                    "ensuring stakeholder requirements for openness and transparency are met.",
+                    "ensuring stakeholder requirements for confidentiality and privacy are met."
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "A security mechanism that searches for customer bank account details in outgoing emails is achieving the goal of:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615846,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "The goals of data operations include which of the following?",
+                "answers": [
+                    "Assuring the quality of the structured data assets, taking backups, and managing the security of the database",
+                    "Assuring backups are taken, managing the performance of SQL, and checking data quality",
+                    "Providing the right database access rights, solving software bugs, and managing database logs",
+                    "Assuring availability of the data throughout its lifecycle, protection and integrity assurance of structured data assets, and performance optimization of database transactions",
+                    "Assuring the performance of the network and storage devices, the quality of the SQL statements, and the selection of DBMS platform"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "The goals of data operations include which of the following?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615844,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Three common interaction models for data integration are:",
+                "answers": [
+                    "plane to point, harvest and seed, publish and subscribe",
+                    "point to point, wheel and spoke, public and share",
+                    "straight copy, curved copy, roundabout copy",
+                    "record and pass, copy and send, read and write",
+                    "point to point, hub and spoke, publish and subscribe"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "Three common interaction models for data integration are:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615842,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Identify who has “primary” responsibility for data capture and usage design within programs?",
+                "answers": [
+                    "Software Architects or Developers",
+                    "Data Management Executive or BI Analysts or Data Security Administrator",
+                    "Suppliers or Consumers",
+                    "Business Data Stewards or Subject Matter Experts (SMEs)",
+                    "Data Architects or Data Analysts or Database Administrators"
+                ],
+                "explanation": "Software Architects or Developers: have “primary” responsibility for data capture and usage design within programs."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Identify who has “primary” responsibility for data capture and usage design within programs?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615840,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "A common driver for initiating a Reference Data Management program is:",
+                "answers": [
+                    "It will improve Data Quality and facilitate analysis across the organization",
+                    "It fosters the creative use of data",
+                    "It will consolidate the process of securing third party code sets",
+                    "It can be a one-time-only project",
+                    "Managing codes and descriptions requires little effort and low cost"
+                ],
+                "explanation": "A common driver for initiating a Reference DM program is: It will improve DQ and facilitate analysis across the organization."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "A common driver for initiating a Reference Data Management program is:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615838,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "A &#x27;Data Swamp&#x27; is a data lake that has become:",
+                "answers": [
+                    "messy, unclean and inconsistent.",
+                    "suitable for frogs, toads and salamanders",
+                    "modelled, managed and muddy",
+                    "a data asset that uses machine learning.",
+                    "overly catalogued, holding information and data."
+                ],
+                "explanation": "A &#x27;Data Swamp&#x27; is a data lake that has become: messy, unclean and inconsistent."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "A &#x27;Data Swamp&#x27; is a data lake that has become:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615836,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "What is a common motivation for Reference &amp; Master Data Management?",
+                "answers": [
+                    "The need to consolidate all data into one physical database",
+                    "The need to improve Data Quality and data integrity across multiple data sources",
+                    "Regulatory acts such as BCBS239, GDPR, and SOX",
+                    "Business Intelligence and data warehousing",
+                    "The need to build a data dictionary of all core data entities and attributes"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What is a common motivation for Reference &amp; Master Data Management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615834,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "One of the key differences between operational systems and data warehouses is?",
+                "answers": [
+                    "Operational systems focus on business processes; data warehouses focus on business strategies",
+                    "Operational systems focus on historical data; data warehouses contain current data",
+                    "Operational systems focus on Data Quality; data warehouses focus on data security.",
+                    "Operational systems are available 24x7; data warehouses are available during business hours",
+                    "Operational systems focus on current data; data warehouses contain historical data"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "One of the key differences between operational systems and data warehouses is?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615832,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "The library of information about our data (our metadata) is built so that:",
+                "answers": [
+                    "We can better manage it",
+                    "We can better understand it",
+                    "We can be consistent in our use of terminology",
+                    "All of these",
+                    "We can have a shared formalized view of requirements (e.g. what data quality we need) "
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "The library of information about our data (our metadata) is built so that:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615850,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Critical to the success of the data warehouse is the ability to explain the data. The DMBoK knowledge area that practices these techniques is:",
+                "answers": [
+                    "Data Storage and Operations",
+                    "Document &amp; Content Management",
+                    "Data Architecture",
+                    "Metadata Management",
+                    "Reference and Master Data"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "Critical to the success of the data warehouse is the ability to explain the data. The DMBoK knowledge area that practices these techniques is:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615828,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "The acronym ACID stands for:",
+                "answers": [
+                    "available, corrupt, isolation and durable",
+                    "atomicity, completeness, independence and durability.",
+                    "available, completeness, isolation and dangerous.",
+                    "actual, created, identified and deleted.",
+                    "atomicity, consistency, isolation and durability"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "The acronym ACID stands for:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615826,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "The data operations team assures that the data is recoverable by what?",
+                "answers": [
+                    "Guaranteeing the applications take proper exports of the data",
+                    "Analyzing database error logs",
+                    "Maintaining a test, development, and production environment",
+                    "Defining and executing the data recovery plan",
+                    "Making sure the disks are checked regularly for write errors"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "The data operations team assures that the data is recoverable by what?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615824,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Whose responsibility should it be to identify and report occurrences of defects in information and data?",
+                "answers": [
+                    "Any employee",
+                    "Regulatory compliance officers",
+                    "The IT department",
+                    "The Information Quality team",
+                    "Customers"
+                ],
+                "explanation": "Any employee is responsible for identifying and reporting occurrences of defects in information and data."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Whose responsibility should it be to identify and report occurrences of defects in information and data?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615822,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Metadata repository processes will not include:",
+                "answers": [
+                    "Controlling versions of data product will be required to manage the required single published master copy in conjunction with the variants potentially established as work in progress",
+                    "Managing change to data products (e.g. Data Dictionary or Business Data Glossary) entries e.g. new data term to be defined, new data requirement, new database tables added, new system included into the technical landscape",
+                    "Selecting Data Management Library software, search, and storage technologies",
+                    "Assessing impact where change to existing data product entries are proposed e.g. the impact of change on related data on other systems",
+                    "All of these"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "Metadata repository processes will not include:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615820,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "The acronym ETL most commonly stands for:",
+                "answers": [
+                    "Extract Transpose Leverage",
+                    "Efficient Trace Logging",
+                    "Extract Transform Load",
+                    "Export Transform Log",
+                    "Extend Trim Load"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "The acronym ETL most commonly stands for:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615818,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "A ____________ is used for detailing collaboration principles, escalation, and dispute resolution process between Master Data Management and its data suppliers?",
+                "answers": [
+                    "Warranty",
+                    "Metadata catalog",
+                    "Operations run book",
+                    "Business requirements document",
+                    "Operational level agreement"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "A ____________ is used for detailing collaboration principles, escalation, and dispute resolution process between Master Data Management and its data suppliers?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615816,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "What is NOT a discipline of Data Management according to the DAMA DMBoK?",
+                "answers": [
+                    "Data Quality Management",
+                    "Data Governance",
+                    "Data Security Management",
+                    "Document and Content Management",
+                    "Data Virtualization"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "What is NOT a discipline of Data Management according to the DAMA DMBoK?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615814,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Apart from security requirements internal to the organization, what other strategic goals should a Data Security Management system address?",
+                "answers": [
+                    "Compliance with ISO29100 and PCI-DSS",
+                    "Ensuring the organization doesn't engage in SPAM marketing",
+                    "Compliance with ISO27001 and HIPPA",
+                    "None of these",
+                    "Regulatory requirements for privacy and confidentiality AND privacy and confidentiality needs of all stakeholders"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "Apart from security requirements internal to the organization, what other strategic goals should a Data Security Management system address?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615868,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Data that is used infrequently or not at all may be moved to an alternative data store. This is called:",
+                "answers": [
+                    "auditing",
+                    "analysis",
+                    "archiving",
+                    "authentication",
+                    "replication"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "Data that is used infrequently or not at all may be moved to an alternative data store. This is called:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615886,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "The process of translating plain text into complex codes to hide privileged information is:",
+                "answers": [
+                    "encryption",
+                    "None of these",
+                    "exaggeration.",
+                    "elimination.",
+                    "encapsulation."
+                ],
+                "explanation": "The process of translating plain text into complex codes to hide privileged information is: encryption."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "The process of translating plain text into complex codes to hide privileged information is:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615884,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Which of these is the best definition of an Ontology?",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "The classification of something",
+                    "An index of terms to enable rapid retrieval and explanation",
+                    "A mythical creature from ancient Greece",
+                    "<p>A set of concepts and categories in a subject area or domain that shows their properties and the relations between them</p>",
+                    "The theory and science of collating structure of living things"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "Which of these is the best definition of an Ontology?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615882,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Users continue to use a shared drive instead of a new Document Management System. This may be due to what?",
+                "answers": [
+                    "The document management system is too expensive",
+                    "Concurrent updates to the document are handled better by the shared drive",
+                    "Concern about the ability to version documents",
+                    "A failure to back up the shared drive",
+                    "Onerous classification requirements When adding documents"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "Users continue to use a shared drive instead of a new Document Management System. This may be due to what?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615880,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "We do not expect to consult the MetaData repository when:",
+                "answers": [
+                    "Updating the operating System that the Master data Management toolset is running on",
+                    "Undertaking a data quality assessment",
+                    "Investigating a data issue",
+                    "Assessing the impact of change",
+                    "None of the these"
+                ],
+                "explanation": "We do not expect to consult the MetaData repository when: Updating the operating system that the Master DM toolset is running on."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "We do not expect to consult the MetaData repository when:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615878,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Which of the following is NOT an activity that would enable business acceptance and user satisfaction?",
+                "answers": [
+                    "Defining different types of reporting tools to be used for future business needs",
+                    "Promoting scheduled meetings with user representatives",
+                    "Understanding the data and defining the operations team's responsiveness to identified issues",
+                    "Ensuring perceptions of the quality of the data in the BI system are managed",
+                    "Furnishing an end-to-end verifiable data lineage"
+                ],
+                "explanation": "Defining different types of reporting tools to be used for future business needs is NOT an activity that would enable business acceptance and user satisfaction."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Which of the following is NOT an activity that would enable business acceptance and user satisfaction?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615876,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "A bank applies the business rule that each Customer may own one or many Accounts and each Account must be owned by one or many Customers. Which relationship type would be most appropriate?",
+                "answers": [
+                    "one-to-many.",
+                    "one-to-one.",
+                    "recursive.",
+                    "many-to-many.",
+                    "many-to-one."
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "A bank applies the business rule that each Customer may own one or many Accounts and each Account must be owned by one or many Customers. Which relationship type would be most appropriate?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615874,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "When considering a Data Governance program, communication is a key element. There are many ways of managing this communication, with one of the most effective being a Data Management intranet. Which of the following would you typically NOT put onto such a communication vehicle?",
+                "answers": [
+                    "Link to a “raise an issue” log",
+                    "Raw data results of An investigation into a possible data privacy breach",
+                    "Executive message regarding significant Data Management issues",
+                    "Description of the DG organization, its key members, and contact details",
+                    "The data steward team profiles"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "When considering a Data Governance program, communication is a key element. There are many ways of managing this communication, with one of the most effective being a Data Management intranet. Which of the following would you typically NOT put onto such a communication vehicle?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615872,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "The role of the CDM in the Metadata repository is: ",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "To determine the primary, alternate and foreign keys of entities",
+                    "<p>To summarize the key data subject areas for a business area at a high level of abstraction to Enable the major data concepts to be understood</p>",
+                    "None of these",
+                    "To agree the cardinality and optionality of relationships between all entities",
+                    "All of these"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "The role of the CDM in the Metadata repository is:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615870,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "When new governmental and industry regulations are formulated and enacted, Data Governance plays a key role in the process of identifying the data and information components for compliance. What is the most important role in any regulatory compliance project?",
+                "answers": [
+                    "Provide access to any possible data set to the compliance team and allow them to mine the data for non-compliance",
+                    "Working with business and technical leadership to find the best answers to a standard set of regulatory compliance questions (How, Why, When, etc)",
+                    "Take no part in any project at all, declaring it an audit and risk project",
+                    "Work in isolation and mine the data and information for compliance and non-compliance issues",
+                    "Create a Data Governance &quot;in-house&quot; project with a team of Data Stewards to create a standard response"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "When new governmental and industry regulations are formulated and enacted, Data Governance plays a key role in the process of identifying the data and information components for compliance. What is the most important role in any regulatory compliance project?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615812,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Ontology asks _____ while metaphysics asks ______?",
+                "answers": [
+                    "What / Who",
+                    "Why / How",
+                    "What / How",
+                    "How / Why",
+                    "How / What"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "Ontology asks _____ while metaphysics asks ______?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615866,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "A data lineage tool enables a user to?",
+                "answers": [
+                    "Visualize how the data gets to the data lake",
+                    "Line up the data to support sophisticated glossary management",
+                    "Enables rapid development of dashboard reporting",
+                    "Track the historical changes to a data value",
+                    "Track the data from the source system to a target database, understanding its transformations"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "A data lineage tool enables a user to?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615864,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Master data differs from reference data in which following way?",
+                "answers": [
+                    "Master data do not require business definitions",
+                    "Master data does not require a data steward",
+                    "Master data should be held to a higher Data Quality standard than reference data",
+                    "Unlike reference data, master data is not usually limited to predefined domain values"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "Master data differs from reference data in which following way?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615862,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Big data is often defined by three characteristics. They are:",
+                "answers": [
+                    "Direction, Depth and Details",
+                    "Expansive, Engaged and Enormous",
+                    "Complexity, Compliance and Completeness",
+                    "Size, Speed and Sensitivity",
+                    "Volume, Variety and Velocity"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "Big data is often defined by three characteristics. They are:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615860,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "We would expect to consult the Metadata Library when:",
+                "answers": [
+                    "Selecting a Data Storage device",
+                    "Assessing the impact of change",
+                    "Accessing the internet",
+                    "Implementing a Data Quality tool",
+                    "Formulating a Goverance policy"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "We would expect to consult the Metadata Library when:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615858,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "The data dictionary describes?",
+                "answers": [
+                    "Mainly source, target, and transformation rules",
+                    "Mainly extract, transform, and access processes",
+                    "Mainly data in business terms directly from the logical model",
+                    "Mainly data in XML, JSON, and text forms",
+                    "Mainly availability and integrity quality rules"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "The data dictionary describes?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615856,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "A strong argument for pursuing a Reference Data and/or Master Data management initiative is:",
+                "answers": [
+                    "It will not require a lot of time",
+                    "Job security for the data people",
+                    "By centralizing the management of reference and master data, the organization can conform critical data needed for analysis",
+                    "They are essential functions in the Data Management framework",
+                    "It will not require a lot of time or effort"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "A strong argument for pursuing a Reference Data and/or Master Data management initiative is:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615854,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "A Data Quality Service Level Agreement (SLA) would normally include which of these?",
+                "answers": [
+                    "Respective roles and responsibilities for Data Quality",
+                    "Detailed technical specifications for data transfer",
+                    "A breakdown of the costs of Data Quality improvement",
+                    "A business case for data improvement",
+                    "An enterprise data model"
+                ],
+                "explanation": "A DQ Service Level Agreement (SLA) would normally include Respective roles and responsibilities for DQ."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "A Data Quality Service Level Agreement (SLA) would normally include which of these?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615852,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "If two data stores are able to be inconsistent during normal operations, then the integration approach is:",
+                "answers": [
+                    "Synchronous",
+                    "Streaming",
+                    "Uncontrolled",
+                    "Faulty",
+                    "Asynchronous"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "If two data stores are able to be inconsistent during normal operations, then the integration approach is:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615754,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "The Data Quality attribute that most closely matches the description “the difference between when the data is available and needed” is what?",
+                "answers": [
+                    "Validity",
+                    "Consistency",
+                    "All of the above",
+                    "Privacy",
+                    "Timeliness"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "The Data Quality attribute that most closely matches the description “the difference between when the data is available and needed” is what?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615772,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Which of the following should staff do to guarantee optimum database performance of data operations?",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "To guarantee optimum database performance of data operations, staff should Discuss performance requirements with the data architects.",
+                "answers": [
+                    "Discuss performance requirements with the data architects",
+                    "Reduce the number of rows in the tables",
+                    "Revoke the access rights of heavy users",
+                    "Discuss the amount of time a user can wait on a screen",
+                    "Decide what type of storage will be acquired"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Which of the following should staff do to guarantee optimum database performance of data operations?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615770,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "According to the DMBoK, which is not a component of a Data Management strategy?",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "Identifying individuals for DM roles is NOT a component of a DM strategy",
+                "answers": [
+                    "Identifying individuals for Data Management roles",
+                    "A draft implementation roadmap with projects and action items",
+                    "A summary business case for Data Management with selected examples",
+                    "A compelling vision for Data Management",
+                    "Descriptions of Data Management roles and organizations, along with a summary of their responsibilities and decision rights"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "According to the DMBoK, which is not a component of a Data Management strategy?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615768,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "A project scope includes the collection, exchange and reporting of data from multiple systems. Conceptual, logical and physical data models are maintained. How many models of each type can be expected?",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "Only 1 conceptual data model, 1 logical data model and 1 physical data model.",
+                    "More logical data models than physical data models, and more logical data models than conceptual data models.",
+                    "The same number of each of the model types.",
+                    "More physical data models than logical data models, and more logical data models than conceptual data models.",
+                    "More conceptual data models than logical data models, and more logical data models than physical data models."
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "A project scope includes the collection, exchange and reporting of data from multiple systems. Conceptual, logical and physical data models are maintained. How many models of each type can be expected?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615766,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Which of the following is the best example of the Data Quality dimension of &#x27;consistency&#x27;?",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "The customer file has 50% duplicated entries",
+                    "The revenue data in the dataset is always $100 out",
+                    "The phone numbers in the customer file do not adhere to the standard format",
+                    "The source data for the end of month report arrived one week late",
+                    "All the records in the CRM have been accounted for in the data warehouse"
+                ]
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "Which of the following is the best example of the Data Quality dimension of &#x27;consistency&#x27;?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615764,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Information Governance and Data Governance should be?",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "Managed as integrated functions, with Data Governance reporting to Information Governance",
+                    "Managed as a single function",
+                    "Managed as integrated functions, with Information Governance reporting to Data Governance",
+                    "Managed as separate functions",
+                    "Managed by the Chief Information Office"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "Information Governance and Data Governance should be?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615762,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "According to DMBoK, which of these is NOT a valid dimension of Data Quality?",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "Currency",
+                    "Reasonableness",
+                    "Relevance",
+                    "Completeness",
+                    "Timeliness"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "According to DMBoK, which of these is NOT a valid dimension of Data Quality?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615760,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Data standards used by the enterprise must?",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "Promote consistent results so they are only written once and never updated",
+                    "Promote consistent results but periodically be reviewed and updated",
+                    "Be a guideline for the organization but open to interpretation",
+                    "Set by a standards organization and not by the enterprise",
+                    "Only be necessary for the Data Governance team"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "Data standards used by the enterprise must?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615758,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Which of the following is NOT a stage in the Shewhart – Deming Cycle that drives the Data Quality Improvement Lifecycle?",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "Plan",
+                    "Do",
+                    "Check",
+                    "Act",
+                    "Investigate"
+                ]
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "Which of the following is NOT a stage in the Shewhart – Deming Cycle that drives the Data Quality Improvement Lifecycle?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615756,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "The purpose for adding redundancy to a data model (denormalisation) is to:",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Make it easier for developers to join tables.</p>",
+                    "<p>Fully utilise all the indexes.</p>",
+                    "<p>Optimise overall database performance across both data access and data update requests.</p>",
+                    "<p>Ensure surrogate keys are retaining their unique values in all satellite tables.</p>",
+                    "<p>Avoid the loss of data by storing key values more than once.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "The purpose for adding redundancy to a data model (denormalisation) is to:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615774,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "All of the following are properties of a logical data model except:",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Technology-independent</p>",
+                    "<p>Contains primary keys.</p>",
+                    "<p>Technology-dependent</p>",
+                    "<p>Contains relationship cardinality</p>",
+                    "<p>Contains attributes.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "All of the following are properties of a logical data model except:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615752,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "A Data Quality dimension is?",
+                "answers": [
+                    "A valid value in a list",
+                    "One aspect of Data Quality used extensively in Data Governance",
+                    "A core concept in dimensional modeling",
+                    "The value of a particular piece of data",
+                    "A measurable feature or characteristic of data"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "A Data Quality dimension is?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615750,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "One of the difficulties when integrating multiple source systems is?",
+                "answers": [
+                    "Modifying the source systems to align to the enterprise data model",
+                    "Completing the Data Architecture on time for the first release",
+                    "Maintaining documentation describing the data warehouse operation",
+                    "Determining valid links or equivalences between data elements",
+                    "Having a Data Quality rule applicable to all source systems"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "One of the difficulties when integrating multiple source systems is?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615748,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "In the common enterprise architecture model coded BIAT, the &#x27;I&#x27; stands for?",
+                "answers": [
+                    "Information",
+                    "Identification",
+                    "Instance",
+                    "Interoperability",
+                    "Integration"
+                ],
+                "explanation": "In the common enterprise architecture model coded BIAT, the &#x27;I&#x27; stands for Information."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "In the common enterprise architecture model coded BIAT, the &#x27;I&#x27; stands for?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615746,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "When the DMBoK calls Data Quality Management a program, not a project, it means?",
+                "answers": [
+                    "Data Quality is more tightly scoped and planned than ordinary projects",
+                    "Data Quality has both project and maintenance work along with communications and training",
+                    "Data Quality practices can stop at the end the project",
+                    "Data Quality managers can be paid more than project managers",
+                    "Data Quality management is really expensive"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "When the DMBoK calls Data Quality Management a program, not a project, it means?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615744,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Is the data model important in establishing Master Data Management?",
+                "answers": [
+                    "Yes, Master Data Management needs consistent logical definitions",
+                    "No, not if the organization has complex systems with multiple ways of capturing data",
+                    "Only if Master Data Management needs to know the processing steps for all data",
+                    "No, within a given source, data representing the same entity can be different",
+                    "No, not if the data model is physically instantiated in multiple platforms"
+                ],
+                "explanation": "data model is important in establishing Master DM because Master DM needs consistent logical definitions."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Is the data model important in establishing Master Data Management?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615742,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Data differs with regards to other assets because:",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "It is regulated",
+                    "It has value",
+                    "It uses automation",
+                    "It is big",
+                    "It can be used yet still retain value"
+                ]
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "Data differs with regards to other assets because:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615740,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Which statement is correct?",
+                "answers": [
+                    "Data Governance is informed by the Enterprise Information Architecture",
+                    "All are correct",
+                    "Data Governance should not be embedded within broader governance frameworks",
+                    "Data Management is designed to “govern” Data Governance practices",
+                    "None are correct"
+                ],
+                "explanation": "DG is informed by the Enterprise Information Architecture."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Which statement is correct?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615738,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "The Data Governance Steering Committee is best described as?",
+                "answers": [
+                    "The local or divisional council working under auspices of the CDO",
+                    "A burden to the agile delivery in a modern enterprise",
+                    "The primary and highest authority responsible for the oversight and support of Data Governance activities",
+                    "The representatives of data use on project steering committees",
+                    "The community of interest focused on specific subject areas or projects"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "The Data Governance Steering Committee is best described as?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615792,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "The MetaData repository enables us to establish multiple perspectives of data. These are:",
+                "answers": [
+                    "Internal and External",
+                    "3rd normal form and un normalised",
+                    "Business and Technical Perspective",
+                    "Structured and unstructured",
+                    "Dimensional and non dimensional perspective"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "The MetaData repository enables us to establish multiple perspectives of data. These are:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615810,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Which of the following statements regarding a value domain is FALSE?",
+                "answers": [
+                    "Value domains are defined by external standard organizations",
+                    "A value domain is a set of allowed values for a given code set",
+                    "Conforming value domains across the organization facilitates Data Quality",
+                    "More than one set of reference data value domains may refer to the same conceptual domain"
+                ],
+                "explanation": "Value domains are NOT defined by external standard organizations."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Which of the following statements regarding a value domain is FALSE?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615808,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Obfuscation or redaction of data is the practice of?",
+                "answers": [
+                    "Making information anonymous or removing sensitive information",
+                    "Selling data",
+                    "Making information available to the public",
+                    "Reducing the size of large databases",
+                    "Organizing data into meaningful groups"
+                ],
+                "explanation": "Obfuscation or redaction of data is the practice of Making information anonymous or removing sensitive information."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Obfuscation or redaction of data is the practice of?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615806,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "The role of the Physical data model in the Metadata repository is:",
+                "answers": [
+                    "When the duplicated records were merged",
+                    "Which version of COTS software (E.g. SAP) is implemented",
+                    "What the business definition of data concepts is",
+                    "To describe how and where our data is stored in our systems applications or packages",
+                    "How many master data records are stored in our MDM system"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "The role of the Physical data model in the Metadata repository is:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615804,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "The number of artifacts that must be searched in the Metadata repository for all Business change projects are:",
+                "answers": [
+                    "Conceptual data models and the Business Data Glossary must be examined",
+                    "The Business Data Glossary and Data Dictionary must be examined",
+                    "There is no mandatory number of artefacts to be searched but it is highly recommended that the library is examined",
+                    "Conceptual, Logical and Physical models must be examined",
+                    "The Business Data Glossary and Systems Inventory must be consulted"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "The number of artifacts that must be searched in the Metadata repository for all Business change projects are:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615802,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Which of the following should a DBA (database administrator) do if a database schema change is failing?",
+                "answers": [
+                    "Instruct the software designer to refer to the script and re-run it",
+                    "Call IT support to restore a previous version of the database",
+                    "Call the software vendor of the database for technical support",
+                    "Remove all the content of the tables and try again",
+                    "Apply the backout plan to restore a consistent database state"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "Which of the following should a DBA (database administrator) do if a database schema change is failing?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615800,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "When outsourcing Information Management functions, organizations can?",
+                "answers": [
+                    "Identification",
+                    "Transfer control but not accountability",
+                    "Align strategy and control privacy",
+                    "Improve controls while reducing costs",
+                    "Reduce cost of compliance and improve turnaround"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "When outsourcing Information Management functions, organizations can?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615798,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Non value-added information is often not removed because:",
+                "answers": [
+                    "Legislation is unclear on what should be kept",
+                    "The policies are unclear of what is defined as non-value-added, storage is cheap so there is no cost driver, and it takes more effort to dispose than to keep",
+                    "Data is an asset. It is likely to be recognized as valuable in the future",
+                    "It should not be removed. All data is value-added",
+                    "We might need the information at a later stage"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "Non value-added information is often not removed because:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615796,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Periodic archiving of transaction data from a production CRM system is critical for:",
+                "answers": [
+                    "the maintenance of database performance.",
+                    "enabling the distribution of transaction data across the enterprise.",
+                    "managing deleted customer records.",
+                    "providing alternate sources for reporting systems.",
+                    "training junior DBAs."
+                ],
+                "explanation": "Periodic archiving of transaction data from a production CRM system is critical for: the maintenance of database performance."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Periodic archiving of transaction data from a production CRM system is critical for:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615794,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "When integrating two data stores using batch or real-time synchronous approaches, results in a difference in:",
+                "answers": [
+                    "lethargy",
+                    "latency",
+                    "Data Quality",
+                    "source of truth",
+                    "time stamping"
+                ],
+                "explanation": ""
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "When integrating two data stores using batch or real-time synchronous approaches, results in a difference in:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615736,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Implementing a Services-Oriented Architecture (SOA) will often use?",
+                "answers": [
+                    "An enterprise services bus",
+                    "ETL servers",
+                    "A Data Modeling tool",
+                    "Data Visualization tools",
+                    "A data lake"
+                ],
+                "explanation": "Implementing a Services-Oriented Architecture (SOA) will often use: An enterprise services bus."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Implementing a Services-Oriented Architecture (SOA) will often use?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615790,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "The right to be forgotten is?",
+                "answers": [
+                    "A person&#x27;s right to have all their information erased from an organization",
+                    "A person&#x27;s right for all search criteria not to lead to their details",
+                    "A person&#x27;s right to have their information removed from all databases on earth",
+                    "A person&#x27;s right to change their name",
+                    "A person&#x27;s right to have imperfect memory"
+                ],
+                "explanation": "The right to be forgotten is A person&#x27;s right to have all their information erased from an organization."
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "The right to be forgotten is?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615788,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "A &#x27;Data Lake&#x27; is an environment where a vast amount of data can be:",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "A &#x27;Data Lake&#x27; is an environment where a vast amount of data can be: ingested, shared, assessed and analysed.",
+                "answers": [
+                    "ingested, shared, assessed and analysed.",
+                    "updated, obfuscated, nullified and cleansed",
+                    "digested, processed, deleted and visualised",
+                    "purged, sorted, split and scanned.",
+                    "ingested, screened, obfuscated and purged."
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "A &#x27;Data Lake&#x27; is an environment where a vast amount of data can be:",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615786,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "What factors should you consider when choosing data warehouse tools?",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "Current and future requirements",
+                    "Current and future costs",
+                    "Build vs. buy vs. rent",
+                    "Professional service offerings",
+                    "All of the above"
+                ]
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "What factors should you consider when choosing data warehouse tools?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615784,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "You are facilitating a committee that is developing data quality metrics. Some of the committee members think that SMART (Specific, Measurable, Accountable, Results-Focused, Time-Bound) is a good model. Select the statement that best describes why business relevance needs to be considered as a characteristic of Data Quality metrics?",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "Business relevance needs to be considered as a Data Quality metric in its own right",
+                    "Expressing business relevance in requirements assists the metadata strategy",
+                    "The value of a metric is limited unless it can be linked to some aspect of a business. The metric&#x27;s acceptability threshold needs to correlate with business expectations",
+                    "Unless you use business terms the end-users won&#x27;t understand and lose interest in the program",
+                    "Any IT program must have some business relevance defined, or it is a waste of time"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "You are facilitating a committee that is developing data quality metrics. Some of the committee members think that SMART (Specific, Measurable, Accountable, Results-Focused, Time-Bound) is a good model. Select the statement that best describes why business relevance needs to be considered as a characteristic of Data Quality metrics?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615782,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Slice, &quot;Dice&quot;, &quot;Roll-up&quot; and &quot;Pivot&quot; are terms used in what kind of data processing?",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "EDI",
+                    "EIEIO",
+                    "ODS",
+                    "OLTP",
+                    "OLAP"
+                ]
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "Slice, &quot;Dice&quot;, &quot;Roll-up&quot; and &quot;Pivot&quot; are terms used in what kind of data processing?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615780,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Which of the following is a typical metric in data warehouse/BI projects?",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "Number of different metadata used",
+                    "Number of fact tables connected",
+                    "Number of indexes used in the fact table",
+                    "Number of snowflake dimensions used in the projects",
+                    "Number of concurrent users connected to the data warehouse"
+                ]
+            },
+            "correct_response": [
+                "e"
+            ],
+            "section": "",
+            "question_plain": "Which of the following is a typical metric in data warehouse/BI projects?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615778,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "During the implementation of a data warehouse, a roadmap is used to?",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "Demonstrate progress towards the desired end state",
+                    "Articulate Data Quality checkpoints",
+                    "Articulate user requirements",
+                    "Demonstrate alignment to the project plan",
+                    "Construct intricate security authorization"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "During the implementation of a data warehouse, a roadmap is used to?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 79615776,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "Which of the following activities are performed by data operations staff?",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "activities performed by data operations staff include: Implement and control database environments, plan for data retention, keep track of database licenses, monitor and tune database performance.",
+                "answers": [
+                    "Implement and control database environments, plan for data retention, keep track of database licenses, monitor and tune database performance",
+                    "Grant access to tables, rewrite SQL statements",
+                    "Clean data that is of bad quality",
+                    "Manage the tape libraries",
+                    "Tune the file systems"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Which of the following activities are performed by data operations staff?",
+            "related_lectures": []
+        }
+    ]
+}
